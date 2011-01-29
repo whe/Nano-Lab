@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.0.85
-lastDocument=
+lastDocument=content.tex
 masterDocument=
 name=Nano-Lab DLW
 pkg_extIsRegExp=false
@@ -16,15 +16,31 @@ src_extensions=.tex .ltx .latex .dtx .ins
 MakeIndex=
 QuickBuild=
 
+[document-settings,item:DLW-Laborbericht.tex]
+Bookmarks=
+Encoding=ISO-8859-1
+Highlighting=LaTeX
+Indentation Mode=
+Mode=LaTeX
+ReadWrite=true
+
+[document-settings,item:content.tex]
+Bookmarks=
+Encoding=ISO-8859-1
+Highlighting=LaTeX
+Indentation Mode=
+Mode=LaTeX
+ReadWrite=true
+
 [item:DLW-Laborbericht.tex]
 archive=true
-column=1953064290
-encoding=
-highlight=
+column=0
+encoding=ISO-8859-1
+highlight=LaTeX
 line=0
-mode=
-open=false
-order=-1
+mode=LaTeX
+open=true
+order=0
 
 [item:appendix.tex]
 archive=true
@@ -38,13 +54,13 @@ order=-1
 
 [item:content.tex]
 archive=true
-column=2963521504
-encoding=
-highlight=
-line=0
-mode=
-open=false
-order=-1
+column=543
+encoding=ISO-8859-1
+highlight=LaTeX
+line=9
+mode=LaTeX
+open=true
+order=1
 
 [item:introduction.tex]
 archive=true
@@ -85,3 +101,11 @@ line=0
 mode=
 open=false
 order=-1
+
+[view-settings,view=0,item:DLW-Laborbericht.tex]
+CursorColumn=0
+CursorLine=0
+
+[view-settings,view=0,item:content.tex]
+CursorColumn=543
+CursorLine=9
