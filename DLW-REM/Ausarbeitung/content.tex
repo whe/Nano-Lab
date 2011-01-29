@@ -84,12 +84,34 @@ Durch die
 
 Zur Herstellung der Proben wurde auf ein gereinigtes Glassubstrat mit einem \textit{Spin Coater} ein Fotolackfilm (SU-8) aufebracht. Um das Lösungsmittel aus dem Lack zu treiben, wurde die Probe bei 95~°C auf einer \textit{Hot Plate} gebacken (\textit{Soft Bake}) \cite{Versuchsanleitung}. Diese Probenvorbereitung erfolgte durch den Versuchsbetreuer.
 
-\todo{Schreiben der Probe im DLW}
+\todo{Edge-Removing}
+
+Zur Belichtung des Lackes wurde die Probe in den DLW eingebaut. Das Objektiv des zur Belichtung verwendeten Mikroskops wurde mit Immersionsöl in Kontakt zum Glassubstrat gebracht. 
+Daraufhin folgte die Kalibrierung der Laserintensität mit Hilfe einer Photodiode. Dazu wurde die Laserleistung auf $\sim$3,4~mW eingestellt und die automatisierte Kalibrierung gestartet.
+
+Um Verkippungen der Probe auszugleichen wurde an drei Punkten die Glas-Lack-Grenze bestimmt. Dazu wurde der Laserfokus manuell in $z$-Richtung durch die Probe bewegt und dabei Fluoreszenzsignal beobachtet. 
+
+\begin{figure}%
+\centering
+%\begin{adjustwidth}{-.5cm}{0cm}
+	\subfloat[Glas-Lack]{\includegraphics[totalheight=4 cm]{Grafiken/glass_su8.jpg}\label{fig:glas_lack}}
+	\subfloat[Lack]{\includegraphics[totalheight=4 cm]{Grafiken/su8.jpg} \label{fig:lack}}%
+		\subfloat[Lack-Luft]{\includegraphics[totalheight=4 cm]{Grafiken/su8_luft.jpg}\label{fig:lack_luft}}
+%\end{adjustwidth}
+\caption{Fluoreszenzantworten auf die Laserbestrahlung \cite{Carsten}. \textbf{(a)} An der Glas-Lack-Grenze ist das Ausbilden einer Fluoreszenzantwort zu erkennen. \textbf{(b)} Im Lack ist eine ausgeprägte Fluoreszenzantwort zu beobachten. \textbf{(c)} An der Lack-Luft-Grenze sind ausgeprägte Nebenmaxima der Fluoreszenzantwort zu beobachten.}%
+\label{fig:fluoreszenz}%
+\end{figure}
+
+Abbildung \ref{fig:fluoreszenz} zeigt die Fluoreszenzantworten bei einer Fokussierung des Lasers auf die Glas-Lack-Grenze (Abbildung \ref{fig:glas_lack}), in die Lackschicht (Abbildung \ref{fig:lack}) sowie auf die Lack-Luft-Grenze (Abbildung \ref{fig:lack_luft}). An der Glas-Lack-Grenze ist die Ausbildung einer Fluoreszenzantwort zu erkennen. Befindet sich der Laserfokus im Lack ist eine ausgeprägte Fluoreszenzantwort zu erkennen. An der Lack-Luft-Grenze ist das ausbilden von Nebenmaxima zu erkennen. 
+
+Anhand dieses Verfahrens wurden die Glas-Lack-Grenze eingestellt.
+
+Anschließend wurden die vom Versuchsbetreuer vorbereiteten Strukturen in den Lack geschrieben. Abbildung \ref{fig:Strukturen} zeigt die geschriebenen Strukturen. Hier sind Linien einzelner Voxel (links), ein dreidimensionales LTI-Logo (mitte) sowie Gitterstrukturen (rechts) zu erkennen. Der Schreibdauer der Strukturen beträgt etwa 2 Stunden.
 
 \begin{figure}%
 \centering
 \includegraphics[width=.6\columnwidth]{Grafiken/Strukturen.pdf}%
-\caption{Vorlage der geschriebenen Strukturen.}%
+\caption{Vorlage der geschriebenen Strukturen \cite{Carsten}.}%
 \label{fig:Strukturen}%
 \end{figure}
 
@@ -170,7 +192,7 @@ Beim Betrachten der Gitterstrukturen in Abbildung \ref{fig:Gitter_uebersicht}{ z
 
 Die Strukturen in Abbildung \ref{fig:Gitter_uebersicht} wurden zeilenweise mit unterschiedlicher Laserleistung (von unten nach oben: 1,75~mW, 1,5~mW und 1,25~mW), spaltenweise mit unterschiedlichen Linienabständen (von links nach rechts: 1~$\upmu$m, 0,75~$\upmu$m, 0,5~$\upmu$m und 0,25~$\upmu$m). Die Linien wurden mit einer Geschwindigkeit von 1~mm/s im Vektor-Modus geschrieben. 
 
-Bei einer Leistung von 1,75~mW reicht die Energie aus, um die Polymerisationsschwelle des Lackes zu überwinden. Es sind alle 4 Gitterstrukturen zu erkennen. Das Fehlen eineger Strukturen bei geringeren Leistungen ist darauf zurückzuführen, dass die Polymerisationsschwelle nicht überschritten wird. 
+Bei einer Leistung von 1,75~mW reicht die Energie aus, um die Polymerisationsschwelle des Lackes zu überwinden. Es sind alle 4 Gitterstrukturen zu erkennen. Das Fehlen einiger Strukturen bei geringeren Leistungen ist darauf zurückzuführen, dass die Polymerisationsschwelle nicht überschritten wird. 
 
 Es zeigt sich allerdings, dass bei geringerem Abstand zwischen den Linien Strukturen bei Leistungen vorhanden sind, die bei größeren Linienabständen nicht vorhanden sind. Durch den geringeren Linienabstand kommt es beim Schreiben einer Linie zur Belichtung von benachbarten Linien. Dadurch kann die Polymerisationsschwelle überschritten werden. 
 
