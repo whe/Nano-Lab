@@ -9,20 +9,35 @@
 \label{ch:Grundlagen:sec:REM}
 In Abbildung \ref{fig:aufbau_rem} ist schematisch der Aufbau eines Rasterelektronenmikroskops~(REM) dargestellt. Aus in einer Elektronenquelle werden durch eine Spannung $U_{B}$ von einigen kV Elektronen (Prim"ar Elektronen - PE) aus einer Kathode gel"ost und beschleunigt. Durch ein System aus Magnetlinsen, Ablenkspulen und Blenden wird ein Elektronenstrahl geformt, mit dem die eine Probe abgetastet werden kann. Treffen PE auf die Probe werden diese durch elastische oder inelastische Streuung abgebremst. \todo{mehr.. hab keine lust mehr}
 
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{Grafiken/ionisationsbirne.jpg}%
-\caption{Ionisationsbirne \cite{Reimer}.}
-\label{fig:ionisationsbirne}
-\end{figure} 
 
-\begin{figure}
+\begin{figure}%
 \centering
-\includegraphics[width=.5\columnwidth]{Grafiken/rem-schema-1.jpg}%
- 
-\caption{Schematischer Aufbau eines REMs \cite{Colliex}.}
-\label{fig:aufbau_rem}
-\end{figure} 
+\begin{adjustwidth}{-1.5cm}{0cm}
+	\subfloat[Ionisationsbirne \cite{Reimer}.]{\includegraphics[width=.6\columnwidth]{Grafiken/ionisationsbirne.jpg}\label{fig:ionisationsbirne}}
+	\subfloat[Schematischer Aufbau eines REMs \cite{Colliex}.]{\includegraphics[width=.6\columnwidth]{Grafiken/rem-schema-1.jpg} \label{fig:aufbau_rem}}%
+	\end{adjustwidth}
+\caption{bla.}%
+\label{fig:rem_subfig}%
+\end{figure}
+
+
+
+
+%
+%\begin{figure}
+%\centering
+%\includegraphics[width=.5\columnwidth]{Grafiken/ionisationsbirne.jpg}%
+%\caption{Ionisationsbirne \cite{Reimer}.}
+%\label{fig:ionisationsbirne}
+%\end{figure} 
+%
+%\begin{figure}
+%\centering
+%\includegraphics[width=.5\columnwidth]{Grafiken/rem-schema-1.jpg}%
+% 
+%\caption{Schematischer Aufbau eines REMs \cite{Colliex}.}
+%\label{fig:aufbau_rem}
+%\end{figure} 
 
 \subsection{Aufbau}
 \label{ch:Grundlagen:sec:REM:sub:Aufbau}
@@ -70,6 +85,47 @@ Die Abscheidung von Gold erfolgte in einer Hochfrequenz (engl. $radio~frequency$
 
 \section{Bestimmung der Voxelgröße}
 \label{ch:Auswertung:sec:voxel}
+
+Um die Voxelausdehnung in z-Richtung zu bestimmen, wurden einzelne Voxel nebeneinander geschrieben. Hierbei wurde die Position in z-Richtung mit jedem Voxel um 100~nm erhöht. Abbildung \ref{fig:steigung} zeigt dies Schematisch. Der Laser ist zuerst in das Glassubstrat fokusiert. Der Fokus verschiebt sich mit jedem Voxel nach oben. Sobald sich der Fokus im Fotolack befindet, wird dieser belichtet. Nach dem Entwickeln verbleiben nur die Voxel stehen, die direkten Kontakt zum Glassubstrat haben. In Abbildung \ref{fig:steigung} würde somit der erste Laserfokuspunkt kein Voxel bilden, das Voxel des letzten Fokuspunktes würde beim Entwickeln wegschwimmen. Aus der Anzahl der verbleibenden Voxel lässt sich damit Voxelausdehnung in z-Richtung abschätzen.
+
+Abbildung \ref{fig:voxelausdehnung} zeigt eine REM-Aufnahme der geschriebenen Voxelstrukturen. Es wurde Laserleistung von 1,75~mW verwendet. Die Belichtungszeit pro Voxel steigt von beträgt (Zeilenweise, von unten nach oben) 10~ms, 20~ms und 30~ms. In der untersten Reihe sind 8 Voxel zu erkennen. Daraus lässt sich eine Voxelausdehnung in z-Richtung von $\sim800$~nm abschätzen. In Tabelle \ref{tab:Ausdehnung} sind die Voxelgrößen in Abhängigkeit der Energie zu finden.
+
+Um die Voxelausdehnung in x- bzw. y-Richtung zu bestimmen, wurde das jeweils letzte Voxel einer Reihe vermessen. Bei diesen Voxeln ist bei einer Aufsicht die volle Voxelbreite zu messen. Abbildung \ref{fig:voxel_x} zeigt die Aufsicht auf ein Voxel (Laserleistung: 1,75~W, Belichtungszeit: 30~ms). Zu erkennen ist eine elliptische Form. Zu erwarten wäre eine kreisförmige Form \cite{Multiphoton}. Dies ist vermutlich auf eine astigmatische Aberration des Linsensystems beim Schreiben der Strukturen zurückzuführen. 
+Zur Bestimmung der Voxelbreite wurde die kürzere Achse der Ellipse gewählt. Für das in der Abbildung gezeigte Voxel ergibt sich damit eine laterale breite von $\sim1,14$~$\upmu$m.
+
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/Steigung.pdf}%
+\caption{Schematische Darstellung: Bestimmung der Voxelausdehnung in z-Richtung.}%
+\label{fig:steigung}
+\end{figure}
+
+%\begin{figure}%
+%\centering
+%\includegraphics[width=.8\columnwidth]{Grafiken/voxel_bsp.jpg}%
+%\caption{REM Aufnahme der Voxelstrukturen.}%
+%\label{fig:voxelausdehnung}%
+%\end{figure}
+%
+
+
+
+\begin{figure}%
+\centering
+\begin{adjustwidth}{-.5cm}{0cm}
+	\subfloat[Voxelanordnung]{\includegraphics[totalheight=4 cm]{Grafiken/voxel_bsp.jpg}\label{fig:voxelausdehnung}\qquad}
+	\subfloat[Voxelgröße]{\includegraphics[totalheight=4 cm]{Grafiken/voxel_x.jpg} \label{fig:voxel_x}}%
+\end{adjustwidth}
+\caption{REM Aufnahmen der Voxelstrukturen}%
+\label{fig:voxel_subfig}%
+\end{figure}
+
+%\begin{figure}%
+%\centering
+%\includegraphics[width=\columnwidth]{Grafiken/voxel_x.jpg}%
+%\caption{}%
+%\label{}%
+%\end{figure}
 
 \section{Bestimmung der Polymerisationsschwelle}
 \label{ch:Auswertung:sec:Polymerisation}
