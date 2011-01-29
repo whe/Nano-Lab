@@ -20,20 +20,35 @@ Durch die
 
 
 
-\begin{figure}
-\centering
-\includegraphics[width=.5\columnwidth]{Grafiken/ionisationsbirne.jpg}%
-\caption{Ionisationsbirne \cite{Reimer}.}
-\label{fig:ionisationsbirne}
-\end{figure} 
 
-\begin{figure}
+\begin{figure}%
 \centering
-\includegraphics[width=.5\columnwidth]{Grafiken/rem-schema-1.jpg}%
- 
-\caption{Schematischer Aufbau eines REMs \cite{Colliex}.}
-\label{fig:aufbau_rem}
-\end{figure} 
+\begin{adjustwidth}{-1.5cm}{0cm}
+	\subfloat[Ionisationsbirne \cite{Reimer}.]{\includegraphics[width=.6\columnwidth]{Grafiken/ionisationsbirne.jpg}\label{fig:ionisationsbirne}}
+	\subfloat[Schematischer Aufbau eines REMs \cite{Colliex}.]{\includegraphics[width=.6\columnwidth]{Grafiken/rem-schema-1.jpg} \label{fig:aufbau_rem}}%
+	\end{adjustwidth}
+\caption{bla.}%
+\label{fig:rem_subfig}%
+\end{figure}
+
+
+
+
+%
+%\begin{figure}
+%\centering
+%\includegraphics[width=.5\columnwidth]{Grafiken/ionisationsbirne.jpg}%
+%\caption{Ionisationsbirne \cite{Reimer}.}
+%\label{fig:ionisationsbirne}
+%\end{figure} 
+%
+%\begin{figure}
+%\centering
+%\includegraphics[width=.5\columnwidth]{Grafiken/rem-schema-1.jpg}%
+% 
+%\caption{Schematischer Aufbau eines REMs \cite{Colliex}.}
+%\label{fig:aufbau_rem}
+%\end{figure} 
 
 \subsection{Aufbau}
 \label{ch:Grundlagen:sec:REM:sub:Aufbau}
@@ -52,6 +67,13 @@ Durch die
 
 \section{Noch eine}
 \label{ch:DLW:sec:bla}
+\begin{figure}%
+\centering
+\includegraphics[width=\columnwidth]{Grafiken/LTI.jpg}%
+\caption{}%
+\label{}%
+\end{figure}
+
 
 %% ===========================
 \chapter{Versuchsdurchführung}
@@ -63,6 +85,14 @@ Durch die
 Zur Herstellung der Proben wurde auf ein gereinigtes Glassubstrat mit einem \textit{Spin Coater} ein Fotolackfilm (SU-8) aufebracht. Um das Lösungsmittel aus dem Lack zu treiben, wurde die Probe bei 95~°C auf einer \textit{Hot Plate} gebacken (\textit{Soft Bake}) \cite{Versuchsanleitung}. Diese Probenvorbereitung erfolgte durch den Versuchsbetreuer.
 
 \todo{Schreiben der Probe im DLW}
+
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/Strukturen.pdf}%
+\caption{Vorlage der geschriebenen Strukturen.}%
+\label{fig:Strukturen}%
+\end{figure}
+
 
 Nach der Belichtun des Fotolacks erfolgte ein $Post~Exposure~Bake$ (PEB) für 7 Minuten bei 95~°C auf einer $Hot~Plate$. Bei diesem Backvorgang werden zuvor belichtete Bereiche des Lacks quervernetzt und damit unempfindlich gegenüber dem Entwickler. Anschließend erfolgte die Entwicklung mit dem Entwickler \mbox{mr-Dev 600}. 
 Die Probe wurde für 7 Minuten im Entwickler geschwenkt, zum stoppen der Entwicklung mit Isopropanol abgespühlt und mit Stickstoff getrocknet. Nach einer optischen Kontrolle der Probe wurde die Probe für eine weitere Minute in \mbox{mr-Dev 600} nachentwickelt. Bei der Entwicklung werden die zuvor nicht belichteten Lackbereiche entfernt.
@@ -79,18 +109,95 @@ Die Abscheidung von Gold erfolgte in einer Hochfrequenz (engl. $radio~frequency$
 \chapter{Auswertung der Messergebnisse}
 \label{ch:Auswertung}
 
+Die Charakterisierung der hergestellten Strukturen erfolgte mit Hilfe eines REMs. Im Folenden wird die Voxelgröße in Abhängigkeit von Belichtungszeit und Laserleistung untersucht. Die Polymerisationsschwelle wird bestimmt und der Einfluss benachbarter Linien aufeinander untersucht.
+
 \section{Bestimmung der Voxelgröße}
 \label{ch:Auswertung:sec:voxel}
+
+Um die Voxelausdehnung in $z$-Richtung zu bestimmen, wurden einzelne Voxel nebeneinander geschrieben. Hierbei wurde die Position in $z$-Richtung mit jedem Voxel um 100~nm erhöht. Abbildung \ref{fig:steigung} zeigt dies Schematisch. Der Laser ist zuerst in das Glassubstrat fokusiert. Der Fokus verschiebt sich mit jedem Voxel nach oben. Sobald sich der Fokus im Fotolack befindet, wird dieser belichtet. Nach dem Entwickeln verbleiben nur die Voxel stehen, die direkten Kontakt zum Glassubstrat haben. In Abbildung \ref{fig:steigung} würde somit der erste Laserfokuspunkt kein Voxel bilden, das Voxel des letzten Fokuspunktes würde beim Entwickeln wegschwimmen. Aus der Anzahl der verbleibenden Voxel lässt sich damit Voxelausdehnung in $z$-Richtung abschätzen.
+
+Abbildung \ref{fig:voxelausdehnung} zeigt eine REM-Aufnahme der geschriebenen Voxelstrukturen. Es wurde Laserleistung von 1,75~mW verwendet. Die Belichtungszeit pro Voxel steigt von beträgt (Zeilenweise, von unten nach oben) 10~ms, 20~ms und 30~ms. In der untersten Reihe sind 8 Voxel zu erkennen. Daraus lässt sich eine Voxelausdehnung in $z$-Richtung von $\sim800$~nm abschätzen. In Tabelle \ref{tab:Voxel} sind die Voxelgrößen in Abhängigkeit der Energie zu finden.
+
+Um die Voxelausdehnung in $x$- bzw. $y$-Richtung zu bestimmen, wurde das jeweils letzte Voxel einer Reihe vermessen. Bei diesen Voxeln ist bei einer Aufsicht die volle Voxelbreite zu messen. Abbildung \ref{fig:voxel_x} zeigt die Aufsicht auf ein Voxel (Laserleistung: 1,75~W, Belichtungszeit: 30~ms). Zu erkennen ist eine elliptische Form. Zu erwarten wäre eine kreisförmige Form \cite{Multiphoton}. Dies ist vermutlich auf eine astigmatische Aberration des Linsensystems beim Schreiben der Strukturen zurückzuführen. 
+Zur Bestimmung der Voxelbreite wurde die kürzere Achse der Ellipse gewählt. Für das in der Abbildung gezeigte Voxel ergibt sich damit eine laterale Breite von $\sim1,14$~$\upmu$m. Tabelle \ref{tab:Ausdehnung} beinhaltet auch die laterale Breite der Voxel in Abhängigkeit der Energie.
+
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/Steigung.pdf}%
+\caption{Schematische Darstellung: Bestimmung der Voxelausdehnung in $z$-Richtung.}%
+\label{fig:steigung}
+\end{figure}
+
+%\begin{figure}%
+%\centering
+%\includegraphics[width=.8\columnwidth]{Grafiken/voxel_bsp.jpg}%
+%\caption{REM Aufnahme der Voxelstrukturen.}%
+%\label{fig:voxelausdehnung}%
+%\end{figure}
+%
+
+
+
+\begin{figure}%
+\centering
+%\begin{adjustwidth}{-.5cm}{0cm}
+	\subfloat[Voxelanordnung]{\includegraphics[totalheight=4 cm]{Grafiken/voxel_bsp.jpg}\label{fig:voxelausdehnung}\qquad}
+	\subfloat[Voxelgröße]{\includegraphics[totalheight=4 cm]{Grafiken/voxel_x.jpg} \label{fig:voxel_x}}%
+%\end{adjustwidth}
+\caption{REM Aufnahmen der Voxelstrukturen}%
+\label{fig:voxel_subfig}%
+\end{figure}
+
+%\begin{figure}%
+%\centering
+%\includegraphics[width=\columnwidth]{Grafiken/voxel_x.jpg}%
+%\caption{}%
+%\label{}%
+%\end{figure}
 
 \section{Bestimmung der Polymerisationsschwelle}
 \label{ch:Auswertung:sec:Polymerisation}
 
-\section{Probleme bei Gitterstrukturen}
+Zur Bestimmung der Polymerisationsschwelle wurden einzelne Voxel mit verschiedenen Energien geschrieben (vgl. Abbildung \ref{fig:voxelausdehnung}). Es wurden Energien von 10~$\upmu$J bis $\sim$50~$\upmu$J untersucht (vgl. Tabelle \ref{tab:Voxel}). 
+
+\todo{Graph und Tabelle verlinken}
+
+
+\section{Gitterstrukturen}
 \label{ch:Auswertung:sec:ProblemeGitter}
 
-\section{Demonstration dreidimensionaler Strukturen}
-\label{ch:Auswertung:sec:LTI}
+Beim Betrachten der Gitterstrukturen in Abbildung \ref{fig:Gitter_uebersicht}{ zeigt sich, dass im Gegensatz zur Vorlage (vgl. Abbildung  \ref{fig:Strukturen}) auf der fertigen Probe nicht alle Strukturen vorhanden sind.
 
+Die Strukturen in Abbildung \ref{fig:Gitter_uebersicht} wurden zeilenweise mit unterschiedlicher Laserleistung (von unten nach oben: 1,75~mW, 1,5~mW und 1,25~mW), spaltenweise mit unterschiedlichen Linienabständen (von links nach rechts: 1~$\upmu$m, 0,75~$\upmu$m, 0,5~$\upmu$m und 0,25~$\upmu$m). Die Linien wurden mit einer Geschwindigkeit von 1~mm/s im Vektor-Modus geschrieben. 
+
+Bei einer Leistung von 1,75~mW reicht die Energie aus, um die Polymerisationsschwelle des Lackes zu überwinden. Es sind alle 4 Gitterstrukturen zu erkennen. Das Fehlen eineger Strukturen bei geringeren Leistungen ist darauf zurückzuführen, dass die Polymerisationsschwelle nicht überschritten wird. 
+
+Es zeigt sich allerdings, dass bei geringerem Abstand zwischen den Linien Strukturen bei Leistungen vorhanden sind, die bei größeren Linienabständen nicht vorhanden sind. Durch den geringeren Linienabstand kommt es beim Schreiben einer Linie zur Belichtung von benachbarten Linien. Dadurch kann die Polymerisationsschwelle überschritten werden. 
+
+Abbildung \ref{fig:Gauss1} zeigt schematisch zwei benachbarte Linien, bei denen die Polymerisationsschwelle nicht überschritten wird. Werden die beiden Linien näher zusammengebracht (Abbildung \ref{fig:Gauss2}) kommt es zu einer Überlagerung beider, und die Polymerisationsquelle kann überschritten werden.
+
+\begin{figure}%
+\centering
+%\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[Gitterstrukturen]{\includegraphics[totalheight=5 cm]{Grafiken/Gitter_uebersicht.jpg}\label{fig:Gitter_uebersicht}\qquad}
+	\subfloat[Struktur]{\includegraphics[totalheight=5 cm]{Grafiken/Gitter.jpg} \label{fig:Gitter}}%
+%\end{adjustwidth}
+\caption{\textbf{(a)} Lichtmikroskopische Aufnahme der geschriebenen Gitterstrukturen. \textbf{(b)} REM-Aufnahme: Die Gitterstruktur konnte nicht aufgelöst werden.}%
+\label{fig:voxel_subfig}%
+\end{figure}
+
+
+\begin{figure}%
+\centering
+\begin{adjustwidth}{-.50cm}{0cm}
+	\subfloat[]{\includegraphics[totalheight=6 cm]{Grafiken/Gauss1.pdf}\label{fig:Gauss1}}
+	\subfloat[]{\includegraphics[totalheight=6 cm]{Grafiken/Gauss2.pdf} \label{fig:Gauss2}}%
+\end{adjustwidth}
+\caption{\textbf{(a)} Die Intensitäten des Lasers reicht nicht zur Polymerisation aus. Beide Linien werden nicht geschrieben.  \textbf{(b)} Die Intensitäten beider Linien überlagern sich und es kommt zu einer Belichtung des Lackes.}%
+\label{fig:Gauss}%
+\end{figure}
+
+Beim Betrachten von Abbildung \ref{fig:Gitter} zeigt sich, dass die einzelnen Linien der Gitterstruktur nicht vorhanden sind. Dies kann zum einen dadurch erklärt werden, dass beim Schreiben der Strukturen ein Gleichanteil der den gepulsten Laser überlagerte vorhanden war. Zum anderen ist eine Unterentwicklung des Lackes denkbar, sodass die Linienzwischenräume nicht entwickelt wurden.
 
 
 \chapter{Zusammenfassung}
