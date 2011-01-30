@@ -32,6 +32,14 @@ Indentation Mode=
 Mode=LaTeX
 ReadWrite=true
 
+[document-settings,item:thesis.bib]
+Bookmarks=
+Encoding=ISO-8859-1
+Highlighting=BibTeX
+Indentation Mode=
+Mode=BibTeX
+ReadWrite=true
+
 [item:DLW-Laborbericht.tex]
 archive=true
 column=0
@@ -54,10 +62,10 @@ order=-1
 
 [item:content.tex]
 archive=true
-column=543
+column=0
 encoding=ISO-8859-1
 highlight=LaTeX
-line=9
+line=112
 mode=LaTeX
 open=true
 order=1
@@ -74,13 +82,13 @@ order=-1
 
 [item:thesis.bib]
 archive=true
-column=4294967295
-encoding=
-highlight=
-line=0
-mode=
-open=false
-order=-1
+column=37
+encoding=ISO-8859-1
+highlight=BibTeX
+line=126
+mode=BibTeX
+open=true
+order=2
 
 [item:thesisclass.cls]
 archive=true
@@ -107,5 +115,9 @@ CursorColumn=0
 CursorLine=0
 
 [view-settings,view=0,item:content.tex]
-CursorColumn=543
-CursorLine=9
+CursorColumn=0
+CursorLine=112
+
+[view-settings,view=0,item:thesis.bib]
+CursorColumn=37
+CursorLine=126
