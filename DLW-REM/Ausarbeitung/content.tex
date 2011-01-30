@@ -33,10 +33,10 @@ beschrieben. Wobei $\lambda$ die Wellenl"ange des Teilchens, und $NA$ die Numeri
 
 \begin{figure}%
 \centering
-\begin{adjustwidth}{-1.5cm}{0cm}
-	\subfloat[Ionisationsbirne \cite{MNO}.]{\includegraphics[width=.6\columnwidth]{Grafiken/ionisationsbirne.jpg}\label{fig:ionisationsbirne}}
-	\subfloat[Schematischer Aufbau eines REMs \cite{Colliex}.]{\includegraphics[width=.6\columnwidth]{Grafiken/rem-schema-1.jpg} \label{fig:aufbau_rem}}%
-	\end{adjustwidth}
+%\begin{adjustwidth}{-1.5cm}{0cm}
+	\subfloat[Ionisationsbirne \cite{MNO}.]{\includegraphics[width=.5\columnwidth]{Grafiken/ionisationsbirne.jpg}\label{fig:ionisationsbirne}}
+	\subfloat[Schematischer Aufbau eines REMs \cite{Colliex}.]{\includegraphics[width=.5\columnwidth]{Grafiken/rem-schema-1.jpg} \label{fig:aufbau_rem}}%
+%	\end{adjustwidth}
 \caption{bla.}%
 \label{fig:rem_subfig}%
 \end{figure}
@@ -73,8 +73,8 @@ beschrieben. Wobei $\lambda$ die Wellenl"ange des Teilchens, und $NA$ die Numeri
 \begin{figure}%
 \centering
 %\begin{adjustwidth}{0cm}{0cm}
-	\subfloat[Lichtmikroskop]{\includegraphics[totalheight=5.5 cm]{Grafiken/lichtmikroskop_schraube.jpg}\label{fig:schraube_licht}\qquad}
-	\subfloat[REM]{\includegraphics[totalheight=5.5 cm]{Grafiken/sem_schraube.jpg} \label{fig:schraube_rem}}%
+	\subfloat[Lichtmikroskop]{\includegraphics[totalheight=5 cm]{Grafiken/lichtmikroskop_schraube.jpg}\label{fig:schraube_licht}\qquad}
+	\subfloat[REM]{\includegraphics[totalheight=5 cm]{Grafiken/sem_schraube.jpg} \label{fig:schraube_rem}}%
 %	\end{adjustwidth}
 \caption{Fotos einer Schraube. \textbf{(a)} Unter dem Lichtmikroskop ist eine sehr geringe Tiefenschärfe zu beobachten.\textbf{(b)} Unter dem REM ist eine hohe Tiefenschräfe zu beobachten.}%
 \label{fig:schraube}%
@@ -106,7 +106,7 @@ Im Fokuspunkt findet eine eine zwei-Photonen-Absorption (engl. \textit{two-photo
 Mit TPA ist dies möglich. Hierbei können zwei Photonen gleichzeitig Absorbiert werden, deren addierte Energien $E_{\mbox{ges}}=$2h$\nu$ ausreichen um die Energiedifferenz zwischen den Energieniveaus S$_2$ und S$_0$ zu überwinden.
 
 Da die Wahrscheinlichkeit von TPA quadratisch von der Laserintensität abhängt finden die TPA Prozesse im Fokus des Lasers statt. 
-Durch TPA wird im Fotolack ein chemischer Prozess in Gang gesetzt, der zur polymerisation des Materials führt \cite{Nanophotonics}. Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Der damit geschriebene Volumenpixel wird Voxel genannt. \todo{evtl. Ellipsoid Voxel}
+Durch TPA wird im Fotolack ein chemischer Prozess in Gang gesetzt, der zur polymerisation des Materials führt \cite{Nanophotonics}. Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Ein geschriebener Volumenpixel wird Voxel genannt. \todo{evtl. Ellipsoid Voxel}
 
 \begin{figure}%
 \centering
@@ -120,27 +120,24 @@ Dadurch ist es möglich Strukturen unterhalb der Auflösungsgrenze (vgl. \eqref{eq
 
 \begin{figure}%
 \centering
-\includegraphics[width=.65\columnwidth]{Grafiken/Polymer.pdf}%
+\includegraphics[width=.6\columnwidth]{Grafiken/Polymer.pdf}%
 \caption{Schematische Darstellung der Abhängigkeit des Voxeldurchmessers von der Intensität \cite{Nanophotonics}.}%
 \label{fig:poly}%
 \end{figure}
 
-\section{Noch eine}
-\label{ch:DLW:sec:bla}
 \begin{figure}%
 \centering
-\includegraphics[width=\columnwidth]{Grafiken/LTI.jpg}%
-\caption{}%
-\label{}%
+\includegraphics[width=.4\columnwidth]{Grafiken/LTI.jpg}%
+\caption{REM Aufnahme dreidimensionaler Strukturen die mit DLW geschrieben wurden.}%
+\label{fig:LTI}%
 \end{figure}
+
+Abbildung \ref{fig:LTI} veranschaulicht die Möglichkeit dreidimensionale Strukturen mit DLW zu schreiben. 
 
 
 %% ===========================
-\chapter{Versuchsdurchführung}
-\label{ch:Durchfuerhung}
-
-\section{Probenherstellung}
-\label{ch:Durchfuerhung:sec:Herstellung}
+\chapter{Probenherstellung}
+\label{ch:Herstellun}
 
 Zur Herstellung der Proben wurde auf ein gereinigtes Glassubstrat mit einem \textit{Spin Coater} ein Fotolackfilm (SU-8) aufebracht. Um das Lösungsmittel aus dem Lack zu treiben, wurde die Probe bei 95~°C auf einer \textit{Hot Plate} gebacken (\textit{Soft Bake}) \cite{Versuchsanleitung}. Diese Probenvorbereitung erfolgte durch den Versuchsbetreuer.
 
@@ -170,23 +167,19 @@ Anschließend wurden die vom Versuchsbetreuer vorbereiteten Strukturen in den Lac
 
 \begin{figure}%
 \centering
-\includegraphics[width=.6\columnwidth]{Grafiken/Strukturen.pdf}%
+\includegraphics[width=.5\columnwidth]{Grafiken/Strukturen.pdf}%
 \caption{Vorlage der geschriebenen Strukturen \cite{Carsten}.}%
 \label{fig:Strukturen}%
 \end{figure}
 
 
-Nach der Belichtun des Fotolacks erfolgte ein $Post~Exposure~Bake$ (PEB) für 7 Minuten bei 95~°C auf einer $Hot~Plate$. Bei diesem Backvorgang werden zuvor belichtete Bereiche des Lacks quervernetzt und damit unempfindlich gegenüber dem Entwickler. Anschließend erfolgte die Entwicklung mit dem Entwickler \mbox{mr-Dev 600}. 
-Die Probe wurde für 7 Minuten im Entwickler geschwenkt, zum stoppen der Entwicklung mit Isopropanol abgespühlt und mit Stickstoff getrocknet. Nach einer optischen Kontrolle der Probe wurde die Probe für eine weitere Minute in \mbox{mr-Dev 600} nachentwickelt. Bei der Entwicklung werden die zuvor nicht belichteten Lackbereiche entfernt.
+Nach der Belichtun des Fotolacks erfolgte ein $Post~Exposure~Bake$ (PEB) für 7~Minuten bei 95~°C auf einer $Hot~Plate$. Bei diesem Backvorgang werden zuvor belichtete Bereiche des Lacks quervernetzt und damit unempfindlich gegenüber dem Entwickler. Anschließend erfolgte die Entwicklung mit dem Entwickler \mbox{mr-Dev 600}. 
+Die Probe wurde für 7~Minuten im Entwickler geschwenkt, zum stoppen der Entwicklung mit Isopropanol abgespühlt und mit Stickstoff getrocknet. Nach einer optischen Kontrolle der Probe wurde die Probe für eine weitere Minute in \mbox{mr-Dev 600} nachentwickelt. Bei der Entwicklung werden die zuvor nicht belichteten Lackbereiche entfernt.
 
 Um die Lackstrukturen weiter zu festigen wurde die Probe für 10 Minuten bei 150~°C auf einer $Hot~Plate$ gebacken ($Hard Bake$). Bei diesem $Hard~Bake$ werden außerdem Isopropanolreste aus den Strukturen ausgetrieben. Dies ist notwendig, damit beim später durchgeführten Aufsputtern von Gold zu keiner Zerstörung der Strukturen durch das Plasma kommt.
 
 Die Abscheidung von Gold erfolgte in einer Hochfrequenz (engl. $radio~frequency$ - RF)-Sputteranlage durchgeführt. Die Goldschicht dient dazu Aufladungseffekte auf den nicht leitfähigen Lackstrukuturen während dem Betrachten unter dem REM zu verhindern.
  
-
-
-\section{evtl. noch was}
-\label{ch:Durchfuerhung:sec:keine}
 
 \chapter{Auswertung der Messergebnisse}
 \label{ch:Auswertung}
@@ -201,11 +194,12 @@ Um die Voxelausdehnung in $z$-Richtung zu bestimmen, wurden einzelne Voxel neben
 Abbildung \ref{fig:voxelausdehnung} zeigt eine REM-Aufnahme der geschriebenen Voxelstrukturen. Es wurde Laserleistung von 1,75~mW verwendet. Die Belichtungszeit pro Voxel steigt von beträgt (Zeilenweise, von unten nach oben) 10~ms, 20~ms und 30~ms. In der untersten Reihe sind 8 Voxel zu erkennen. Daraus lässt sich eine Voxelausdehnung in $z$-Richtung von $\sim800$~nm abschätzen. In Tabelle \ref{tab:Voxel} sind die Voxelgrößen in Abhängigkeit der Energie zu finden.
 
 Um die Voxelausdehnung in $x$- bzw. $y$-Richtung zu bestimmen, wurde das jeweils letzte Voxel einer Reihe vermessen. Bei diesen Voxeln ist bei einer Aufsicht die volle Voxelbreite zu messen. Abbildung \ref{fig:voxel_x} zeigt die Aufsicht auf ein Voxel (Laserleistung: 1,75~W, Belichtungszeit: 30~ms). Zu erkennen ist eine elliptische Form. Zu erwarten wäre eine kreisförmige Form \cite{Multiphoton}. Dies ist vermutlich auf eine astigmatische Aberration des Linsensystems beim Schreiben der Strukturen zurückzuführen. 
-Zur Bestimmung der Voxelbreite wurde die kürzere Achse der Ellipse gewählt. Für das in der Abbildung gezeigte Voxel ergibt sich damit eine laterale Breite von $\sim1,14$~$\upmu$m. Tabelle \ref{tab:Ausdehnung} beinhaltet auch die laterale Breite der Voxel in Abhängigkeit der Energie.
+Zur Bestimmung der Voxelbreite wurde die kürzere Achse der Ellipse gewählt. Für das in der Abbildung gezeigte Voxel ergibt sich damit eine laterale Breite von $\sim1,14$~$\upmu$m. Tabelle \ref{tab:Voxel} beinhaltet auch die laterale Breite der Voxel in Abhängigkeit der Energie.
+Abbildung \ref{fig:voxel} veranschaulicht den Zusammenhang zwischen Energie und Voxelvolumen. Mit steigender Energie steigt auch das Voxelvolumen. Dies bestätigt das in Kapitel \ref{ch:DLW} beschriebene Verhalten der minimalen Auflösung.
 
 \begin{figure}%
 \centering
-\includegraphics[width=.5\columnwidth]{Grafiken/Steigung.pdf}%
+\includegraphics[width=.4\columnwidth]{Grafiken/Steigung.pdf}%
 \caption{Schematische Darstellung: Bestimmung der Voxelausdehnung in $z$-Richtung.}%
 \label{fig:steigung}
 \end{figure}
@@ -230,6 +224,12 @@ Zur Bestimmung der Voxelbreite wurde die kürzere Achse der Ellipse gewählt. Für 
 \label{fig:voxel_subfig}%
 \end{figure}
 
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/Voxel.pdf}%
+\caption{Voxelvolumen in Abhängigkeit der Energie. Zur Veranschaulichung der mit der Energie steigenden Voxelgröße wurde eine Orientierungslinie eingezeichnet.}%
+\label{fig:voxel}%
+\end{figure}
 %\begin{figure}%
 %\centering
 %\includegraphics[width=\columnwidth]{Grafiken/voxel_x.jpg}%
@@ -240,9 +240,37 @@ Zur Bestimmung der Voxelbreite wurde die kürzere Achse der Ellipse gewählt. Für 
 \section{Bestimmung der Polymerisationsschwelle}
 \label{ch:Auswertung:sec:Polymerisation}
 
-Zur Bestimmung der Polymerisationsschwelle wurden einzelne Voxel mit verschiedenen Energien geschrieben (vgl. Abbildung \ref{fig:voxelausdehnung}). Es wurden Energien von 10~$\upmu$J bis $\sim$50~$\upmu$J untersucht (vgl. Tabelle \ref{tab:Voxel}). 
+Zur Bestimmung der Polymerisationsschwelle wurden einzelne Voxel mit verschiedenen Energien geschrieben (vgl. Abbildung \ref{fig:voxelausdehnung}). Es wurden Energien von 10~$\upmu$J bis $\sim$50~$\upmu$J untersucht (vgl. Tabelle \ref{tab:Voxel}). Aus der Tabelle sowie Abbildung \ref{fig:voxel} geht hervor, dass bis zu einer Energie von 12,5~$\upmu$J keine Voxel geschrieben werden. Ab 15~$\upmu$J sind Voxel zu erkennen. Die Polymerisationsschwelle befindet sich also bei einer Energie zwischen $12,5~\upmu$J$~<E_{\mathrm{Schwelle}}<15~\upmu$J.
 
-\todo{Graph und Tabelle verlinken}
+\begin{table}%
+\centering
+% \renewcommand{\arraystretch}{1.3}
+\caption{Belichtungsparameter und daraus resultierende Voxelgrößen.}
+\begin{tabular}{lllllll}
+\toprule
+ 
+Leistung&Zeit&Energie&Anzahl&H"ohe &Breite&Volumen\\
+in mW&in ms&in $\upmu$J&Voxel&in $\upmu$m&in $\upmu$m&in $\upmu$m$^3$\\
+\midrule
+1,75&10&17,5&8&0,80&0,67&0,19\\
+1,75&20&35,0&14&1,40&1,03&0,78\\
+1,75&30&52,5&15&1,50&1,14&1,02\\
+1,50&10&15,0&3&0,30&0,56&0,05\\
+1,50&20&30,0&13&1,30&0,93&0,59\\
+1,50&30&45,0&15&1,50&1,10&0,95\\
+1,25&10&12,5&0&0,00&0,00&0,00\\
+1,25&20&25,0&9&0,90&0,74&0,26\\
+1,25&30&37,5&11&1,10&0,89&0,46\\
+1,00&10&10,0&0&0,00&0,00&0,00\\
+1,00&20&20,0&4&0,40&0,52&0,06\\
+1,00&30&30,0&9&0,90&0,69&0,22\\
+
+\bottomrule 
+\end{tabular}
+
+\label{tab:Voxel}
+\end{table}
+
 
 
 \section{Gitterstrukturen}
@@ -283,3 +311,9 @@ Beim Betrachten von Abbildung \ref{fig:Gitter} zeigt sich, dass die einzelnen Li
 
 
 \chapter{Zusammenfassung}
+
+Im Versuch "`Direct Laser Writing und Raster Elektronenmikroskopie"' am Lichttechnischen Institut (LTI) wurden dreidimensionale Strukturen in einer Größenordnung von einigen Mikrometern hergestellt und charakterisiert.
+
+Das Schreiben der Strukturen erfolgte mittels \textit{Direct Laser Writing} (DLW). Die Polymerisation des Fotolacks erfolgte über die zwei-Photonen-Polymerisation (2PP). Die hergestellten Strukturen wurden anschließend mit Hilfe eines Raster Elektronen Mikroskops (REM) charakterisiert.
+
+Es wurde der Einfluss der Energie auf die Voxelgröße untersucht. Die Polymerisationsschwelle des verwendeten Fotolackes wurde experimentell bestimmt. 
