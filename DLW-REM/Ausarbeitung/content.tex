@@ -7,39 +7,49 @@
 %% ==============
 \section{Rasterelektronenmikroskop}
 \label{ch:Grundlagen:sec:REM}
-In Abbildung \ref{fig:aufbau_rem} ist schematisch der Aufbau eines Ras\-ter\-elektro\-nen\-mikros\-kops (REM) dargestellt. Aus in einer Elektronenquelle werden durch eine Spannung $U_{B}$ von einigen kV Elektronen (Prim"ar Elektronen - PE) aus einer Kathode gel"ost und beschleunigt. Durch ein System aus Magnetlinsen, Ablenkspulen und Blenden wird ein Elektronenstrahl geformt, mit dem die eine Probe abgetastet werden kann. Der Aufbau befindet sich in einem evakuierten Geh"au"se, um ein ablenken des Elektronenstrahls durch Luftmolek"ule zu vermeiden. 
-
-Treffen PE auf die Probe werden diese durch elastische oder inelastische Streuung abgebremst. Hierdurch werden von der Oberfl"ache durch verschiedene Prozesse Teilchen emittiert, die sich in ihrer Energie unterscheiden.
-
-Bei Elektronen mit einer Energie von weniger als 50~eV spricht man von Sekund"arelektronen~(SE). Diese werden durch inelastische St"o"se der PE mit schwach gebunden Elektronen im Material erzeugt. Seitlich der Probe ist ein Everhart-Thornley-Detektor angebracht. Dieser beschleunigt durch eine Spannung die SE auf einen Szintilationskristall. Trifft ein Elektron auf diesen Kristall sendet er einen Lichtpuls aus, der anschlie"send durch einen Photomultiplier verst"arkt wird und in einen Spannungsimpuls umgewandelt werden. Es k"onnen nur SE detektiert werden, die im oberfl"achennahen Bereich des Materials erzeugt wurden (Vgl. Abb. \ref{fig:ionisationsbirne}), da die Energie der Elektronen nicht ausreicht, um das Material zu durchdringen \todo{hmm, bl"od}. Mit SE kann daher die Topografie des Materials mit hoher Aufl"osung vermessen werden.
 
 
-Elektronen die Tiefer in das Material eindringen und stark vom Material gestreut werden, werden als R"uckstreuelektronen (engl. \textit{Backscattered Electrons} - BSE) bezeichnet. BSE besitzen eine Energie zwischen 50~eV und $ e \cdot U_B$. Sie werden durch einen Detektor, der "uber der Probe um die Apperturblende angebracht ist, detektiert (Vgl. Abb. \ref{fig:aufbau_rem}). Da die Streuung der Elektronen und damit die Energieverteilung der BSE von der Dichte des Untersuchten Materials abh"angt, lassen sich "uber BSE gut Materialkontraste darstellen. Allerdings ist die Aufl"osung geringer als bei SE.
-
-Durch St"o"se der Elektronen mit den Atomen der Probe werden diese angeregt, d.h. Elektronen vom Valenzband ins Leitungsband angehoben. Wenn diese angeregten Elektronen rekombinieren wird entweder R"ontgenstrahlung emmitiert, oder die freiwerdende Energie wird an ein weiteres atomares Elektron ertragen, das als Augerelektron emmittiert wird. Da die emmitierten Teilchen diskrete Energien besitzen, l"asst sich mit ihnen ebenfalls das Probenmaterial bestimmen \cite{Reimer}.
-
-Um nun ein Bild aufzunehmen, tastet man die Probe mit dem Elektronenstrahl ab. Die gemessenen Detektorinformatinen werden nun entweder auf einer Kathodenstrahlr"ohre Zeilenweise dargestellt, oder an einen Messrechner weitergeleitet und verarbeitet.
-
-Die Aufl"osung eines Rasterelektronenmikroskops wird durch die Beugung bestimmt. Diese wird durch das Abbe'sche Abbildungskriterium
-\begin{equation}
- d_{min} \approx \frac{\lambda}{2\cdot NA}
-\label{eq:Abbe}
-\end{equation}
-beschrieben. Wobei $\lambda$ die Wellenl"ange des Teilchens, und $NA$ die Numerische Apperatur der Elektronenoptik bezeichnet. Je h"oher die Enenergie eines Elektrons ist, je n"aher sich das Objekt an der Apperturblende befindet und je weiter die Apperturblende ge"offnet ist, lassen sich also theoretisch kleinere Objekte abbilden \todo{der Satz is komisch}. Jedoch wird die Aufl"osung des Rasterelektronenmikroskops auch durch die Abbildungsfehler des Linsensystems begrenzt. So werden bei Magnetlinsen h"aufig achsferne Strahlen st"arker zur Achse hin gebrochen als achsnahe Strahlen. Daraus resultiert eine starke sph"arische Abberation. Um diesen Abbildungsfehler zu minimieren und somit die Aufl"sung zu erh"ohen, sollte die Apperturblende, anders als in \eqref{eq:Abbe} gezeigt, weiter geschlossen werden.
-
-
-
-
-
-\begin{figure}%
+\begin{figure}[h]%
 \centering
 %\begin{adjustwidth}{-1.5cm}{0cm}
 	\subfloat[Ionisationsbirne \cite{MNO}.]{\includegraphics[width=.5\columnwidth]{Grafiken/ionisationsbirne.jpg}\label{fig:ionisationsbirne}}
 	\subfloat[Schematischer Aufbau eines REMs \cite{Colliex}.]{\includegraphics[width=.5\columnwidth]{Grafiken/rem-schema-1.jpg} \label{fig:aufbau_rem}}%
 %	\end{adjustwidth}
-\caption{bla.}%
+\caption{todo}%
 \label{fig:rem_subfig}%
 \end{figure}
+
+In Abbildung \ref{fig:aufbau_rem} ist schematisch der Aufbau eines Ras\-ter\-elektro\-nen\-mikros\-kops (REM) dargestellt. Aus in einer Elektronenquelle werden durch eine Spannung $U_{B}$ von einigen kV Elektronen (Prim"ar Elektronen - PE) aus einer Kathode gel"ost und beschleunigt. Durch ein System aus Magnetlinsen, Ablenkspulen und Blenden wird ein Elektronenstrahl geformt, mit dem die eine Probe abgetastet werden kann. Der Aufbau befindet sich in einem evakuierten Geh"au"se, um ein ablenken des Elektronenstrahls durch Luftmolek"ule zu vermeiden. 
+
+Treffen PE auf die Probe werden diese durch elastische oder inelastische Streuung abgebremst. Hierdurch werden von der Oberfl"ache durch verschiedene Prozesse Teilchen emittiert, die sich in ihrer Energie unterscheiden.
+
+% Bei Elektronen mit einer Energie von weniger als 50~eV spricht man von Sekund"arelektronen~(SE). Diese werden durch inelastische St"o"se der PE mit schwach gebunden Elektronen im Material erzeugt. Seitlich der Probe ist ein Everhart-Thornley-Detektor angebracht. Dieser beschleunigt durch eine Spannung die SE auf einen Szintilationskristall. Trifft ein Elektron auf diesen Kristall sendet er einen Lichtpuls aus, der anschlie"send durch einen Photomultiplier verst"arkt wird und in einen Spannungsimpuls umgewandelt werden.
+
+Bei Elektronen mit einer Energie von weniger als 50~eV spricht man von Sekund"arelektronen~(SE). Diese werden durch inelastische St"o"se der PE mit schwach gebunden Elektronen im Material erzeugt. Seitlich der Probe ist ein Everhart-Thornley-Detektor angebracht. Dieser zieht durch eine Spannung die SE an. Treffen diese auf den Szintilationskristall des Detektors sendet dieser einen Lichtpuls aus, der anschlie"send durch einen Photomultiplier verst"arkt wird und in einen Spannungsimpuls umgewandelt wird. Es k"onnen nur SE detektiert werden, die im oberfl"achennahen Bereich des Materials erzeugt wurden (Vgl. Abb. \ref{fig:ionisationsbirne}), da die Energie der SE nicht ausreicht, um aus tieferen Materialschichten nach au"sen zu dringen. Mit SE kann daher die Topografie des Materials mit hoher Aufl"osung vermessen werden.
+
+
+Elektronen die Tiefer in das Material eindringen und stark vom Material gestreut werden, werden als R"uckstreuelektronen (engl. \textit{Backscattered Electrons} - BSE) bezeichnet. BSE besitzen eine Energie zwischen 50~eV und $ e \cdot U_B$. Sie werden durch einen Detektor, der "uber der Probe um die Apperturblende angebracht ist, detektiert (Vgl. Abb. \ref{fig:aufbau_rem}). Da die Streuung der Elektronen und damit die Energieverteilung der BSE von der Dichte des Untersuchten Materials abh"angt, lassen sich "uber BSE gut Materialkontraste darstellen. Allerdings ist die Aufl"osung geringer als bei SE.
+
+Durch St"o"se der Elektronen mit den Atomen der Probe werden diese angeregt, d.h. Elektronen vom Valenzband ins Leitungsband angehoben. Wenn diese angeregten Elektronen rekombinieren wird entweder R"ontgenstrahlung emmitiert, oder die freiwerdende Energie wird an ein weiteres atomares Elektron "ubertragen, das als Augerelektron emmittiert wird. Da die emmitierten Elektronen bzw. Photonen diskrete Energien besitzen, l"asst sich mit ihnen ebenfalls das Probenmaterial bestimmen \cite{Reimer}.
+
+Um nun ein Bild aufzunehmen, tastet man die Probe mit dem Elektronenstrahl ab. Die gemessenen Detektorinformatinen werden nun entweder auf einer Kathodenstrahlr"ohre Zeilenweise dargestellt, oder an einen Messrechner weitergeleitet und verarbeitet.
+
+% Die Aufl"osung eines Rasterelektronenmikroskops wird durch die Beugung bestimmt. Diese wird durch das Abbe'sche Abbildungskriterium
+% \begin{equation}
+%  d_{min} \approx \frac{\lambda}{2\cdot NA}
+% \label{eq:Abbe}
+% \end{equation}
+% beschrieben. Wobei $\lambda$ die Wellenl"ange des Teilchens, und $NA$ die Numerische Apperatur der Elektronenoptik bezeichnet. Je h"oher die Enenergie eines Elektrons ist, je n"aher sich das Objekt an der Apperturblende befindet und je weiter die Apperturblende ge"offnet ist, lassen sich also theoretisch kleinere Objekte abbilden \todo{der Satz is komisch}. Jedoch wird die Aufl"osung des Rasterelektronenmikroskops auch durch die Abbildungsfehler des Linsensystems begrenzt. So werden bei Magnetlinsen h"aufig achsferne Strahlen st"arker zur Achse hin gebrochen als achsnahe Strahlen. Daraus resultiert eine starke sph"arische Abberation. Um diesen Abbildungsfehler zu minimieren und somit die Aufl"sung zu erh"ohen, sollte die Apperturblende, anders als in \eqref{eq:Abbe} gezeigt, weiter geschlossen werden.
+
+Die Aufl"osung eines Lichtmikroskops wird durch die Beugung bestimmt. Diese wird durch das Abbe'sche Abbildungskriterium
+\begin{equation}
+ d_{min} \approx \frac{\lambda}{2\cdot NA}
+\label{eq:Abbe}
+\end{equation}
+beschrieben. Wobei $\lambda$ die Wellenl"ange der verwendeten Strahlung, und $NA$ die Numerische Apperatur der Optik bezeichnet. Je kleiner also $\lambda$ bzw je gr"oser $NA$, desto kleinere Strukturen kn"onnen also aufgel"ost werden. F"ur das REM bedeutet das, dass die Elektronenenergie m"oglichst gro"s, die Apperturblende m"oglichst weit ge"offnet und das Objekt m"oglichst nah an der Blende sein muss, um eine hohe Aufl"osung zu erzielen. Die Aufl"osung des Rasterelektronenmikroskops wird jedoch auch stark durch die Abbildungsfehler des Linsensystems begrenzt. So werden bei Magnetlinsen h"aufig achsferne Strahlen st"arker zur Achse hin gebrochen als achsnahe Strahlen. Daraus resultiert eine starke sph"arische Abberation. Um diesen Abbildungsfehler zu minimieren und somit die Aufl"sung zu erh"ohen, sollte die Apperturblende m"oglichst weit geschlossen werden.
+
+Ein weiterer Vorteil eines REM gegen"uber einem Lichtmikroskop ist, neben der h"oheren Aufl"osung, die gro"se Tiefensch"arfe. Abbildung \ref{fig:schraube} zeigt eine Aufnahme einer Schraube, zum einen mit dem Lichtmikroskop (a), zum anderen mit dem REM (b). Mit dem Lichtmikroskop (Vgl Abbildung \ref{fig:schraube_licht}) kann nur eine Bestimmte Ebene der Schraube fokusiert werden. Man erkennt daher gerade noch zwei Windungen der Schraube scharf. Bei der Rasterelektronenmikroskopie wird die Probe durch einen feinen Strahl abgetastet. Der Bereich der Fokusierung (Raileigh L"ange) ist daher viel gr"o"ser als beim Lichtmikroskop. Daher sind auf Abbildung \ref{fig:schraube_rem} alle Windungen der Schraube zu erkennen.
+
 
 
 
@@ -60,11 +70,6 @@ beschrieben. Wobei $\lambda$ die Wellenl"ange des Teilchens, und $NA$ die Numeri
 %\label{fig:aufbau_rem}
 %\end{figure} 
 
-\subsection{Aufbau}
-\label{ch:Grundlagen:sec:REM:sub:Aufbau}
-
-\subsection{Auflösungsvermögen}
-\label{ch:Grundlagen:sec:REM:sub:Auflösung}
 
 \subsection{Tiefenschärfe}
 \label{ch:Grundlagen:sec:REM:sub:Tiefenschaerfe}
