@@ -108,7 +108,7 @@ Ein weiterer Vorteil eines REM gegen"uber einem Lichtmikroskop ist, neben der h"
 %\end{figure}
 %
 
-
+\newpage
 \section{Direct Laser Writing}
 \label{ch:DLW}
 Im Laborversuch wurden Strukturen mit \textit{Direct Laser Writing} (DLW) geschrieben. Dieses Verfahren soll im Folgenden kurz erläutert werden.
@@ -122,7 +122,7 @@ Die Bestrahlung erfolgt durch einen Femtosekundenlaser, der durch ein Mikroskop 
 
 \begin{figure}%
 \centering
-\includegraphics[width=\columnwidth]{Grafiken/dlw_aufbau.jpg}%
+\includegraphics[width=.9\columnwidth]{Grafiken/dlw_aufbau.jpg}%
 \caption{Schematischer Aufbau eines DLW-Systems \cite{Versuchsanleitung}.}%
 \label{fig:dlw_aufbau}%
 \end{figure}
@@ -132,29 +132,29 @@ Abbildung \ref{fig:2PP} zeigt schematisch den Unterschied zwischen ein-Photonen-
 So kann Atom durch ein Photon angeregt werden, wenn die Energie des Photons $E=$h$\nu$ ausreicht um die Energiedifferenz zwischen den beiden Energieniveaus S$_1$ und S$_0$ zu überwinden. In der Abbildung ist Strahlung im UV-Bereich notwendig ($\lambda \approx 400$~nm). Mit 800~nm reicht die Energie des Lasers nicht aus um die das Atom anzuregen.
 Mit TPA ist dies möglich. Hierbei können zwei Photonen gleichzeitig absorbiert werden, deren addierte Energien $E_{\mbox{ges}}=$2h$\nu$ ausreichen um die Energiedifferenz zwischen den Energieniveaus S$_2$ und S$_0$ zu überwinden.
 
-Da die Wahrscheinlichkeit von TPA quadratisch von der Laserintensität abhängt finden die TPA Prozesse im Fokus des Lasers statt. 
-Durch TPA wird im Fotolack ein chemischer Prozess in Gang gesetzt, der zur polymerisation des Materials führt \cite{Nanophotonics} und dabei eine Säure freisetzt. Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Ein geschriebener Volumenpixel wird Voxel genannt. 
-
-\begin{figure}%
+\begin{figure}[h]%
 \centering
-\includegraphics[width=.5\columnwidth]{Grafiken/2PP.JPG}%
+\includegraphics[width=.4\columnwidth]{Grafiken/2PP.JPG}%
 \caption{Vergleich ein- und zwei-Photonen-Absorption \cite{Nanophotonics}.}%
 \label{fig:2PP}%
 \end{figure}
+\enlargethispage{\baselineskip}
+Da die Wahrscheinlichkeit von TPA quadratisch von der Laserintensität abhängt finden die TPA Prozesse im Fokus des Lasers statt. 
+Durch TPA wird im Fotolack ein chemischer Prozess in Gang gesetzt, der zur polymerisation des Materials führt \cite{Nanophotonics} und dabei eine Säure freisetzt. Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Ein geschriebener Volumenpixel wird Voxel genannt. 
 
 Um die Polymerisation beim 2PP-Prozess zu starten, muss eine gewisse Polymerisationsschwelle überwunden werden. Erst wenn die Laserintensität diese Schwelle überschreitet, kommt es zur Polymeisation. 
 Dadurch ist es möglich Strukturen unterhalb der Auflösungsgrenze (vgl. \eqref{eq:Abbe}) abzubilden. Abbildung \ref{fig:poly} veranschaulicht dies. Für große Intensitäten folgt ein großer Voxeldurchmesser. Für Intensitäten  nahe der Polymerisationsschwelle folgen sehr kleine Voxeldurchmesser. Für Intensitäten unterhalb der Polymerisationsschwelle erfolgt keine Polymerisation.
-
+\enlargethispage{\baselineskip}
 \begin{figure}%
 \centering
-\includegraphics[width=.6\columnwidth]{Grafiken/Polymer.pdf}%
+\includegraphics[width=.5\columnwidth]{Grafiken/Polymer.pdf}%
 \caption{Schematische Darstellung der Abhängigkeit des Voxeldurchmessers von der Intensität \cite{Nanophotonics}.}%
 \label{fig:poly}%
 \end{figure}
 
 \begin{figure}%
 \centering
-\includegraphics[width=.4\columnwidth]{Grafiken/LTI.jpg}%
+\includegraphics[width=.39\columnwidth]{Grafiken/LTI.jpg}%
 \caption{REM Aufnahme dreidimensionaler Strukturen die mit DLW geschrieben wurden.}%
 \label{fig:LTI}%
 \end{figure}
@@ -188,6 +188,7 @@ Um Verkippungen der Probe auszugleichen wurde an drei Punkten die Glas-Lack-Gren
 Abbildung \ref{fig:fluoreszenz} zeigt die Fluoreszenzantworten bei einer Fokussierung des Lasers auf die Glas-Lack-Grenze (Abbildung \ref{fig:glas_lack}), in die Lackschicht (Abbildung \ref{fig:lack}) sowie auf die Lack-Luft-Grenze (Abbildung \ref{fig:lack_luft}). An der Glas-Lack-Grenze ist die Ausbildung einer Fluoreszenzantwort zu erkennen. Befindet sich der Laserfokus im Lack ist eine ausgeprägte Fluoreszenzantwort zu erkennen. An der Lack-Luft-Grenze ist das Ausbilden von Nebenmaxima zu erkennen. 
 
 Anhand dieses Verfahrens wurden die Glas-Lack-Grenze eingestellt.
+\newpage
 
 Anschließend wurden die vom Versuchsbetreuer vorbereiteten Strukturen in den Lack geschrieben. Abbildung \ref{fig:Strukturen} zeigt die geschriebenen Strukturen. Hier sind Linien einzelner Voxel (links), ein dreidimensionales LTI-Logo (mitte) sowie Gitterstrukturen (rechts) zu erkennen. Der Schreibdauer der Strukturen beträgt etwa 2 Stunden.
 
@@ -217,6 +218,13 @@ Die Charakterisierung der hergestellten Strukturen erfolgte mit Hilfe eines REMs
 
 Um die Voxelausdehnung in $z$-Richtung zu bestimmen, wurden einzelne Voxel nebeneinander geschrieben. Hierbei wurde die Position in $z$-Richtung mit jedem Voxel um 100~nm erhöht. Abbildung \ref{fig:steigung} zeigt dies Schematisch. Der Laser ist zuerst in das Glassubstrat fokusiert. Der Fokus verschiebt sich mit jedem Voxel nach oben. Sobald sich der Fokus im Fotolack befindet, wird dieser belichtet. Nach dem Entwickeln verbleiben nur die Voxel stehen, die direkten Kontakt zum Glassubstrat haben. In Abbildung \ref{fig:steigung} würde somit der erste Laserfokuspunkt kein Voxel bilden, das Voxel des letzten Fokuspunktes würde beim Entwickeln wegschwimmen. Aus der Anzahl der verbleibenden Voxel lässt sich damit Voxelausdehnung in $z$-Richtung abschätzen.
 
+\begin{figure}%
+\centering
+\includegraphics[width=.4\columnwidth]{Grafiken/Steigung.pdf}%
+\caption{Schematische Darstellung: Bestimmung der Voxelausdehnung in $z$-Richtung.}%
+\label{fig:steigung}
+\end{figure}
+\enlargethispage{\baselineskip}
 Abbildung \ref{fig:voxelausdehnung} zeigt eine REM-Aufnahme der geschriebenen Voxelstrukturen. Es wurde eine Laserleistung von 1,75~mW verwendet. Die Belichtungszeit pro Voxelzeile beträgt (Zeilenweise, von unten nach oben) 10~ms, 20~ms und 30~ms. In der untersten Reihe sind 8 Voxel zu erkennen. Daraus lässt sich eine Voxelausdehnung in $z$-Richtung von $\sim800$~nm abschätzen. In Tabelle \ref{tab:Voxel} sind die Voxelgrößen in Abhängigkeit der Energie zu finden.
 
 Um die Voxelausdehnung in $x$- bzw. $y$-Richtung zu bestimmen, wurde das jeweils letzte Voxel einer Reihe vermessen. Bei diesen Voxeln ist bei einer Aufsicht die volle Voxelbreite zu messen. Abbildung \ref{fig:voxel_x} zeigt die Aufsicht auf ein Voxel (Laserleistung: 1,75~W, Belichtungszeit: 30~ms). Zu erkennen ist eine elliptische Form. Zu erwarten wäre eine kreisförmige Form \cite{Multiphoton}. Dies ist vermutlich auf eine astigmatische Aberration des Linsensystems beim Schreiben der Strukturen zurückzuführen. 
@@ -224,12 +232,6 @@ Zur Bestimmung der Voxelbreite wurde die kürzere Achse der Ellipse gewählt. Für 
 Abbildung \ref{fig:voxel} veranschaulicht den Zusammenhang zwischen Energie und der Voxelbreite. Mit steigender Energie steigt auch die Voxelbreite. Dies bestätigt das in Kapitel \ref{ch:DLW} beschriebene Verhalten der minimalen Auflösung.
 %Es zeigt sich weitergehend, dass die Belichtungszeit nicht linear in die Voxelbreite eingeht.
 
-\begin{figure}%
-\centering
-\includegraphics[width=.4\columnwidth]{Grafiken/Steigung.pdf}%
-\caption{Schematische Darstellung: Bestimmung der Voxelausdehnung in $z$-Richtung.}%
-\label{fig:steigung}
-\end{figure}
 
 %\begin{figure}%
 %\centering
