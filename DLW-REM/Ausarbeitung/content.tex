@@ -141,7 +141,7 @@ Mit TPA ist dies möglich. Hierbei können zwei Photonen gleichzeitig absorbiert w
 \end{figure}
 \enlargethispage{\baselineskip}
 Da die Wahrscheinlichkeit von TPA quadratisch von der Laserintensität abhängt finden die TPA Prozesse im Fokus des Lasers statt. 
-Durch TPA wird im Fotolack ein chemischer Prozess in Gang gesetzt, \todo{Säure entsteht beim Belichten, die Polymerisation erfolgt erst beim PEB durch die Säure} der zur polymerisation des Materials führt \cite{Nanophotonics} und dabei eine Säure freisetzt. Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Ein geschriebener Volumenpixel wird Voxel genannt. 
+Durch TPA wird eine fotoaktive Komponente im Lack aktiviert, was zur Entstehung einer Säure führt, die beim späteren \textit{Post Exposure Bake} (PEB) als Katalysator für die Polymerisation dient \cite{Carsten, Nanophotonics}.  \todo{Den vorherigen Satz nchmal lesen ob das passt mit dem was Carsten geschrieben hat.} Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Ein geschriebener Volumenpixel wird Voxel genannt. 
 
 Um die Polymerisation beim 2PP-Prozess zu starten, muss eine gewisse Polymerisationsschwelle überwunden werden. Erst wenn die Laserintensität diese Schwelle überschreitet, kommt es zur Polymeisation. 
 Dadurch ist es möglich Strukturen unterhalb der Auflösungsgrenze (vgl. \eqref{eq:Abbe}) herzustellen. Abbildung \ref{fig:poly} veranschaulicht dies. Für große Intensitäten folgt ein großer Voxeldurchmesser. Für Intensitäten  nahe der Polymerisationsschwelle folgen sehr kleine Voxeldurchmesser. Für Intensitäten unterhalb der Polymerisationsschwelle erfolgt keine Polymerisation.
@@ -169,9 +169,10 @@ Abbildung \ref{fig:LTI} veranschaulicht die Möglichkeit dreidimensionale Struktu
 
 Zur Herstellung der Proben wurde auf ein gereinigtes Glassubstrat mit einem \textit{Spin Coater} ein Fotolackfilm (SU-8) aufebracht. Um das Lösungsmittel aus dem Lack zu treiben, wurde die Probe für 9 Minuten bei 95~°C auf einer \textit{Hot Plate} gebacken (\textit{Soft Bake}) \cite{Versuchsanleitung}. Anschließend wurden der Lack an den Rändern der Probe entfernt. Diese Probenvorbereitung erfolgte durch den Versuchsbetreuer.
 
-\todo{Erst Kalibrierung, dann wurde die Probe eingebaut}
+Bevor die Strukturen mit DLW in den Fotolack geschrieben wurden, erfolgte die Kalibrierung der Laserintensität des DLW-Systems mit Hilfe einer Fotodiode. Dazu wurde die Laserleistung auf $\sim$3,4~mW eingestellt und die automatisierte Kalibrierung gestartet.
+\todo{Vorherigen Satz einmal Lesen und gucken ob passt.}
+
 Zur Belichtung des Lackes wurde die Probe in das DLW-System eingebaut. Das Objektiv des zur Belichtung verwendeten Mikroskops wurde mit Immersionsöl in Kontakt zum Glassubstrat gebracht. 
-Daraufhin folgte die Kalibrierung der Laserintensität mit Hilfe einer Photodiode. Dazu wurde die Laserleistung auf $\sim$3,4~mW eingestellt und die automatisierte Kalibrierung gestartet.
 
 Um Verkippungen der Probe auszugleichen wurde an drei Punkten die Glas-Lack-Grenze bestimmt. Dazu wurde der Laserfokus manuell in $z$-Richtung durch die Probe bewegt und dabei das Fluoreszenzsignal beobachtet. 
 
