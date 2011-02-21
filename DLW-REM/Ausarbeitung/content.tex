@@ -132,9 +132,9 @@ Im Laborversuch wurden Strukturen mit \textit{Direct Laser Writing} (DLW) geschr
 
 \section{Aufbau und Funktionsweise}
 \label{ch:DLW:sec:Aufbau}
-Beim DLW erfolgt die Belichtung von fotoempfindlichen Lack über einen Laser. Dieser kann über ein optisches System in den Fotolack fokussiert werden (vgl. Abbildung \ref{fig:dlw_aufbau}). Der verwendete Fotolack ist empfindlichkeit gegenüber UV-Licht ($\sim400$~nm). Für die eingestellte Wellenlänge des Lasers von 800~nm ist der Fotolack transparent. 
+Beim DLW erfolgt die Belichtung von fotoempfindlichen Lack über einen Laser. Dieser kann über ein optisches System in den Fotolack fokussiert werden (vgl. Abbildung \ref{fig:dlw_aufbau}). Der verwendete Fotolack weist eine Empfindlichkeit gegenüber UV-Strahlung ($\sim400$~nm) auf. Für die eingestellte Wellenlänge des Lasers von 800~nm ist der Fotolack transparent. 
 
-Die Bestrahlung erfolgt durch einen Femtosekundenlaser, der durch ein Mikroskop in den Fotolack fokussiert wird. Femtosekundenlaser werden genutzt, da sie sehr hohe Intensitäten liefern können \cite{Nanophotonics}.  Die Probe kann über einen Probentisch in $x$- $y-$ und $z-$ Richtung positioniert werden. Bevor der Strahl in das Mikroskop geführt wird, wird der Strahl aufgeweitet. Über einen Neutraldichtefilter (ND-Filter) kann die Intensität des Lasers gesteuert werden. Ein \textit{Shutter} ermöglicht ein Blockieren des Strahls. Die Steuerung des Systems erfolgt über einen PC. 
+Die Bestrahlung erfolgt durch einen Femtosekundenlaser, der durch ein Mikroskop in den Fotolack fokussiert wird. Femtosekundenlaser werden genutzt, da sie sehr hohe Intensitäten liefern können \cite{Nanophotonics}.  Die Probe kann über einen Probentisch in $x-$ $y-$ und $z-$ Richtung positioniert werden. Bevor der Strahl in das Mikroskop geführt wird, wird der Strahl aufgeweitet. Über einen Neutraldichtefilter (ND-Filter) kann die Intensität des Lasers gesteuert werden. Ein \textit{Shutter} ermöglicht ein Blockieren des Strahls. Die Steuerung des Systems erfolgt über einen PC. Abbildung \ref{fig:dlw_aufbau} veranschaulicht den Aufbau schematisch.
 
 
 \begin{figure}%
@@ -146,7 +146,7 @@ Die Bestrahlung erfolgt durch einen Femtosekundenlaser, der durch ein Mikroskop 
 
 Im Fokuspunkt findet eine eine zwei-Photonen-Absorption (engl. \textit{two-photon absorption} - TPA)  statt, die zu einer zwei-Photonen-Polymerisation (2PP) führt.
 Abbildung \ref{fig:2PP} zeigt schematisch den Unterschied zwischen ein-Photonen-Absorption und zwei-Photonen-Absorption.
-So kann ein Atom durch ein Photon angeregt werden, wenn die Energie des Photons $E~=h\nu$ ausreicht um die Energiedifferenz zwischen den beiden Energieniveaus S$_1$ und S$_0$ zu überwinden. In der Abbildung ist Strahlung im UV-Bereich notwendig ($\lambda \approx 400$~nm). Bei einer Wellenlänge von 800~nm reicht die Energie des Lasers nicht aus um das Atom anzuregen.
+So kann ein Atom durch ein Photon angeregt werden, wenn die Energie des Photons $E~=h\nu$ ausreicht um die Energiedifferenz zwischen den beiden Energieniveaus S$_1$ und S$_0$ zu überwinden. In der Abbildung ist Strahlung im UV-Bereich notwendig ($\lambda \approx 400$~nm). Bei einer Laserwellenlänge von 800~nm reicht die Energie eines Photons nicht aus um das Atom anzuregen.
 Mit TPA ist dies möglich. Hierbei können zwei Photonen gleichzeitig absorbiert werden, deren addierte Energien $E_{\mbox{ges}}=2h\nu$ ausreichen um die Energiedifferenz zwischen den Energieniveaus S$_2$ und S$_0$ zu überwinden.
 
 \begin{figure}[h]%
@@ -156,8 +156,8 @@ Mit TPA ist dies möglich. Hierbei können zwei Photonen gleichzeitig absorbiert w
 \label{fig:2PP}%
 \end{figure}
 \enlargethispage{\baselineskip}
-Da die Wahrscheinlichkeit von TPA quadratisch von der Laserintensität abhängt finden die TPA Prozesse im Fokus des Lasers statt. 
-Durch TPA wird eine fotoaktive Komponente im Lack aktiviert, was zur Entstehung einer Säure führt, die beim späteren \textit{Post Exposure Bake} (PEB) als Katalysator für die Polymerisation dient \cite{Carsten, Nanophotonics}.  \todo{Den vorherigen Satz nchmal lesen ob das passt mit dem was Carsten geschrieben hat.} Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Ein geschriebener Volumenpixel wird Voxel genannt. 
+Da die Wahrscheinlichkeit von TPA quadratisch von der Laserintensität abhängt finden die TPA Prozesse im Fokus des Lasers statt \cite{Nanophotonics}. 
+Durch TPA wird eine fotoaktive Komponente im Lack aktiviert, was zur Entstehung einer Säure führt, die beim späteren \textit{Post Exposure Bake} (PEB) als Katalysator für die Polymerisation dient \cite{Carsten}.  \todo{Den vorherigen Satz nchmal lesen ob das passt mit dem was Carsten geschrieben hat.} Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Ein geschriebener Volumenpixel wird Voxel genannt. 
 
 Um die Polymerisation beim 2PP-Prozess zu starten, muss eine gewisse Polymerisationsschwelle überwunden werden. Erst wenn die Laserintensität diese Schwelle überschreitet, kommt es zur Polymeisation. 
 Dadurch ist es möglich Strukturen unterhalb der Auflösungsgrenze (vgl. \eqref{eq:Abbe}) herzustellen. Abbildung \ref{fig:poly} veranschaulicht dies. Für große Intensitäten folgt ein großer Voxeldurchmesser. Für Intensitäten  nahe der Polymerisationsschwelle folgen sehr kleine Voxeldurchmesser. Für Intensitäten unterhalb der Polymerisationsschwelle erfolgt keine Polymerisation.
