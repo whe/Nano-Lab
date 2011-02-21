@@ -64,13 +64,16 @@ Bei zu geringer Appertur tritt ein weiteres Problem auf. Es treffen nur noch wen
 \label{fig:ss}%
 \end{figure}
 
-
-
 Ein weiterer Vorteil eines REM gegen"uber einem Lichtmikroskop ist, neben der h"oheren Aufl"osung, die gro"se Tiefensch"arfe. Abbildung \ref{fig:schraube} zeigt eine Aufnahme einer Schraube, zum einen mit dem Lichtmikroskop (a), zum anderen mit dem REM (b). Mit dem Lichtmikroskop (vgl. Abbildung \ref{fig:schraube_licht}) kann nur eine bestimmte Ebene der Schraube fokusiert werden. Man erkennt daher gerade noch eine Windung der Schraube scharf. Durch Messungen mit dem REM wurde dieser Abstand und damit die Tiefenschärfe des Lichtmikroskops auf ca. 850~$\upmu$m bestimmt. Bei der Rasterelektronenmikroskopie wird die Probe durch einen feinen Strahl abgetastet. Der Bereich der Fokusierung (Raileigh L"ange) ist daher viel gr"o"ser als beim Lichtmikroskop. Daher sind auf Abbildung \ref{fig:schraube_rem} alle Windungen der Schraube zu erkennen.
-
-
-
-
+\begin{figure}[]%
+\centering
+%\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[Lichtmikroskop]{\includegraphics[totalheight=4.15 cm]{Grafiken/lichtmikroskop_schraube.jpg}\label{fig:schraube_licht}\qquad}
+	\subfloat[REM]{\includegraphics[totalheight=4.15 cm]{Grafiken/sem_schraube.jpg} \label{fig:schraube_rem}}%
+%	\end{adjustwidth}
+\caption{Fotos einer Schraube. \textbf{(a)} Unter dem Lichtmikroskop ist eine sehr geringe Tiefenschärfe zu beobachten. \textbf{(b)} Unter dem REM ist eine hohe Tiefenschräfe zu beobachten.}%
+\label{fig:schraube}%
+\end{figure}
 
 %
 %\begin{figure}
@@ -94,15 +97,6 @@ Ein weiterer Vorteil eines REM gegen"uber einem Lichtmikroskop ist, neben der h"
 %Ein Vorteil des REMs gegenüber des Lichtmikroskops ist die im Vergleich wesentlich höhere Tiefenschärfe. Abbildung \ref{fig:schraube} Veranschaulicht diesen Unterschied. 
 
 
-\begin{figure}%
-\centering
-%\begin{adjustwidth}{0cm}{0cm}
-	\subfloat[Lichtmikroskop]{\includegraphics[totalheight=5 cm]{Grafiken/lichtmikroskop_schraube.jpg}\label{fig:schraube_licht}\qquad}
-	\subfloat[REM]{\includegraphics[totalheight=5 cm]{Grafiken/sem_schraube.jpg} \label{fig:schraube_rem}}%
-%	\end{adjustwidth}
-\caption{Fotos einer Schraube. \textbf{(a)} Unter dem Lichtmikroskop ist eine sehr geringe Tiefenschärfe zu beobachten. \textbf{(b)} Unter dem REM ist eine hohe Tiefenschräfe zu beobachten.}%
-\label{fig:schraube}%
-\end{figure}
 
 %\section{Auswirkungen von REM-Einstellungen}
 %
@@ -125,7 +119,7 @@ Ein weiterer Vorteil eines REM gegen"uber einem Lichtmikroskop ist, neben der h"
 %\end{figure}
 %
 
-\newpage
+%\newpage
 \section{Direct Laser Writing}
 \label{ch:DLW}
 Im Laborversuch wurden Strukturen mit \textit{Direct Laser Writing} (DLW) geschrieben. Dieses Verfahren soll im Folgenden kurz erläutert werden.
@@ -135,49 +129,47 @@ Im Laborversuch wurden Strukturen mit \textit{Direct Laser Writing} (DLW) geschr
 Beim DLW erfolgt die Belichtung von fotoempfindlichen Lack über einen Laser. Dieser kann über ein optisches System in den Fotolack fokussiert werden (vgl. Abbildung \ref{fig:dlw_aufbau}). Der verwendete Fotolack weist eine Empfindlichkeit gegenüber UV-Strahlung ($\sim$~400~nm) auf. Für die eingestellte Wellenlänge des Lasers von 800~nm ist der Fotolack transparent. 
 
 Die Bestrahlung erfolgt durch einen Femtosekundenlaser, der durch ein Mikroskop in den Fotolack fokussiert wird. Femtosekundenlaser werden genutzt, da sie sehr hohe Intensitäten liefern können \cite{Nanophotonics}.  Die Probe kann über einen Probentisch in $x-$ $y-$ und $z-$ Richtung positioniert werden. Bevor der Strahl in das Mikroskop geführt wird, wird der Strahl aufgeweitet. Über einen Neutraldichtefilter (ND-Filter) kann die Intensität des Lasers gesteuert werden. Ein \textit{Shutter} ermöglicht ein Blockieren des Strahls. Die Steuerung des Systems erfolgt über einen PC. Abbildung \ref{fig:dlw_aufbau} veranschaulicht den Aufbau schematisch.
-
-
-\begin{figure}%
+\enlargethispage{\baselineskip}
+\begin{figure}[h]%
 \centering
 \includegraphics[width=.9\columnwidth]{Grafiken/dlw_aufbau.jpg}%
 \caption{Schematischer Aufbau eines DLW-Systems \cite{Versuchsanleitung}.}%
 \label{fig:dlw_aufbau}%
 \end{figure}
-
+\newpage
 Im Fokuspunkt findet eine eine zwei-Photonen-Absorption (engl. \textit{two-photon absorption} - TPA)  statt, die zu einer zwei-Photonen-Polymerisation (2PP) führt.
 Abbildung \ref{fig:2PP} zeigt schematisch den Unterschied zwischen ein-Photonen-Absorption und zwei-Photonen-Absorption.
 So kann ein Atom durch ein Photon angeregt werden, wenn die Energie des Photons $E~=h\nu$ ausreicht um die Energiedifferenz zwischen den beiden Energieniveaus S$_1$ und S$_0$ zu überwinden. In der Abbildung ist Strahlung im UV-Bereich notwendig ($\lambda \approx 400$~nm). Bei einer Laserwellenlänge von 800~nm reicht die Energie eines Photons nicht aus um das Atom anzuregen.
 Mit TPA ist dies möglich. Hierbei können zwei Photonen gleichzeitig absorbiert werden, deren addierte Energien $E_{\mbox{ges}}=2h\nu$ ausreichen um die Energiedifferenz zwischen den Energieniveaus S$_2$ und S$_0$ zu überwinden.
 
-\begin{figure}[h]%
+\begin{figure}%
 \centering
-\includegraphics[width=.4\columnwidth]{Grafiken/2PP.JPG}%
+\includegraphics[width=.5\columnwidth]{Grafiken/2PP.JPG}%
 \caption{Vergleich ein- und zwei-Photonen-Absorption \cite{Nanophotonics}.}%
 \label{fig:2PP}%
 \end{figure}
-\enlargethispage{\baselineskip}
-Da die Wahrscheinlichkeit von TPA quadratisch von der Laserintensität abhängt finden die TPA Prozesse im Fokus des Lasers statt \cite{Nanophotonics}. 
-Durch TPA wird eine fotoaktive Komponente im Lack aktiviert, was zur Entstehung einer Säure führt, die beim späteren \textit{Post Exposure Bake} (PEB) als Katalysator für die Polymerisation dient \cite{Carsten}.  \todo{Den vorherigen Satz nchmal lesen ob das passt mit dem was Carsten geschrieben hat.} Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Ein geschriebener Volumenpixel wird Voxel genannt. 
 
-Um die Polymerisation beim 2PP-Prozess zu starten, muss eine gewisse Polymerisationsschwelle überwunden werden. Erst wenn die Laserintensität diese Schwelle überschreitet, kommt es zur Polymeisation. 
-Dadurch ist es möglich Strukturen unterhalb der Auflösungsgrenze (vgl. \eqref{eq:Abbe}) herzustellen. Abbildung \ref{fig:poly} veranschaulicht dies. Für große Intensitäten folgt ein großer Voxeldurchmesser. Für Intensitäten  nahe der Polymerisationsschwelle folgen sehr kleine Voxeldurchmesser. Für Intensitäten unterhalb der Polymerisationsschwelle erfolgt keine Polymerisation.
-\enlargethispage{\baselineskip}
-\begin{figure}%
+Da die Wahrscheinlichkeit von TPA quadratisch von der Laserintensität abhängt finden die TPA Prozesse im Fokus des Lasers statt \cite{Nanophotonics}. 
+Durch TPA wird eine fotoaktive Komponente im Lack aktiviert, was zur Entstehung einer Säure führt, die beim späteren \textit{Post Exposure Bake} (PEB) als Katalysator für die Polymerisation dient \cite{Carsten}. Somit kann ein beliebiger Punkt im Lackvolumen fokussiert werden und dreidimensionale Strukturen geschrieben werden. Ein geschriebener Volumenpixel wird Voxel genannt. 
+\begin{figure}[b]%
 \centering
-\includegraphics[width=.5\columnwidth]{Grafiken/Polymer.pdf}%
+\includegraphics[width=.58\columnwidth]{Grafiken/Polymer.pdf}%
 \caption{Schematische Darstellung der Abhängigkeit des Voxeldurchmessers von der Intensität \cite{Nanophotonics}.}%
 \label{fig:poly}%
 \end{figure}
-
-\begin{figure}%
-\centering
-\includegraphics[width=.39\columnwidth]{Grafiken/LTI.jpg}%
-\caption{REM Aufnahme dreidimensionaler Strukturen die mit DLW geschrieben wurden.}%
-\label{fig:LTI}%
-\end{figure}
+\newpage
+Um die Polymerisation beim 2PP-Prozess zu starten, muss eine gewisse Polymerisationsschwelle überwunden werden. Erst wenn die Laserintensität diese Schwelle überschreitet, kommt es zur Polymeisation. 
+Dadurch ist es möglich Strukturen unterhalb der Auflösungsgrenze (vgl. \eqref{eq:Abbe}) herzustellen. Abbildung \ref{fig:poly} veranschaulicht dies. Für große Intensitäten folgt ein großer Voxeldurchmesser. Für Intensitäten  nahe der Polymerisationsschwelle folgen sehr kleine Voxeldurchmesser. Für Intensitäten unterhalb der Polymerisationsschwelle erfolgt keine Polymerisation.
+%\enlargethispage{\baselineskip}
 
 Abbildung \ref{fig:LTI} veranschaulicht die Möglichkeit dreidimensionale Strukturen mit DLW zu schreiben. 
 
+\begin{figure}[h]%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/LTI.jpg}%
+\caption{REM Aufnahme dreidimensionaler Strukturen die mit DLW geschrieben wurden.}%
+\label{fig:LTI}%
+\end{figure}
 
 %% ===========================
 \chapter{Probenherstellung}
@@ -240,7 +232,7 @@ Um die Voxelausdehnung in $z$-Richtung zu bestimmen, wurden einzelne Voxel neben
 \caption{Schematische Darstellung: Bestimmung der Voxelausdehnung in $z$-Richtung.}%
 \label{fig:steigung}
 \end{figure}
-\enlargethispage{\baselineskip}
+%\enlargethispage{\baselineskip}
 Abbildung \ref{fig:voxelausdehnung} zeigt eine REM-Aufnahme der geschriebenen Voxelstrukturen. Es wurde eine Laserleistung von 1,75~mW verwendet. Die Belichtungszeit pro Voxelzeile beträgt (Zeilenweise, von unten nach oben) 10~ms, 20~ms und 30~ms. In der untersten Reihe sind 8 Voxel zu erkennen. Daraus lässt sich eine Voxelausdehnung in $z$-Richtung von $\sim$800~nm abschätzen. In Tabelle \ref{tab:Voxel} sind die Voxelgrößen in Abhängigkeit der Energie zu finden.
 
 Um die Voxelausdehnung in $x$- bzw. $y$-Richtung zu bestimmen, wurde das jeweils letzte Voxel einer Reihe vermessen. Bei diesen Voxeln ist bei einer Aufsicht die volle Voxelbreite zu messen. Abbildung \ref{fig:voxel_x} zeigt die Aufsicht auf ein Voxel (Laserleistung: 1,75~W, Belichtungszeit: 30~ms). Zu erkennen ist eine elliptische Form. Zu erwarten wäre eine kreisförmige Form \cite{Multiphoton}. Dies ist vermutlich auf eine astigmatische Aberration des Linsensystems beim Schreiben der Strukturen zurückzuführen. 
@@ -284,6 +276,7 @@ Abbildung \ref{fig:voxel} veranschaulicht den Zusammenhang zwischen Energie und 
 
 \section{Bestimmung der Polymerisationsschwelle}
 \label{ch:Auswertung:sec:Polymerisation}
+\enlargethispage{\baselineskip}
 
 Zur Bestimmung der Polymerisationsschwelle wurden einzelne Voxel mit verschiedenen Belichtungszeiten und Laserleistungen geschrieben (vgl. Abbildung \ref{fig:voxelausdehnung}). Es wurden Leistungen von 1~mW bis 1,75~mW, Belichtungszeiten von 10~ms bis 30~ms und daraus resultierend Energien von 10~$\upmu$J bis $\sim$50~$\upmu$J untersucht (vgl. Tabelle \ref{tab:Voxel}). Aus der Tabelle sowie Abbildung \ref{fig:voxel} geht hervor, dass bis zu einer Energie von 12,5~$\upmu$J keine Voxel geschrieben werden. Ab 15~$\upmu$J sind Voxel zu erkennen. Die Polymerisationsschwelle befindet sich also bei einer Energie zwischen $12,5~\upmu$J$~<E_{\mathrm{Schwelle}}<15~\upmu$J.
 
