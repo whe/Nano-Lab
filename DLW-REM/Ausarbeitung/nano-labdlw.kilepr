@@ -3,7 +3,7 @@ def_graphic_ext=
 img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
-kileversion=2.0.85
+kileversion=2.0.86
 lastDocument=content.tex
 masterDocument=
 name=Nano-Lab DLW
@@ -32,6 +32,14 @@ Indentation Mode=
 Mode=LaTeX
 ReadWrite=true
 
+[document-settings,item:introduction.tex]
+Bookmarks=
+Encoding=ISO-8859-1
+Highlighting=LaTeX
+Indentation Mode=
+Mode=LaTeX
+ReadWrite=true
+
 [document-settings,item:thesis.bib]
 Bookmarks=
 Encoding=ISO-8859-1
@@ -42,12 +50,12 @@ ReadWrite=true
 
 [item:DLW-Laborbericht.tex]
 archive=true
-column=0
+column=22
 encoding=ISO-8859-1
 highlight=LaTeX
-line=0
+line=4
 mode=LaTeX
-open=true
+open=false
 order=0
 
 [item:appendix.tex]
@@ -67,16 +75,16 @@ encoding=ISO-8859-1
 highlight=LaTeX
 line=112
 mode=LaTeX
-open=true
+open=false
 order=1
 
 [item:introduction.tex]
 archive=true
-column=6619240
-encoding=
-highlight=
+column=0
+encoding=ISO-8859-1
+highlight=LaTeX
 line=0
-mode=
+mode=LaTeX
 open=false
 order=-1
 
@@ -87,7 +95,7 @@ encoding=ISO-8859-1
 highlight=BibTeX
 line=126
 mode=BibTeX
-open=true
+open=false
 order=2
 
 [item:thesisclass.cls]
@@ -111,12 +119,16 @@ open=false
 order=-1
 
 [view-settings,view=0,item:DLW-Laborbericht.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=22
+CursorLine=4
 
 [view-settings,view=0,item:content.tex]
 CursorColumn=0
 CursorLine=112
+
+[view-settings,view=0,item:introduction.tex]
+CursorColumn=0
+CursorLine=0
 
 [view-settings,view=0,item:thesis.bib]
 CursorColumn=37
