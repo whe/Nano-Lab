@@ -21,7 +21,7 @@
 %% ---------------------------------
 
 \newcommand{\myname}{Wolfgang Heni \\ Sebastian Heunisch}
-\newcommand{\mytitle}{Optical Communications Lab - Experiment 7}
+\newcommand{\mytitle}{Optical Communications Lab}
 \newcommand{\myinstitute}{Institute of Photonics and Quantum Electronics}
 
 \newcommand{\reviewerone}{?}
@@ -128,8 +128,8 @@ appendix
 \phantomsection
 \addcontentsline{toc}{chapter}{\bibname}
 
-\iflanguage{english}
-{\bibliographystyle{IEEEtranSA}}	% english style
+% \iflanguage{english}
+% {\bibliographystyle{IEEEtranSA}}	% english style
 {\bibliographystyle{abbrvdin}}	% german style
 												  
 % Use IEEEtran for numeric references

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/Arch Linux) (format=pdflatex 2011.2.3)  30 APR 2011 18:33
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/Arch Linux) (format=pdflatex 2011.2.3)  1 MAY 2011 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,7 +913,7 @@ babelbib: Set language for keywords in the bibliography fixed to ngerman
 babelbib: Set language for keywords in the bibliography fixed to ngerman
 \openout2 = `titlepage.aux'.
 
-(./titlepage.tex <logos/KITLogo_RGB.pdf, id=39, 196.46399pt x 90.77916pt>
+(./titlepage.tex <logos/KITLogo_RGB.pdf, id=43, 196.46399pt x 90.77916pt>
 File: logos/KITLogo_RGB.pdf Graphic file (type pdf)
 
 <use logos/KITLogo_RGB.pdf>
@@ -951,7 +951,14 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              Support for \float@addtolists may be removed from
 (scrbook)              `scrbook' soon .
 
-) [2
+<Grafiken/Mach-Zehnder.jpg, id=53, 923.45pt x 671.50874pt>
+File: Grafiken/Mach-Zehnder.jpg Graphic file (type jpg)
+
+<use Grafiken/Mach-Zehnder.jpg>
+<Grafiken/Mach-Zender-Transfer.jpg, id=56, 1181.41376pt x 848.16875pt>
+File: Grafiken/Mach-Zender-Transfer.jpg Graphic file (type jpg)
+
+<use Grafiken/Mach-Zender-Transfer.jpg>) [2
 
 
 
@@ -964,35 +971,46 @@ Class scrbook Warning: \float@addtolists detected!
 
 
 
-] (./OKT7.bbl)
+ <./Grafiken/Mach-Zehnder.jpg>]
+[3 <./Grafiken/Mach-Zender-Transfer.jpg>] (./OKT7.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
+ [4
+
+
+
+
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
- (./OKT7.aux (./titlepage.aux) (./introduction.aux)
-(./content.aux))
+ (./OKT7.aux
+(./titlepage.aux) (./introduction.aux) (./content.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package rerunfilecheck Info: File `OKT7.out' has not changed.
-(rerunfilecheck)             Checksum: 78991B085067C6BED5C6DBC4FF5CC7E0;576.
+(rerunfilecheck)             Checksum: BEC37722B984FC1AA576256319B6EEF8;624.
  ) 
 Here is how much of TeX's memory you used:
- 19719 strings out of 493738
- 333394 string characters out of 3148798
- 438661 words of memory out of 3000000
- 22514 multiletter control sequences out of 15000+200000
- 49278 words of font info for 89 fonts, out of 3000000 for 9000
+ 19765 strings out of 493738
+ 334031 string characters out of 3148798
+ 440661 words of memory out of 3000000
+ 22537 multiletter control sequences out of 15000+200000
+ 59117 words of font info for 103 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 68i,11n,57p,430b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,11n,57p,531b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/
-uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on OKT7.pdf (2 pages, 91992 bytes).
+cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsl12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/shar
+e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb>
+Output written on OKT7.pdf (4 pages, 334830 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
