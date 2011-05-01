@@ -8,3 +8,16 @@ In a Mach-Zehnder Modulator the light is split up in two branches. In each branc
 \begin{equation}
  E_{\mathrm{out}}=\exp\left(j\frac{\theta_1+\theta_2}{2}+j\frac{\theta_{\mathrm{Bias}}}{2} \right)\cdot\cos\left(\frac{\theta_1-\theta_2}{2}+\frac{\theta_{\mathrm{Bias}}}{2}\right)\cdot E_{\mathrm{in}}
 \end{equation}
+
+
+\section{Modulation Formats}
+\subsection{Amplitude Shift Keying}
+In Amplitude Shift Keying the signal is modulated on a carrier-wave by varying the Amplitude of the Envelope.   
+\subsection{Phase Shift Keying}
+
+\subsection{Quadrature Amplitude Modulation}
+
+
+\section{Signal Generation}
+
+\section{RZ Signal Generation}

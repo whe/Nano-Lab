@@ -1,2 +1,23 @@
 \chapter{Preparation}
-\section{Mach-Zehnder Modulator}
+\section{The Mach-Zehnder Modulator}
+\begin{figure}
+%  \includegraphics{machzehnder}
+\caption{}
+\end{figure}
+In a Mach-Zehnder Modulator the light is split up in two branches. In each branch there is a non-linear medium, through which the Phase of the Light can be shifted. At the end the Light is brought together, so that it is interfering. The Amplitude of the Field at the end of the Modulater can be expressed as:
+\begin{equation}
+ E_{\mathrm{out}}=\exp\left(j\frac{\theta_1+\theta_2}{2}+j\frac{\theta_{\mathrm{Bias}}}{2} \right)\cdot\cos\left(\frac{\theta_1-\theta_2}{2}+\frac{\theta_{\mathrm{Bias}}}{2}\right)\cdot E_{\mathrm{in}}
+\end{equation}
+
+
+\section{Modulation Formats}
+\subsection{Amplitude Shift Keying}
+
+\subsection{Phase Shift Keying}
+
+\subsection{Quadrature Amplitude Modulation}
+
+
+\section{Signal Generation}
+
+\section{RZ Signal Generation}
