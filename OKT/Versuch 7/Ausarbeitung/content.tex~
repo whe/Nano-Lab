@@ -19,12 +19,12 @@ The phase shift of the Signal at the output of the modulator is described by the
 
 \caption{}
 \label{fig:MZI_plot}
-
+\end{figure}
 
 
 \section{Modulation Formats}
 \subsection{Amplitude Shift Keying}
- 
+In Amplitude Shift Keying (ASK) the Amplitude of a Signal is modulated. 
 \subsection{Phase Shift Keying}
 
 \subsection{Quadrature Amplitude Modulation}

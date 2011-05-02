@@ -135,7 +135,7 @@ appendix
 % Use IEEEtran for numeric references
 %\bibliographystyle{IEEEtranSA})
 
-\bibliography{thesis}
+\bibliography{OKT7}
 \nocite{*}
 
 
