@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/Arch Linux) (format=pdflatex 2011.2.3)  2 MAY 2011 20:06
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/Arch Linux) (format=pdflatex 2011.2.3)  2 MAY 2011 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,7 +1001,7 @@ Here is how much of TeX's memory you used:
  22544 multiletter control sequences out of 15000+200000
  60687 words of font info for 108 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 68i,11n,57p,531b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,11n,57p,586b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -1014,7 +1014,7 @@ fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fo
 nts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvet
 ic/uhvr8a.pfb>
-Output written on OKT7.pdf (4 pages, 442313 bytes).
+Output written on OKT7.pdf (4 pages, 443524 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams
