@@ -11,7 +11,7 @@ In a Mach-Zehnder Modulator (MZM) the light is split up in two branches. In each
 \begin{equation}
  E_{\mathrm{out}}=\exp\left(j\frac{\vartheta_1+\vartheta_2}{2}+j\frac{\vartheta_{\mathrm{Bias}}}{2} \right)\cdot\cos\left(\frac{\vartheta_1-\vartheta_2}{2}+\frac{\vartheta_{\mathrm{Bias}}}{2}\right)\cdot E_{\mathrm{in}} .
 \end{equation}
-The phase shift of the Signal at the output of the modulator is described by the first term, the amplitude by the second term. For the phase Modulation $\vartheta_1 = \vartheta_2$ only the phase of the Signal is changed while the Amplitude stays constant. This operation mode is called "`push-push"' mode. For $\vartheta_1 = -\vartheta_2$ only the Amplitude of the Signal is modulated. This operation mode is called "`push-pull"' mode. \todo{Null-point vs. quadrature point / alternativ die beschriftung aus der grafik entfernen} \footnote[1]{Leuthold, J. : Optical Communication Systems. WS 2010/2011}
+The phase shift of the Signal at the output of the modulator is described by the first term, the amplitude by the second term. For the phase Modulation $\vartheta_1 = \vartheta_2$ only the phase of the Signal is changed while the Amplitude stays constant. This operation mode is called "`push-push"' mode. For $\vartheta_1 = -\vartheta_2$ only the Amplitude of the Signal is modulated. This operation mode is called "`push-pull"' mode. \footnote[1]{Leuthold, J. : Optical Communication Systems. WS 2010/2011}
 
 
 \begin{figure}
@@ -55,4 +55,4 @@ A OOK-Signal for high-speed telecommunication systems is commonly created throug
 For the generation of a BPSK the same setup as for the OOK-Signal can be used. The MZM is also operated in the push-pull mode, but with twice the switching Voltage used for OOK modulation. \todo{noch die Bilder irgendwie} \footnotemark[1]
 
 \section{RZ Signal Generation}
-For the generation of a RZ signal, first a NRZ signal is created for example with one of the methods described above. Then another MZM is used to carve the signal into a RZ shape.
+For the generation of a RZ signal, first a NRZ signal is created for example with one of the methods described above. Then another MZM is used to carve the signal into a RZ shape. It is possible to realize different pulse widths for the RZ signal. When the MZM is driven by a sine with the 
