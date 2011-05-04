@@ -1,0 +1,409 @@
+4 15 129
+1 3
+2 26:01:1998:11:26:13 author
+3 11 02:05:2011:14:47:47 Stud 
+4 40444 9999 9999 9999 9999 
+5 }+aQ5QPxU42VSYM!9Y=7X]^KFM]Vx*%*
+99 3538499546
+50 6
+51 0
+52 1 3 fvbslo_thz 193.014489032258
+52 1 3 fvbslo_nm 1546.79443533486
+52 1 3 fvbshi_thz 193.814489032258
+52 1 3 fvbshi_nm 1553.20556466514
+52 1 3 fsym_thz 193.414489032258
+52 1 3 fsym_nm 1550
+52 1 3 bwsym_thz 0.8
+52 1 3 bwsym_nm 6.411129330281
+52 1 3 fspelo_thz 192.914489032258
+52 1 3 fspelo_nm 1546.003393022008
+52 1 3 fspehi_thz 193.914489032258
+52 1 3 fspehi_nm 1554.017323965078
+52 1 3 f0spt_thz 193.414489032258
+52 1 3 f0spt_nm 1550.010358493543
+52 1 3 bwspt_thz 1
+52 1 3 bwspt_nm 8.013930943069
+52 1 3 refbrt 10
+52 1 3 fintim 10
+52 1 3 totbit 100
+52 1 5 irep 1
+52 1 5 seed 1
+52 1 5 accur 0
+52 1 5 ienf 0
+52 1 3 amperr 0.3
+52 1 3 gderr 1.2
+52 1 5 ilaw 0
+52 1 3 bperc 0
+52 1 3 peakav 25
+52 1 5 ixxx 25
+52 1 3 phamax 1
+52 1 3 supprs 18
+52 1 5 samples 100
+52 1 3 sym_brt 10
+52 1 3 raman_accuracy 1e-06
+52 1 5 force 0
+52 1 5 full_band 0
+53 1 3 1 Fib_length 10
+53 2 3 1 CW_FWHM_MHz 0
+99 1827342875
+?4)31
+47%21/4108ib%1#3#Rr`n`ilaaa"Dbsjr%obsolr"5*5/4=
+67$:$<%dr`qWtoz+2#3=1#3861>9501=0<
+70'>%0#erfq]kg%?%>102
+:;/4#6#slura`U`admhj$;$>
+7:%9'8"plwmut[foj)2%6
+2=#2/6$pjwgutXbw%3#2
+1:%;%<%cmkw"8#>5
+1;#2"6*ifkw=4/4+=6+6<00?
+0;"5"8'paclhiZtypf#?%5
+70'?%3#pkbkkc%?%?
+6="9#:%mljsf]typ`*5/5
+=</4+4/r`ndxWpbji\draq"='9
+0=&0%3#rjiexZpmfdZlv#3#2
+7=%75?5%((1/5#Srfggcckja/Ifsgnhcdl`gus'dspn#2$2-5
+;:%7 6#bttjk[aj'?%3
+1;#3%9%ntt`a[ikf#?%2
+14#35==/U]F\$9$?%Rr`lbmkmg`"@nsjgijakflus/pksaq%8'?%27
+1;"4*6/gft[rdtg(3/43
+1:#3%Eut%>
+77$>$8$mdufZritb+2#34
+05'8"0&nuh\aft%4%9
+57%2#6#sgqu`dfjZtypj$5"9
+17%2#22"ccij%?$lustkf[>+fdt
+:?+3#7$sgqRjff`&0%3
+17%4%8'sjqZofm#2%:
+77%>$0"ofaZplo\typf"5*5
+==/4/4+cjk]pjdy';"3
+0<"<'<"got_`gdjZtypa%8'>
+7;#2#1%hltP`kc`"8#?
+7;#2#7%stkrtZp`lat[typj$;$>
+7:%9'>"stbrt]pkkct'9"5
+48%2#:%syjfWtypb/5#0
+14"6?3:=/abcam>%1#3#Rr`n`ilaak$Fmsl`niiinmus#gccdi)2%6 7
+1;/4$6(cm%3#20,<=<;
+77$4";#clm#3#7
+7=%<0916$OetnWct`WOjne"6"='Ekg&CdrrjfrPFhjklPWf`lvfry"K^MKL=$5"8#;
+7;#2#1%Idrrf`rPBrjquaegy/5"5&7:
+0;"5"8'G]jutputYoptllm/5$4
+:?/4#0#Lutput]`dv`cjpj[dopdjtuk`#3#2
+0=*4/0/JP`bvmsfjlZnfhtmr#2$0
+?0)10065#rflkrz5%:'?%Srfgfdld`k%Krmv`r"rm`arz%3#3#6
+72%>%<$ckThjv`n%8':g.22
+05'8"6&hl\ojv`h%8':
+7;#2#1%tsfjpj%?$5
+00#>%0#`rlss]pjckt/5/5?4
+9=/5"Lf':
+04"<2=5)(%4 5#Srjaacaija#Njs`gifda``us$`spn(3/5#1
+1;"4*6/dttjjP`i$?%2
+70':"0"ettgcXekk&0%2
+18%70>1>%fspo2#0%:%_r`kackffk%Njs`fnikkjjus/aspc$;$?%0
+70':"0"ettgcXm`%6 5
+1;/4$6(fttjk\ojm"5*4
+=2/704>1/Uuosf@brvgr%8%?%_rakamma`f%Enshgonelhhus)mdkoa1#?%4%96
+==#2#0"`xUi`ss%?$5
+00#>%0#ledZveitnbj$?$;
+67%3%='nxt]rbtkk]typh'9"5
+48%3#?%axtZritn`%3#3
+1:%;%<%lllrp"8#?
+7;#2#1%vpcbrj%?$:
+63$>%7%mkmko"4"=
+51"5&0%abaawmat`'?%3
+1;#2%:%ajtll%2(3
+==#2#0"dttUh`aP`m$;$<
+7:%9'8"btt]imiXekk&0%3-853<<28=70;7
+02*=?5<$/":#?%Srfgfdld`k%Bmslaghnkgjus(hspg"3"4"?
+51"4&3%bttfaZ`g(7/5
+1;#2"6*dttjkPhll(3/4
+14#073<6/K]^P`jtePsfmp`9'9"3"Trgibokkcd%Njsl`hiiijjus#s`lpf"5*5/3
+=<%3(0/rdtf#3#35
+8=/4/1/tmfaPr`s"5(7
+9:#2$2-suesVddetor%3#?
+7<%9':%nfbsurf]tlg`/5/4
+7:(3/5#stbrt\tjo`*5/5
+=</4+4/`laWtnfg#2$2
+?0)10061#SgdsaZpa6/7#3#Okg*Hfsfjhicffn%@NVOV%:%?%>
+67$:$<%C%8'&3
+15$:=7="/&2%3#_r```nna`g#Njsa`finkjkus%gspd#?%3#1
+1:%;%<%nttaa[of/5"5
+:?+3#1$ctthiVnlh 5#2
+=2$6=190#@olanUsf`p`>$7"8#_r`gfejl`n%Blslachjjjjus"sfgpb+2#2$4
+??)3%5 rdtf#?%55
+:?/4#6#tjo`Ur`s/5/4
+7:(3/5#suas\ecfter%?%?
+67$:$:%o`isurbTtkng$2-7
+;:%6 5#stbrtPtli`(7/5
+1;#3"5*`aaPtmhg(3/5
+14#073<3/h`jPJY^/7"5(Wrnffdmlhc)Olseeioba`kus%prgej%3#3#6
+72%>%:$hgisurfPtlnf#3"5
+8=/5/4/stertTtmb`"5(7
+9:#2$2-bgfZtom`#3/5
+6=(6/0#sbnpokkmZidltkr%2(2
+=2#06542*HUL/6/4+Trjagcainf#Cipndtucl]Hiduibtlr/jehgc/5#3#23
+72%>%<$imss(3/6
+1;#2"6*jicPvkctela/5"0
+:?+3#7$gxtRrft`mZtypc 5#3
+==$5(7/`xt\rbtjl"5*5
+==/5%1(`glrp#3#3
+0=*4/6/vpmhra+4/0
+0=(6+7#ghddk)2%6
+2=#3/5$giikwlgtk#3"5
+8=/5/4%lgt`g%3#3
+1:%;%<%ntt[bko[kg"5(>%21204?49:63
+2=#2/6$dttWj`a\ojm"5*5!6:7<506
+=2#;337% %=%?$_raoaill`l'Fks`ghnlilmus%ispl%3#?%6
+70'>%0#bttflZng/5/4
+7:(2/6#bttfm]ick/5/5
+=3+7:34=(Dgm`i[sabpb;"7&0%Srfk`blfbk%Njs`fnikkjjus/sgjpg(3/5#5
+1;"4*6/rdtj$?$:4
+=="4(2+tkng[rgs-7)2
+7> 5#3/sugs[cidt`r%3#3
+1:%;%:%badsurgWtjb`#3#3
+0=*5/5/stertPtmfa/5"5
+:?+2#2$gccVtkhc 5#3
+=2$6=19<#0qubtfrVZt*7/5/Hl`(Nfsffoobl`k%K@CEV$;$?%3
+70':"0"P]ibecy%6 26
+18%70>?8%nlm\P_*7/5/Tr`fmefkfg#Nksfoicdaa`us$prdfj%2%8'?
+0;"5"8'dgdsurc_tlnf/5$5
+:?/5#3#stbrt]tlg`/5/4
+7:(3/5#fmg]tlg`/5/4
+=<+5/0"sdepkbld]bcnthr)2%7
+22#09=44(hnhped2#0%:%_r`kackffk%Lptj`bnZKhpclimjrs$debpce%8';":
+0<"<'<"bgik\typf/5$5
+:?/4#0#dcld%?%6*421
+17%3#3#edckPcfhj$;$?
+7:%9'>"mm[lbnsl"5&1
+7;#?%4%fhfs`\typf#3"5
+8=/5/4%lgjsjZga#3"5
+8=/5/4/jdmsjZnlf';"3
+0<"='9"kiis`\efia%8'?
+7;#2#7%ljrl`Psphlt"8#?
+74#;323*//7/4/Trn`jckkmc+Ojsaanafggjus&ospi#3/5$7
+:?/4#0#bttgkUam%?$5
+00#>%0#bttflZfla%?$>
+6<$<3:5;'dpmwng5"?'9"Urcd`eja``%Ensl`oobmgjus*jp`whj$5"8#:
+7;#2#7%hdaaPtypa/4+4
+=="5(7+drfq]tlz"='9
+0=&0%3#ir`q[ke'?%3
+1;#2%:%mda`wlft`\hmz#3#3
+0=*5/5/fnjowmktm]ke';"3
+03"97:70&mjm\cdsar%:'?%Srfgfdld`k%Bmsfgdonkflus#prl``*5/5/0
+=<+5/0"hmfsurn]tjoa"='9
+0=&0%3#stnrtZtmhm'?%3
+1;#2%:%jkk[tlom#?%3
+1;#3%?%snhpcmacTbnftmr%8':
+04"02>>?"pmitoa\pja4$7(7/Urfgfekkoa/Ugktjfalk`#pkltlfZpck/5/4/<
+9</4"6(rbm]ergq$2-601+2117;6577:27
+7;#2#1%rocPwdvjh%2(2:03
+1;#3%9%qP`ibfgbaafy"5(7%5
+1:$3-4)rgspjhsivlty#3/5*=?2>
+7;#2#7%oiilc$5"9
+17%2#0#`ddawfatg$?$94
+=="4(2+llksa"='8
+0=&1%0#kdroZkurrbat%3#3-3
+7=%;5<=2"p`lt`a\pjm1"7*5/Urj`jbbjja"U`htdfjm`g-poftmaYpik#3/5$=
+:?/4#0#rfdZlr`q/5/5<1&7>17;:317807
+77$>$8$rjc]wdvmk+2#317=
+51"4&3%q\ficmfabafy#3#3,2
+8=/4/7%rgspgmsfvlty#3#3,==0>
+77$>$>$jidld';"2
+0<"<':"ggnawjgtg%4%<7
+==#2#6"kelsj%?$4
+00#>%0#gbriZiurr`at%?$?*:
+68%65;>2"MP^]]NG"7&0%Srfk`blfbk%Njs`fnikkjjus/sgjpg(3/5#5
+1;"4*6/rdtj$?$:4
+=="4(2+tkng[rgs-7)2
+7> 5#3/sugs[cidt`r%3#3
+1:%;%:%badsurgWtjb`#3#3
+0=*5/5/stertPtmfa/5"5
+:?+2#2$gccVtkhc 5#3
+=2$183?4#QY\RLD%=%?$Urglfilmfg#Olsi`cinjjkus+sg`p`"5(7+4
+1:$3-4)rct`&0%23
+==$4(2/tlnf\rfs"5*5
+==/4%2(suasPcb`tlr#2%:
+77%>$:$fansur`]tleb+2#2
+6:-7)2%stgrt_tlnf/5$5
+:?/5#3#flaUtlb`/4%2
+:4/13734"ccgjr7/5/4+Trjagcainf#Dm`hr'okgcr 5#3/=3
+70'>%7#mbo`*5/QgmsZDaajrZLmoy
+1:%;%:%dma`+4/4
+0=(6+33"hgc'9"46 4
+EjmZh`f`tg
+7;#2#1%f`aZrnjbg(3/5
+1;#2"0*i`ssZirkbbbhj%2%9
+53"2"7"ahssVrgcYfr`q#3/4=6&3>17;:317
+8=/4/7%ngss\rjc\wbvfo"5*4:0?
+67$;$?%njss(7+2
+1:$2-7)ci`a4#3/5
+6=(7/5#boec7*5/5
+=<%3(2>%olss\ekio%?%CkssPGdrjfkeVEA9:-FEV
+??)3%3 i\e`rhetZtypm'?%2
+1;#3%?%cjssPtypa%2(2
+==#2#6"acspZirjbbfhn$?%2
+70':"0"radRarlq"5&1<0-;4010>?61
+1;#3%9%rjcPwev`n(3/4663
+1:%;%<%matn6+4/(05&3;52553460
+0=&1%0#klsp$5(69
+7;#2#1%h`tn6/4%2&2867;5:62>6
+==/5/7+`fspZf`(7+2-2<4
+??)3%5 gftb;%4%8
+57%2#0#``tk0/5/4
+7:(2/6#ezgjsp]tmz*5/7>6!5818<6302?32
+0<"<':"czbispZmn/5$4<6<+12326=3791;=
+7:(3/5#gjsp\dlf`/5/4
+=<+4/5"aWadrobt]typa"='9
+0=&1%6#klsp[stdt(7/5
+1;#2"6*afspZstk$5"8
+17%2#0#``tk7Psta/4/4
+9</4"6(azsto]tkz"4"=
+51"4&3%ezstgPki%8'?
+7;#2#1%nlspPf`rr$5":3
+==#2#0"kekcla[rjbTbrjq%2%9>8,73065>917
+48%2#<%jjfkfk\rfe\wcv`f%?%>102
+:;/4#0#dchgd/5/5!526=077?1>
+0;"5">'llkc2%3#=+1`%5?
+7;#2#1%k`ic/4%:=
+17%2#0#``ktZc`a$?$>
+67%3%;'hmrr\nal-7)2+4
+2=#2/6$gmftPsta#3#3,0
+8=/4/7%pol#?%3-2
+1:%;%:%pr`bfhn[typj%2%9
+53"3"4"rljhlZrcfZerfq/5$5
+:?/5#3#rboddZrjcPwev`n(3/5
+1;#3"5*crnhnj/4+4
+=="5(7+tcu2"4"=
+51"5&0%tbu1/5$5
+:?/5#3#rboddZilca%2(3
+==#3#3"fustehPtyp`/4/4
+9</5"5(sdjnjlc"='9
+0=&0%3#rnZsgddnab\ejog%:%?
+77$5"8#rnhbm\emrhktZtypj%?$?
+63$>%7%riyXtypn"3"5
+05'8"6&rayZga/5$(;7
+==#2#6"r`liPtyp`/4%2
+:;/5#3#r3]ah%?%?
+67$;$?%rnZle+2#2
+6:-6)7%gmpi\r#?%4
+70'?%3#`kcrtZr*5/5
+=<%2(3/pjwfrs\`kcrt%:%?
+77$?$;$aj]kgnsn"3"4
+05'9"5&rahbmPtm$5(7
+==#3#3"sldbc`PpuipZtypg(3/5
+1;#3"5*rdbda[pubp[typn[a`w"5(7
+9:#2$2-ck]pjwcr_kfw#?%4
+70'?%3#nw\pmw`rUkjw%?$5
+00#?%3#punp\dr`qUkjw%?$?
+63$?%2%puepXwjvgo]jgw-7)2
+7> 5#3/puhp[dttmiPkfw#3#2
+72%?%?$hunta\pubpZtypf#3#2
+72%?%?$rn[pufp[iln`(7+2
+1:$2-7)rcZjossZejc`$5(7
+==#3#3"cUc`rhnt[typ`"8#?
+7;#3#2%lpuhpPc`rint[typn$?%2
+70':"6"sfs"='9
+0=&0%3#hZf%8'?
+7;#3#2%n`ctdPbg"8#?
+7;#3#2%mdfkPrai[mraq/5"5
+:?+2#2$dRe)2%6
+2=#3/5$iaijwlgtk#3"5
+8=/5/4%iWplc%3#3
+1:%:%?%sms[lljrt$?%2
+70':"6"blbie"5&0
+7;#>%1%ni`ko\r#3"5
+8=/4/1%dpeg>%3#3
+1:%;%:%iffr5+4/5
+0=(6+7#dfkr>'9"5
+47%;3?2$/(5/5#Srfggcckja/Ilsamocdmflus#mspi*5/5/6
+=<+5/6"dttmiTfa"4"=
+51"4&3%bttfaZhlf'?%2
+14#65>56%bkk]ietjrZejafr"7*5/Urj`jbbjja"Hasdnnocjgbus'prf``&0%3#;
+7<%9':%nfbsurf]tlg`/5/4
+7:(3/5#stbrt\tjo`*5/5
+=</4+4/`laWtnfg#2$2
+??)3%3 sdnpofkcZnfltjr#3#2
+02*1?1>0%ogmPgfelrf]ccgjr%=$?$[rak`dlfbo"Nksggakhl`ius prjaf/5$5(3
+==#2#6"hodsurjZtfi`"8#?
+7;#3#2%stkrtZtfhj$?$;
+67%2%8'nlg]tmoh'9"5
+48%2#:%sehpdnab\eb`tmr%:%>
+78$12<28%lplwnf0ZkctjrZimmar+6/5"Urmcndjlaf-J`sa`jldmf`us%kpjweb/5#3#6
+0=*4/0/fdll\typj%3#3
+1:%:%?%iraqPtlz+4/5
+0=(7+2#draq]cj)2%6
+2=#3/5$giikwlgtk\djz%:%?
+77$5"8#mdmgwjgtjZdh/5/4
+<5+5/6"4:'3233$MptButX8"JptOnZ2
+0>%6%;'7532#073<2///KptLlW2
+<4#0#0"=:5>%;4<1>$%%MptLfX:
+12"0"?'822> 66595$Jut(Na
+62#6#3%;58=/704=:/@ofLut\3%OZfkput
+<5/2+5/673=?+1642;-BegJutY1%jmput
+<4$2(6/6656:"6?3:=/AZmutput(Fc`Jm\2
+14*=/4/7:2=4/=25:'NnfMut[3-BegLh_4
+02/<$4(??51#06439%%%Jh`Kf\>
+62#23"4*=?5=$<1=28%(%MknKm]5
+1<'83%7 66594$6=191#)#Fkk
+94/4=$4";6932#06438%%%JhjMe[>
+63%94+3#114;6)10060#)/@h`AiP4
+02#26%9%<0927"03?6#LptLut\3%EptLaZ>
+7>$:1/6"=878"072::'#"JptOnZ2
+0>%53(4/=330#1325>%%$JptKf\>
+62#24"4*6:390/<;4;%Gjut(BggJl[3
+>6)3=&1%;3?1$6=19=#)#Fn`CkP4
+<5%31#>%;337"6?397/./AgaFk]7
+;6+03"7">2?42&8536/JptKutZ9'@ptLm\2
+03%84/6/<52=#<0555#(%EptLaZ>
+7>$96/6"=87>"0724?'#"JptOnZ2
+0>%66(4/=336#659<9%%$JptKf\>
+62#17"4*6:39=/7>294"jutput(BggJl[3
+>6)00&3%05755%07?3#LptLut\3%EptLaZ>
+74":5/6#;334%9375<$%$DptMaZ3
+69'95#1$:=7?"16454#%%KptLfX>
+62#1;"6*=?59$12<2;%)#LptJlZ;
+6>%==/5+0?6;3(3;1:;$GabFut]4&EifJaZ5
+69'<5#2#72632/1?053(Fc`Lut\2#GioLaZ>
+7>$85/6"183;5#:42:'FptMutZ7 JptJmP4
+74(4=%0#;322*1?663%((LptFk\2
+02"69%<%74?3+0?12<(-+MptJl[3
+>6)11&3%;3?2$183>2#)#LptKkU4
+99 2335837654
+41 4
+42 12 -420 -354 -415 -376 1
+42 8001 50 0 55 -22 1
+42 1078 -540 -348 -535 -370 1
+42 35658 -366 -288 -361 -310 1
+42 35659 -432 -288 -427 -310 1
+42 35660 -420 -402 -415 -424 1
+42 8002 50 0 55 -22 1
+42 35661 -427 -217 -422 -239 1
+42 35662 -216 -192 -211 -214 1
+42 8003 50 0 55 -22 1
+42 35663 -252 -438 -247 -460 1
+42 35664 -427 -145 -422 -167 1
+42 8004 50 0 55 -22 1
+42 35665 -348 -234 -343 -256 1
+42 35666 -48 -378 -43 -400 1
+42 35667 -186 -372 -181 -394 1
+42 8005 50 0 55 -22 1
+42 35668 -342 -162 -337 -184 1
+42 35669 -318 -288 -313 -310 1
+42 35687 -162 -222 -157 -244 1
+42 36801 -132 -156 -127 -178 1
+42 8006 50 0 55 -22 1
+42 36803 -108 -96 -103 -118 1
+42 40355 -252 -330 -247 -352 1
+42 40396 -107 -318 -102 -340 1
+42 40397 0 -156 5 -178 1
+42 40399 -60 -318 -55 -340 1
+42 40401 18 -96 23 -118 1
+42 40407 -60 -156 -55 -178 1
+42 8007 50 0 55 -22 1
+42 40409 0 -222 5 -244 1
+42 40414 -84 -234 -79 -256 1
+42 40417 -60 -54 -55 -76 1
+45 2 0 0 0 2 65 100 137 100
+99 2025952766
+70 2
+71 0 0
+99 2256362295
+90 2 0000000009 0000000128 0000000151 0000000894 0000001059 0000008559 0000009632 0000000959 0000010605 0000000012
+99 1460314821
