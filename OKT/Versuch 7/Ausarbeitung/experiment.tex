@@ -22,10 +22,17 @@ For driving the MZ in "`puhs-pull"' mode (cf. \ref{sec:MZM}) the phase of one el
 
 \footnote[3]{Materials for the Preparation of Experiment 7: Simulation of Optical Transmitters}
 
-Figure \ref{fig:P1ExB_Spectra} shows the spectrum of the laser source (red) and the spectrum of the optical NRZ signal (green). At a frequency of $f~\approx~193.415$~THz both spectra show a large peak. This is the laser frequency and therefor also the carrier frequency of the NRZ-Signal. 10~GHz beside the carrier frequenzy are the peaks of the 10~Gbit/s NRZ signal and it's harmonics. 
+Figure \ref{fig:P1ExB_Spectra} shows the spectrum of the laser source (red) and the spectrum of the optical NRZ signal (green). At a frequency of $f~\approx~193.415$~THz both spectra show a large peak. This is the laser frequency and therefor also the carrier frequency of the NRZ-Signal. 10~GHz beside the carrier frequency are the peaks of the 10~Gbit/s NRZ signal and it's harmonics. 
+
 \begin{figure}%
 \centering
-\includegraphics[width=.5\columnwidth]{Grafiken/P1ExB_Spectra.pdf}%
-\caption{Spectrum of the laser source (red) and spectrum of the NRZ-signal (green).}%
-\label{fig:P1ExB_Spectra}%
+%\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[Spectra]{\includegraphics[totalheight=6 cm]{Grafiken/P1ExB_Spectra.pdf}\label{fig:P1ExB_Spectra}~}
+	\subfloat[Eye Diagramm]{\includegraphics[totalheight=6 cm]{Grafiken/P1ExB_Eye.pdf} \label{fig:P1ExB_Eye}}%
+%\end{adjustwidth}
+\caption{\textbf{a)} Spectrum of the laser source (red) and spectrum of the NRZ-signal (green). \textbf{b)} Eye diagramm of the NRZ signal.}%
+\label{fig:P1ExB_1}%
 \end{figure}
+
+Figure \ref{fig:P1ExB_Eye} shows an eye diagramm of the generated NRZ signal. 
+\todo{Was bedeutet das? Was kann man hier sehen? WTF?} The measured log Q factor of the NRZ signal is 40 dB.
