@@ -16,11 +16,7 @@ For the Experiment an OptiSim Example of a 50~\% RZ-OOK-Transmitter was used. Fi
 
 Starting in the upper left-hand side at the PRBS again, the lower path leads to an divider. Here the DataRate can be divided. In the first project there is no change of the data rate and the divider is 1. Afer that there is an amplifier (egain1) and a time-delay element. Those elements are used to set the driving-voltage for the MZM (PulseCarver).
 
-For driving the MZ in "`puhs-pull"' mode (cf. \ref{sec:MZM}) the phase of one electrical paths is shifted. The folloing MZM (PulseCarver) is used to carve the NRZ pulses to a NRZ-OOK signal.
-
-
-
-\footnote[3]{Materials for the Preparation of Experiment 7: Simulation of Optical Transmitters}
+For driving the MZ in "`puhs-pull"' mode (cf. \ref{sec:MZM}) the phase of one electrical paths is shifted. The folloing MZM (PulseCarver) is used to carve the NRZ pulses to a NRZ-OOK signal. \footnote[3]{Materials for the Preparation of Experiment 7: Simulation of Optical Transmitters}
 
 Figure \ref{fig:P1ExB_Spectra} shows the spectrum of the laser source (red) and the spectrum of the optical NRZ signal (green). At a frequency of $f~\approx~193.415$~THz both spectra show a large peak. This is the laser frequency and therefor also the carrier frequency of the NRZ-Signal. 10~GHz beside the carrier frequency are the peaks of the 10~Gbit/s NRZ signal and it's harmonics. 
 
@@ -44,3 +40,6 @@ Taking a look at the electrical and the optical bit sequence shows, that they ar
 \caption{NRZ bit sequences.}%
 \label{fig:P1ExB_bit}%
 \end{figure}
+
+\section{Project 2}
+In the next Project two PIN photodetectors were inserted. One at the exit of the NRZ-MZM and the other after the optical amplifier("`oampfg1"') for the RZ signal. To display the signal a "`Electrical Monitor"' was placed behind each of the detectors. After running the simulation the eye diagrams of each signal was recorded.
