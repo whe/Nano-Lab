@@ -69,15 +69,66 @@ In the next Project two PIN photodetectors were inserted. One at the exit of the
 \section{Project 3}
 \label{sec:P3}
 In Project 3 an additional fibre was added to the simulation. The fibre "`CorningSMF28\_1550"' was inserted between the Pulse Carver and the in project 2 added PIN diode. 
+\todo{What parameters do we know?}
 
 For this project all nonlinear effects were deactivated ("`Advanced control"' -> all options were switched off).
 
 To achieve an optical power of the fibre the optical power of the sender laser needed to be adjusted. Without adjusting the power, there is a power of -3.304 dBm after the 10~km fibre. Setting the CW-Power of the 1550~nm Laser to 3.304 dBm leads to an optical output power of 0 dBm after the 10~km optical fibre.
 
+Figure \ref{fig:P3ExB_Eye10) shows the eye diagram after 10~km of transmission line. Figure \ref{fig:P3ExB_Eye20} shows he eye diagram after 20~km transmission line.
+\todo{vergliech der diagramme}
+
+Figure \ref{fig:P3ExB_Q} shows the \textit{Q}-factor of different fibre length. After 10~km the \textit{Q}-factor is 39.99~dB. With increasing fibre length the \textit{Q}-factor decreases. Figure \ref{fig:P3ExB_Q} shows in the measured range a linear dependency between \textit{Q} and the fibre length. At 20~km \textit{Q}~=~34.40~dB, at 30~km $Q=29.66$~dB and at 40~km $Q=24.27$~dB.
+\todo{how are the q-factors measured}
+\todo{discuss the numerical values}
+For the 20~km transmission there is a Jitter of $\sim$1~ps. With a bit-slot length of 0.1~ns the jitter is 1~\% of the bit-slot length.
+
+
 \begin{figure}%
 \centering
-\includegraphics[width=.5\columnwidth]{Grafiken/P3ExB_Eye.pdf}%
-\caption{Eye Diagramm after 10 km transmission.}%
-\label{fig:P3ExB_Eyes}%
+%\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[10 km]{\includegraphics[totalheight=6 cm]{Grafiken/P3ExB_Eye10.pdf}\label{fig:P3ExB_Eye10}~}
+	\subfloat[20 km]{\includegraphics[totalheight=6 cm]{Grafiken/P3ExB_Eye20.pdf} \label{fig:P3ExB_Eye20}}%
+%\end{adjustwidth}
+\caption{Eye Diagrams after \textbf{a)} 10~km and \textbf{b)} 20~km fibre lenght.}
+\label{fig:P3ExB_Eye}%
 \end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/P3ExB_Q.pdf}%
+\caption{\textit{Q}-factor over fibre lenght}%
+\label{fig:P3ExB_Q}%
+\end{figure}
+
+\begin{table}%
+\centering
+\caption{Losses}
+\begin{tabular}{ccccc}
+
+\toprule
+Fibre length & Loss in dB&$\Delat t_{\mathrm{H}}$ in ps&\\
+in km&Calculated&Measured&Calculated&Measured\\
+\midrule
+10&	1.9&1.72&19,85	&2	\\
+20&	3.8&3.58&39,7	&	10\\
+30&	5.7&5.31&59,56	&	28\\
+40&	7.6&7.19&79,41	&	47\\
+\bottomrule 
+\end{tabular}
+\label{tab:P3ExB_loss}
+\end{table}
+
+Table \ref{tab:P3ExB_loss} shows the calculated and the measured losses of the fibre with different fibre lengths. For the calculation a attenuation of $\alpha_0=0.19$~dB/km was used. The measured losses are a little bit smaller then the calculated values. This could be caused by \todo{Warum sind die unterschiedlich?}
+
+Because of the fiber there is also a broadening of the transmitted pulse. To examine the influence of the spectral FWHM of the optical source on the transmission characteristic different spectral widths of the laser source were used. The \textit{Q}-factor was measured after the PIN-diode. In Figure \ref{fig:P3ExC_Q} the logarithmic \textit{Q}-factor is shown at different FWHMs. The \textit{Q}-factor decreases fast with increasing FWHM of the optical source. At a FWHM of $\sim$75~MHz $Q$ reaches 30~dB and stops decreasing so fast and is nearly constant.
+
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/P3ExC_Q.pdf}%
+\caption{\textit{Q}-factor over FWHM of the optical source}%
+\label{fig:P3ExC_Q}%
+\end{figure}
+
+To measure the impulse's emporal half-maximum full-width differenz $\Delta t_{\mathrm{H}}$ a prepared bit sequence was loaded ("`costum_1.dat"') and a parameter scan was performet for the lenght of 10, 20, 30 and 40~km.
 
