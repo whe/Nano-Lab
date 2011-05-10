@@ -60,7 +60,7 @@ The now generated signal shows pulses with a FWHM of 0.03~ns.
 \section{Project 2}
 In the next Project two PIN photodetectors with default parameters were inserted. One at the exit of the NRZ-MZM and the other after the optical amplifier("`oampfg1"') for the RZ signal. To display the signal a "`Electrical Monitor"' was placed behind each of the detectors. After running the simulation the eye diagrams of each signal were recorded. In the eye diagram of the NRZ signal the influence of the photodiode can be seen. The transition from "0" to "1" and vice versa is not instant anymore (cf.\ref{sec:P1}). Since the RZ-signal is rising and falling in one bitslot anyway, it is influenced less by this effect. 
 
-For the Q-factor a value of 40~dB is obtained. \todo{is this value practical}
+For the Q-factor a value of 40~dB is obtained. This value is not very practical, since the Q-factor can be decreased by the photodiode as well. 
 
 \begin{figure}%
 \centering
@@ -79,7 +79,7 @@ Changing the -3~dB bandwidth changes the reaction time of the diode.
 Figure \ref{fig:P2ExB_3dB} shows the output signal of the PIN-diode for different -3~dB bandwidths. To demonstrate this effect an incoming optical NRZ signal was used. A bandwidth of 10~GHz (cf. fig. \ref{fig:P2ExB_10}) leads to a rise-time of approximately 0.03~ns. \comwo{ich hab jetzt mal von einer hilfslinie über null bis eine hilfslinie unter max gemessen :-/.. grob}
 
 A -3~dB bandwidth of 40~GHz (cf. fig. \ref{fig:P2ExB_40}) leads to much faster rise and fall times. Here the rise time is about 0.01~ns. The same behaviour can be observed for the fall time.
-\todo{Muss hier rein warum das so ist??}
+\todo{Muss hier rein warum das so ist??}\comseb{im zweifel nein}
 
 \begin{figure}%
 \centering
@@ -97,7 +97,7 @@ A -3~dB bandwidth of 40~GHz (cf. fig. \ref{fig:P2ExB_40}) leads to much faster r
 \section{Project 3}
 \label{sec:P3}
 In Project 3 an additional fibre was added to the simulation. The fibre "`CorningSMF28\_1550"' was inserted between the Pulse Carver and the in project 2 added PIN diode. 
-\todo{What parameters do we know?}\comwo{Muss das wirkilich rein?}
+\todo{What parameters do we know?}\comwo{Muss das wirkilich rein?}\comseb{wir kennen alle ;) -> weglassen}
 
 For this project all nonlinear effects were deactivated ("`Advanced control"' -> all options were switched off).
 
@@ -109,7 +109,7 @@ Figure \ref{fig:P3ExB_Eye10} shows the eye diagram after 10~km of transmission l
 Figure \ref{fig:P3ExB_Q} shows the \textit{Q}-factor of different fibre length. After 10~km the \textit{Q}-factor is 39.99~dB. With increasing fibre length the \textit{Q}-factor decreases. Figure \ref{fig:P3ExB_Q} shows in the measured range a linear dependency between \textit{Q} and the fibre length. At 20~km \textit{Q}~=~34.40~dB, at 30~km $Q=29.66$~dB and at 40~km $Q=24.27$~dB.
 \todo{how are the q-factors measured}
 \comwo{argh... das ist auch arg aus dem finger gesaugt, schau lieber nochmal drüber als standardabweichungsexperte... vergleiche 22.
-6 - Q Estimator im vorbereitungsdingens}
+6 - Q Estimator im vorbereitungsdingens}\comseb{is schon in ordnung, ich weiß es auch net besser}
 Because the pulse broadening caused by the fibre dispersion the standard deviation the signal samples increases and the mean of the signal samples decreases. Using the expression 
 \begin{equation}
 Q = \frac{m_1-m_0}{\sigma_1+\sigma_0}
@@ -117,7 +117,7 @@ Q = \frac{m_1-m_0}{\sigma_1+\sigma_0}
 \end{equation}
 with the means $m_0$ and $m_1$ and the standard deviations of the signal samples $\sigma_0$ and $\sigma_1$. The subscript stands for a received "`0"' or "`1"'. In our case mean and standard deviation of a received "`0"' is 0. 
 The $Q$-factor of the signal gets lower with increasing pulse broadening and therefore with a increasing fibre length. 
-\todo{discuss the numerical values}
+\todo{discuss the numerical values}\comseb{die ham wir eigentl discussed, wir ham gesagt das der zusammenhang linear is}
 For the 20~km transmission there is a Jitter of $\sim$1~ps. With a bit-slot length of 0.1~ns the jitter is 1~\% of the bit-slot length.
 
 
