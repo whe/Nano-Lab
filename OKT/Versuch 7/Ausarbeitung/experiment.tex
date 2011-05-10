@@ -30,8 +30,8 @@ Figure \ref{fig:P1ExB_Spectra} shows the spectrum of the laser source (red) and 
 \label{fig:P1ExB_1}%
 \end{figure}
 
-Figure \ref{fig:P1ExB_Eye} shows an eye diagramm of the generated NRZ signal. 
-\todo{Was bedeutet das? Was kann man hier sehen? WTF?} The measured log Q factor of the NRZ signal is 40 dB.
+Figure \ref{fig:P1ExB_Eye} shows an eye diagramm of the generated NRZ signal. Since a digital signal is regarded, the slopes of the signal are perfectly steep.
+\comseb{evtl noch irgendwas} The measured log Q factor of the NRZ signal is 40 dB.
 
 Figure \ref{fig:P1ExB_bit} shows the electrical , the optical NRZ  and the optical 50~\% RZ bit sequenze. Both optical sequences match the electrical signal. The RZ signal shows errorous pulsshape, because the exported data of this signal has not enough datapoints. Figure \ref{fig:P1ExB_FWHM} shows the correct shape of one pulse. In this figure also the full width at half maximum can be measured. With an FWHM of 0.05~ns and a lenght of a bitslot of 0.1~ns the duty cycle of the optical signal is 50~\%.
 
@@ -60,6 +60,15 @@ The now generated signal shows pulses with a FWHM of 0.03~ns.
 \section{Project 2}
 In the next Project two PIN photodetectors with default parameters were inserted. One at the exit of the NRZ-MZM and the other after the optical amplifier("`oampfg1"') for the RZ signal. To display the signal a "`Electrical Monitor"' was placed behind each of the detectors. After running the simulation the eye diagrams of each signal were recorded. \todo{Eye diagrams + Q-factor}
 
+\begin{figure}%
+\centering
+%\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[Eye Diagram NRZ]{\includegraphics[totalheight=6 cm]{Grafiken/P2_ExA_NRZ_PIN_eye.pdf}\label{fig:P2ExA_Eye}~}
+	\subfloat[Eye Diagram 33\%-RZ]{\includegraphics[totalheight=6 cm]{Grafiken/P2_ExA_RZ_PIN_eye.pdf} \label{fig:P1ExA_Eye}}%
+%\end{adjustwidth}
+\caption{}%
+\label{fig:P2ExA_1}%
+\end{figure}
 
 OptiSim gives several possibilities to change parameters of the PIN-diode. 
 By changing the quantum efficiency of the diode the output amplitude varies. A large quantum efficiency leads to a higher, a small quantum efficiency leads to a lower output amplitude. 
