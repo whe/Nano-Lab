@@ -65,9 +65,9 @@ OptiSim gives several possibilities to change parameters of the PIN-diode.
 By changing the quantum efficiency of the diode the output amplitude varies. A large quantum efficiency leads to a higher, a small quantum efficiency leads to a lower output amplitude. 
 
 Changing the -3~dB bandwidth changes the reaction time of the diode. 
-Figure \ref{fig:P2ExB_3dB} shows the output signal of the PIN-diode for different -3~dB bandwidths. The incoming optical signal was a NRZ signal. A bandwidth of 10~GHz (cf. fig. \ref{fig:P2ExB_10}) leads to a rise-time of approximately 0.2~ns. This is the complete bit slot length.
+Figure \ref{fig:P2ExB_3dB} shows the output signal of the PIN-diode for different -3~dB bandwidths. The incoming optical signal was a NRZ signal. A bandwidth of 10~GHz (cf. fig. \ref{fig:P2ExB_10}) leads to a rise-time of approximately 0.03~ns. \comwo{ich hab jetzt mal von einer hilfslinie über null bis eine hilfslinie unter max gemessen :-/.. grob}
 
-A -3~dB bandwidht of 40~GHz (cf. fig. \ref{fig:P2ExB_40}) leads to much faster rise and fall times. Here the rise time is about 0.02~ns. The same behaviour can be observed for the fall time.
+A -3~dB bandwidht of 40~GHz (cf. fig. \ref{fig:P2ExB_40}) leads to much faster rise and fall times. Here the rise time is about 0.01~ns. The same behaviour can be observed for the fall time.
 \todo{Muss hier rein warum das so ist??}
 
 \begin{figure}%
@@ -86,7 +86,7 @@ A -3~dB bandwidht of 40~GHz (cf. fig. \ref{fig:P2ExB_40}) leads to much faster r
 \section{Project 3}
 \label{sec:P3}
 In Project 3 an additional fibre was added to the simulation. The fibre "`CorningSMF28\_1550"' was inserted between the Pulse Carver and the in project 2 added PIN diode. 
-\todo{What parameters do we know?}
+\todo{What parameters do we know?}\comwo{Muss das wirkilich rein?}
 
 For this project all nonlinear effects were deactivated ("`Advanced control"' -> all options were switched off).
 
@@ -124,7 +124,7 @@ For the 20~km transmission there is a Jitter of $\sim$1~ps. With a bit-slot leng
 
 Table \ref{tab:P3ExB_loss} shows the calculated and the measured losses of the fibre with different fibre lengths. For the calculation a attenuation of $\alpha_0=0.19$~dB/km was used. The measured losses are a little bit smaller then the calculated values. This could be caused by \todo{Warum sind die unterschiedlich?}
 
-Because of the fiber there is also a broadening of the transmitted pulse. To examine the influence of the spectral FWHM of the optical source on the transmission characteristic different spectral widths of the laser source were used. The \textit{Q}-factor was measured after the PIN-diode. In Figure \ref{fig:P3ExC_Q} the logarithmic \textit{Q}-factor is shown at different FWHMs. The \textit{Q}-factor decreases fast with increasing FWHM of the optical source. At a FWHM of $\sim$75~MHz $Q$ reaches 30~dB and stops decreasing so fast and is nearly constant.
+Because of the fiber there is also a broadening of the transmitted pulse. To examine the influence of the spectral FWHM of the optical source on the transmission characteristic different spectral widths of the laser source were used. The \textit{Q}-factor was measured behind the PIN-diode. In Figure \ref{fig:P3ExC_Q} the logarithmic \textit{Q}-factor is shown at different FWHMs. The \textit{Q}-factor decreases fast with increasing FWHM of the optical source. At a FWHM of $\sim$75~MHz $Q$ reaches 30~dB and stops decreasing so fast and is nearly constant.
 
 To measure the impulse's emporal half-maximum full-width differenz $\Delta t_{\mathrm{H}}$ a prepared bit sequence was loaded ("`costum\_1.dat"') and a parameter scan was performet for the lenght of 10, 20, 30 and 40~km.
 The values of $\Delta t_{\mathrm{H}}$ were calculated with
