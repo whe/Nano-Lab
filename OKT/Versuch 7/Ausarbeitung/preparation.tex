@@ -87,14 +87,6 @@ For the generation of a BPSK the same setup as for the OOK-Signal can be used. T
 \label{sec:RZ}
 For the generation of a RZ signal, first a NRZ signal is created for example with one of the methods described above. Then another MZM is used to carve the signal into a RZ shape. It is possible to realize different pulse widths for the RZ signal. When the MZM is driven by a sine with the data rate between the minimum and the maximum of the transition the signal has a duty cycle of 50\%. When the MZM is driven by a sine with half the data rate between the minima of the transition the signal has a duty cycle of 33\%. When the MZM is driven by a sine with half the data rate between the maxima of the transition the signal has a duty cycle of 66\% (cf. figure \ref{fig:RZ_OOK}). Beside the lower pulse width and thus the lower power a 33\%-RZ signal has a larger spectral width than a 66\%-RZ signal. Furthermore the spectrum of a 66\%-RZ signal shows no peak at the carrier frequency and the spectral tones are at $\omega=\omega_0\pm2\pi\cdot R/2$.
 
-This is a result of modulating the signal with $\omega_m=2\pi\cdot R/2$ in the push-pull mode. Because there is no additional unmodulated carrier added, the frequency $\omega_0$ is supressed in the spectrum. Through the modulation, neighboring bits have a phase difference of $\pi$. This means, that the "`1"' of a signal, are one half of the time positive, the other half of the time negative. This results in a zero mean signal. 
-\comseb{bin nicht ganz zufrieden mit der formulierung}
-
-
-
-
-
-
-\footnote[2]{Kaminow, I. P. ; Li, T. ; Willner, A. : Systems and Networks. Amsterdam :
+This is a result of modulating the signal with $\omega_m=2\pi\cdot R/2$ in the push-pull mode. Because there is no additional unmodulated carrier added, the frequency $\omega_0$ is supressed in the spectrum. Through the modulation, neighboring bits have a phase difference of $\pi$. This means, that the "`1"' of a signal, are one half of the time positive, the other half of the time negative. This results in a zero mean signal. \footnote[2]{Kaminow, I. P. ; Li, T. ; Willner, A. : Systems and Networks. Amsterdam :
 Elsevier/Academic Press, 2008 (Optical Fiber Telecommunications V)}
 
