@@ -12,7 +12,7 @@ In the Experiment an optical transmitter was simulated in OptSim. The Experiment
 \label{fig:P1_aufbau}%
 \end{figure}
 
-For the Experiment an OptiSim Example of a 50~\% RZ-OOK-Transmitter was used. Figure \ref{fig:P1_aufbau} shows the schematic of this example\footnotemark[3]. In the upper left-hand side theres the PRBS which generates a pseudo-random bit-stream. A logical connection path (green) leads to an NRZ-Rectifier (recnrz1) which generates an electrical output signal. Via an MZI this electrical NRZ-signal gets modulated on a 1550~nm laser. 
+For the Experiment an OptiSim Example of a 50~\% RZ-OOK-Transmitter was used. Figure \ref{fig:P1_aufbau} shows the schematic of this example\footnotemark[3]. In the upper left-hand side there's the PRBS which generates a pseudo-random bit-stream. A logical connection path (green) leads to an NRZ-Rectifier (recnrz1) which generates an electrical output signal. Via an MZI this electrical NRZ-signal gets modulated on a 1550~nm laser. 
 
 Starting in the upper left-hand side at the PRBS again, the lower path leads to an divider. Here the DataRate can be divided. In the first project there is no change of the data rate and the divider is 1. Afer that there is an amplifier (egain1) and a time-delay element. Those elements are used to set the driving-voltage for the MZM (PulseCarver).
 
@@ -30,10 +30,10 @@ Figure \ref{fig:P1ExB_Spectra} shows the spectrum of the laser source (red) and 
 \label{fig:P1ExB_1}%
 \end{figure}
 
-Figure \ref{fig:P1ExB_Eye} shows an eye diagramm of the generated NRZ signal. Since a digital signal is regarded, the slopes of the signal are perfectly steep.
-\comseb{evtl noch irgendwas} The measured log Q factor of the NRZ signal is 40 dB. This is the maximum value OptiSim 
+Figure \ref{fig:P1ExB_Eye} shows an eye diagramm of the generated NRZ signal. Since a digital signal is regarded, the slopes of the signal are perfectly steep. The measured log Q factor of the NRZ signal is 40 dB.
 
 Figure \ref{fig:P1ExB_bit} shows the electrical , the optical NRZ  and the optical 50~\% RZ bit sequenze. Both optical sequences match the electrical signal. The RZ signal shows erroneous pulsshape, because the exported data of this signal has not enough datapoints. Figure \ref{fig:P1ExB_FWHM} shows the correct shape of one pulse. In this figure also the full width at half maximum can be measured. With an FWHM of 0.05~ns and a lenght of a bitslot of 0.1~ns the duty cycle of the optical signal is 50~\%.
+
 
 \begin{figure}%
 \centering
@@ -76,7 +76,7 @@ OptiSim gives several possibilities to change parameters of the PIN-diode.
 By changing the quantum efficiency of the diode the output amplitude varies. A large quantum efficiency leads to a higher, a small quantum efficiency leads to a lower output amplitude. 
 
 Changing the -3~dB bandwidth changes the reaction time of the diode. 
-Figure \ref{fig:P2ExB_3dB} shows the output signal of the PIN-diode for different -3~dB bandwidths. The incoming optical signal was a NRZ signal. A bandwidth of 10~GHz (cf. fig. \ref{fig:P2ExB_10}) leads to a rise-time of approximately 0.03~ns. \comwo{ich hab jetzt mal von einer hilfslinie über null bis eine hilfslinie unter max gemessen :-/.. grob}
+Figure \ref{fig:P2ExB_3dB} shows the output signal of the PIN-diode for different -3~dB bandwidths. To demonstrate this effect an incoming optical NRZ signal was used. A bandwidth of 10~GHz (cf. fig. \ref{fig:P2ExB_10}) leads to a rise-time of approximately 0.03~ns. \comwo{ich hab jetzt mal von einer hilfslinie über null bis eine hilfslinie unter max gemessen :-/.. grob}
 
 A -3~dB bandwidth of 40~GHz (cf. fig. \ref{fig:P2ExB_40}) leads to much faster rise and fall times. Here the rise time is about 0.01~ns. The same behaviour can be observed for the fall time.
 \todo{Muss hier rein warum das so ist??}
@@ -101,7 +101,7 @@ In Project 3 an additional fibre was added to the simulation. The fibre "`Cornin
 
 For this project all nonlinear effects were deactivated ("`Advanced control"' -> all options were switched off).
 
-To achieve an optical power of the fibre the optical power of the sender laser needed to be adjusted. Without adjusting the power, there is a power of -3.304 dBm after the 10~km fibre. Setting the CW-Power of the 1550~nm Laser to 3.304 dBm leads to an optical output power of 0 dBm after the 10~km optical fibre.
+To achieve an optical power of 0~dBm out of the fibre the optical power of the sender laser needed to be adjusted. Without adjusting the power, there is a power of -3.304 dBm after the 10~km fibre. Setting the CW-Power of the 1550~nm Laser to 3.304 dBm leads to an optical output power of 0 dBm after the 10~km optical fibre.
 
 Figure \ref{fig:P3ExB_Eye10} shows the eye diagram after 10~km of transmission line. Figure \ref{fig:P3ExB_Eye20} shows he eye diagram after 20~km transmission line. Through the dispersion, there is an overlap of two neighbouring "`1s"'. At a fiber length of 10 km this overlap is marginally low. At the length of 20~km the overlap increases significantly. Hence this overlap only occurs for two neighbouring "1s" it will not lead to problems in the signal detection. If the broadening of the pulse is increased, the overlap even occurs in the bitpattern "101". Then it is possible, that the "0" between the "1s" is interpreted as a "1". 
 \comseb{Ich bin mir net sicher ob das stimmt. das hab ich mir so überlegt}
