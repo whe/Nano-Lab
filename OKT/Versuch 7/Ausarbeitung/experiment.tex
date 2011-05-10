@@ -64,7 +64,10 @@ In the next Project two PIN photodetectors with default parameters were inserted
 OptiSim gives several possibilities to change parameters of the PIN-diode. 
 By changing the quantum efficiency of the diode the output amplitude varies. A large quantum efficiency leads to a higher, a small quantum efficiency leads to a lower output amplitude. 
 
-Changing the -3dB bandwidth changes the reaction time of the diode.  
+Changing the -3~dB bandwidth changes the reaction time of the diode. 
+Figure \ref{fig:P2ExB_3dB} shows the output signal of the PIN-diode for different -3~dB bandwidths. The incoming optical signal was a NRZ signal. A bandwidth of 10~GHz (cf. fig. \ref{fig:P2ExB_10}) leads to a rise-time of approximately 0.2~ns. This is the complete bit slot length.
+
+A -3~dB bandwidht of 40~GHz (cf. fig. \ref{fig:P2ExB_40}) leads to much faster rise and fall times. Here the rise time is about 0.02~ns.
 
 \begin{figure}%
 \centering
@@ -72,7 +75,7 @@ Changing the -3dB bandwidth changes the reaction time of the diode.
 	\subfloat[10~GHz]{\includegraphics[totalheight=6 cm]{Grafiken/P2ExB_10.pdf}\label{fig:P2ExB_10}~}
 	\subfloat[40~GHz]{\includegraphics[totalheight=6 cm]{Grafiken/P2ExB_40.pdf} \label{fig:P2ExB_40}}%
 %\end{adjustwidth}
-\caption{...}
+\caption{The rise- and fall time of the signal depends on the -3 dB bandwidth (\textbf{a)} 10~GHz and \textbf{b)} 40~GHz) of the PIN-diode.}
 \label{fig:P2ExB_3dB}%
 \end{figure}
 
