@@ -106,6 +106,15 @@ Figure \ref{fig:P3ExB_Eye10} shows the eye diagram after 10~km of transmission l
 
 Figure \ref{fig:P3ExB_Q} shows the \textit{Q}-factor of different fibre length. After 10~km the \textit{Q}-factor is 39.99~dB. With increasing fibre length the \textit{Q}-factor decreases. Figure \ref{fig:P3ExB_Q} shows in the measured range a linear dependency between \textit{Q} and the fibre length. At 20~km \textit{Q}~=~34.40~dB, at 30~km $Q=29.66$~dB and at 40~km $Q=24.27$~dB.
 \todo{how are the q-factors measured}
+\comwo{argh... das ist auch arg aus dem finger gesaugt, schau lieber nochmal drüber als standardabweichungsexperte... vergleiche 22.
+6 - Q Estimator im vorbereitungsdingens}
+Because the pulse broadening caused by the fibre dispersion the standard deviation the signal samples increases and the mean of the signal samples decreases. Using the expression 
+\begin{equation}
+Q = \frac{m_1-m_0}{\sigma_1+\sigma_0}
+\label{eq:Q-factor}
+\end{equation}
+with the means $m_0$ and $m_1$ and the standard deviations of the signal samples $\sigma_0$ and $\sigma_1$. The subscript stands for a received "`0"' or "`1"'. In our case mean and standard deviation of a received "`0"' is 0. 
+The $Q$-factor of the signal gets lower with increasing pulse broadening and therefore with a increasing fibre length. 
 \todo{discuss the numerical values}
 For the 20~km transmission there is a Jitter of $\sim$1~ps. With a bit-slot length of 0.1~ns the jitter is 1~\% of the bit-slot length.
 
