@@ -58,10 +58,23 @@ The now generated signal shows pulses with a FWHM of 0.03~ns.
 
 
 \section{Project 2}
-In the next Project two PIN photodetectors were inserted. One at the exit of the NRZ-MZM and the other after the optical amplifier("`oampfg1"') for the RZ signal. To display the signal a "`Electrical Monitor"' was placed behind each of the detectors. After running the simulation the eye diagrams of each signal was recorded. \todo{Eye diagrams + Q-factor}
+In the next Project two PIN photodetectors with default parameters were inserted. One at the exit of the NRZ-MZM and the other after the optical amplifier("`oampfg1"') for the RZ signal. To display the signal a "`Electrical Monitor"' was placed behind each of the detectors. After running the simulation the eye diagrams of each signal was recorded. \todo{Eye diagrams + Q-factor}
 
 
+OptiSim gives several possibilities to change parameters of the PIN-diode. 
+By changing the quantum efficiency of the diode the output amplitude varies. A large quantum efficiency leads to a higher, a small quantum efficiency leads to a lower output amplitude. 
 
+Changing the -3dB bandwidth changes the reaction time of the diode.  
+
+\begin{figure}%
+\centering
+%\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[10~GHz]{\includegraphics[totalheight=6 cm]{Grafiken/P2ExB_10.pdf}\label{fig:P2ExB_10}~}
+	\subfloat[40~GHz]{\includegraphics[totalheight=6 cm]{Grafiken/P2ExB_40.pdf} \label{fig:P2ExB_40}}%
+%\end{adjustwidth}
+\caption{...}
+\label{fig:P2ExB_3dB}%
+\end{figure}
 
 
 
@@ -94,16 +107,32 @@ For the 20~km transmission there is a Jitter of $\sim$1~ps. With a bit-slot leng
 \label{fig:P3ExB_Eye}%
 \end{figure}
 
+
 \begin{figure}%
 \centering
-\includegraphics[width=.5\columnwidth]{Grafiken/P3ExB_Q.pdf}%
-\caption{\textit{Q}-factor over fibre lenght}%
-\label{fig:P3ExB_Q}%
+%\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[\textit{Q}-factor vs. fibre lenght]{\includegraphics[totalheight=6 cm]{Grafiken/P3ExB_Q.pdf}\label{fig:P3ExB_Q}~}
+	\subfloat[\textit{Q}-factor vs. FWHM of the optical source]{\includegraphics[totalheight=6 cm]{Grafiken/P3ExC_Q.pdf} \label{fig:P3ExC_Q}}%
+%\end{adjustwidth}
+\caption{\textit{Q}-factors of the optical signal.}
+\label{fig:P3_Q}%
 \end{figure}
+
+Table \ref{tab:P3ExB_loss} shows the calculated and the measured losses of the fibre with different fibre lengths. For the calculation a attenuation of $\alpha_0=0.19$~dB/km was used. The measured losses are a little bit smaller then the calculated values. This could be caused by \todo{Warum sind die unterschiedlich?}
+
+Because of the fiber there is also a broadening of the transmitted pulse. To examine the influence of the spectral FWHM of the optical source on the transmission characteristic different spectral widths of the laser source were used. The \textit{Q}-factor was measured after the PIN-diode. In Figure \ref{fig:P3ExC_Q} the logarithmic \textit{Q}-factor is shown at different FWHMs. The \textit{Q}-factor decreases fast with increasing FWHM of the optical source. At a FWHM of $\sim$75~MHz $Q$ reaches 30~dB and stops decreasing so fast and is nearly constant.
+
+To measure the impulse's emporal half-maximum full-width differenz $\Delta t_{\mathrm{H}}$ a prepared bit sequence was loaded ("`costum\_1.dat"') and a parameter scan was performet for the lenght of 10, 20, 30 and 40~km.
+The values of $\Delta t_{\mathrm{H}}$ were calculated with
+\begin{equation}
+\Delta t_{\mathrm{H}} = L\cdot((C\cdot\Delta\lambda)+(D\cdot\Delta\lambda^2))
+\label{eq:delta_t}
+\end{equation}
+where $L$ is the length of the fibre, $C$ is the chromatic dispersion, $D$ is the Derivative of the chromatic dispersion and $\Delta\lambda$ is the spectral range of the signal. The used values were $C=16~\frac{\mathrm{ps}}{\mathrm{nm}\cdot \mathrm{km}}$, $D=0.086~\frac{\mathrm{ps}}{\mathrm{nm}^2\cdot \mathrm{km}}$ and $\Delta\lambda=0.124$~nm are given in the materials for the preparation\footnotemark[3].
 
 \begin{table}%
 \centering
-\caption{Losses}
+\caption{Losses and temporal FWHM differences}
 \begin{tabular}{ccccc}
 
 \toprule
@@ -119,23 +148,5 @@ in km&Calculated&Measured&Calculated&Measured\\
 \label{tab:P3ExB_loss}
 \end{table}
 
-Table \ref{tab:P3ExB_loss} shows the calculated and the measured losses of the fibre with different fibre lengths. For the calculation a attenuation of $\alpha_0=0.19$~dB/km was used. The measured losses are a little bit smaller then the calculated values. This could be caused by \todo{Warum sind die unterschiedlich?}
-
-Because of the fiber there is also a broadening of the transmitted pulse. To examine the influence of the spectral FWHM of the optical source on the transmission characteristic different spectral widths of the laser source were used. The \textit{Q}-factor was measured after the PIN-diode. In Figure \ref{fig:P3ExC_Q} the logarithmic \textit{Q}-factor is shown at different FWHMs. The \textit{Q}-factor decreases fast with increasing FWHM of the optical source. At a FWHM of $\sim$75~MHz $Q$ reaches 30~dB and stops decreasing so fast and is nearly constant.
-
-\begin{figure}%
-\centering
-\includegraphics[width=.5\columnwidth]{Grafiken/P3ExC_Q.pdf}%
-\caption{\textit{Q}-factor over FWHM of the optical source}%
-\label{fig:P3ExC_Q}%
-\end{figure}
-
-To measure the impulse's emporal half-maximum full-width differenz $\Delta t_{\mathrm{H}}$ a prepared bit sequence was loaded ("`costum\_1.dat"') and a parameter scan was performet for the lenght of 10, 20, 30 and 40~km.
-The values of $\Delta t_{\mathrm{H}}$ were calculated with
-\begin{equation}
-\Delta t_{\mathrm{H}} = L\cdot((C\cdot\Delta\lambda)+(D\cdot\Delta\lambda^2))
-\label{eq:delta_t}
-\end{equation}
-where $L$ is the length of the fibre, $C$ is the chromatic dispersion, $D$ is the Derivative of the chromatic dispersion and $\Delta\lambda$ is the spectral range of the signal. The used values were $C=16~\frac{\mathrm{ps}}{\mathrm{nm}\cdot \mathrm{km}}$, $D=0.086~\frac{\mathrm{ps}}{\mathrm{nm}^2\cdot \mathrm{km}}$ and $\Delta\lambda=0.124$~nm are given in the materials for the preparation\footnotemark[3].
 
 Table \ref{tab:P3ExB_loss} shows the calculated and the measured broadening of the pulses. With a larger fibre-length the temporal FWHM difference gets larger. But there is a large difference between the calculated and the measured values. \todo{Warum sind die Werte so viel anders????}
