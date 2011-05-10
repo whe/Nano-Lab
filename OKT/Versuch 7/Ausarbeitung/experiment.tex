@@ -12,7 +12,7 @@ In the Experiment an optical transmitter was simulated in OptSim. The Experiment
 \label{fig:P1_aufbau}%
 \end{figure}
 
-For the Experiment an OptiSim Example of a 50~\% RZ-OOK-Transmitter was used. Figure \ref{fig:P1_aufbau} shows the schematic of this example\footnotemark[3]. In the upper left-hand side theres the PRBS which generates a pseudo-random bit-stream. A logical connection path (green) leads to an NRZ-Rectifier (recnrz1) which generates an electrical output signal. Via an MZI this electrical NRZ-signal gets modulated on a 1550~nm laser. 
+For the Experiment an OptiSim Example of a 50~\% RZ-OOK-Transmitter was used. Figure \ref{fig:P1_aufbau} shows the schematic of this example\footnotemark[3]. In the upper left-hand side there's the PRBS which generates a pseudo-random bit-stream. A logical connection path (green) leads to an NRZ-Rectifier (recnrz1) which generates an electrical output signal. Via an MZI this electrical NRZ-signal gets modulated on a 1550~nm laser. 
 
 Starting in the upper left-hand side at the PRBS again, the lower path leads to an divider. Here the DataRate can be divided. In the first project there is no change of the data rate and the divider is 1. Afer that there is an amplifier (egain1) and a time-delay element. Those elements are used to set the driving-voltage for the MZM (PulseCarver).
 
@@ -32,7 +32,7 @@ Figure \ref{fig:P1ExB_Spectra} shows the spectrum of the laser source (red) and 
 
 Figure \ref{fig:P1ExB_Eye} shows an eye diagramm of the generated NRZ signal. Since a digital signal is regarded, the slopes of the signal are perfectly steep.
 \comseb{evtl noch irgendwas}
-Figure \ref{fig:P1ExB_bit} shows the electrical , the optical NRZ  and the optical 50~\% RZ bit sequenze. Both optical sequences match the electrical signal. The RZ signal shows errorous pulsshape, because the exported data of this signal has not enough datapoints. Figure \ref{fig:P1ExB_FWHM} shows the correct shape of one pulse. In this figure also the full width at half maximum can be measured. With an FWHM of 0.05~ns and a lenght of a bitslot of 0.1~ns the duty cycle of the optical signal is 50~\%.
+Figure \ref{fig:P1ExB_bit} shows the electrical , the optical NRZ  and the optical 50~\% RZ bit sequenze. Both optical sequences match the electrical signal. The RZ signal shows an errorous pulsshape, because the exported data of this signal has not enough datapoints. Figure \ref{fig:P1ExB_FWHM} shows the correct shape of one pulse. In this figure also the full width at half maximum can be measured. With an FWHM of 0.05~ns and a lenght of a bitslot of 0.1~ns the duty cycle of the optical signal is 50~\%.
 
 \begin{figure}%
 \centering
