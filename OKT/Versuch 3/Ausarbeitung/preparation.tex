@@ -74,7 +74,7 @@ To transform $Y(k)$ from the momentum space into the position-space the followin
 
 \begin{equation} 
 \begin{split} 
-\breve{Y}(k)=\frac{1}{\sqrt{2\pi}}\int^{\infty}_{-\infty}P\cdot r_{\Delta k}(k)\mathrm{e}^{jkz}\mathrm{d}k \\
+\breve{Y}(z)=\frac{1}{\sqrt{2\pi}}\int^{\infty}_{-\infty}P\cdot r_{\Delta k}(k)\mathrm{e}^{jkz}\mathrm{d}k \\
 =			\frac{1}{\sqrt{2\pi}}\int^{\frac{\Delta k}{2}}_{-\frac{\Delta k}{2}}P\cdot \mathrm{e}^{jkz}\mathrm{d}k\\
 =			\frac{P}{\sqrt{2\pi}}\left[\frac{\mathrm{e}^{jkz}}{jz}\right]^{\frac{\Delta k}{2}}_{-\frac{\Delta k}{2}}\\
 =		\frac{P}{\sqrt{2\pi}}\left(\frac{\mathrm{e}^{j\Delta kz}}{jz}-\frac{\mathrm{e}^{-j\Delta kz}}{jz}\right)\\
@@ -91,3 +91,5 @@ With equation \eqref{eq:verschiebung} this leads to
 \breve{S}(z) = \frac{P}{\sqrt{2\pi}}\Delta k \cdot\mathrm{sinc}(\frac{\Delta k}{2}z)\cdot\mathrm{e}^{-jzk_0}
 \label{eq:S_ortsraum}
 \end{equation}
+
+\subsection{What is the FWHM of \breve{S}(z)?}
