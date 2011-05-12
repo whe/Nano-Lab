@@ -49,3 +49,45 @@ S(k)=P\cdot r_{\Delta k}(k-k_0)\qquad\laplace\qquad \mathrm{e}^{-jzk_0}\cdot P\D
 \label{eq:Transformation}
 \end{equation}
 with si$(x)=\frac{\mathrm{sin}(x)}{x}$
+
+
+\comwo{Nochmal ohne Korrespondenz, sondern selbst gerechnet:... überleg dir was richtig ist}
+
+A Fourier transformation of $S(k)$ leads to $\breve{S}(z)$. To performe the Fourier transformation the function $Y(k)$ is introduced.
+\begin{equation}
+S(k)=P\cdot r_{\Delta k}(k-k_0)=Y(k-k_0)
+\label{eq:hilfsunktion}
+\end{equation} 
+
+
+\begin{equation}
+S(k)=Y(k-k_0)\qquad \laplace \qquad \breve{Y}(z)\cdot\mathrm{e}^{-jzk_0}=\breve{S}(z)
+\label{eq:verschiebung}
+\end{equation}
+
+\begin{equation}
+Y(k)=P\cdot r_{\Delta k}(k)
+\label{eq:Y_k}
+\end{equation}
+
+To transform $Y(k)$ from the momentum space into the position-space the following integral needs to be solved:
+
+\begin{equation} 
+\begin{split} 
+\breve{Y}(k)=\frac{1}{\sqrt{2\pi}}\int^{\infty}_{-\infty}P\cdot r_{\Delta k}(k)\mathrm{e}^{jkz}\mathrm{d}k \\
+=			\frac{1}{\sqrt{2\pi}}\int^{\frac{\Delta k}{2}}_{-\frac{\Delta k}{2}}P\cdot \mathrm{e}^{jkz}\mathrm{d}k\\
+=			\frac{P}{\sqrt{2\pi}}\left[\frac{\mathrm{e}^{jkz}}{jz}\right]^{\frac{\Delta k}{2}}_{-\frac{\Delta k}{2}}\\
+=		\frac{P}{\sqrt{2\pi}}\left(\frac{\mathrm{e}^{j\Delta kz}}{jz}-\frac{\mathrm{e}^{-j\Delta kz}}{jz}\right)\\
+=		\frac{P}{\sqrt{2\pi}}\cdot\frac{2\mathrm{sin}(\frac{\Delta k}{2}z)}{z}\\
+=		\frac{P}{\sqrt{2\pi}}\Delta k \cdot\mathrm{si}(\frac{\Delta k}{2}z)
+\end{split}
+\end{equation}
+
+with si$(x)=\frac{\mathrm{sin}(x)}{x}$
+
+With equation \eqref{eq:verschiebung} this leads to
+
+\begin{equation}
+\breve{S}(z) = \frac{P}{\sqrt{2\pi}}\Delta k \cdot\mathrm{si}(\frac{\Delta k}{2}z)\cdot\mathrm{e}^{-jzk_0}
+\label{eq:S_ortsraum}
+\end{equation}
