@@ -74,7 +74,7 @@ To transform $Y(k)$ from the momentum space into the position-space the followin
 
 \begin{equation} 
 \begin{split} 
-\breve{Y}(k)=\frac{1}{\sqrt{2\pi}}\int^{\infty}_{-\infty}P\cdot r_{\Delta k}(k)\mathrm{e}^{jkz}\mathrm{d}k \\
+\breve{Y}(z)=\frac{1}{\sqrt{2\pi}}\int^{\infty}_{-\infty}P\cdot r_{\Delta k}(k)\mathrm{e}^{jkz}\mathrm{d}k \\
 =			\frac{1}{\sqrt{2\pi}}\int^{\frac{\Delta k}{2}}_{-\frac{\Delta k}{2}}P\cdot \mathrm{e}^{jkz}\mathrm{d}k\\
 =			\frac{P}{\sqrt{2\pi}}\left[\frac{\mathrm{e}^{jkz}}{jz}\right]^{\frac{\Delta k}{2}}_{-\frac{\Delta k}{2}}\\
 =		\frac{P}{\sqrt{2\pi}}\left(\frac{\mathrm{e}^{j\Delta kz}}{jz}-\frac{\mathrm{e}^{-j\Delta kz}}{jz}\right)\\
@@ -92,6 +92,15 @@ With equation \eqref{eq:verschiebung} this leads to
 \label{eq:S_ortsraum}
 \end{equation}
 
+\subsection{What is the FWHM of $\breve{S}(z)$?}
+
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{grafiken/FWHM.pdf}%
+\caption{}%
+\label{}%
+\end{figure}
+
 
 \section{Calculate the depth profile of a spool of adhesive tape}
 
@@ -101,6 +110,9 @@ In a .mat file the measurement of the interface term of a spool of adhesive tape
   \centering
   \includegraphics[width=\columnwidth]{Grafiken/profile.pdf}
 
-\caption{Amplitude transfer function (left) and Intensity transfer function (right) of a Mach-Zehnder Modulator }
+\caption{ }
 \label{fig:profile}
 \end{figure}
+
+
+
