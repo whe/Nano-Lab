@@ -12,11 +12,11 @@ In the Experiment an optical transmitter was simulated in OptSim. The Experiment
 \label{fig:P1_aufbau}%
 \end{figure}
 
-For the Experiment an OptiSim Example of a 50~\% RZ-OOK-Transmitter was used. Figure \ref{fig:P1_aufbau} shows the schematic of this example\footnotemark[3]. In the upper left-hand side there's the PRBS which generates a pseudo-random bit-stream. A logical connection path (green) leads to an NRZ-Rectifier (recnrz1) which generates an electrical output signal. Via an MZI this electrical NRZ-signal gets modulated on a 1550~nm laser. 
+For the Experiment an OptiSim Example of a 50~\% RZ-OOK-Transmitter was used. Figure \ref{fig:P1_aufbau} shows the schematic of this example \footnote[3]{Materials for the Preparation of Experiment 7: Simulation of Optical Transmitters}. In the upper left-hand side there's the PRBS which generates a pseudo-random bit-stream. A logical connection path (green) leads to an NRZ-Rectifier (recnrz1) which generates an electrical output signal. Via an MZI this electrical NRZ-signal gets modulated on a 1550~nm laser. 
 
 Starting in the upper left-hand side at the PRBS again, the lower path leads to an divider. Here the DataRate can be divided. In the first project there is no change of the data rate and the divider is 1. Afer that there is an amplifier (egain1) and a time-delay element. Those elements are used to set the driving-voltage for the MZM (PulseCarver).
 
-For driving the MZ in "`push-pull"' mode (cf. \ref{sec:MZM}) the phase of one electrical paths is shifted. The folloing MZM (PulseCarver) is used to carve the NRZ pulses to a NRZ-OOK signal. \footnote[3]{Materials for the Preparation of Experiment 7: Simulation of Optical Transmitters}
+For driving the MZ in "`push-pull"' mode (cf. \ref{sec:MZM}) the phase of one electrical paths is shifted. The folloing MZM (PulseCarver) is used to carve the NRZ pulses to a NRZ-OOK signal.
 
 Figure \ref{fig:P1ExB_Spectra} shows the spectrum of the laser source (red) and the spectrum of the optical NRZ signal (green). At a frequency of $f~\approx~193.415$~THz both spectra show a large peak. This is the laser frequency and therefor also the carrier frequency of the NRZ-Signal. 10~GHz beside the carrier frequency are the peaks of the 10~Gbit/s NRZ signal and it's harmonics. 
 
@@ -76,10 +76,10 @@ OptiSim gives several possibilities to change parameters of the PIN-diode.
 By changing the quantum efficiency of the diode the output amplitude varies. A large quantum efficiency leads to a higher, a small quantum efficiency leads to a lower output amplitude. 
 
 Changing the -3~dB bandwidth changes the reaction time of the diode. 
-Figure \ref{fig:P2ExB_3dB} shows the output signal of the PIN-diode for different -3~dB bandwidths. To demonstrate this effect an incoming optical NRZ signal was used. A bandwidth of 10~GHz (cf. fig. \ref{fig:P2ExB_10}) leads to a rise-time of approximately 0.03~ns. \comwo{ich hab jetzt mal von einer hilfslinie über null bis eine hilfslinie unter max gemessen :-/.. grob}
+Figure \ref{fig:P2ExB_3dB} shows the output signal of the PIN-diode for different -3~dB bandwidths. To demonstrate this effect an incoming optical NRZ signal was used. A bandwidth of 10~GHz (cf. fig. \ref{fig:P2ExB_10}) leads to a rise-time of approximately 0.03~ns.
 
 A -3~dB bandwidth of 40~GHz (cf. fig. \ref{fig:P2ExB_40}) leads to much faster rise and fall times. Here the rise time is about 0.01~ns. The same behaviour can be observed for the fall time.
-\todo{Muss hier rein warum das so ist??}\comseb{im zweifel nein}
+
 
 \begin{figure}%
 \centering
@@ -96,20 +96,13 @@ A -3~dB bandwidth of 40~GHz (cf. fig. \ref{fig:P2ExB_40}) leads to much faster r
 
 \section{Project 3}
 \label{sec:P3}
-In Project 3 an additional fibre was added to the simulation. The fibre "`CorningSMF28\_1550"' was inserted between the Pulse Carver and the in project 2 added PIN diode. 
-\todo{What parameters do we know?}\comwo{Muss das wirkilich rein?}\comseb{wir kennen alle ;) -> weglassen}
-
-For this project all nonlinear effects were deactivated ("`Advanced control"' -> all options were switched off).
+In Project 3 an additional fibre was added to the simulation. The fibre "`CorningSMF28\_1550"' was inserted between the Pulse Carver and the in project 2 added PIN diode. For this project all nonlinear effects were deactivated ("`Advanced control"' -> all options were switched off).
 
 To achieve an optical power of 0~dBm out of the fibre the optical power of the sender laser needed to be adjusted. Without adjusting the power, there is a power of -3.304 dBm after the 10~km fibre. Setting the CW-Power of the 1550~nm Laser to 3.304 dBm leads to an optical output power of 0 dBm after the 10~km optical fibre.
 
-Figure \ref{fig:P3ExB_Eye10} shows the eye diagram after 10~km of transmission line. Figure \ref{fig:P3ExB_Eye20} shows he eye diagram after 20~km transmission line. Through the dispersion, there is an overlap of two neighbouring "`1s"'. At a fiber length of 10 km this overlap is marginally low. At the length of 20~km the overlap increases significantly. Hence this overlap only occurs for two neighbouring "1s" it will not lead to problems in the signal detection. If the broadening of the pulse is increased, the overlap even occurs in the bitpattern "101". Then it is possible, that the "0" between the "1s" is interpreted as a "1". 
-\comseb{Ich bin mir net sicher ob das stimmt. das hab ich mir so überlegt}
+Figure \ref{fig:P3ExB_Eye10} shows the eye diagram after 10~km of transmission line. Figure \ref{fig:P3ExB_Eye20} shows he eye diagram after 20~km transmission line. Through the dispersion, there is inter symbol interference (ISI) of two neighbouring "`1s"'. At a fiber length of 10 km this overlap is marginally low. At the length of 20~km ISI increases significantly. Hence this overlap only occurs for two neighbouring "1s" it will not lead to problems in the signal detection. If the broadening of the pulse is increased, the overlap even occurs in the bitpattern "101". Then it is possible, that the "0" between the "1s" is interpreted as a "1". 
 
 Figure \ref{fig:P3ExB_Q} shows the \textit{Q}-factor of different fibre length. After 10~km the \textit{Q}-factor is 39.99~dB. With increasing fibre length the \textit{Q}-factor decreases. Figure \ref{fig:P3ExB_Q} shows in the measured range a linear dependency between \textit{Q} and the fibre length. At 20~km \textit{Q}~=~34.40~dB, at 30~km $Q=29.66$~dB and at 40~km $Q=24.27$~dB.
-\todo{how are the q-factors measured}
-\comwo{argh... das ist auch arg aus dem finger gesaugt, schau lieber nochmal drüber als standardabweichungsexperte... vergleiche 22.
-6 - Q Estimator im vorbereitungsdingens}\comseb{is schon in ordnung, ich weiß es auch net besser}
 Because the pulse broadening caused by the fibre dispersion the standard deviation the signal samples increases and the mean of the signal samples decreases. Using the expression 
 \begin{equation}
 Q = \frac{m_1-m_0}{\sigma_1+\sigma_0}
@@ -118,7 +111,6 @@ Q = \frac{m_1-m_0}{\sigma_1+\sigma_0}
 with the means $m_0$ and $m_1$ and the standard deviations of the signal samples $\sigma_0$ and $\sigma_1$. The subscript stands for a received "`0"' or "`1"'. In our case mean and standard deviation of a received "`0"' is 0. 
 
 The $Q$-factor of the signal gets lower with increasing pulse broadening and therefore with a increasing fibre length. 
-\todo{discuss the numerical values}\comseb{die ham wir eigentl discussed, wir ham gesagt das der zusammenhang linear is}
 For the 20~km transmission there is a Jitter of $\sim$1~ps. With a bit-slot length of 0.1~ns the jitter is 1~\% of the bit-slot length.
 
 
@@ -143,7 +135,7 @@ For the 20~km transmission there is a Jitter of $\sim$1~ps. With a bit-slot leng
 \label{fig:P3_Q}%
 \end{figure}
 
-Table \ref{tab:P3ExB_loss} shows the calculated and the measured losses of the fibre with different fibre lengths. For the calculation a attenuation of $\alpha_0=0.19$~dB/km was used. The measured losses are a little bit smaller then the calculated values. This could be caused by \todo{Warum sind die unterschiedlich?}
+Table \ref{tab:P3ExB_loss} shows the calculated and the measured losses of the fibre with different fibre lengths. The attenuation is calculated by $\alpha = \alpha_0 \cdot L$ with $\alpha_0=0.19$~dB/km and the fiber length $L$. The measured losses are a little bit smaller then the calculated values. As a more realistic approach the calculation of the attenuation is more complex, since it depends on the wavelength. Thus for a certain spectral width the attenuation is not constant. This shoud be taken into account by the simulation program.
 
 Because of the fiber there is also a broadening of the transmitted pulse. To examine the influence of the spectral FWHM of the optical source on the transmission characteristic different spectral widths of the laser source were used. The \textit{Q}-factor was measured behind the PIN-diode. In Figure \ref{fig:P3ExC_Q} the logarithmic \textit{Q}-factor is shown at different FWHMs. The \textit{Q}-factor decreases fast with increasing FWHM of the optical source. At a FWHM of $\sim$75~MHz $Q$ reaches 30~dB and stops decreasing so fast and is nearly constant.
 
@@ -157,21 +149,21 @@ where $L$ is the length of the fibre, $C$ is the chromatic dispersion, $D$ is th
 
 \begin{table}%
 \centering
-\caption{Losses and temporal FWHM differences}
+\caption{Losses and temporal FWHM}
 \begin{tabular}{ccccc}
 
 \toprule
 Fibre length & Loss in dB&&$\Delta t_{\mathrm{H}}$ in ps&\\
 in km&Calculated&Measured&Calculated&Measured\\
 \midrule
-10&	1.9&1.72&19,85	&2	\\
-20&	3.8&3.58&39,7	&	10\\
-30&	5.7&5.31&59,56	&	28\\
-40&	7.6&7.19&79,41	&	47\\
+10&	1.9&1.7&20	&	36	\\
+20&	3.8&3.6&40	&	44\\
+30&	5.7&5.3&60	&	62\\
+40&	7.6&7.2&79	&	81\\
 \bottomrule 
 \end{tabular}
 \label{tab:P3ExB_loss}
 \end{table}
 
-
-Table \ref{tab:P3ExB_loss} shows the calculated and the measured broadening of the pulses. With a larger fibre-length the temporal FWHM difference gets larger. But there is a large difference between the calculated and the measured values. \todo{Warum sind die Werte so viel anders????}
+ 
+Table \ref{tab:P3ExB_loss} shows the calculated and the measured broadening of the pulses. With a larger fibre-length the temporal FWHM difference gets larger. If compared to the calculated values, this can also be seen. But the calculated values differ from the measured ones.  The pulse shape for the calculation is approximated as a gaussian, but the real pulse is not perfectly shaped. For long fiber length the pulse broadens and thus fits better to the gaussian shape. 
