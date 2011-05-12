@@ -6,7 +6,7 @@
 \subsection{Calculate the central wavenumber $k_0$ and the broadness of the spectral envelope function $\Delta k$}
 
 \begin{equation}
-k=\frac{2\pi}{\lambda} \rightarrow \frac{\Delta k}{\Delta\lambda}=-\frac{2\pi}{\lambda^2} 
+k_0=\frac{2\pi}{\lambda_0} \rightarrow \frac{\Delta k}{\Delta\lambda}=-\frac{2\pi}{\lambda_0^2} 
 \label{eq:delta_k_herleitung}
 \end{equation}
 
@@ -16,8 +16,36 @@ k=\frac{2\pi}{\lambda} \rightarrow \frac{\Delta k}{\Delta\lambda}=-\frac{2\pi}{\
 \end{equation}
 
 With $\Delta\lambda = 130$~nm and $\lambda_0=1310~$nm equation \ref{eq:delta_k} becomes
-
+\comwo{wie schreib ich, dass das negative vorzeichen bei delta k hier wegfällt}
+\begin{equation}
+k_0=\frac{2\pi}{1310~\mathrm{nm}}=4.80 \cdot 10^{6}~\mathrm{m}
+\label{eq:k_0_wert}
+\end{equation}
+and
 \begin{equation}
 \Delta k = \frac{2\pi}{1310 ^2~\mathrm{nm}^2}\cdot130~\mathrm{nm}=476\cdot10^3~\mathrm{m}
-\label{eq:}
+\label{eq:delta_k_wert}
 \end{equation}
+
+\subsection{Calculate Foriertransformations-F....$=S(z)$with respect to $P$}
+The spectral power envelope $S(k)$ is a rectalngle of height $P$.
+\begin{equation}
+S(k)=P\cdot r_{\Delta k}(k-k_0)
+\label{eq:S_k}
+\end{equation}
+with the rectangular function 
+
+\begin{equation}
+r_{\Delta k}(k-k_0)=\begin{cases}
+1,&\mathrm{for}~|k-k_0|\leq\frac{\Delta k}{2} \\
+0,&\mathrm{for}~|k-k_0|>\frac{\Delta k}{2} 
+\end{cases}
+\label{eq:rect}
+\end{equation}
+
+A fourier transformation of $S(k)$ leads to $\breve{S}(z)$:
+\begin{equation}
+S(k)=P\cdot r_{\Delta k}(k-k_0)\qquad\laplace\qquad \mathrm{e}^{-jzk_0}\cdot P\Delta k\mathrm{si}(z\frac{\Delta k}{2})=\breve{S}(z)
+\label{eq:Transformation}
+\end{equation}
+with si$(x)=\frac{\mathrm{sin}(x)}{x}$
