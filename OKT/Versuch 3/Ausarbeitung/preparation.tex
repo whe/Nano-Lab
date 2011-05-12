@@ -18,12 +18,12 @@ k_0=\frac{2\pi}{\lambda_0} \rightarrow \frac{\Delta k}{\Delta\lambda}=-\frac{2\p
 With $\Delta\lambda = 130$~nm and $\lambda_0=1310~$nm equation \ref{eq:delta_k} becomes
 \comwo{wie schreib ich, dass das negative vorzeichen bei delta k hier wegfällt}
 \begin{equation}
-k_0=\frac{2\pi}{1310~\mathrm{nm}}=4.80 \cdot 10^{6}~\mathrm{m}
+k_0=\frac{2\pi}{1310~\mathrm{nm}}=4.80 \cdot 10^{6}~\mathrm{\upmu m}^{-1}
 \label{eq:k_0_wert}
 \end{equation}
 and
 \begin{equation}
-\Delta k = \frac{2\pi}{1310 ^2~\mathrm{nm}^2}\cdot130~\mathrm{nm}=476\cdot10^3~\mathrm{m}
+\Delta k = \frac{2\pi}{1310 ^2~\mathrm{nm}^2}\cdot130~\mathrm{nm}=0,48\mathrm{\upmu m}^{-1}
 \label{eq:delta_k_wert}
 \end{equation}
 
@@ -43,23 +43,23 @@ r_{\Delta k}(k-k_0)=\begin{cases}
 \label{eq:rect}
 \end{equation}
 
-A fourier transformation of $S(k)$ leads to $\breve{S}(z)$:
-\begin{equation}
-S(k)=P\cdot r_{\Delta k}(k-k_0)\qquad\laplace\qquad \mathrm{e}^{-jzk_0}\cdot P\Delta k\mathrm{sinc}(z\frac{\Delta k}{2})=\breve{S}(z)
-\label{eq:Transformation}
-\end{equation}
-with sinc$(x)=\frac{\mathrm{sin}(x)}{x}$
+% A fourier transformation of $S(k)$ leads to $\breve{S}(z)$:
+% \begin{equation}
+% S(k)=P\cdot r_{\Delta k}(k-k_0)\qquad\laplace\qquad \mathrm{e}^{-jzk_0}\cdot P\Delta k\mathrm{sinc}(z\frac{\Delta k}{2})=\breve{S}(z)
+% \label{eq:Transformation}
+% \end{equation}
+% with sinc$(x)=\frac{\mathrm{sin}(x)}{x}$
+% 
+% 
+% \comwo{Nochmal ohne Korrespondenz, sondern selbst gerechnet:... überleg dir ob was davon und wenn ja welches richtig ist}
 
-
-\comwo{Nochmal ohne Korrespondenz, sondern selbst gerechnet:... überleg dir ob was davon und wenn ja welches richtig ist}
-
-A Fourier transformation of $S(k)$ leads to $\breve{S}(z)$. To performe the Fourier transformation the function $Y(k)$ is introduced.
-\begin{equation}
-S(k)=P\cdot r_{\Delta k}(k-k_0)=Y(k-k_0)
-\label{eq:hilfsunktion}
-\end{equation} 
-
-
+% A Fourier transformation of $S(k)$ leads to $\breve{S}(z)$. To performe the Fourier transformation the function $Y(k)$ is introduced.
+% \begin{equation}
+% S(k)=P\cdot r_{\Delta k}(k-k_0)=Y(k-k_0)
+% \label{eq:hilfsunktion}
+% \end{equation} 
+% 
+% 
 \begin{equation}
 S(k)=Y(k-k_0)\qquad \laplace \qquad \breve{Y}(z)\cdot\mathrm{e}^{-jzk_0}=\breve{S}(z)
 \label{eq:verschiebung}
