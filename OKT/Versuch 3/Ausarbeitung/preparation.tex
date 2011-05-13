@@ -106,12 +106,13 @@ The determination of the FWHM of $\breve{S}(z)$ was done graphical. Figure \ref{
 
 \subsection{To which spatial resolution in $\upmu$m in z-coordinates does this correspond?}
 
-\todo{Rayleigh-Länge?}
+\todo{Rayleigh-Länge? Aber eigentlich ist unser FWHM ja schon die depth resolution? Einfach die Rechenschritte der vorherigen aufgabe nochmal durchführen, diesmal aber mit $\lambda = \lambda_0 / n$ und $\Delta\lambda = \Delta\lambda_0/n$?}
 \begin{equation}
-z_r = \frac{\pi w_0^2}{\lambda}
+z_r = \frac{\pi w_0^2}{\lambda} = \frac{\pi w_0^2 n}{\lambda_0}
 \label{eq:}
 \end{equation}
-with the beam waist $w_0$. \todo{$w_0/2$ is FWHM, aber mir ist nicht klar wie ich das gegebene $n$ einbau}
+
+with the beam waist $w_0 = 0.5\cdot FWHM$, the vacuumwavelenght $\lambda_0$ and the refractive index $n$.
 
 \section{Calculate the depth profile of a spool of adhesive tape}
 
@@ -123,7 +124,7 @@ In a .mat file the measurement of the interface term of a spool of adhesive tape
   \includegraphics[width=.6\columnwidth]{Grafiken/profile_nm.pdf}
 
 \caption{ }
-\label{fig:profile_nm}
+\label{fig:profile}
 \end{figure}
 
 
