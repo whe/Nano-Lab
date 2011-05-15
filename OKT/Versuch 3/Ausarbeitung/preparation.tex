@@ -96,7 +96,20 @@ With equation \eqref{eq:verschiebung} this leads to
 The 
 
 
-The determination of the FWHM of $\breve{S}(z)$ was done graphical. Figure \ref{fig:fwhm} shows the main peak of $\breve{S}(z)$. The measured FWHM is $\sim$16~$\upmu$m. 
+To determine the FWHM of $\breve{S}(z)$ the Taylor series of sinc($x$) is used.
+
+\begin{equation}
+\begin{split}
+\mathrm{sinc}(x)=\frac{\mathrm{sin}(x)}{x}=\sum^{\infty}_{n=0}{-1^n}{\frac{x^{2n}}{(2n+1)!}}\\
+\approx 1-\frac{x^2}{3!}+\frac{x^4}{5!}.
+\end{split}
+\end{equation}
+For the half width at half maximum $\breve{S}(z) = 0.5\cdot\breve{S}(0)$ must be solved.
+
+The first positive zero of $1-\frac{x^2}{3!}+\frac{x^4}{5!}=0.5$ is 1.92. 
+With $x=\frac{\Delta k}{2}z$ the result of the half width at half maximum is $8~\upmu$m. The FWHM is then $\delta l = 2\cdot 8~\upmu$m = 16~$\upmu$m. Figure \ref{fig:fwhm} shows the main peak of $\breve{S}(z)$ and the and the FWHM.
+
+%The determination of the FWHM of $\breve{S}(z)$ was done graphical. Figure \ref{fig:fwhm} shows the main peak of $\breve{S}(z)$. The measured FWHM is $\sim$16~$\upmu$m. 
 \begin{figure}[h]%
 \centering
 \includegraphics[width=.5\columnwidth]{Grafiken/FWHM.pdf}%
@@ -108,14 +121,13 @@ The determination of the FWHM of $\breve{S}(z)$ was done graphical. Figure \ref{
 \todo{FWHM noch in matlab genau bestimmen!}
 
 \subsection{To which spatial resolution in $\upmu$m in z-coordinates does this correspond?}
-
-\todo{Rayleigh-Länge? Aber eigentlich ist unser FWHM ja schon die depth resolution? Einfach die Rechenschritte der vorherigen aufgabe nochmal durchführen, diesmal aber mit $\lambda = \lambda_0 / n$ und $\Delta\lambda = \Delta\lambda_0/n$?}
+Te resolve two points the peaks in the signal must be at least $\delta l$ apart. Because the light in the specimen travels the way to the reflecting plane and back in the medium with the refractive index $n$ the spatial resolution is
+\comwo{hab ich hier was verrafft?}
 \begin{equation}
-z_r = \frac{\pi w_0^2}{\lambda} = \frac{\pi w_0^2 n}{\lambda_0}
+\delta z = \frac{\delta l}{2n}=\frac{16~\upmu\mathrm{m}}{3}=5.33~\upmu\mathrm{m}
 \label{eq:}
 \end{equation}
 
-with the beam waist $w_0 = 0.5\cdot FWHM$, the vacuumwavelenght $\lambda_0$ and the refractive index $n$.
 
 \section{Calculate the depth profile of a spool of adhesive tape}
 
