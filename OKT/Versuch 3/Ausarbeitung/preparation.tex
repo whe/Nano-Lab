@@ -27,7 +27,7 @@ and
 \label{eq:delta_k_wert}
 \end{equation}
 
-\subsection{Calculate Foriertransformations-F....$=S(z)$with respect to $P$}
+\subsection{Calculate $\mathcal{F}\{S(k)\}=\breve{S}(z)$with respect to $P$}
 The spectral power envelope $S(k)$ is a rectalngle of height $P$.
 \begin{equation}
 S(k)=P\cdot r_{\Delta k}(k-k_0)
@@ -98,7 +98,7 @@ To determine the FWHM of $\breve{S}(z)$ the Taylor series of sinc($x$) is used.
 
 \begin{equation}
 \begin{split}
-\mathrm{sinc}(x)=\frac{\mathrm{sin}(x)}{x}=\sum^{\infty}_{n=0}{-1^n}{\frac{x^{2n}}{(2n+1)!}}\\
+\mathrm{sinc}(x)=\frac{\mathrm{sin}(x)}{x}=\sum^{\infty}_{n=0}{(-1)^n}{\frac{x^{2n}}{(2n+1)!}}\\
 \approx 1-\frac{x^2}{3!}+\frac{x^4}{5!}.
 \end{split}
 \end{equation}
@@ -110,13 +110,11 @@ With $x=\frac{\Delta k}{2}z$ the result of the half width at half maximum is $8~
 %The determination of the FWHM of $\breve{S}(z)$ was done graphical. Figure \ref{fig:fwhm} shows the main peak of $\breve{S}(z)$. The measured FWHM is $\sim$16~$\upmu$m. 
 \begin{figure}[h]%
 \centering
-\includegraphics[width=.5\columnwidth]{Grafiken/FWHM.pdf}%
+\includegraphics[width=.8\columnwidth]{Grafiken/FWHM_gros.pdf}
 \caption{}%
-\label{}%
+\label{fig:fwhm}%
 
 \end{figure}
-
-\todo{FWHM noch in matlab genau bestimmen!}
 
 \subsection{To which spatial resolution in $\upmu$m in z-coordinates does this correspond?}
 Te resolve two points the peaks in the signal must be at least $\delta l$ apart. Because the light in the specimen travels the way to the reflecting plane and back in the medium with the refractive index $n$ the distance the light travels is $l=2\cdot nz$. From this follows that $\delta l = 2\cdot n\delta z$ and
