@@ -117,17 +117,26 @@ With $x=\frac{\Delta k}{2}z$ the result of the half width at half maximum is $8~
 
 
 \subsection{To which spatial resolution in $\upmu$m in z-coordinates does this correspond?}
+\label{sec:resolution}
 Te resolve two points the peaks in the signal must be at least $\delta l$ apart. Because the light in the specimen travels the way to the reflecting plane and back in the medium with the refractive index $n$ the distance the light travels is $l=2\cdot nz$. From this follows that $\delta l = 2\cdot n\delta z$ and
 \begin{equation}
 \delta z = \frac{\delta l}{2n}=\frac{16~\upmu\mathrm{m}}{3} = 5.33~\upmu\mathrm{m}.
-\label{eq:}
+\label{eq:resolution}
 \end{equation}
 
 
 
 \section{Calculate the depth profile of a spool of adhesive tape}
 
-In a .mat file the measurement of the interface term of a spool of adhesive tape $\breve{u}(k_m)$ is given. To calculate the term in the spacial domain $\breve{u}(z)_{sr}$ the matlab function \verb|fft()| is used. The absolute of the result $\breve{u}(z)_{sr}$ is shown in fig. \ref{fig:profile_nm}.
+In a .mat file the measurement of the interface term of a spool of adhesive tape $\breve{u}(k_m)$ is given. The Values have been sampled with the interval $\delta k$ and are lineary spaced. To calculate the term in the spacial domain $\breve{u}(z)_{sr}$ the Matlab function \verb|fft()| is used. Now the spacing of the values in z space has to be calculated. This is done by
+\begin{equation}
+  \delta z = \frac{2\pi}{M\cdot \delta k}
+\end{equation}
+where $M$ is the total number of values given in the file. Like in \ref{sec:resolution} it has to be taken into account, that the light measured at the detector travels back and forth through the sample. Also the refractive index of the sample can not be neglegted. With \eqref{eq:resolution} follows
+\begin{equation}
+  \delta z = \frac{2\pi}{2n\cdot M\cdot \delta k}.
+\end{equation}
+This calculation is also done with Matlab. The absolute of $\breve{u}(z)_{sr}$ is shown in fig. \ref{fig:profile}.
 
 
 \begin{figure}[ht]
