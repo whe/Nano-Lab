@@ -110,7 +110,7 @@ With $x=\frac{\Delta k}{2}z$ the result of the half width at half maximum is $8~
 \begin{figure}[h]%
 \centering
 \includegraphics[width=.8\columnwidth]{Grafiken/FWHM_gros.pdf}
-\caption{}%
+\caption{Plot of the spatial coherence function}%
 \label{fig:fwhm}%
 
 \end{figure}
@@ -118,9 +118,9 @@ With $x=\frac{\Delta k}{2}z$ the result of the half width at half maximum is $8~
 
 \subsection{To which spatial resolution in $\upmu$m in z-coordinates does this correspond?}
 \label{sec:resolution}
-Te resolve two points the peaks in the signal must be at least $\delta l$ apart. Because the light in the specimen travels the way to the reflecting plane and back in the medium with the refractive index $n$ the distance the light travels is $l=2\cdot nz$. From this follows that $\delta l = 2\cdot n\delta z$ and
+To resolve two points the peaks in the signal must be at least $\delta z$ apart. Because the light in the specimen travels the way to the reflecting plane and back in the medium with the refractive index $n$ the distance the light travels is $z=2\cdot n\hat{z}$. From this follows that $\delta z = 2\cdot n\delta \hat{z}$ and
 \begin{equation}
-\delta z = \frac{\delta l}{2n}=\frac{16~\upmu\mathrm{m}}{3} = 5.33~\upmu\mathrm{m}.
+\delta \hat{z} = \frac{\delta z}{2n}=\frac{16~\upmu\mathrm{m}}{3} = 5.33~\upmu\mathrm{m}.
 \label{eq:resolution}
 \end{equation}
 
@@ -134,9 +134,9 @@ In a .mat file the measurement of the interface term of a spool of adhesive tape
 \end{equation}
 where $M$ is the total number of values given in the file. Like in \ref{sec:resolution} it has to be taken into account, that the light measured at the detector travels back and forth through the sample. Also the refractive index of the sample can not be neglected. With \eqref{eq:resolution} follows
 \begin{equation}
-  \delta z = \frac{2\pi}{2n\cdot M\cdot \delta k}.
+  \delta \hat{z} = \frac{2\pi}{2n\cdot M\cdot \delta k}.
 \end{equation}
-This calculation is also done with Matlab. The absolute of $\breve{u}(z)_{sr}$ is shown in fig. \ref{fig:profile}. Since $\breve{u}(z)_{sr}$ is symmetric around $z=4$~mm only the range 4~mm$~\leq z\leq~$8~mm is plotted.
+This calculation is also done with Matlab. The absolute of $\breve{u}(z)_{sr}$ is shown in fig. \ref{fig:profile}. Since $\breve{u}(z)_{sr}$ is symmetric around $z=4$~mm only the range 0$~\leq z\leq~$4~mm is plotted.
 
 Most noticeable in figure \ref{fig:profile} is a large peak around $z=1.6$~mm and the increasing of $I$ for $z \rightarrow 0$~mm. This increasing of $I$ towards 0~mm are DC parts caused by non-interfering components. 
 At $z\approx1.6$~mm the signal shows a good reflecting plane. Figure \ref{fig:profile_zoom} shows the range from 1.4 to 2.5~mm. Here the layer thickness of the tape can be estimated. The width of one major peak can be estimated as $\sim 40~\upmu$m. So the layer thickness is around 40~$\upmu$m as well.
@@ -148,7 +148,7 @@ At $z\approx1.6$~mm the signal shows a good reflecting plane. Figure \ref{fig:pr
   \centering
   \includegraphics[width=.6\columnwidth]{Grafiken/profile_mm_2.pdf}
 
-\caption{ }
+\caption{Interface pattern of a spool of adhesive tape}
 \label{fig:profile}
 \end{figure}
 
@@ -157,6 +157,6 @@ At $z\approx1.6$~mm the signal shows a good reflecting plane. Figure \ref{fig:pr
   \centering
   \includegraphics[width=.6\columnwidth]{Grafiken/profile_14-24.pdf}
 
-\caption{ }
+\caption{Zoom of the Interface pattern}
 \label{fig:profile_zoom}
 \end{figure}
