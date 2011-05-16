@@ -1,7 +1,7 @@
 \chapter{Preparation}
 \label{ch.preparation}
 
-\section{Calculate the depth resolution of the OCT-system performing the folloing steps}
+\section{Calculate the depth resolution of the OCT-system performing the following steps}
 
 \subsection{Calculate the central wavenumber $k_0$ and the broadness of the spectral envelope function $\Delta k$}
 
@@ -11,7 +11,7 @@ k_0=\frac{2\pi}{\lambda_0} \rightarrow \frac{\Delta k}{\Delta\lambda}=-\frac{2\p
 \end{equation}
 
 \begin{equation}
-\|\Delta k\|=\frac{2\pi}{\lambda_0^2}\Delta\lambda
+|\Delta k|=\frac{2\pi}{\lambda_0^2}\Delta\lambda
 \label{eq:delta_k}
 \end{equation}
 
@@ -22,7 +22,7 @@ k_0=\frac{2\pi}{1310~\mathrm{nm}}=4.80~\mathrm{\upmu m}^{-1}
 \end{equation}
 and
 \begin{equation}
-\|\Delta k\| = \frac{2\pi}{1310 ^2~\mathrm{nm}^2}\cdot130~\mathrm{nm}=0,48~\mathrm{\upmu m}^{-1}
+|\Delta k| = \frac{2\pi}{1310 ^2~\mathrm{nm}^2}\cdot130~\mathrm{nm}=0,48~\mathrm{\upmu m}^{-1}
 \label{eq:delta_k_wert}
 \end{equation}
 
@@ -117,28 +117,29 @@ With $x=\frac{\Delta k}{2}z$ the result of the half width at half maximum is $8~
 
 
 \subsection{To which spatial resolution in $\upmu$m in z-coordinates does this correspond?}
+\label{sec:resolution}
 Te resolve two points the peaks in the signal must be at least $\delta l$ apart. Because the light in the specimen travels the way to the reflecting plane and back in the medium with the refractive index $n$ the distance the light travels is $l=2\cdot nz$. From this follows that $\delta l = 2\cdot n\delta z$ and
 \begin{equation}
 \delta z = \frac{\delta l}{2n}=\frac{16~\upmu\mathrm{m}}{3} = 5.33~\upmu\mathrm{m}.
-\label{eq:}
+\label{eq:resolution}
 \end{equation}
 
 
 
 \section{Calculate the depth profile of a spool of adhesive tape}
 
-In a .mat file the measurement of the interface term of a spool of adhesive tape $\breve{u}(k_m)$ is given. The Values have been sampled with the interval $\delta k$ and are lineary spaced. To calculate the term in the spacial domain $\breve{u}(z)_{sr}$ the Matlab function \verb|fft()| is used. Now the spacing of the values in z space has to be calculated. This is done by
+In a .mat file the measurement of the interface term of a spool of adhesive tape $\breve{u}(k_m)$ is given. The Values have been sampled with the interval $\delta k$ and are linear spaced. To calculate the term in the spacial domain $\breve{u}(z)_{sr}$ the Matlab function \verb|fft()| is used. Now the spacing of the values in z space has to be calculated. This is done by
 \begin{equation}
   \delta z = \frac{2\pi}{M\cdot \delta k}
 \end{equation}
-where $M$ is the total number of values given in the file. Like in \ref{sec:resolution} it has to be taken into account, that the light measured at the detector travels back and forth through the sample. Also the refractive index of the sample can not be neglegted. With \eqref{eq:resolution} follows
+where $M$ is the total number of values given in the file. Like in \ref{sec:resolution} it has to be taken into account, that the light measured at the detector travels back and forth through the sample. Also the refractive index of the sample can not be neglected. With \eqref{eq:resolution} follows
 \begin{equation}
   \delta z = \frac{2\pi}{2n\cdot M\cdot \delta k}.
 \end{equation}
 This calculation is also done with Matlab. The absolute of $\breve{u}(z)_{sr}$ is shown in fig. \ref{fig:profile}. Since $\breve{u}(z)_{sr}$ is symmetric around $z=4$~mm only the range 4~mm$~\leq z\leq~$8~mm is plotted.
 
-Most noticable in figure \ref{fig:profile} is a large peak around $z=1.6$~mm and the increasing of $I$ for $z \rightarrow 0$~mm. This increasing of $I$ towards 0~mm are DC parts caused by non-interfering components. 
-At $z\approx1.6$~mm the signal shows a good reflecting plane. Figure \ref{fig:profile_zoom} shows the range from 1.4 to 2.5~mm. Here the layer thickness of the tape can be estimated. The width of one major peak can be estemated as $\sim 40~\upmu$m. So the layer thickness is around 40~$\upmu$m as well.
+Most noticeable in figure \ref{fig:profile} is a large peak around $z=1.6$~mm and the increasing of $I$ for $z \rightarrow 0$~mm. This increasing of $I$ towards 0~mm are DC parts caused by non-interfering components. 
+At $z\approx1.6$~mm the signal shows a good reflecting plane. Figure \ref{fig:profile_zoom} shows the range from 1.4 to 2.5~mm. Here the layer thickness of the tape can be estimated. The width of one major peak can be estimated as $\sim 40~\upmu$m. So the layer thickness is around 40~$\upmu$m as well.
 
 
 
