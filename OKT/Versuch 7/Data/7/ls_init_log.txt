@@ -1,0 +1,4 @@
+Couldn't load library C:/RSoft/products/optsim/block_mode/bin/matcosim.dll for model MatlabCosimulation
+Load or symbol error in DLLManager. Necessary binaries ar either not
+installed, or not available via the system path. 
+

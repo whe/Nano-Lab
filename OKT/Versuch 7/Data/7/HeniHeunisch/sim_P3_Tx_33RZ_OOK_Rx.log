@@ -1,0 +1,227 @@
+Copyright (c) 1989-2008 RSoft Design Group, Inc.
+
+OptSim-I-Executing Variable Bandwidth Simulation
+OptSim-I-Starting at Mon May 02 16:47:47 2011
+OptSim-I-Reading file E:\OKT-LAB\7\HeniHeunisch\sim_P3_Tx_33RZ_OOK_Rx.opf
+OptSim-I-Checking errors of Project sim_P3_Tx_33RZ_OOK_Rx
+OptSim-I-Checking warnings of Project sim_P3_Tx_33RZ_OOK_Rx
+OptSim-I-Expanding compound component and iterations
+OptSim-I-Parameter Length in block fiber2 assuming value 1.000000000E+001 [Km] in run(s)  1
+OptSim-I-Calculating delay and memory request
+OptSim-I-Simulation prerun has been subdivided in 1 run(s)
+OptSim-I-Simulation prerun 1 has been subdivided in 1 session
+OptSim-I-Loading delay and memory information
+OptSim-I-Optimizing
+OptSim-I-Calculating
+OptSim-I-Simulation run has been subdivided in 1 run(s)
+OptSim-I-Simulation run 1 has been subdivided in 2 session
+OptSim-I-Creating run for section 1 of 2
+OptSim-I-Simulating run for session 1 of 2
+OptSim-I-   0 % of section    1 of    2                             
+OptSim-I-   1 % of section    1 of    2                             
+OptSim-I-   2 % of section    1 of    2                             
+OptSim-I-   3 % of section    1 of    2                             
+OptSim-I-   4 % of section    1 of    2                             
+OptSim-I-   5 % of section    1 of    2                             
+OptSim-I-   6 % of section    1 of    2                             
+OptSim-I-   7 % of section    1 of    2                             
+OptSim-I-   8 % of section    1 of    2                             
+OptSim-I-   9 % of section    1 of    2                             
+OptSim-I-  10 % of section    1 of    2                             
+OptSim-I-  11 % of section    1 of    2                             
+OptSim-I-  12 % of section    1 of    2                             
+OptSim-I-  13 % of section    1 of    2                             
+OptSim-I-  14 % of section    1 of    2                             
+OptSim-I-  15 % of section    1 of    2                             
+OptSim-I-  16 % of section    1 of    2                             
+OptSim-I-  17 % of section    1 of    2                             
+OptSim-I-  18 % of section    1 of    2                             
+OptSim-I-  19 % of section    1 of    2                             
+OptSim-I-  20 % of section    1 of    2                             
+OptSim-I-  21 % of section    1 of    2                             
+OptSim-I-  22 % of section    1 of    2                             
+OptSim-I-  23 % of section    1 of    2                             
+OptSim-I-  24 % of section    1 of    2                             
+OptSim-I-  25 % of section    1 of    2                             
+OptSim-I-  26 % of section    1 of    2                             
+OptSim-I-  27 % of section    1 of    2                             
+OptSim-I-  28 % of section    1 of    2                             
+OptSim-I-  29 % of section    1 of    2                             
+OptSim-I-  30 % of section    1 of    2                             
+OptSim-I-  31 % of section    1 of    2                             
+OptSim-I-  32 % of section    1 of    2                             
+OptSim-I-  33 % of section    1 of    2                             
+OptSim-I-  34 % of section    1 of    2                             
+OptSim-I-  35 % of section    1 of    2                             
+OptSim-I-  36 % of section    1 of    2                             
+OptSim-I-  37 % of section    1 of    2                             
+OptSim-I-  38 % of section    1 of    2                             
+OptSim-I-  39 % of section    1 of    2                             
+OptSim-I-  40 % of section    1 of    2                             
+OptSim-I-  41 % of section    1 of    2                             
+OptSim-I-  42 % of section    1 of    2                             
+OptSim-I-  43 % of section    1 of    2                             
+OptSim-I-  44 % of section    1 of    2                             
+OptSim-I-  45 % of section    1 of    2                             
+OptSim-I-  46 % of section    1 of    2                             
+OptSim-I-  47 % of section    1 of    2                             
+OptSim-I-  48 % of section    1 of    2                             
+OptSim-I-  49 % of section    1 of    2                             
+OptSim-I-  50 % of section    1 of    2                             
+OptSim-I-  51 % of section    1 of    2                             
+OptSim-I-  52 % of section    1 of    2                             
+OptSim-I-  53 % of section    1 of    2                             
+OptSim-I-  54 % of section    1 of    2                             
+OptSim-I-  55 % of section    1 of    2                             
+OptSim-I-  56 % of section    1 of    2                             
+OptSim-I-  57 % of section    1 of    2                             
+OptSim-I-  58 % of section    1 of    2                             
+OptSim-I-  59 % of section    1 of    2                             
+OptSim-I-  60 % of section    1 of    2                             
+OptSim-I-  61 % of section    1 of    2                             
+OptSim-I-  62 % of section    1 of    2                             
+OptSim-I-  63 % of section    1 of    2                             
+OptSim-I-  64 % of section    1 of    2                             
+OptSim-I-  65 % of section    1 of    2                             
+OptSim-I-  66 % of section    1 of    2                             
+OptSim-I-  67 % of section    1 of    2                             
+OptSim-I-  68 % of section    1 of    2                             
+OptSim-I-  69 % of section    1 of    2                             
+OptSim-I-  70 % of section    1 of    2                             
+OptSim-I-  71 % of section    1 of    2                             
+OptSim-I-  72 % of section    1 of    2                             
+OptSim-I-  73 % of section    1 of    2                             
+OptSim-I-  74 % of section    1 of    2                             
+OptSim-I-  75 % of section    1 of    2                             
+OptSim-I-  76 % of section    1 of    2                             
+OptSim-I-  77 % of section    1 of    2                             
+OptSim-I-  78 % of section    1 of    2                             
+OptSim-I-  79 % of section    1 of    2                             
+OptSim-I-  80 % of section    1 of    2                             
+OptSim-I-  81 % of section    1 of    2                             
+OptSim-I-  82 % of section    1 of    2                             
+OptSim-I-  83 % of section    1 of    2                             
+OptSim-I-  84 % of section    1 of    2                             
+OptSim-I-  85 % of section    1 of    2                             
+OptSim-I-  86 % of section    1 of    2                             
+OptSim-I-  87 % of section    1 of    2                             
+OptSim-I-  88 % of section    1 of    2                             
+OptSim-I-  89 % of section    1 of    2                             
+OptSim-I-  90 % of section    1 of    2                             
+OptSim-I-  91 % of section    1 of    2                             
+OptSim-I-  92 % of section    1 of    2                             
+OptSim-I-  93 % of section    1 of    2                             
+OptSim-I-  94 % of section    1 of    2                             
+OptSim-I-  95 % of section    1 of    2                             
+OptSim-I-  96 % of section    1 of    2                             
+OptSim-I-  97 % of section    1 of    2                             
+OptSim-I-  98 % of section    1 of    2                             
+OptSim-I-  99 % of section    1 of    2                             
+OptSim-I- Section    1 User   time   0.16 sec                        
+OptSim-I- Section    1 System time   0.05 sec                        
+OptSim-I-Creating run for section 2 of 2
+OptSim-I-Simulating run for session 2 of 2
+OptSim-I-   0 % of section    2 of    2                             
+OptSim-I-   1 % of section    2 of    2                             
+OptSim-I-   2 % of section    2 of    2                             
+OptSim-I-   3 % of section    2 of    2                             
+OptSim-I-   4 % of section    2 of    2                             
+OptSim-I-   5 % of section    2 of    2                             
+OptSim-I-   6 % of section    2 of    2                             
+OptSim-I-   7 % of section    2 of    2                             
+OptSim-I-   8 % of section    2 of    2                             
+OptSim-I-   9 % of section    2 of    2                             
+OptSim-I-  10 % of section    2 of    2                             
+OptSim-I-  11 % of section    2 of    2                             
+OptSim-I-  12 % of section    2 of    2                             
+OptSim-I-  13 % of section    2 of    2                             
+OptSim-I-  14 % of section    2 of    2                             
+OptSim-I-  15 % of section    2 of    2                             
+OptSim-I-  16 % of section    2 of    2                             
+OptSim-I-  17 % of section    2 of    2                             
+OptSim-I-  18 % of section    2 of    2                             
+OptSim-I-  19 % of section    2 of    2                             
+OptSim-I-  20 % of section    2 of    2                             
+OptSim-I-  21 % of section    2 of    2                             
+OptSim-I-  22 % of section    2 of    2                             
+OptSim-I-  23 % of section    2 of    2                             
+OptSim-I-  24 % of section    2 of    2                             
+OptSim-I-  25 % of section    2 of    2                             
+OptSim-I-  26 % of section    2 of    2                             
+OptSim-I-  27 % of section    2 of    2                             
+OptSim-I-  28 % of section    2 of    2                             
+OptSim-I-  29 % of section    2 of    2                             
+OptSim-I-  30 % of section    2 of    2                             
+OptSim-I-  31 % of section    2 of    2                             
+OptSim-I-  32 % of section    2 of    2                             
+OptSim-I-  33 % of section    2 of    2                             
+OptSim-I-  34 % of section    2 of    2                             
+OptSim-I-  35 % of section    2 of    2                             
+OptSim-I-  36 % of section    2 of    2                             
+OptSim-I-  37 % of section    2 of    2                             
+OptSim-I-  38 % of section    2 of    2                             
+OptSim-I-  39 % of section    2 of    2                             
+OptSim-I-  40 % of section    2 of    2                             
+OptSim-I-  41 % of section    2 of    2                             
+OptSim-I-  42 % of section    2 of    2                             
+OptSim-I-  43 % of section    2 of    2                             
+OptSim-I-  44 % of section    2 of    2                             
+OptSim-I-  45 % of section    2 of    2                             
+OptSim-I-  46 % of section    2 of    2                             
+OptSim-I-  47 % of section    2 of    2                             
+OptSim-I-  48 % of section    2 of    2                             
+OptSim-I-  49 % of section    2 of    2                             
+OptSim-I-  50 % of section    2 of    2                             
+OptSim-I-  51 % of section    2 of    2                             
+OptSim-I-  52 % of section    2 of    2                             
+OptSim-I-  53 % of section    2 of    2                             
+OptSim-I-  54 % of section    2 of    2                             
+OptSim-I-  55 % of section    2 of    2                             
+OptSim-I-  56 % of section    2 of    2                             
+OptSim-I-  57 % of section    2 of    2                             
+OptSim-I-  58 % of section    2 of    2                             
+OptSim-I-  59 % of section    2 of    2                             
+OptSim-I-  60 % of section    2 of    2                             
+OptSim-I-  61 % of section    2 of    2                             
+OptSim-I-  62 % of section    2 of    2                             
+OptSim-I-  63 % of section    2 of    2                             
+OptSim-I-  64 % of section    2 of    2                             
+OptSim-I-  65 % of section    2 of    2                             
+OptSim-I-  66 % of section    2 of    2                             
+OptSim-I-  67 % of section    2 of    2                             
+OptSim-I-  68 % of section    2 of    2                             
+OptSim-I-  69 % of section    2 of    2                             
+OptSim-I-  70 % of section    2 of    2                             
+OptSim-I-  71 % of section    2 of    2                             
+OptSim-I-  72 % of section    2 of    2                             
+OptSim-I-  73 % of section    2 of    2                             
+OptSim-I-  74 % of section    2 of    2                             
+OptSim-I-  75 % of section    2 of    2                             
+OptSim-I-  76 % of section    2 of    2                             
+OptSim-I-  77 % of section    2 of    2                             
+OptSim-I-  78 % of section    2 of    2                             
+OptSim-I-  79 % of section    2 of    2                             
+OptSim-I-  80 % of section    2 of    2                             
+OptSim-I-  81 % of section    2 of    2                             
+OptSim-I-  82 % of section    2 of    2                             
+OptSim-I-  83 % of section    2 of    2                             
+OptSim-I-  84 % of section    2 of    2                             
+OptSim-I-  85 % of section    2 of    2                             
+OptSim-I-  86 % of section    2 of    2                             
+OptSim-I-  87 % of section    2 of    2                             
+OptSim-I-  88 % of section    2 of    2                             
+OptSim-I-  89 % of section    2 of    2                             
+OptSim-I-  90 % of section    2 of    2                             
+OptSim-I-  91 % of section    2 of    2                             
+OptSim-I-  92 % of section    2 of    2                             
+OptSim-I-  93 % of section    2 of    2                             
+OptSim-I-  94 % of section    2 of    2                             
+OptSim-I-  95 % of section    2 of    2                             
+OptSim-I-  96 % of section    2 of    2                             
+OptSim-I-  97 % of section    2 of    2                             
+OptSim-I-  98 % of section    2 of    2                             
+OptSim-I-  99 % of section    2 of    2                             
+OptSim-I- Section    2 User   time   0.20 sec                        
+OptSim-I- Section    2 System time   0.13 sec                        
+OptSim-I-Finish at Mon May 02 16:47:54 2011
+OptSim-I-Elapsed time 7 second
