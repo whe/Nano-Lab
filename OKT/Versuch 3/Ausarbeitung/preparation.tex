@@ -117,9 +117,9 @@ With $x=\frac{\Delta k}{2}z$ the result of the half width at half maximum is $8~
 
 
 \subsection{To which spatial resolution in $\upmu$m in z-coordinates does this correspond?}
-Te resolve two points the peaks in the signal must be at least $\delta l$ apart. Because the light in the specimen travels the way to the reflecting plane and back in the medium with the refractive index $n$ the distance the light travels is $l=2\cdot nz$. From this follows that $\delta l = 2\cdot n\delta z$ and
+Te resolve two points the peaks in the signal must be at least $\delta z$ apart. Because the light in the specimen travels the way to the reflecting plane and back in the medium with the refractive index $n$ the distance the light travels is $z=2\cdot n\hat{z}$. From this follows that $\delta z = 2\cdot n\delta \hat{z}$ and
 \begin{equation}
-\delta z = \frac{\delta l}{2n}=\frac{16~\upmu\mathrm{m}}{3} = 5.33~\upmu\mathrm{m}.
+\delta \hat{z} = \frac{\delta z}{2n}=\frac{16~\upmu\mathrm{m}}{3} = 5.33~\upmu\mathrm{m}.
 \label{eq:}
 \end{equation}
 
@@ -133,7 +133,7 @@ In a .mat file the measurement of the interface term of a spool of adhesive tape
 \end{equation}
 where $M$ is the total number of values given in the file. Like in \ref{sec:resolution} it has to be taken into account, that the light measured at the detector travels back and forth through the sample. Also the refractive index of the sample can not be neglegted. With \eqref{eq:resolution} follows
 \begin{equation}
-  \delta z = \frac{2\pi}{2n\cdot M\cdot \delta k}.
+  \delta \hat{z} = \frac{2\pi}{2n\cdot M\cdot \delta k}.
 \end{equation}
 This calculation is also done with Matlab. The absolute of $\breve{u}(z)_{sr}$ is shown in fig. \ref{fig:profile}. Since $\breve{u}(z)_{sr}$ is symmetric around $z=4$~mm only the range 0$~\leq z\leq~$4~mm is plotted.
 
