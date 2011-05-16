@@ -3,3 +3,27 @@ $cat .gitignore
 *.toc
 *.tps
 *.blg
+
+/OKT/Versuch 7/Ausarbeitung/OKT7.aux
+/OKT/Versuch 7/Ausarbeitung/OKT7.log
+/OKT/Versuch 7/Ausarbeitung/OKT7.out
+/OKT/Versuch 7/Ausarbeitung/OKT7.pdf
+/OKT/Versuch 7/Ausarbeitung/OKT7.tcp
+/OKT/Versuch 7/Ausarbeitung/OKT7.tex~
+/OKT/Versuch 7/Ausarbeitung/content.aux
+/OKT/Versuch 7/Ausarbeitung/content.tex.backup
+/OKT/Versuch 7/Ausarbeitung/content.tex~
+/OKT/Versuch 7/Ausarbeitung/introduction.aux
+/OKT/Versuch 7/Ausarbeitung/introduction.tex.backup
+/OKT/Versuch 7/Ausarbeitung/introduction.tex~
+/OKT/Versuch 7/Ausarbeitung/oled.kilepr
+/OKT/Versuch 7/Ausarbeitung/thesis.bib~
+/OKT/Versuch 7/Ausarbeitung/thesis.tex~
+/OKT/Versuch 7/Ausarbeitung/titlepage.aux
+/OKT/Versuch 7/Ausarbeitung/titlepage.tex~
+/OKT/Versuch 7/IPQ_OKT_7.pdf
+/OKT/Versuch 7/Mach-Zehnder.jpg
+/OKT/Versuch 7/Mach-Zender-Transfer.jpg
+/OKT/Versuch 7/Ausarbeitung/preparation.aux
+/OKT/Versuch 3/Ausarbeitung/OKT3.pdf
+/OKT/Versuch 3/Ausarbeitung/.gitignore
