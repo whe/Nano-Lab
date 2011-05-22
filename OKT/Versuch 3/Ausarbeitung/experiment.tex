@@ -30,7 +30,7 @@ At the last the data is displayed in four surface plots. In the first plot, all 
 \todo{Eigentl muss noch jeweils einer von den 4 Plots rein. Irgendwo}
 
 The scan was first performed with an angle between -10° to 1° in x-direction and an angle of -7° to 7° in y-direction. The step size was chosen as 1° for a first try. The resolution of the obtained 3D-surface was very low, so a lower stepsize had to be chosen. When trying a stepsize of 0.1° the LabView interface crashed. This becomes clear when the amount of data is considered. Each A-scan contains of $n_{A-scan}=$1536 measured values in k-space. There are 111 steps in x-direction and 141 steps in y-direction. Thus for this measurement $111 \cdot 141 \cdot 1536 \approx 24 \cdot  
-10^6$ values have to be measured. \comseb{Lol, der betreuer hat vergessen Bit in Byte umzurechnen. Es kommen 1,53 Gbit raus. Das entspricht 183 Mb.}
+10^6$ values have to be measured. Obviously the LabView vi cannot handle that much data.
 
 
 
