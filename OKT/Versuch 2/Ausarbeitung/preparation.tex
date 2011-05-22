@@ -1,0 +1,34 @@
+\chapter{Preparation}
+
+\section{Question 1: Open Circuit Voltage}
+The Term (1)
+\begin{equation}
+ I_{\mathrm{PIN}} = I_{\mathrm{Sat}}\left[\exp\left(\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}}\right)-1\right] -I_{\mathrm{pr}}
+\label{eq:diode}
+\end{equation}
+from the experiment description, with $R_{\mathrm{a}}\to\infty(I_{\mathrm{PIN}}\to0)$ can be rearranged to:
+\begin{equation}
+ I_{\mathrm{pr}} = I_{\mathrm{Sat}}\left[\exp\left(\frac{U_{\mathrm{PIN0}}}{U_{\mathrm{T}}}\right)-1\right]
+\end{equation}
+and further to:
+\begin{equation}
+ U_{\mathrm{PIN0}}(I_{\mathrm{pr}}) = U_{\mathrm{T}}\ln\left(\frac{I_{\mathrm{pr}}}{I_{\mathrm{Sat}}}\right)+1
+\end{equation}
+
+\section{Question 2: Electrical power of a PIN diode}
+
+With $P = R\cdot I^2$, $I_{\mathrm{pr}} = S\cdot P$ and equation \eqref{eq:diode}, the Power of the PIN-diode can be calculated by:
+\begin{equation}
+ P_{\mathrm{el}} = R_{\mathrm{a}}\cdot\left\{ I_{\mathrm{Sat}}\left[\exp\left(\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}}\right)-1\right] -S\cdot P\right\}^2.
+\label{eq:power}
+\end{equation}
+For the Case:
+\begin{equation}
+ \frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}} \ll 1 \to \exp\left(\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}}\right)\approx1+\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}}
+\end{equation}
+equation \eqref{eq:power} can be simplified to:
+\begin{equation}
+  P_{\mathrm{el}} = R_{\mathrm{a}}\cdot\left\{ I_{\mathrm{Sat}}\cdot\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}} -S\cdot P\right\}^2.
+\end{equation}
+\todo{da stimmt irgendwas noch net}
+
