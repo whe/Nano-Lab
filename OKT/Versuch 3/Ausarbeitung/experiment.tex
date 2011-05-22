@@ -19,27 +19,25 @@ If the reference path is blocked, only the back scattered light of the sample hi
 
 In the next step a 3D scan of an Austrian one cent coin was recorded. The sample was mounted in the OCT-System by the advisor of the experiment in advance. Then the range of scanning is set by the rotation angle and the stepsize in x- and y-direction. The obtained measurement data is now analyzed by the MATLAB script 'OKT\_OCT\_3D.m'. 
 
-At first the variables of the script needed to be defined. Therefore the in LabView chosen settings as angle and the number of steps in x- and y- direction were inserted.\comseb{das würde ich eigentl weglassen}
+%At first the variables of the script needed to be defined. Therefore the in LabView chosen settings as angle and the number of steps in x- and y- direction were inserted.\comseb{das würde ich eigentl weglassen}
 
 By setting the parameters \textsc{zmin} and \textsc{zmax} the region of interest can be defined in meters.
 
 For each A-scan the z-position of the peak is detected. This is done by finding the maximum of the reflectivity in z-domain. The obtained values are writen into a matrix at the corresponding (x,y)-position.
 
-At the last the data is displayed in four surface plots. In the first plot, all A-scans in k-space are shown. In the second and third plot all A-scans in z-space are shown. In the third plot, only the range defined by \textsc{zmin} and \textsc{zmax} is displayed. Lastly in the fourth plot the Matrix calculated earlyer is displayed. It shows the 3 dimensional surface of the sample.
-
-\todo{Eigentl muss noch jeweils einer von den 4 Plots rein. Irgendwo}
+At the last the data is displayed in four surface plots. In the first plot, all A-scans in k-space are shown (cf. fig. \ref{fig:Ak1}). In the second and third plot all A-scans in z-space are shown (cf. fig. \ref{fig:Az1}, \ref{fig:Az_1_trunc}). In the third plot, only the range defined by \textsc{zmin} and \textsc{zmax} is displayed. Lastly in the fourth plot the Matrix calculated earlyer is displayed. It shows the 3 dimensional surface of the sample (cf. fig. \ref{fig:3d_1}).
 
 
 \begin{figure}%
 \centering
 %\begin{adjustwidth}{0cm}{0cm}
-	\subfloat[A/k]{\includegraphics[totalheight=6 cm]{Grafiken/Ak_1.pdf}\label{fig:Profil_3D}~}
-	\subfloat[A/z]{\includegraphics[totalheight=4 cm]{Grafiken/Az_1.pdf} \label{fig:1ct}}\\%
-	\subfloat[trunked A/z]{\includegraphics[totalheight=4 cm]{Grafiken/Az_trunc1.pdf}\label{fig:Az_1_trunc}~}
+	\subfloat[k-space]{\includegraphics[totalheight=6 cm]{Grafiken/Ak_1.pdf}\label{fig:Ak1}~}
+	\subfloat[z-space]{\includegraphics[totalheight=4 cm]{Grafiken/Az_1.pdf} \label{fig:Az1}}\\%
+	\subfloat[z-space (limited)]{\includegraphics[totalheight=4 cm]{Grafiken/Az_trunc1.pdf}\label{fig:Az_1_trunc}~}
 	\subfloat[3-D surface]{\includegraphics[totalheight=4 cm]{Grafiken/3d_1.pdf} \label{fig:3d_1}}
 %\end{adjustwidth}
-\caption{\textbf{a)} Measured profile of a coin with a stepsice of 0.2°.  \textbf{b)} Austrian 1 ct. coin.}%
-\label{fig:Coin}%
+\caption{Matlab Output. Step size: 1°}%
+\label{fig:matlab}%
 \end{figure}
 
 
@@ -57,8 +55,8 @@ The scan was first performed with an angle between -10° to 1° in x-direction and
 	\subfloat[Measured profile]{\includegraphics[totalheight=6 cm]{Grafiken/3d_0_2.pdf}\label{fig:Profil_3D}~}
 	\subfloat[Austrian 1 ct. coin]{\includegraphics[totalheight=6 cm]{Grafiken/1ct.jpg} \label{fig:1ct}}%
 %\end{adjustwidth}
-\caption{\textbf{a)} Measured profile of a coin with a stepsice of 0.2°.  \textbf{b)} Austrian 1 ct. coin.}%
+\caption{\textbf{a)} Measured profile of a coin with a stepsize of 0.2°.  \textbf{b)} Austrian 1 ct. coin.}%
 \label{fig:Coin}%
 \end{figure}
 
-Figure \ref{fig:Profil_3D} shows the result of the measurement with a stepsice of 0.2°. The depth of the surfaces is color-coded.  For comparison figure \ref{fig:1ct} shows a Austrian 1 cent coin\footnote[1]{Source: European Central Bank} with the section marked that is shown in \ref{fig:Profil_3D}.
+Figure \ref{fig:Profil_3D} shows the result of the measurement with a stepsize of 0.2°. The depth of the surfaces is color-coded.  For comparison figure \ref{fig:1ct} shows a Austrian 1 cent coin\footnote[1]{Source: European Central Bank} with the section marked that is shown in \ref{fig:Profil_3D}.
