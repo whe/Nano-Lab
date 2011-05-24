@@ -83,23 +83,38 @@ eFg_{\mathrm{photo}} = \frac{\eta e}{hf_L}P_e\frac{\alpha e^{-\alpha(x+w_a)}}{1-
 with the differential equation
 
 \begin{equation}
-\frac{1}{v_p} \frac{\partiali_p}{\partial t} +\frac{\partiali_p}{\partial x} = eFg_{\mathrm{photo}} 
+\frac{1}{v_p} \frac{\partial i_p}{\partial t} +\frac{\partial i_p}{\partial x} = eFg_{\mathrm{photo}} 
 \label{eq:}
 \end{equation}
 
 and
 
 \begin{equation}
-\frac{1}{v_n} \frac{\partiali_n}{\partial t} +\frac{\partiali_n}{\partial x} = eFg_{\mathrm{photo}} 
+\frac{1}{v_n} \frac{\partial i_n}{\partial t} +\frac{\partial i_n}{\partial x} = eFg_{\mathrm{photo}} 
 \label{eq:}
 \end{equation}
 
 follows for $\frac{\partial}{\partial t} = 0$
 
+
 \begin{equation}
-eFg_{\mathrm{ion}} = \alpha_i i_n + \beta_i
+i_p = eFg_{\mathrm{photo}}\cdot x
 \label{eq:}
 \end{equation}
+
+\begin{equation}
+i_n = eFg_{\mathrm{photo}}\cdot x
+\label{eq:}
+\end{equation}
+
+Therefore $i_n$, $i_p$ $\propto P_e$.
+
+At a APD there's an impact ionszation. 
+\begin{equation}
+eFg_{\mathrm{ion}} = \alpha_i i_n + \beta_i i_p
+\label{eq:}
+\end{equation}
+
 
 \begin{figure}%
 \centering
