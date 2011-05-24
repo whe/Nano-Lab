@@ -76,12 +76,28 @@ and further
 \section{Question 4: APD - Change of light power}
 
 \begin{equation}
-eFg = \frac{\eta e}{hf_L}P_e\frac{\alpha e^{-\alpha(x+w_a)}}{1-e^{-\alpha w_A}}, \rightarrow eFg \propto P_e.
+eFg_{\mathrm{photo}} = \frac{\eta e}{hf_L}P_e\frac{\alpha e^{-\alpha(x+w_a)}}{1-e^{-\alpha w_A}}, \rightarrow eFg_{\mathrm{photo}} \propto P_e.
 \label{eq:}
 \end{equation}
 
+with the differential equation
+
 \begin{equation}
-eFg = \alpha_i i_n + \beta_i i_p
+\frac{1}{v_p} \frac{\partiali_p}{\partial t} +\frac{\partiali_p}{\partial x} = eFg_{\mathrm{photo}} 
+\label{eq:}
+\end{equation}
+
+and
+
+\begin{equation}
+\frac{1}{v_n} \frac{\partiali_n}{\partial t} +\frac{\partiali_n}{\partial x} = eFg_{\mathrm{photo}} 
+\label{eq:}
+\end{equation}
+
+follows for $\frac{\partial}{\partial t} = 0$
+
+\begin{equation}
+eFg_{\mathrm{ion}} = \alpha_i i_n + \beta_i
 \label{eq:}
 \end{equation}
 
