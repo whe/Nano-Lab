@@ -6,9 +6,14 @@ In the Experiment an Austrian one cent coin was examined. The goal of the experi
 
 To start the OCT-system first the measurement computer, the scanning mirror drivers, the detector unit and the Laser has to be switched on. The laser is operational if the LED labeled 'ready' is on. At the measurement computer the LabView program 'OCT\_student.vi' is started.
 
+<<<<<<< HEAD
+To check the functionality of the system a 'continuous scan' is performed. The current plots of the A-scan in k-space and z-space are shown in the LabView window. In the A-scan in z-space a peak is visible. This represents the position of the surface of the sample. The position of the sample can be moved by a positioning screw. If the position of the peak is moved below zero, another peak becomes visible moving in positive direction. Thus the modulation of the A-scan in k-space consists of two symmetrical peaks in z-space. Since k-space and z-space are related by a Fourier transform (cf. \ref{sec:fourier}), the modulation carrying the information must be sinusoidal.
+With this setup only the difference of the optical path length of the reference and the sample arm is measured. So when moving the peak below zero, another peak becomes visible moving in positive direction. 
+=======
 To check the functionality of the system a 'continuous scan' is performed. The current plots of the A-scan in k-space and z-space are shown in the LabView window. In the A-scan in z-space a peak is visible. This represents the position of the surface of the sample. The position of the sample can be moved by a positioning screw. If the position of the peak is moved below zero, another peak becomes visible moving in positive direction. Thus the modulation of the A-scan in k-space consists of two symmetrical peaks in z-space. Since k-space and z-space are related by a Fourier transform (cf. \ref{sec:fourier}), the modulation carrying the information must be sinusoidal. 
 With this setup only the difference of the optical path length of the reference and the sample arm is measured. So when moving the peak below zero, another peak becomes visible moving in positive direction. 
 
+>>>>>>> 5b3da80a481814a42c97c7979e3b40e1e040ff34
 When turning on the positioning screw and moving the sample, the amplitude of the peak in z-space changes. This is because of the lens that focuses the beam on the sample. The maximum peak amplitude is when the beam is focused. By moving the sample out of the focus the amplitude gets smaller.
 
 As another check, the optical path was one time blocked at the sample side and one time at the reference side. If this is done, in both ways the peak in z-domain vanishes, because there is no more interference. Though the A-scans in z-domain differ significantly. 
@@ -31,9 +36,9 @@ At the last the data is displayed in four surface plots. In the first plot, all 
 \begin{figure}%
 \centering
 %\begin{adjustwidth}{0cm}{0cm}
-	\subfloat[k-space]{\includegraphics[totalheight=6 cm]{Grafiken/Ak_1.pdf}\label{fig:Ak1}~}
+	\subfloat[k-space]{\includegraphics[totalheight=6 cm]{Grafiken/Ak_1.pdf}\label{fig:Ak1}}
 	\subfloat[z-space]{\includegraphics[totalheight=4 cm]{Grafiken/Az_1.pdf} \label{fig:Az1}}\\%
-	\subfloat[z-space (limited)]{\includegraphics[totalheight=4 cm]{Grafiken/Az_trunc1.pdf}\label{fig:Az_1_trunc}~}
+	\subfloat[z-space (truncaded)]{\includegraphics[totalheight=4 cm]{Grafiken/Az_trunc1.pdf}\label{fig:Az_1_trunc}}
 	\subfloat[3-D surface]{\includegraphics[totalheight=4 cm]{Grafiken/3d_1.pdf} \label{fig:3d_1}}
 %\end{adjustwidth}
 \caption{Matlab Output. Step size: 1°}%
