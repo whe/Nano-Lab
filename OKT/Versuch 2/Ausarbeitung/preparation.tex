@@ -34,13 +34,34 @@ equation \eqref{eq:power} can be simplified to:
 
 \section{Question 3: Photodetector with Transimpedance Amplifier}
 
-In Figure \ref{fig:OPAMP} with Kirchhoff's second law it can be derived:
+In Figure \ref{fig:OPAMP} with Kirchhoff's second law it can be derived (using the green loop):
 \begin{equation}
- - u_{\mathrm{PIN}} - i_{\mathrm{PIN}}\cdot \frac{R}{1+ j\omega RC}+u_{\mathrm{a}} = 0
+ - u_{\mathrm{PIN}} - i_{\mathrm{PIN}}\cdot \frac{R}{1+ j\omega RC}+u_{\mathrm{a}} = 0 .
+\label{eq:masche1}
 \end{equation}
-and
+Using
 \begin{equation}
- u_{\mathrm{PIN}}=0
+ u_{\mathrm{PIN}}=0.
+\label{eq:masche2}
+\end{equation}
+resulting also from Kirchhoff's second law (red loop) you get:
+\begin{equation}
+ u_{\mathrm{a}} = i_{\mathrm{PIN}}\cdot \frac{R}{1+ j\omega RC}.
+\label{eq:ua}
 \end{equation}
 
+For the cut-off frequency $f_{\mathrm{3dB}}$ the following condition has to be fulfilled:
+\begin{equation}
+ \frac{f_{\mathrm{3dB}})}{u(0)} = \frac{1}{2}
+\end{equation}
+With \eqref{eq:ua} you obtain
+\begin{equation}
+ \frac{i_{\mathrm{PIN}}\cdot \frac{R}{1+ j2\pi f_{\mathrm{3dB}} RC}}{i_{\mathrm{PIN}}\cdot R} = \frac{1}{2}
+\end{equation}
+and further
+\begin{equation}
+ f_{\mathrm{3dB}} = \frac{1}{j2\pi RC} 
+\end{equation}
+
+ 
 
