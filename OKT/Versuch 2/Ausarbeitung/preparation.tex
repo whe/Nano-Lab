@@ -80,40 +80,50 @@ eFg_{\mathrm{photo}} = \frac{\eta e}{hf_L}P_e\frac{\alpha e^{-\alpha(x+w_a)}}{1-
 \label{eq:}
 \end{equation}
 
-with the differential equation
+Because in a stationary case $i$ is proportional to eFg it is also proportional to $P_e$. Here $e$ is the elementary charge, $F$ the active surface and $g$ the optical generation rate.
+ 
+The multiplication in the APD is caused by impact ionization. The ionization probabilities $\beta_i$ and $\alpha_i$ are proportional to $e^{\frac{-W_{\mathrm{ion}}}{W_T}},  W_T=eEl_\mathrm{LO}$. Here $E$ is the electrical field, $l_\mathrm{LO]$ the free path. Therefore $\beta_i$ and $\alpha_i$ are independent of $P$.
 
+Since $M_0$ is for the stationary case 
 \begin{equation}
-\frac{1}{v_p} \frac{\partial i_p}{\partial t} +\frac{\partial i_p}{\partial x} = eFg_{\mathrm{photo}} 
+M_0=\frac{(\beta_i  -\alpha_i)e^{(\beta_i-\alpha_i)w_L}}{\beta_i - \alpha_i e^{(\beta_i - \alpha_i)w_L}},
 \label{eq:}
 \end{equation}
-
-and
-
-\begin{equation}
-\frac{1}{v_n} \frac{\partial i_n}{\partial t} +\frac{\partial i_n}{\partial x} = eFg_{\mathrm{photo}} 
-\label{eq:}
-\end{equation}
-
-follows for $\frac{\partial}{\partial t} = 0$
-
-
-\begin{equation}
-i_p = eFg_{\mathrm{photo}}\cdot x
-\label{eq:}
-\end{equation}
-
-\begin{equation}
-i_n = eFg_{\mathrm{photo}}\cdot x
-\label{eq:}
-\end{equation}
-
-Therefore $i_n$, $i_p$ $\propto P_e$.
-
-At a APD there's an impact ionszation. 
-\begin{equation}
-eFg_{\mathrm{ion}} = \alpha_i i_n + \beta_i i_p
-\label{eq:}
-\end{equation}
+$w_L$ is the length of the avalanche-zone, $M_0$ does not depend on $P$.
+%with the differential equation
+%
+%\begin{equation}
+%\frac{1}{v_p} \frac{\partial i_p}{\partial t} +\frac{\partial i_p}{\partial x} = eFg_{\mathrm{photo}} 
+%\label{eq:}
+%\end{equation}
+%
+%and
+%
+%\begin{equation}
+%\frac{1}{v_n} \frac{\partial i_n}{\partial t} +\frac{\partial i_n}{\partial x} = eFg_{\mathrm{photo}} 
+%\label{eq:}
+%\end{equation}
+%
+%follows for $\frac{\partial}{\partial t} = 0$
+%
+%
+%\begin{equation}
+%i_p = eFg_{\mathrm{photo}}\cdot x
+%\label{eq:}
+%\end{equation}
+%
+%\begin{equation}
+%i_n = eFg_{\mathrm{photo}}\cdot x
+%\label{eq:}
+%\end{equation}
+%
+%Therefore $i_n$, $i_p$ $\propto P_e$.
+%
+%At a APD there's an impact ionszation. 
+%\begin{equation}
+%eFg_{\mathrm{ion}} = \alpha_i i_n + \beta_i i_p
+%\label{eq:}
+%\end{equation}
 
 
 \begin{figure}%
