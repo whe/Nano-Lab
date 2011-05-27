@@ -26,7 +26,7 @@ Figure \ref{fig:T1_laser} shows the measured short-circuit current $I_{\mathrm{P
 
 \todo{Threshold}
 
-For the next tasks four laser currents were selected. The corresponding photo currents are equidistant. Table \ref{tab:T1_values} shows the selected currents. Since the photo current is proportional to the incoming radiant power, the corresponding power at the for laser currents are equidistant as well.
+For the next tasks four laser currents were selected. The corresponding photo currents are equidistant. Table \ref{tab:T1_values} shows the selected currents. Since the photo current is proportional to the incoming radiant power, the corresponding powers at the four laser currents are equidistant as well.
 
 
 \begin{table}%
@@ -60,9 +60,22 @@ $I_{\mathrm{L}}$ / mA	&	$I_{\mathrm{PIN}}$ / $\upmu$A\\
 
 \section{Task 3: Field characteristic of an APD}
 
+For this task a APD was integrated into the setup. The diode was aligned to maximize the output current $I_{\mathrm{APD}}$.
+Figure \ref{fig:T3_setup}\footmarknote[1] shows the setup.
+
+To measure the caracteristic of the laser diode a reverse voltage ov $U = -10$~V was applied to the APD and the series resistance $R_{\mathrm{V}}$. "The voltage corresponds to an avalanche multiplication factor $M_0 \approx 1$"\footmarknote[1].
+
 \begin{figure}%
 \centering
-\includegraphics[width=\columnwidth]{Grafiken/T3_setup.jpg}%
+\includegraphics[width=.85\columnwidth]{Grafiken/T3_setup.jpg}%
 \caption{}%
 \label{fig:T3_setup}%
+\end{figure}
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/T3_laser.pdf}%
+\caption{Dependency of the photo current of the APD on the laser current.}%
+\label{fig:T3_laser}%
 \end{figure}
