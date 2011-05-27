@@ -25,12 +25,38 @@ With $P = R\cdot I^2$, $I_{\mathrm{pr}} = S\cdot P$ and equation \eqref{eq:diode
 For the Case:
 \begin{equation}
  \frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}} \ll 1 \to \exp\left(\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}}\right)\approx1+\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}}
+\label{eq:vereinfachung}
 \end{equation}
-equation \eqref{eq:power} can be simplified to:
+equation \eqref{eq:diode} can be simplified to:
+%\begin{equation}
+%  P_{\mathrm{el}} = R_{\mathrm{a}}\cdot\left\{ I_{\mathrm{Sat}}\cdot\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}} -S\cdot P\right\}^2.
+%\end{equation}
+%
+%Because of \eqref{eq:vereinfachung} the primary photo current $S\cdot P$ is dominating. 
 \begin{equation}
-  P_{\mathrm{el}} = R_{\mathrm{a}}\cdot\left\{ I_{\mathrm{Sat}}\cdot\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}} -S\cdot P\right\}^2.
+I_{\mathrm{PIN}} = I_{\mathrm{Sat}}\cdot\frac{U_{\mathrm{PIN}}}{U_{\mathrm{T}}} -S\cdot P
+\label{eq:}
 \end{equation}
-\todo{da stimmt irgendwas noch net}
+The power $P = U_{\mathrm{PIN}} \cdot I_{\mathrm{PIN}}$ can be maximized  by deriving $P$ by $U_{\mathrm{PIN}}$. That way the voltage for the maximum power can be obtained. 
+\begin{equation}
+U_{\mathrm{PIN}} = \frac{S\cdot P \cdot U_{\mathrm{T}}}{2\cdot I_{\mathrm{sat}}} 
+\label{eq:}
+\end{equation}
+Inserting this therm into \eqref{eq:diode} the current for the maximum power is
+
+\begin{equation}
+I_{\mathrm{PIN}} = - \frac{S \cdot P}{2}
+\label{eq:}
+\end{equation}
+
+Thus for $R = U/I$ the resistance for the maximum power is
+
+\begin{equation}
+R_{\mathrm{max}} = - \frac{U_{\mathrm{T}}}{I_{\mathrm{Sat}}}
+\label{eq:}
+\end{equation}
+
+%\todo{da stimmt irgendwas noch net}
 
 \section{Question 3: Photodetector with Transimpedance Amplifier}
 
@@ -71,25 +97,42 @@ and further
  f_{\mathrm{3dB}} = \frac{\sqrt{2}-1}{j2\pi RC} 
 \end{equation}
 
- 
+With \eqref{eq:ua}, \eqref{eq:diode},\eqref{eq:masche2} and $I_{\mathrm{S\cdot P}}$ it can be obtained:
+\begin{equation}
+ u_{\mathrm{a}} =  -S\cdot P\cdot \frac{R}{1+ j\omega RC} 
+\label{eq:}
+\end{equation} 
 
+Thus for a constant $\omega$, $u_{\mathrm{a}}$ is linearly dependent on the optical power $P$. The proportionality constant is 
+\begin{equation}
+\zeta = -S\cdot \frac{R}{1+ j\omega RC}.
+\label{eq:}
+\end{equation}
+ 
 \section{Question 4: APD - Change of light power}
 
-\begin{equation}
-eFg_{\mathrm{photo}} = \frac{\eta e}{hf_L}P_e\frac{\alpha e^{-\alpha(x+w_a)}}{1-e^{-\alpha w_A}}, \rightarrow eFg_{\mathrm{photo}} \propto P_e.
-\label{eq:}
-\end{equation}
-
-Because in a stationary case $i$ is proportional to eFg it is also proportional to $P_e$. Here $e$ is the elementary charge, $F$ the active surface and $g$ the optical generation rate.
- 
-The multiplication in the APD is caused by impact ionization. The ionization probabilities $\beta_i$ and $\alpha_i$ are proportional to $e^{\frac{-W_{\mathrm{ion}}}{W_T}},  W_T=eEl_\mathrm{LO}$. Here $E$ is the electrical field, $l_\mathrm{LO]$ the free path. Therefore $\beta_i$ and $\alpha_i$ are independent of $P$.
-
-Since $M_0$ is for the stationary case 
-\begin{equation}
-M_0=\frac{(\beta_i  -\alpha_i)e^{(\beta_i-\alpha_i)w_L}}{\beta_i - \alpha_i e^{(\beta_i - \alpha_i)w_L}},
-\label{eq:}
-\end{equation}
-$w_L$ is the length of the avalanche-zone, $M_0$ does not depend on $P$.
+%\begin{equation}
+%eFg_{\mathrm{photo}} = \frac{\eta e}{hf_L}P_e\frac{\alpha e^{-\alpha(x+w_a)}}{1-e^{-\alpha w_A}}, \rightarrow eFg_{\mathrm{photo}} \propto P_e.
+%\label{eq:}
+%\end{equation}
+%
+%Because in a stationary case $i$ is proportional to eFg it is also proportional to $P_e$. Here $e$ is the elementary charge, $F$ the active surface and $g$ the optical generation rate.
+% 
+%The multiplication in the APD is caused by impact ionization. The ionization probabilities $\beta_i$ and $\alpha_i$ are proportional to 
+%\begin{equation}
+%\alpha_i, \beta_i \propto e^{\frac{-W_{\mathrm{ion}}}{W_T}},  W_T=eEl_\mathrm{LO}.
+%\label{eq:}
+%\end{equation}
+%
+%
+%Here $E$ is the electrical field, $l_\mathrm{LO}$ the free path. Therefore $\beta_i$ and $\alpha_i$ are independent of $P$.
+%
+%Since $M_0$ is for the stationary case (dP/dt=0)
+%\begin{equation}
+%M_0=\frac{(\beta_i  -\alpha_i)e^{(\beta_i-\alpha_i)w_L}}{\beta_i - \alpha_i e^{(\beta_i - \alpha_i)w_L}},
+%\label{eq:}
+%\end{equation}
+%$w_L$ is the length of the avalanche-zone, $M_0$ does not depend on $P$.
 %with the differential equation
 %
 %\begin{equation}
@@ -125,6 +168,15 @@ $w_L$ is the length of the avalanche-zone, $M_0$ does not depend on $P$.
 %\label{eq:}
 %\end{equation}
 
+The in figure \ref{fig:Q4_APD}\footnote[1]{Source: OKT Experiment 2: Photodiode analysis task-sheet} shown circuit is given.
+The APD gets radiated by a power $P$. 
+When changing the the radiating power to $P + \Delta P$ several things change in the circuit.
+
+The circuit is driven by a constant voltage of $U = 0.9\cdot U_{\mathrm{BR}}$. When changing $P$, $I_{\mathrm{APD}}$ changes proportional to the change of $P$.
+
+A change of $I_{\mathrm{APD}}$ causes a change of the voltage that falls off over $R_{\mathrm{V}}$. Since the driving voltage is constant, the voltage over the APD decreases. Because $M_0$ depends strongly on $U_{\mathrm{APD}}$, $M_0$ decreases as well. 
+
+
 
 \begin{figure}%
 \centering
@@ -132,3 +184,5 @@ $w_L$ is the length of the avalanche-zone, $M_0$ does not depend on $P$.
 \caption{APD with series resistance}%
 \label{fig:Q4_APD}%
 \end{figure}
+
+
