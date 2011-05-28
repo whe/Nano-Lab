@@ -20,7 +20,7 @@ from the experiment description, with $R_{\mathrm{a}}\to\infty(I_{\mathrm{PIN}}\
 \end{equation}
 and further to:
 \begin{equation}
- U_{\mathrm{PIN0}}(I_{\mathrm{pr}}) = U_{\mathrm{T}}\ln\left(\frac{I_{\mathrm{pr}}}{I_{\mathrm{Sat}}}\right)+1
+ U_{\mathrm{PIN0}}(I_{\mathrm{pr}}) = U_{\mathrm{T}}\ln\left(\frac{I_{\mathrm{pr}}}{I_{\mathrm{Sat}}}+1\right)
 \end{equation}
 
 \section{Question 2: Electrical Power of a PIN Diode}
@@ -64,6 +64,11 @@ R_{\mathrm{max}} = - \frac{U_{\mathrm{T}}}{I_{\mathrm{Sat}}}
 \label{eq:}
 \end{equation}
 
+For the maximum power then results:
+\begin{equation}
+ P_{\mathrm{max}}= \frac{S^2\cdot P^2\cdot U_{\mathrm{T}}}{4 \cdot I_{\mathrm{sat}}}
+\end{equation}
+
 %\todo{da stimmt irgendwas noch net}
 
 \section{Question 3: Photodetector with Transimpedance Amplifier}
@@ -94,22 +99,21 @@ resulting also from Kirchhoff's second law (green loop) you get:
 
 For the cut-off frequency $f_{\mathrm{3dB}}$ the following condition has to be fulfilled:
 \begin{equation}
- \frac{u(f_{\mathrm{3dB}})}{u(0)} = \frac{1}{\sqrt{2}}
+ \left|\frac{u(f_{\mathrm{3dB}})}{u(0)}\right| = \frac{1}{\sqrt{2}}
 \end{equation}
 With \eqref{eq:ua} you obtain
 \begin{equation}
- \frac{i_{\mathrm{PIN}}\cdot \frac{R}{1+ j2\pi f_{\mathrm{3dB}} RC}}{i_{\mathrm{PIN}}\cdot R} = \frac{1}{\sqrt{2}}
+ \left|\frac{i_{\mathrm{PIN}}\cdot \frac{R}{1+ j2\pi f_{\mathrm{3dB}} RC}}{i_{\mathrm{PIN}}\cdot R}\right| = \frac{1}{\sqrt{2}}
 \end{equation}
 and further
 \begin{equation}
- f_{\mathrm{3dB}} = \frac{\sqrt{2}-1}{j2\pi RC} 
+ f_{\mathrm{3dB}} = \frac{\sqrt{2}-1}{2\pi RC} 
 \end{equation}
 
-With \eqref{eq:ua}, \eqref{eq:diode},\eqref{eq:masche2} and $I_{\mathrm{S\cdot P}}$ it can be obtained:
-\begin{equation}
- u_{\mathrm{a}} =  -S\cdot P\cdot \frac{R}{1+ j\omega RC} 
-\label{eq:}
+With \eqref{eq:ua}, \eqref{eq:diode},\eqref{eq:masche2} and $I_{\mathrm{pr}}=S\cdot P$ it can be obtained:
 
+\begin{equation}
+ u_{\mathrm{a}} =  -S\cdot P\cdot \frac{R}{1+ j\omega RC}
 \end{equation}
 
 Because in a stationary case $i$ is proportional to eFg it is also proportional to $P_e$. Here $e$ is the elementary charge, $F$ the active surface and $g$ the optical generation rate.
@@ -184,7 +188,7 @@ Thus for a constant $\omega$, $u_{\mathrm{a}}$ is linearly dependent on the opti
 
 The in figure \ref{fig:Q4_APD}\footnote[1]{Source: OKT Experiment 2: Photodiode analysis task-sheet} shown circuit is given.
 The APD gets radiated by a power $P$. 
-When changing the the radiating power to $P + \Delta P$ several things change in the circuit.
+When changing the radiating power to $P + \Delta P$ several things change in the circuit.
 
 The circuit is driven by a constant voltage of $U = 0.9\cdot U_{\mathrm{BR}}$. When changing $P$, $I_{\mathrm{APD}}$ changes proportional to the change of $P$.
 
