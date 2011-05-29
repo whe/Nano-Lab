@@ -3,10 +3,31 @@
 \section{Theory}
 % Commonly two kinds of photodetectors are used. PIN-Photodiodes and Avalanche Photo Diodes (APD).
 \subsection{PIN-Photodiode}
-In a PIN-Photodiode a p-doped region of a semiconductor is seperated from a n-doped region by an intrinsic zone. This layout is shown in figure \ref{fig:pin}. \todo{Bild einfügen}. If the device is irradiated, photons with more energy than the band gap ($h\cdot f > W_{\mathrm{Gap}}$) are absorbed by generating a electron hole pair. Usualy this electron hole pair recombines after a short period of time, but if it is generated in the diffusion zone, the space charge zone or the intrinsic zone of a pin junction the charge carriers are accelerated by the Electric field in opposite directions. This carrier movement in the device is compensated by a current in the external wiring.
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/pin.png}%
+\caption{Layout of a PIN-diode}%
+\label{fig:pin}%
+\end{figure}
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/apd.png}%
+\caption{Layout of an APD}%
+\label{fig:APD}%
+\end{figure}
+
+In a PIN-Photodiode a p-doped region of a semiconductor is seperated from a n-doped region by an intrinsic zone. This layout is shown in figure \ref{fig:pin}. If the device is irradiated, photons with more energy than the band gap ($h\cdot f > W_{\mathrm{Gap}}$) are absorbed by generating a electron hole pair. Usualy this electron hole pair recombines after a short period of time, but if it is generated in the space charge zone or the intrinsic zone of a pin junction the charge carriers are accelerated by the electric field in opposite directions. This carrier movement in the device is compensated by a current in the external wiring.
+
+A electron hole pair generated in the diffusion zone also leads to a current. Since the carriers in that zone move with their diffusion velocity, which is orders of magnitude smaller than the drift velocity in the intrinsic zone, generation in the diffusion zone is not wanted. The generation of carriers in the diffusion zone can be minimized by highly doping the semiconductor.
+
+
 \subsection{Avalanche Photo Diode (APD)}
-
-
+% The setup of a APD is shown in figure \ref{fig:APD}. It is build like a PIN-diode, but there is an additional avalanche zone. 
+The APD is build similary to the PIN-diode. There is a n-doped zone at the one side and a p-doped zone at the other side. In between there is also a intrinsic domain and additionaly another doped zone, which is oppositly doped as the contigous zone (cf. figure \ref{fig:APD}. Like in the PIN-diode, the carriers are generated in the i-zone and accelerated in different directions. One kind of the carriers (in the figure \ref{fig:APD} the holes) move through the avalanche zone. There carriers are accelerated by the high electric field. These carriers have enough kinetic energy to generate further carriers by impact ionization. This leads to a amplification of the current induced by one photon. Since the carrier multiplication in the avalanche zone is a stochastic process, there is more noise in the APD than in the PIN-diode.
 
 \section{Question 1: Open Circuit Voltage}
 The Term (1)
