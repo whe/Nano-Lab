@@ -57,8 +57,11 @@ $I_{\mathrm{L}}$ / mA	&	$I_{\mathrm{PIN}}$ / $\upmu$A\\
 
 \section{Task 2: Field characteristic of a PIN diode II}
 
-In the second task first a bias is applied to the PIN-diode (cf. \ref{fig:T2_setup}). The voltage is varied from 0.1~V to 0.6~V and the $I_{\mathrm{PIN}}$ is recorded for the four $I_{\mathrm{pr}}$ determined in the first task (cf tabular \ref{tab:T1_values}). The voltage $U_{\mathrm{PIN0}} = U_{\mathrm{PIN}}(I_{\mathrm{PIN}}=0)$ is determined as well. Figure \ref{fig:UPIN0} shows the dependency of $\exp(U_{\mathrm{PIN0}}/U_{\mathrm{T}})$ on $I_{\mathrm{pr}}$.
+In the second task first a bias is applied to the PIN-diode (cf. \ref{fig:T2_setup}). The voltage is varied from 0.1~V to 0.6~V and  $I_{\mathrm{PIN}}$ is recorded for the four $I_{\mathrm{pr}}$ determined in the first task (cf tabular \ref{tab:T1_values}). The voltage $U_{\mathrm{PIN0}} = U_{\mathrm{PIN}}(I_{\mathrm{PIN}}=0)$ is determined as well. Figure \ref{fig:UPIN0} shows the dependency of $\exp(U_{\mathrm{PIN0}}/U_{\mathrm{T}})$ on $I_{\mathrm{pr}}$. \todo{evtl was die grafik bedeutet.}
 
+Next a reverse bias is applied to the PIN-diode. $U_{\mathrm{PIN}}$ is varied between 0 and -20~V. Figure \ref{fig:linearity} shows the dependence of $I_{\mathrm{PIN}}$ on the photocurrent $I_{\mathrm{pr}}$ for a bias voltage of -4~V and -12~V respectively. One can see, that the dependency is linear. This dependency is the same for all measured reverse bias voltages. Thus $I_{\mathrm{PIN}}$ depends lineary on the photocurrent $I_{\mathrm{pr}}$ independent from the bias voltage.
+
+Figure \ref{fig:PIN_kombiniert} shows the field characteristic of the PIN-diode for a forward bias as well as reverse bias voltage.
  
 
 
@@ -67,6 +70,13 @@ In the second task first a bias is applied to the PIN-diode (cf. \ref{fig:T2_set
 \includegraphics[width=.6\columnwidth]{Grafiken/T2_setup.jpg}%
 \caption{}%
 \label{fig:T2_setup}%
+\end{figure}
+
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/linearity.pdf}%
+\caption{}%
+\label{fig:linearity}%
 \end{figure}
 
 \begin{figure}%
