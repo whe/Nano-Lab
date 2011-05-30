@@ -1,9 +1,9 @@
 \chapter{Experimental Tasks}
 
-Before the tasks were performed the PIN diode was set into the test set-up. Therefore it was aligned into the optical path of the laser. To align the diode the laser was driven at a constant laser current. The position of diode was adjusted to maximize the photo current. 
+Before the tasks were performed the PIN diode was set into the test set-up. Therefore it was aligned into the optical path of the laser. To align the diode the laser was driven at a constant laser current. The position of diode was adjusted to maximize the photocurrent. 
 
 
-Beside the laser light the diode detected extraneous light as well. This leads to an offset of the measured photo current. With the laser switched off a photo current varying between 2.2 and 2.4~$\upmu$A could be measured.
+Beside the laser light the diode detected extraneous light as well. This leads to an offset of the measured photocurrent. With the laser switched off a photocurrent varying between 2.2 and 2.4~$\upmu$A could be measured.
 
 \section{Task 1: Field characteristic of a PIN diode I}
 \label{T1}
@@ -13,7 +13,7 @@ Beside the laser light the diode detected extraneous light as well. This leads t
 \caption{Setup of task 1}%
 \label{fig:T1_setup}%
 \end{figure}
-In this task the short-ci1rcuit current $I_{\mathrm{PIN}}$ of the PIN diode was measured for different laser currents. Figure \ref{fig:T1_setup}\footnotemark[3] shows the used setup. 
+In this task the short-ci1rcuit current $I_{\mathrm{PIN}}$ of the PIN diode was measured for different laser currents. Figure \ref{fig:T1_setup}\footnote[3]{Source: OKT Experiment 2: Photodiode analysis task-sheet} shows the used setup. 
 
 The laser current was swept from 0 to 60~mA. In the range from 0 to 10~mA a step size of the current change of 0.4~mA was used. From 10 to 20~mA the step size was 1~mA and from 20 to 60~mA a step size of 5~mA was used. 
 
@@ -26,21 +26,21 @@ The laser current was swept from 0 to 60~mA. In the range from 0 to 10~mA a step
 
 Figure \ref{fig:T1_laser} shows the measured short-circuit current $I_{\mathrm{PIN}}$ as a function of the laser current $I_{\mathrm{L}}$. Due to the fact that the measurement was not performed in a dark environment, the ambient light had impact on the measurements. For that reason the values of $I_{\mathrm{PIN}}$ are adjusted by 2.2~$\upmu$A. Thereby the value of $I_{\mathrm{PIN}}$ for the laser in off-state is 0~$\upmu$A.
 
-To approximate the threshold a linear dependence of the number of photons emitted by the laser diode and the laser current was assumed \footnotemark[1]. Since the power depends of the number of photons and the photo current is proportional to the laser power, the connection between $I_{\mathrm{PIN}}$ and $I_{\mathrm{L}}$ can be assumed as linear as well. The linear emission should start at the threshold current. Because of spontaneous emission in the laser diode the emission starts below this threshold.
+To approximate the threshold a linear dependence of the number of photons emitted by the laser diode and the laser current was assumed \footnote[1]{Source: Optische Nachrichtentechnik; Grau,G; Freude, W; 3rd ed. Springer, 1991}. Since the power depends of the number of photons and the photocurrent is proportional to the laser power, the connection between $I_{\mathrm{PIN}}$ and $I_{\mathrm{L}}$ can be assumed as linear as well. The linear emission should start at the threshold current. Because of spontaneous emission in the laser diode the emission starts below this threshold.
 
 To approximate the threshold a linear fitting of the curve was performed. Only values of $I_{\mathrm{L}} \geq 50$~mA were taken into account because the spontaneous emission is of no consequence there. This fit corresponds approximately to the tangent in the linear range. Figure \ref{fig:T1_laser} shows the linear fit as well. The intercept with $I_{\mathrm{PIN}} = 0~\upmu$A is at $I_{\mathrm{th}} \approx 28$mA. This can be assumed as the threshold of the laser diode.
 
-For the next tasks four laser currents were selected. The corresponding photo currents are equidistant. Table \ref{tab:T1_values} shows the selected currents. Since the photo current is proportional to the incoming radiant power, the corresponding powers at the four laser currents are equidistant as well.
+For the next tasks four laser currents were selected. The corresponding photocurrents are equidistant. Table \ref{tab:T1_values} shows the selected currents. Since the photocurrent is proportional to the incoming radiant power, the corresponding powers at the four laser currents are equidistant as well.
 
 
 \begin{table}%
 \centering
-\caption{Laser currents and corresponding photo currents.}
+\caption{Laser currents and corresponding primary photocurrents.}
 
 \begin{tabular}{cc}
 
 \toprule
-$I_{\mathrm{L}}$ / mA	&	$I_{\mathrm{PIN}}$ / $\upmu$A\\
+$I_{\mathrm{L}}$ / mA	&	($I_{\mathrm{pr}}$ = -$I_{\mathrm{PIN}}$) / $\upmu$A\\
 
 \midrule
 
@@ -61,10 +61,9 @@ In the second task first a bias is applied to the PIN-diode (cf. \ref{fig:T2_set
 % \end{equation}
 
 
-
 \begin{table}%
 \centering
-\caption{$I_{\mathrm{PIN}} = 0~\upmu$A INSERT CAPTION}
+\caption{$U_{\mathrm{PIN}}(I_{\mathrm{PIN}}=0~\upmu$A) for different primary photocurrents.}
 
 \begin{tabular}{cc}
 
@@ -84,7 +83,13 @@ $I_{\mathrm{pr}} / \upmu$A & $U_{\mathrm{PIN}}(I_{\mathrm{PIN}} = 0~\upmu$A$) /$
 
 
 
+<<<<<<< HEAD
 Next a reverse bias is applied to the PIN-diode. $U_{\mathrm{PIN}}$ is varied between 0 and -20~V and $I_{\mathrm{PIN}}$ is again recorded for the four $I_{\mathrm{pr}}$. Figure \ref{fig:linearity} shows the dependence of $I_{\mathrm{PIN}}$ on the photocurrent $I_{\mathrm{pr}}$ for a bias voltage of -4~V and -12~V respectively. One can see, that the dependency is linear. This dependency is the same for all measured reverse bias voltages. Thus $I_{\mathrm{PIN}}$ depends lineary on the photocurrent $I_{\mathrm{pr}}$ independent from the bias voltage as expected when looking at \eqref{eq:diode}.
+=======
+Figure \ref{fig:UPIN0} shows the dependency of $\exp(U_{\mathrm{PIN0}}/U_{\mathrm{T}})$ on $I_{\mathrm{pr}}$. \todo{evtl was die grafik bedeutet.}
+
+Next a reverse bias is applied to the PIN-diode. $U_{\mathrm{PIN}}$ is varied between 0 and -20~V and $I_{\mathrm{PIN}}$ is again recorded for the four $I_{\mathrm{pr}}$. Figure \ref{fig:linearity} shows the dependence of $I_{\mathrm{PIN}}$ on the primary photocurrent $I_{\mathrm{pr}}$ for a bias voltage of -4~V and -12~V respectively. One can see, that the dependency is linear. This dependency is the same for all measured reverse bias voltages. Thus $I_{\mathrm{PIN}}$ depends lineary on the photocurrent $I_{\mathrm{pr}}$ independent from the bias voltage as expected when looking at \eqref{eq:diode}.
+>>>>>>> 02c9a384062676bae5f4b57592caf0434d4d899c
 
 Figure \ref{fig:PIN_kombiniert} shows the field characteristic of the PIN-diode for a forward bias as well as reverse bias voltage.
  
@@ -100,7 +105,7 @@ Figure \ref{fig:PIN_kombiniert} shows the field characteristic of the PIN-diode 
 \begin{figure}%
 \centering
 \includegraphics[width=.6\columnwidth]{Grafiken/linearity.pdf}%
-\caption{Dependency of $I_{\mathrm{PIN}}$ on the photo current $I_{\mathrm{pr}}$}%
+\caption{Dependency of $I_{\mathrm{PIN}}$ on the primary photocurrent $I_{\mathrm{pr}}$}%
 \label{fig:linearity}%
 \end{figure}
 
@@ -119,9 +124,9 @@ Figure \ref{fig:PIN_kombiniert} shows the field characteristic of the PIN-diode 
 \section{Task 3: Field characteristic of an APD}
 
 For this task a APD was integrated into the setup. The diode was aligned to maximize the output current $I_{\mathrm{APD}}$.
-Figure \ref{fig:T3_setup}\footnotemark[3] shows the setup.
+Figure \ref{fig:T3_setup}\footnote[3]{Source: OKT Experiment 2: Photodiode analysis task-sheet} shows the setup.
 
-To measure the caracteristic of the laser diode a reverse voltage ov $U = -10$~V was applied to the APD and the series resistance $R_{\mathrm{V}}$. ``The voltage corresponds to an avalanche multiplication factor $M_0 \approx 1$''\footnotemark[3].
+To measure the caracteristic of the laser diode a reverse voltage ov $U = -10$~V was applied to the APD and the series resistance $R_{\mathrm{V}}$. ``The voltage corresponds to an avalanche multiplication factor $M_0 \approx 1$''\footnote[3]{Source: OKT Experiment 2: Photodiode analysis task-sheet}.
 
 \begin{figure}%
 \centering
@@ -134,14 +139,14 @@ To measure the caracteristic of the laser diode a reverse voltage ov $U = -10$~V
 \begin{figure}%
 \centering
 \includegraphics[width=.5\columnwidth]{Grafiken/T3_laser.pdf}%
-\caption{Dependency of the photo current of the APD on the laser current.}%
+\caption{Dependency of the primary photocurrent of the APD on the laser current.}%
 \label{fig:T3_laser}%
 \end{figure}
 
 
 A laser current range from 0~mA~$\leq I_{\mathrm{L}} \leq 60$~mA was swept in 5~mA steps. There was no offset of $I_{\mathrm{APD}}$ when the laser was switched off. 
 
-Figure \ref{fig:T3_laser} shows the measured photo current $I_{\mathrm{APD}}$ as a function of the laser current $I_{\mathrm{L}}$. 
+Figure \ref{fig:T3_laser} shows the measured photocurrent $I_{\mathrm{APD}}$ as a function of the laser current $I_{\mathrm{L}}$. 
 
 The approximation of the threshold was performed as in \ref{T1} described.
 With this linear approximation for $I_{\mathrm{L}} \geq 50$~mA a threshold of $I_{\mathrm{th}} \approx 30$~mA can be read off.
@@ -150,11 +155,11 @@ This is near the value determined by using the PIN diode but not the same. The u
 
 
 
-Similar to \ref{T1} four laser currents were selected. The corresponding photo currents are equidistant (cf. tab. \ref{tab:T3_values}).
+Similar to \ref{T1} four laser currents were selected. The corresponding photocurrents are equidistant (cf. tab. \ref{tab:T3_values}).
 
 \begin{table}%
 \centering
-\caption{Laser currents and corresponding photo currents at a reverse voltage of $U = -10$~V.}
+\caption{Laser currents and corresponding primary photocurrents at a reverse voltage of $U = -10$~V.}
 
 
 \begin{tabular}{cc}
@@ -207,7 +212,7 @@ M_0(U_{\mathrm{APD}})=\frac{I_{\mathrm{APD}}(U_{\mathrm{APD}})}{I_{\mathrm{APD}}
 \label{eq:M0}
 \end{equation}
 
-This function is plotted in figure \ref{fig:T3_3} for a primary photo current $I_{\mathrm{pr}}=-20~\upmu$A . To estimate the breakthrough voltage $U_{\mathrm{BR}}$ of the APD another formula\footnotemark[2] for $M_0$ was was used:
+This function is plotted in figure \ref{fig:T3_3} for a photocurrent $I_{\mathrm{pr}}=-20~\upmu$A . To estimate the breakthrough voltage $U_{\mathrm{BR}}$ of the APD another formula\footnote[2]{Source: Optical Communication Systems - Part 2, Wolfgang Freude} for $M_0$ was was used:
 \begin{equation}
 M_{\mathrm{th}} = \frac{1}{1-(U/U_{\mathrm{BR}})^n},
 \label{eq:Mth}
