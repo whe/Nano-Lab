@@ -22,28 +22,31 @@
 
 In a PIN-Photodiode a p-doped region of a semiconductor is seperated from a n-doped region by an intrinsic zone. This layout is shown in figure \ref{fig:pin}. If the device is irradiated, photons with more energy than the band gap ($h\cdot f > W_{\mathrm{Gap}}$) are absorbed by generating a electron hole pair. Usualy this electron hole pair recombines after a short period of time, but if it is generated in the space charge zone or the intrinsic zone of a pin junction the charge carriers are accelerated by the electric field in opposite directions. This carrier movement in the device is compensated by a current in the external wiring.
 
-A electron hole pair generated in the diffusion zone also leads to a current. Since the carriers in that zone move with their diffusion velocity, which is orders of magnitude smaller than the drift velocity in the intrinsic zone, generation in the diffusion zone is not wanted. The generation of carriers in the diffusion zone can be minimized by highly doping the semiconductor.\footnote[1]{Optische Nachrichtentechnik; Grau,G; Freude, W; 3rd ed. Springer, 1991}
+A electron hole pair generated in the diffusion zone also leads to a current. Since the carriers in that zone move with their diffusion velocity, which is orders of magnitude smaller than the drift velocity in the intrinsic zone, generation in the diffusion zone is not wanted. The generation of carriers in the diffusion zone can be minimized by highly doping the semiconductor.\footnote[1]{Source: Optische Nachrichtentechnik; Grau,G; Freude, W; 3rd ed. Springer, 1991}
 
 
 \subsection{Avalanche Photo Diode (APD)}
 % The setup of a APD is shown in figure \ref{fig:APD}. It is build like a PIN-diode, but there is an additional avalanche zone. 
 The APD is build similary to the PIN-diode. There is a n-doped zone at the one side and a p-doped zone at the other side. In between there is also a intrinsic domain and additionaly another doped zone, which is oppositly doped as the contigous zone (cf. figure \ref{fig:APD}. Like in the PIN-diode, the carriers are generated in the i-zone and accelerated in different directions. One kind of the carriers (in the figure \ref{fig:APD} the holes) move through the avalanche zone. There carriers are accelerated by the high electric field. These carriers have enough kinetic energy to generate further carriers by impact ionization. This leads to a amplification of the current induced by one photon. Since the carrier multiplication in the avalanche zone is a stochastic process, there is more noise in the APD than in the PIN-diode.\footnotemark[1]
 
-\subsection{Other stuff}
-\todo{Kapitelname ändern!!!!!!!!!!!!}
+\subsection{Sensitivity}
 
 The photo current $i$ of photo diode is proportional to $S\cdot P_{\mathrm{e}}$ with the optical power $P_{\mathrm{e}}$ and the sensitivity $S$ of the photo diode.
 
 The sensitivity is given by
 
 \begin{equation}
-S = \frac{\eta e \lambda_{\mathrm{L}}}{hc}
+S = \frac{\eta e \lambda}{hc}
 \label{eq:}
 \end{equation} 
-where $h$ is Planck's constant, $e$ the elementary charge, $\eta$ the quantum efficiency and $\lambda$ the wavelength of the incoming light. 
-Since $\eta$ depends strongly on the absorption $\alpha$. The absorption depends on the wave length. For $\lambda > \lambda (W_{\mathrm{gap}})$ nothing gets absorbed by the material and $\eta = 0$. For $\lambda < \lambda (W_{\mathrm{gap}})$ the sensitivity gets worse es well. The energy of the photons are higher than the band gap energy. This additional energy changes into phonon energy.\footnote[2]{Optical Communication Systems - Part 2, Wolfgang Freude}
+where $h$ is Planck's constant, $e$ the elementary charge, $c$ the speed of light,  $\eta$ the quantum efficiency and $\lambda$ the wavelength of the incoming light. 
+Since $\alpha$ depends on the wavelength, $\eta$ depends on the wavelength as well. For $\lambda > \lambda (W_{\mathrm{gap}})$ nothing gets absorbed by the material and $\eta = 0$. So the sensitivity below is 0 for $\lambda > \lambda (W_{\mathrm{gap}})$.
+ 
+For $\lambda < \lambda (W_{\mathrm{gap}})$ the sensitivity decreases. 
+When keeping the optical power constant and decreasing the photon wavelength there are less incoming photons. Every photon can only generate on electron-hole pair. So the sensitivity decreases linear with a decreasing wavelength.\footnote[2]{Source: Optical Communication Systems - Part 2, Wolfgang Freude}
+The energy of the photons is higher than the band gap energy. This additional energy of the photons transfers into phonon energy.
 
-Figure \ref{fig:sens} shows the spectral sensitivity of a BPW34 PIN photodiode\footnote[4]{Vishay Semiconductors, BPW34 Datasheet}. 
+Figure \ref{fig:sens} shows the spectral sensitivity of a BPW34 PIN photodiode\footnote[4]{Source: Vishay Semiconductors, BPW34 Datasheet}. 
 
 \begin{figure}%
 \centering
