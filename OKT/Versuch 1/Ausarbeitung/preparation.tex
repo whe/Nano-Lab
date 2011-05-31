@@ -66,17 +66,27 @@ and $n_\mathrm{g}$ can be calculated:
 \begin{split}
 n_\mathrm{g} = n - \lambda\frac{-0.4}{\mathrm{eV}}\frac{hc}{\lambda^2}=4.136 \quad.
 \end{split}
-\label{eq:}
+\label{eq:ng}
 \end{equation}
 \subsection{Question 3}
 
-From figure \ref{fig:Q1} the difference of two resonator wavelenth can be determined as about $\Delta\lambda\i{q} \approx 0.29$~nm. This corresponds to a frequency difference of $\Delta f\i{q} \approx 138$~GHz.
-
-With the free spectral range and 
+From figure \ref{fig:Q1} the difference of two resonator wavelenth can be determined as about $\Delta\lambda\i{q} \approx 0.29$~nm. This corresponds to a frequency difference of 
 \begin{equation}
- \Delta f\i{q} = \frac{c}{2n\i{g}L} = \frac{1}{\tau\i{U}}
+ \left|\Delta f\i{q}\right| = \frac{c\cdot\Delta\lambda\i{q}}{\lambda_0^2} = 138 \mathrm{~GHz} 
 \end{equation}
-$\tau\i{U}$ ca
+The circulation time in the resonator can be calculated by:
+\begin{equation}
+ \tau\i{U} = \frac{1}{\Delta f\i{q}} = 7.24\mathrm{~ps}
+\end{equation}
+With the group velocity form \eqref{eq:ng} the Length the resonator $L$ can be computed by
+\begin{equation}
+ L = \frac{c\cdot\tau\i{U}}{2n\i{g}} = 262.7 \mathrm{~nm}
+\end{equation}
+Expressed in multiples of the resonator wavelength the length of one resonator circulation is:
+\begin{equation}
+ q = \frac{n\i{g}\cdot 2L}{\lambda_0} = 2786
+\end{equation}
+
 
 \subsection{Question 5}
 \subsubsection{5. a)}
