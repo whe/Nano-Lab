@@ -24,8 +24,50 @@ Since the resonance frequencies of the laser depend on the refractive index of t
 
 \todo{nochmal kontrollieren, und warum ändert sich der optical gain auch mit der leistung? sicher auch wegen $\Delta n$.}
 
+\subsection{Question 2}
+The group refractive index for $\lambda~=~$780~nm in GaAs was ask.
+For $n$~=~3.5 and d$n$/d$E$ = 0.4/eV.
+
+\begin{equation}
+\begin{split}
+n_\mathrm{g} = n - \lambda \frac{\mathrm{d}n}{\mathrm{d}\lambda}\\
+\end{split}
+\label{eq:}
+\end{equation}
 
 
+with 
+\begin{equation}
+\begin{split}
+\frac{\mathrm{d}E}{\mathrm{d}\lambda}=- \frac{hc}{\lambda^2}\\
+\mathrm{d}E=- \frac{hc}{\lambda^2}\mathrm{d}\lambda\\
+\end{split}
+\label{eq:}
+\end{equation}
+follows for $\frac{\mathrm{d}n}{\mathrm{d}E}$
+
+
+\begin{equation}
+\begin{split}
+\frac{\mathrm{d}n}{\mathrm{d}E}=\frac{0.5}{\mathrm{eV}}=\frac{\mathrm{d}n}{\mathrm{d}\lambda}\frac{-\lambda^2}{hc}\quad.
+\end{split}
+\label{eq:}
+\end{equation}
+So $\frac{\mathrm{d}n}{\mathrm{d}\lambda}$ becomes
+
+\begin{equation}
+\frac{\mathrm{d}n}{\mathrm{d}\lambda} = \frac{-0.4}{\mathrm{eV}}\frac{hc}{\lambda^2}\quad.
+\label{eq:}
+\end{equation}
+
+and $n_\mathrm{g}$ can be calculated:
+
+\begin{equation}
+\begin{split}
+n_\mathrm{g} = n - \lambda\frac{-0.4}{\mathrm{eV}}\frac{hc}{\lambda^2}=4.136 \quad.
+\end{split}
+\label{eq:}
+\end{equation}
 \subsection{Question 3}
 
 From figure \ref{fig:Q1} the difference of two resonator wavelenth can be determined as about $\Delta\lambda\i{q} \approx 0.29$~nm. This corresponds to a frequency difference of $\Delta f\i{q} \approx 138$~GHz.
@@ -40,29 +82,29 @@ $\tau\i{U}$ ca
 \subsubsection{5. a)}
 
 \begin{equation}
-\frac{dN_p}{dt}=\left[ \Gamma G(n_T) - \frac{1}{\tau_p} \right] + \Gamma G(n_T)n_{sp}(n_T)
+\frac{\mathrm{d}N\i{p}}{\mathrm{d}t}=\left[ \Gamma G(n\i{T}) - \frac{1}{\tau\i{p}} \right] + \Gamma G(n\i{T})n\i{sp}(n\i{T})
 \label{eq:}
 \end{equation}
 There are different parts in the differential equation with different physical meanings.
 
 \begin{itemize}
-	\item $\frac{dN_p}{dt}$ is the change of the number of photons per time.
-	\item $N_P \Gamma G(n_T)$ are the through stimulation generated photons per time.
-	\item $-\frac{N_P}{\tau_p}$ are the outcoupled and absorbed photons per time.
-	\item $\Gamma G(n_t)n_{sp}(n_t)$ are the spontaniously generated photons per mode and time.
+	\item $\frac{\mathrm{d}N\i{p}}{\mathrm{d}t}$ is the change of the number of photons per time.
+	\item $N\i{P} \Gamma G(n\i{T})$ are the through stimulation generated photons per time.
+	\item $-\frac{N\i{P}}{\tau\i{p}}$ are the outcoupled and absorbed photons per time.
+	\item $\Gamma G(n\i{T})n\i{sp}(n\i{T})$ are the spontaniously generated photons per mode and time.
 \end{itemize}
 
 and in
 
 \begin{equation}
-\frac{d(n_T V_r)}{dt} = \frac{I}{e}-r_{eff}(n_T)V_R-N_P\Gamma G(n_t)
+\frac{\mathrm{d}(n\i{T} V\i{r})}{\mathrm{d}t} = \frac{I}{e}-r\i{eff}(n\i{T})V\i{R}-N\i{P}\Gamma G(n\i{T})
 \label{eq:}
 \end{equation}
 
 
 \begin{itemize}
-	\item $\frac{d(n_T V_r)}{dt}$ is the change of the number of electrons per time.
+	\item $\frac{\mathrm{d}(n\i{T} V\i{r})}{\mathrm{d}t}$ is the change of the number of electrons per time.
 	\item $\frac{I}{e}$ are the injected electrons per time
-	\item $-r_{eff}(n_T)V_R$ are the spontaneous and non radiative depleted electrons per time.
-	\item $-N_p\Gamma G(n_T)$ are the through stimulation depleted electrons per time.
+	\item $-r\i{eff}(n\i{T})V\i{R}$ are the spontaneous and non radiative depleted electrons per time.
+	\item $-N\i{p}\Gamma G(n\i{T})$ are the through stimulation depleted electrons per time.
 \end{itemize}
