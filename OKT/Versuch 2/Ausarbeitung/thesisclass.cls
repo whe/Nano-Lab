@@ -287,7 +287,7 @@ language=Matlab
 
 
 
-%\renewcommand{\baselinestretch}{1.3}
+\renewcommand{\baselinestretch}{1.2}
 %\setcounter{tocdepth}{1}
 
 %% **** END OF CLASS ****
