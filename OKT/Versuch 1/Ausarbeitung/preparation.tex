@@ -117,26 +117,25 @@ With the $R$ obtained in \eqref{eq:reflection} this leads to $\alpha\i{S}=$ and 
 
 
 \subsection{Question 5}
-\subsubsection{5. a)}
-
+\paragraph{5. a)}
 \begin{equation}
-\frac{\mathrm{d}N\i{p}}{\mathrm{d}t}=\left[ \Gamma G(n\i{T}) - \frac{1}{\tau\i{p}} \right] + \Gamma G(n\i{T})n\i{sp}(n\i{T})
-\label{eq:}
+\frac{\mathrm{d}N\i{p}}{\mathrm{d}t}=N\i{P}\left[ \Gamma G(n\i{T}) - \frac{1}{\tau\i{p}} \right] + \Gamma G(n\i{T})n\i{sp}(n\i{T})
+\label{eq:q4a1}
 \end{equation}
-There are different parts in the differential equation with different physical meanings.
+There are different parts in the differential equation with different physical meanings.\footnote[4]{Lecture Notes: Optical Sources and Detectors; Koos, C.}
 
 \begin{itemize}
 	\item $\frac{\mathrm{d}N\i{p}}{\mathrm{d}t}$ is the change of the number of photons per time.
 	\item $N\i{P} \Gamma G(n\i{T})$ are the through stimulation generated photons per time.
 	\item $-\frac{N\i{P}}{\tau\i{p}}$ are the outcoupled and absorbed photons per time.
-	\item $\Gamma G(n\i{T})n\i{sp}(n\i{T})$ are the spontaniously generated photons per mode and time.
+	\item $\Gamma G(n\i{T})n\i{sp}(n\i{T})$ are the spontaneously generated photons per mode and time.
 \end{itemize}
 
 and in
 
 \begin{equation}
 \frac{\mathrm{d}(n\i{T} V\i{r})}{\mathrm{d}t} = \frac{I}{e}-r\i{eff}(n\i{T})V\i{R}-N\i{P}\Gamma G(n\i{T})
-\label{eq:}
+\label{eq:q4a2}
 \end{equation}
 
 
@@ -146,3 +145,32 @@ and in
 	\item $-r\i{eff}(n\i{T})V\i{R}$ are the spontaneous and non radiative depleted electrons per time.
 	\item $-N\i{p}\Gamma G(n\i{T})$ are the through stimulation depleted electrons per time.
 \end{itemize}
+
+\todo{Nochmal drüberschauen, vgl. OWS-Skript: 3.114 (PDF-Seite 117). Daher hab ich die bezeichnungen was was ist. hier sind aber einige elemente leicht anders!!!}
+
+\paragraph{5. b)}
+
+When working in the operating point of the Laser with $N\i{P0}, n\i{T0}$ and $I_0$ and assuming that there is no spontaneous emission the equations \eqref{eq:q4a1} and \eqref{eq:q4a2} can be simplified to
+
+\begin{equation}
+\begin{split}
+N\i{P}\left[\Gamma G(n\i{T0})- \frac{1}{\tau\i{P}}\right]=0\\
+\frac{I\i{0}}{e}-r\i{eff}(n\i{T0})V\i{R}-N\i{P}\Gamma G(n\i{T0})=0
+\end{split}
+\label{eq:}
+\end{equation}
+
+With this equations both $\Gamma G(n\i{T0})$ and $N\i{P0}$ can be calculated.
+
+\begin{equation}
+\Gamma G(n\i{T0}) = \frac{1}{\tau\i{P}}
+\label{eq:}
+\end{equation}
+\begin{equation}
+N\i{P0}=\tau\i{P}\left(\frac{I_0}{e}-r\i{eff}(n\i{T0})V\i{R}\right)
+\label{eq:}
+\end{equation}
+
+For $I_0 > er\i{eff}(n\i{Ts})V\i{R}$ $N\i{P}$ is positive and therefore useful. Here more Photons are generated then photons are lost.
+
+\todo{Ich habe die Frage nicht verstanden "`Für welche Laserströme ist diese Voraussetzung am besten erfüllt"'? vgl. auch OWS-Script "`Lasing threshold"' Pdf Seite 118}
