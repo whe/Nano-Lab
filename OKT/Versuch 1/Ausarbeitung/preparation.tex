@@ -26,33 +26,48 @@ Since the resonance frequencies of the laser depend on the refractive index of t
 
 \subsection{Question 2}
 The group refractive index for $\lambda~=~$780~nm in GaAs was ask.
-For $n$~=~3.5 and d$N$/d$E$ = 0.4/eV.
+For $n$~=~3.5 and d$n$/d$E$ = 0.4/eV.
 
 \begin{equation}
 \begin{split}
-n_\mathrm{g} = n - \lambda \frac{\mathrm{d}n}{\mathrm{d}t}\\
+n_\mathrm{g} = n - \lambda \frac{\mathrm{d}n}{\mathrm{d}\lambda}\\
 \end{split}
 \label{eq:}
 \end{equation}
+
+
 with 
 \begin{equation}
 \begin{split}
 \frac{\mathrm{d}E}{\mathrm{d}\lambda}=- \frac{hc}{\lambda^2}\\
-\mathrm{d}E=- \frac{hc}{\lambda^2}\mathrm{d}\lambda,\\
+\mathrm{d}E=- \frac{hc}{\lambda^2}\mathrm{d}\lambda\\
 \end{split}
 \label{eq:}
 \end{equation}
-follows for $\frac{\mathrm{d}n}{\mathrm{d}t}$
+follows for $\frac{\mathrm{d}n}{\mathrm{d}E}$
 
 
 \begin{equation}
 \begin{split}
-n_\mathrm{g} = n - \lambda \frac{\mathrm{d}n}{\mathrm{d}t}\\
+\frac{\mathrm{d}n}{\mathrm{d}E}=\frac{0.5}{\mathrm{eV}}=\frac{\mathrm{d}n}{\mathrm{d}\lambda}\frac{-\lambda^2}{hc}\qquad.
 \end{split}
 \label{eq:}
 \end{equation}
+So $\frac{\mathrm{d}n}{\mathrm{d}\lambda}$ becomes
 
+\begin{equation}
+\frac{\mathrm{d}n}{\mathrm{d}\lambda} = \frac{-0.4}{\mathrm{eV}}\frac{hc}{\lambda^2}\qquad.
+\label{eq:}
+\end{equation}
 
+and $n_\mathrm{g}$ can be calculated:
+
+\begin{equation}
+\begin{split}
+n_\mathrm{g} = n - \lambda\frac{-0.4}{\mathrm{eV}}\frac{hc}{\lambda^2}=4.136
+\end{split}
+\label{eq:}
+\end{equation}
 \subsection{Question 3}
 
 With the free spectral range
