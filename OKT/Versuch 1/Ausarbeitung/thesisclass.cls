@@ -87,6 +87,8 @@ language=Matlab
 						
 \usepackage[fixlanguage]{babelbib}	% sets german style for literature entries
 \selectbiblanguage{ngerman}			% for \bibliographystyle{babalpha}
+
+
 %% --- End of Packages ---
 
 
