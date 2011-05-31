@@ -20,3 +20,36 @@ An applied current through the flows nearly complete through the active zone of 
 Since the resonance frequencies of the laser depend on the refractive index of the material, the frequencies shift with the higher output power as well.
 
 \todo{nochmal kontrollieren, und warum ändert sich der optical gain auch mit der leistung? sicher auch wegen $\Delta n$.}
+
+
+
+\subsection{Question 5}
+\subsubsection{5. a)}
+
+\begin{equation}
+\frac{dN_p}{dt}=\left[ \Gamma G(n_T) - \frac{1}{\tau_p} \right] + \Gamma G(n_T)n_{sp}(n_T)
+\label{eq:}
+\end{equation}
+There are different parts in the differential equation with different physical meanings.
+
+\begin{itemize}
+	\item $\frac{dN_p}{dt}$ is the change of the number of photons per time.
+	\item $N_P \Gamma G(n_T)$ are the through stimulation generated photons per time.
+	\item $-\frac{N_P}{\tau_p}$ are the outcoupled and absorbed photons per time.
+	\item $\Gamma G(n_t)n_{sp}(n_t)$ are the spontaniously generated photons per mode and time.
+\end{itemize}
+
+and in
+
+\begin{equation
+\frac{d(n_T V_r)}{dt} = \frac{I}{e}-r_{eff}(n_T)V_R-N_P\Gamma G(n_t)
+\label{eq:}
+\end{equation}
+
+
+\begin{itemize}
+	\item $\frac{d(n_T V_r)}{dt}$ is the change of the number of electrons per time.
+	\item $\frac{I}{e}$ are the injected electrons per time
+	\item $-r_{eff}(n_T)V_R$ are the spontaneous and non radiative depleted electrons per time.
+	\item $-N_p\Gamma G(n_T)$ are the through stimulation depleted electrons per time.
+\end{itemize}
