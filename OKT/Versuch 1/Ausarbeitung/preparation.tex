@@ -12,11 +12,20 @@
 \caption{output spectra of a laser diode for different optical output powers.}%
 \label{fig:Q1}%
 \end{figure}
-The output spectra of a laser diode is shown in figure \ref{fig:Q1}\footnote[1]{Optical Communications Lab - Experiment 1, Preparation Materials} for different output powers $P_0$. 
-There are different modes in the output spectrum.  How much modes exist depends on the optical gain each mode experiences. For a low output power the the spectrum is multimoded, for a higher power it gets single mode.\footnote[2]{Optoelectronics and Photonics; S. O. Kasap; Prentice Hall, 2001}
-For a low output power several modes can be amplified by the material. For higher powers, all electrons are involved in the amplification of the one mode. The other modes can't be amplified any more.
-\comwo{sehr komische sache, ne quelle wos drinsteht wär gut}
- 
+Figure \ref{fig:Q1} shows the spectral behaviour of a laser diode at different power levels. At a low power level, there are many intensity peaks. This can be explained by the different modes existing in the laser's resonator. The light generated in the laser diode is only interfering constructively, when the condition
+\begin{equation} \frac{n\i{g}\cdot 2L}{\lambda_0} = q \hspace{1,5cm}	 q\in \mathbb{N}	
+\end{equation}
+is fulfilled, hence only these wavelength are emitted.
+
+Of course this condition holds when the power is increased. However with increasing power the fundamental mode of the resonator is amplified more than the other modes. This can be explained by the fact, that the propability of spontaneous emission into a certain mode increases with the number of photons in that mode. 
+
+
+
+% The output spectra of a laser diode is shown in figure \ref{fig:Q1}\footnote[1]{Optical Communications Lab - Experiment 1, Preparation Materials} for different output powers $P_0$. 
+% There are different modes in the output spectrum.  How much modes exist depends on the optical gain each mode experiences. For a low output power the the spectrum is multimoded, for a higher power it gets single mode.\footnote[2]{Optoelectronics and Photonics; S. O. Kasap; Prentice Hall, 2001}
+% For a low output power several modes can be amplified by the material. For higher powers, all electrons are involved in the amplification of the one mode. The other modes can't be amplified any more.
+% \comwo{sehr komische sache, ne quelle wos drinsteht wär gut}
+%  
 For higher powers the spectrum of the laser shifts to a longer wavelength.
 An applied current through the flows nearly complete through the active zone of the laser diode. Because the refractive index depends on the carrier density\footnote[3]{Optische Nachrichtentechnik; Grau, G.; Freunde, W.; 3. ed.; Springer 1991} it changes with higher currents and therefore with higher optical output powers.
 
@@ -131,7 +140,7 @@ There are different parts in the differential equation with different physical m
 	\item $-\frac{N\i{P}}{\tau\i{p}}$ are the outcoupled and absorbed photons per time.
 	\item $\Gamma G(n\i{T})n\i{sp}(n\i{T})$ are the spontaneously generated photons per mode and time.
 \end{itemize}
-
+\comseb{warum: per mode?}
 and in
 
 \begin{equation}
@@ -148,33 +157,61 @@ and in
 \end{itemize}
 
 \todo{Nochmal drüberschauen, vgl. OWS-Skript: 3.114 (PDF-Seite 117). Daher hab ich die bezeichnungen was was ist. hier sind aber einige elemente leicht anders!!!}
-
+\comseb{bin eigentl zufrieden damit}
 \paragraph{5. b)}
 
-When working in the operating point of the Laser with $N\i{P0}, n\i{T0}$ and $I_0$ and assuming that there is no spontaneous emission the equations \eqref{eq:q4a1} and \eqref{eq:q4a2} can be simplified to
+At a stationary operatinon point ($N\i{P0}, n\i{T0}$ , $I_0$) equation \eqref{eq:q4a1} and \eqref{eq:q4a2} can be simplified to
 
 \begin{equation}
-\begin{split}
-N\i{P}\left[\Gamma G(n\i{T0})- \frac{1}{\tau\i{P}}\right]=0\\
-\frac{I\i{0}}{e}-r\i{eff}(n\i{T0})V\i{R}-N\i{P}\Gamma G(n\i{T0})=0
-\end{split}
+0 = N\i{P}\left[\Gamma G(n\i{T0})- \frac{1}{\tau\i{P}}\right] +\Gamma G(n\i{T})n\i{sp}(n\i{T})
+\label{eq:dgl_stat1}
+\end{equation}
+and
+\begin{equation}
+ 0 = \frac{I\i{0}}{e}-r\i{eff}(n\i{T0})V\i{R}-N\i{P}\Gamma G(n\i{T0}),
+\label{eq:dgl_stat2}
+\end{equation}
+respectively.
+
+The number of emitted photons at the operation point $N\i{P0}$ can be obtained by rearranging \eqref{eq:dgl_stat1} to:
+\begin{equation}
+N\i{P0}=\tau\i{P}\left(\frac{I_0}{e}-r\i{eff}(n\i{T0})V\i{R}\right).
 \label{eq:}
 \end{equation}
-
-With this equations both $\Gamma G(n\i{T0})$ and $N\i{P0}$ can be calculated.
+For
+\begin{equation}
+ I_0 \gg er\i{eff}(n\i{Ts})V\i{R}
+\end{equation}
+% i.e. there are much more electrons generated, than there are spontaniously recombining, the term $\Gamma G(n\i{T})n\i{sp}(n\i{T})$ in \eqref{eq:dgl_stat2} can be neglected as well. Thus $\Gamma G(n\i{T0})$ and $N\i{P0}$ can be calculated by:
+ i.e. the current $I_0$ is much bigger than the threshold current of the laser, the spontaneous emission in \eqref{eq:dgl_stat2} can be neglected as well. Thus $\Gamma G(n\i{T0})$ and $N\i{P0}$ can be calculated by:
 
 \begin{equation}
 \Gamma G(n\i{T0}) = \frac{1}{\tau\i{P}}
 \label{eq:}
 \end{equation}
 \begin{equation}
-N\i{P0}=\tau\i{P}\left(\frac{I_0}{e}-r\i{eff}(n\i{T0})V\i{R}\right)
+N\i{P0}=\tau\i{P}\cdot\frac{I_0}{e}
 \label{eq:}
 \end{equation}
 
-For $I_0 > er\i{eff}(n\i{Ts})V\i{R}$ $N\i{P}$ is positive and therefore useful. Here more Photons are generated then photons are lost.
 
-\todo{Ich habe die Frage nicht verstanden "`Für welche Laserströme ist diese Voraussetzung am besten erfüllt"'? vgl. auch OWS-Script "`Lasing threshold"' Pdf Seite 118}
+% 
+% 
+% %%%%%%
+% With this equations both $\Gamma G(n\i{T0})$ and $N\i{P0}$ can be calculated.
+% 
+% \begin{equation}
+% \Gamma G(n\i{T0}) = \frac{1}{\tau\i{P}}
+% \label{eq:}
+% \end{equation}
+% \begin{equation}
+% N\i{P0}=\tau\i{P}\left(\frac{I_0}{e}-r\i{eff}(n\i{T0})V\i{R}\right)
+% \label{eq:}
+% \end{equation}
+% 
+% For $I_0 > er\i{eff}(n\i{Ts})V\i{R}$ $N\i{P}$ is positive and therefore useful. Here more Photons are generated then photons are lost.
+% 
+% \todo{Ich habe die Frage nicht verstanden "`Für welche Laserströme ist diese Voraussetzung am besten erfüllt"'? vgl. auch OWS-Script "`Lasing threshold"' Pdf Seite 118}
 
 
 \paragraph{5. c)}
