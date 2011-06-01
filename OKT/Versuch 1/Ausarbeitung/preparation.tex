@@ -31,6 +31,8 @@ An applied current through the flows nearly complete through the active zone of 
 
 Since the resonance frequencies of the laser depend on the refractive index of the material, the frequencies shift with the higher output power as well.
 
+Another explanation could be, that through the higher power the temperature of the laser changes and therefore the frequency shifts. 
+
 \todo{nochmal kontrollieren, und warum ändert sich der optical gain auch mit der leistung? sicher auch wegen $\Delta n$.}
 
 \subsection{Question 2}
@@ -256,9 +258,46 @@ For operation of the laser beneath threshold \eqref{eq:freq_resp} is invalid. In
 % 
 % \todo{nochmal überlegen was da so passiert}
 
+\paragraph{5. d)}
+Starting from 
+\begin{equation}
+\omega\i{r}^2 = \frac{1}{\tau\i{P}}\frac{\Gamma N\i{P0}}{V\i{R}}\frac{\partial G}{\partial n\i{T}}
+\label{eq:}
+\end{equation}
+
+and using
+\begin{equation}
+\begin{split}
+\frac{\Gamma \partial G}{\partial n\i{T}} =\frac{G(n\i{t})}{r\i{eff}(n\i{T})\tau\i{eff}}\quad,\\
+\frac{N\i{P0}}{\tau\i{P}}= \frac{I-I\i{s}}{e} \quad\mathrm{and}\\
+G(n\i{t})=\frac{1}{\tau\i{P}}
+\end{split}
+\label{eq:}
+\end{equation}
+leads to
+\begin{equation}
+\omega\i{r}^2 = \frac{I-I\i{s}}{e\tau\i{P} V\i{R}r\i{eff}\tau\i{eff}}
+\label{eq:}
+\end{equation}
+and simplifies with
+\begin{equation}
+I\i{s}=er\i{eff}(n\i{TS})V\i{R} \quad \mathrm{and}
+\label{eq:}
+\end{equation}
+
+to 
+\begin{equation}
+\omega\i{r}^2 = \frac{1}{\tau\i{P}\tau\i{eff}}\left(\frac{I_0}{I\i{S}}-1\right)\quad.
+\label{eq:}
+\end{equation}
+
+Using the same simplifications as before the following can be derivated:
+\begin{equation}
+2\gamma\i{r}=\frac{1}{\tau\i{eff}}\frac{I_0}{I\i{S}}\quad.
+\label{eq:}
+\end{equation}
 
 \subsection{Question 6}
 \paragraph{6. a)}
-
-
+``The attenuation of the relaxation oscillation is dominated by the spontaneous emission in the range of the threshold.''\footnote[3]{Optische Nachrichtentechnik; Grau, G.; Freude, W.; 3. ed.; Springer 1991}
 \paragraph{6. b)}
