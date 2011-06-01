@@ -27,7 +27,7 @@ Of course this condition holds when the power is increased. However with increas
 % \comwo{sehr komische sache, ne quelle wos drinsteht wär gut}
 %  
 For higher powers the spectrum of the laser shifts to a longer wavelength.
-An applied current through the flows nearly complete through the active zone of the laser diode. Because the refractive index depends on the carrier density\footnote[3]{Optische Nachrichtentechnik; Grau, G.; Freunde, W.; 3. ed.; Springer 1991} it changes with higher currents and therefore with higher optical output powers.
+An applied current through the flows nearly complete through the active zone of the laser diode. Because the refractive index depends on the carrier density\footnote[3]{Optische Nachrichtentechnik; Grau, G.; Freude, W.; 3. ed.; Springer 1991} it changes with higher currents and therefore with higher optical output powers.
 
 Since the resonance frequencies of the laser depend on the refractive index of the material, the frequencies shift with the higher output power as well.
 
@@ -234,7 +234,25 @@ that leads to $H\i{Kl}(0)=1$ and thereby
 \label{eq:}
 \end{equation}
 
-With $\omega\i{Kl}=\sqrt{\omega\i{r}^2 - 2\gamma\i{r}^2}$
+This needs to be maximized:
+\begin{equation}
+\begin{split}
+\frac{\mathrm{d}|H\i{Kl}(f\i{Kl})|}{\mathrm{d}\omega\i{Kl}}=0\\
+=\frac{\omega\i{r}^2 (4\omega\i{r}^2\omega\i{Kl}+4\omega\i{Kl}^3+8\omega\i{Kl}\gamma\i{r}) }{2(\omega\i{r}^4 + 2\omega\i{r}^2\omega\i{Kl}^2+\omega\i{Kl}^4+4\omega\i{Kl}^2\gamma\i{r}^2)^{\frac{3}{2}}}\\
+4\omega\i{r}^2\omega\i{Kl}+4\omega\i{Kl}^3+8\omega\i{Kl}\gamma\i{r}=0
+\end{split}
+\label{eq:}
+\end{equation}
+this leads to
+
+\begin{equation}
+\omega\i{Kl} = \sqrt{-\omega\i{r}^2-2\gamma\i{r}^2}
+\label{eq:}
+\end{equation}
+
+There must be an error in the derivation of this term. After source \footnote[3]{Optische Nachrichtentechnik; Grau, G.; Freude, W.; 3. ed.; Springer 1991} the correct soultion should be
+
+$\omega\i{Kl}=\sqrt{\omega\i{r}^2 - 2\gamma\i{r}^2}$.
 
 \subsection{Question 6}
 \paragraph{6. a)}
