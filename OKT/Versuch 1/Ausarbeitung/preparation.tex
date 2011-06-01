@@ -90,7 +90,7 @@ The circulation time in the resonator can be calculated by:
 \end{equation}
 With the group velocity form \eqref{eq:ng} the Length the resonator $L$ can be computed by
 \begin{equation}
- L = \frac{c\cdot\tau\i{U}}{2n\i{g}} = 262.7 \mathrm{~nm}
+ L = \frac{c\cdot\tau\i{U}}{2n\i{g}} = 262.7 ~\upmu\mathrm{m}
 \end{equation}
 Expressed in multiples of the resonator wavelength the length of one resonator circulation is:
 \begin{equation}
@@ -100,7 +100,7 @@ Expressed in multiples of the resonator wavelength the length of one resonator c
 \subsection{Question 4}
 For perpendicular incident light the power reflection coefficient for a boundary between GaAs and air is given by
 \begin{equation}
- R = \left(\frac{n\i{air} - n\i{g}}{n\i{air} + n\i{g}}\right)^2 = 
+ R = \left(\frac{n\i{air} - n\i{g}}{n\i{air} + n\i{g}}\right)^2 = 0.373
 \label{eq:reflection}
 \end{equation}
 \comseb{ich bin mir net ganz sicher ob ich $n_g$ oder $n_{GaAs}$ nehmen muss}.
@@ -115,11 +115,11 @@ and
 \end{equation}
 respectively.
 
-With the $R$ obtained in \eqref{eq:reflection} this leads to $\alpha\i{S}=$ and $\tau\i{R}=$. With a attenuation of the medium of about $\alpha\i{V}=40$~cm$^{-1}$ the lifetime of a photon is:
+With the $R$ obtained in \eqref{eq:reflection} this leads to $\alpha\i{S}=0.376\mathrm{~cm}^{-1}$ and $\tau\i{R}=0.215\mathrm{~ps}$. With a attenuation of the medium of about $\alpha\i{V}=40$~cm$^{-1}$ the lifetime of a photon is:
 \begin{equation}
- \tau\i{p}=\frac{1}{cn\i{g}(\alpha\i{S}+\alpha\i{V})}= 
+ \tau\i{p}=\frac{1}{cn\i{g}(\alpha\i{S}+\alpha\i{V})}= 0.2 \mathrm{~ps}
 \end{equation}
-
+This is smaller than the circulation time of the resonator with about a factor 36.
 % With this the equivalent attenuation and time constant for the mirrors can be calculated:
 % \begin{equation}
 %  \alpha\i{S} = 
@@ -215,16 +215,12 @@ N\i{P0}=\tau\i{P}\cdot\frac{I_0}{e}
 
 
 \paragraph{5. c)}
-Driving the laser below the threshold  means, that there is no stimulated emission. Only spontaneous emission could be taken into account. 
-
-\todo{nochmal überlegen was da so passiert}
-
-
+The frequency response of the diode
 \begin{equation}
 H\i{Kl}(f)=\frac{\omega\i{r}^2}{(\mathrm{j}\omega)^2 + 2\gamma\i{r}(\mathrm{j}\omega)+\omega\i{r}^2}
-\label{eq:}
+\label{eq:freq_resp}
 \end{equation}
-that leads to $H\i{Kl}(0)=1$ and thereby
+leads to $H\i{Kl}(0)=1$ and thereby
 \begin{equation}
 \left|\frac{H\i{Kl}(f\i{Kl})}{H\i{Kl}(0)}\right| = \left|H\i{Kl}(f\i{Kl})\right|
 \label{eq:}
@@ -253,6 +249,13 @@ this leads to
 There must be an error in the derivation of this term. After source \footnote[3]{Optische Nachrichtentechnik; Grau, G.; Freude, W.; 3. ed.; Springer 1991} the correct soultion should be
 
 $\omega\i{Kl}=\sqrt{\omega\i{r}^2 - 2\gamma\i{r}^2}$.
+
+For operation of the laser beneath threshold \eqref{eq:freq_resp} is invalid. In that domain, there is no stimulated emmission and thus no spontaneous emmision has to be taken into account. 
+% 
+% Driving the laser below the threshold  means, that there is no stimulated emission. Only spontaneous emission could be taken into account. 
+% 
+% \todo{nochmal überlegen was da so passiert}
+
 
 \subsection{Question 6}
 \paragraph{6. a)}
