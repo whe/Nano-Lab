@@ -1,0 +1,166 @@
+\documentclass[german,oneside]{thesisclass}
+% Based on thesisclass.cls of Timo Rohrberg, 2009
+% ----------------------------------------------------------------
+% Thesis - Main document
+% ----------------------------------------------------------------
+
+
+%% -------------------------------
+%% |  Information for PDF file   |
+%% -------------------------------
+\hypersetup{
+ pdfauthor={Wolfgang Heni, Sebastian Heunisch},
+ pdftitle={Optical Communications Lab - Experiment 5},
+ pdfsubject={Optical Communications Lab - Experiment 5},
+ pdfkeywords={}
+}
+
+
+%% ---------------------------------
+%% | Information about the thesis  |
+%% ---------------------------------
+
+\newcommand{\myname}{Georgi Hadzhiyanev\\Wolfgang Heni\\Sebastian Heunisch}
+\newcommand{\mytitle}{Optical Communications Lab}
+\newcommand{\mysubtitle}{Experiment 5}
+\newcommand{\myinstitute}{Institute of Photonics and Quantum Electronics}
+
+
+
+\newcommand{\reviewerone}{?}
+\newcommand{\reviewertwo}{?}
+\newcommand{\advisor}{Jingshi Li}
+\newcommand{\advisortwo}{?}
+
+\newcommand{\timestart}{08. June 2011}
+\newcommand{\timeend}{XX. Monat 20XX}
+\newcommand{\submissiontime}{DD. MM. 20XX}
+
+
+%% ---------------------------------
+%% | ToDo Marker - only for draft! |
+%% ---------------------------------
+% Remove this section for final version!
+\setlength{\marginparwidth}{20mm}
+
+\newcommand{\margtodo}
+{\marginpar{\textbf{\textcolor{red}{ToDo}}}{}}
+
+\newcommand{\todo}[1]
+{{\textbf{\textcolor{red}{(\margtodo{}#1)}}}{}}
+
+
+\newcommand{\margcommentse}
+{\marginpar{\textbf{\textcolor{green}{Sebastian}}}{}}
+\newcommand{\comseb}[1]
+{{\textbf{\textcolor{green}{(\margcommentse{}#1)}}}{}}
+
+\newcommand{\margcommentwo}
+{\marginpar{\textbf{\textcolor{blue}{Wolfgang}}}{}}
+\newcommand{\comwo}[1]
+{{\textbf{\textcolor{blue}{(\margcommentwo{}#1)}}}{}}
+
+%% --------------------------------
+%% | Old Marker - only for draft! |
+%% --------------------------------
+% Remove this section for final version!
+\newenvironment{deprecated}
+{\begin{color}{gray}}
+{\end{color}}
+
+
+%% --------------------------------
+%% | Settings for word separation |
+%% --------------------------------
+% Help for separation:
+% In german package the following hints are additionally available:
+% "- = Additional separation
+% "| = Suppress ligation and possible separation (e.g. Schaf"|fell)
+% "~ = Hyphenation without separation (e.g. bergauf und "~ab)
+% "= = Hyphenation with separation before and after
+% "" = Separation without a hyphenation (e.g. und/""oder)
+
+% Describe separation hints here:
+\hyphenation{
+% Pro-to-koll-in-stan-zen
+% Ma-na-ge-ment  Netz-werk-ele-men-ten
+% Netz-werk Netz-werk-re-ser-vie-rung
+% Netz-werk-adap-ter Fein-ju-stier-ung
+% Da-ten-strom-spe-zi-fi-ka-tion Pa-ket-rumpf
+% Kon-troll-in-stanz
+}
+
+
+%% ------------------------
+%% |    Including files   |
+%% ------------------------
+% Only files listed here will be included!
+% Userful command for partially translating the document (for bug-fixing e.g.)
+\includeonly{%
+titlepage,
+% introduction,
+preparation,
+experiment,
+appendix
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Here, main documents begins %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Remove the following line for German text
+\selectlanguage{english}
+
+\frontmatter
+\pagenumbering{roman}
+\include{titlepage}
+\blankpage
+
+
+%% -------------------
+%% |   Directories   |
+%% -------------------
+% \tableofcontents
+\blankpage
+
+
+%% -----------------
+%% |   Main part   |
+%% -----------------
+\mainmatter
+\pagenumbering{arabic}
+% \include{introduction}
+\include{preparation}
+\include{experiment}
+
+
+%% --------------------
+%% |   Bibliography   |
+%% --------------------
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+
+% \iflanguage{english}
+% {\bibliographystyle{IEEEtranSA}}	% english style
+{\bibliographystyle{abbrvdin}}	% german style
+												  
+% Use IEEEtran for numeric references
+%\bibliographystyle{IEEEtranSA})
+
+% \bibliography{OKT7}
+% \nocite{*}
+
+
+%% ----------------
+%% |   Appendix   |
+%% ----------------
+%\cleardoublepage
+
+%\input{appendix}
+
+
+\end{document}
+
