@@ -62,7 +62,10 @@ The output power of the laser diode at different driving currents is measured wi
 \caption{Optical power at the photodiode in dependence of the laser current and the temperature.}%
 \label{fig:2_PI}%
 \end{figure}
-Figure \ref{fig:2_PI} shows the power-current characteristic of the laser diode for different temperatures. The power $P\i{opt}$ is the power that is received by the photo diode. One can see, that the characteristics shifts to higher currents for an increasing temperature. The different threshold currents for the temperatures can be estimated by using a linear approximation of the $P/I$-curve for $I > I\i{th}$. The intersection of this linear approximation with the $I\i{L}$-axis is the estimated value of $I\i{th}$. Table \ref{tab:2_temp} shows the estimated values of $I\i{th}$ for the different temperatures.
+
+Figure \ref{fig:2_PI} shows the power-current characteristic of the laser diode for different temperatures. The power $P\i{opt}$ is the power that is received by the photo diode and therefore emitted at one side of the laser. One can see, that the characteristics shifts to higher currents for an increasing temperature.
+
+The different threshold currents for the temperatures can be estimated by using a linear approximation of the $P/I$-curve for $I > I\i{th}$. The intersection of this linear approximation with the $I\i{L}$-axis is the estimated value of $I\i{th}$. Table \ref{tab:2_temp} shows the estimated values of $I\i{th}$ for the different temperatures.
 
 \begin{table}%
 \centering
@@ -82,3 +85,28 @@ $T$~/~°C& $I\i{th}$~/~mA\\
 \end{tabular}
 \label{tab:2_temp}
 \end{table}
+
+Using 
+\begin{equation}
+\begin{split}
+I\i{th}(\Delta T)=I\i{th}(0)\mathrm{e}^{\frac{\Delta T}{T_0}}\\
+\frac{\Delta T}{\mathrm{ln}(\frac{I\i{th}(\Delta T)}{I\i{th}(0)})}=T_0
+\label{eq:2_T0}
+\end{split}
+\end{equation}
+with the change of temperature $\Delta T$ and $I\i{th}$ is the threshold current before the temperature change the characteristic temperature $T_0$ can be found from measurements.
+
+For the measured values $T_0$ is between
+\begin{equation}
+138~\mathrm{K} < T_0 < 310~\mathrm{K}\quad.
+\label{eq:}
+\end{equation}
+\comwo{Hier bekomm ich für unterschiedliche eingesetze werte unterschiedliche $T_0$ raus.  Den Höchsten wert bekomm ich wenn ich 20°C und 25°C nutze., den niedrigsten wenn ich 25° und 30° benutz. :-/}
+
+To calculate the external quantum efficiency 
+\begin{equation}
+\eta\i{ext}=\frac{P\i{a}/hf}{I/e}
+\label{eq:}
+\end{equation}
+can be used.
+$P\i{a}$ is the total output power of the laser diode. Since the mirrors at both sides of the laserdiode have the same reflectivity and therefore the same output powers. This leads to the total output power of  $P\i{a} = 2\cdot P\i{opt}$.
