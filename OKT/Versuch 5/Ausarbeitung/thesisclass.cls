@@ -26,6 +26,7 @@
 %\usepackage{german}
 \usepackage{ae}               % Almost european, virtual T1-Font
 \usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
 \usepackage{vmargin}          % Adjust margins in a simple way
 \usepackage{fancyhdr}         % Define simple headings
 %\usepackage{subfigure}
