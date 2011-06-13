@@ -123,4 +123,41 @@ is calculated to be
 \eta\i{d} = 0.655~\mathrm{mW/mA}
 \label{eq:}
 \end{equation} at $T=20~$°C and currents above threshold.
+\comwo{Einheit? Freude schreibt keine Einheit dahinter, das Datasheet gibt die Einheit an, die ich auch geschrieben hab}
 
+To calculate the efficiency of the induced emission the values of the preparation for $\tau\i{P}$ (cf. \eqref{eq:tau_p}) and $\tau\i{R}$ (cf. \eqref{eq:tau_r}) are used.
+
+\begin{equation}
+\eta\i{ind}=\eta\i{d}\frac{\tau\i{R}}{\tau\i{P}}
+\label{eq:}
+\end{equation}
+leads to $\eta\i{ind}$~=~1.28.
+\comwo{Größer als 1. da kann was nicht stimmen! \\alternative vorgehensweise:}
+
+\begin{equation}
+\begin{split}
+\eta\i{ind}=\eta\i{d}\frac{\eta\i{int}}{\eta\i{ext}}\\
+=\eta\i{d}\frac{P}{P\i{a}}=\eta\i{d}\frac{UI-R\i{s}I^2}{2P\i{opt}}\\
+=2.98
+\end{split}
+\label{eq:}
+\end{equation}
+for $I = 65$~mA and $U = 1.975$~V at $T = 20$~°C.
+
+To calculate the number of photons above threshold neglecting spontaneous emission 
+\begin{equation}
+N\i{P}=\tau\i{P}\frac{I-I\i{th}}{e}
+\label{eq:}
+\end{equation}
+can be used.
+For $I = 65$~mA:
+\begin{equation}
+\begin{split}
+N\i{P}(20~\mathrm{°C})\approx 245 \\
+N\i{P}(30~\mathrm{°C})\approx 220
+\end{split}
+\label{eq:}
+\end{equation}
+
+
+ 
