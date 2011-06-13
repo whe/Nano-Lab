@@ -11,7 +11,7 @@
 \label{fig:Q1}%
 \end{figure}
 Figure \ref{fig:Q1} shows the spectral behaviour of a laser diode at different power levels. At a low power level, there are many intensity peaks. This can be explained by the different modes existing in the laser's resonator. The light generated in the laser diode is only interfering constructively, when the condition
-\begin{equation} \frac{n\i{g}\cdot 2L}{\lambda_0} = q \hspace{1,5cm}	 q\in \mathbb{N}	
+\begin{equation} \frac{n\cdot 2L}{\lambda_0} = q \hspace{1,5cm}	 q\in \mathbb{N}	
 \end{equation}
 is fulfilled, hence only these wavelength are emitted.
 
@@ -88,17 +88,17 @@ The circulation time in the resonator can be calculated by:
 \end{equation}
 With the group velocity form \eqref{eq:ng} the Length the resonator $L$ can be computed by
 \begin{equation}
- L = \frac{c\cdot\tau\i{U}}{2n\i{g}} = 262.7 ~\upmu\mathrm{m}
+ L = \frac{c\cdot\tau\i{U}}{2n} = 310 ~\upmu\mathrm{m}
 \end{equation}
 Expressed in multiples of the resonator wavelength the length of one resonator circulation is:
 \begin{equation}
- q = \frac{n\i{g}\cdot 2L}{\lambda_0} = 2786
+ q = \frac{n\cdot 2L}{\lambda_0} = 2782
 \end{equation}
 
 \subsection{Question 4}
 For perpendicular incident light the power reflection coefficient for a boundary between GaAs and air is given by
 \begin{equation}
- R = \left(\frac{n\i{air} - n\i{g}}{n\i{air} + n\i{g}}\right)^2 = 0.373
+ R = \left(\frac{n\i{air} - n}{n\i{air} + n}\right)^2 = 0.309
 \label{eq:reflection}
 \end{equation}
 The reflection at the mirrors can also be expressed as an equivalent attenuation or time constant, which is calculated by
@@ -107,15 +107,17 @@ The reflection at the mirrors can also be expressed as an equivalent attenuation
 \end{equation}
 and
 \begin{equation}
- \tau\i{R}=\frac{1}{cn\i{g}\alpha\i{S}} 
+ \tau\i{R}=\frac{n\i{g}}{c\alpha\i{S}} 
+ \label{eq:tau_r}
 \end{equation}
 respectively.
 \todo{n$_g$ muss in zähler bei $\tau_r$}
-With the $R$ obtained in \eqref{eq:reflection} this leads to $\alpha\i{S}=0.376\mathrm{~cm}^{-1}$ and $\tau\i{R}=0.215\mathrm{~ps}$. With a attenuation of the medium of about $\alpha\i{V}=40$~cm$^{-1}$ the lifetime of a photon is:
+With the $R$ obtained in \eqref{eq:reflection} this leads to $\alpha\i{S}=37.88\mathrm{~cm}^{-1}$ and $\tau\i{R}=3.64\mathrm{~ps}$. With a attenuation of the medium of about $\alpha\i{V}=40$~cm$^{-1}$ the lifetime of a photon is:
 \begin{equation}
- \tau\i{p}=\frac{1}{cn\i{g}(\alpha\i{S}+\alpha\i{V})}= 0.2 \mathrm{~ps}
+ \tau\i{p}=\frac{n\i{g}}{c(\alpha\i{S}+\alpha\i{V})}= 1.77 \mathrm{~ps}
+ \label{eq:tau_p}
 \end{equation}
-This is smaller than the circulation time of the resonator with about a factor 36.
+This is smaller than the circulation time of the resonator with about a factor 4.
 % With this the equivalent attenuation and time constant for the mirrors can be calculated:
 % \begin{equation}
 %  \alpha\i{S} = 
@@ -292,4 +294,6 @@ Using the same simplifications as before the following can be derivated:
 \paragraph{6. a)}
 ``The attenuation of the relaxation oscillation is dominated by the spontaneous emission in the range of the threshold.''\footnote[3]{Optische Nachrichtentechnik; Grau, G.; Freude, W.; 3. ed.; Springer 1991}
 \paragraph{6. b)}
-For operation of the laserdiode with low oszillation, the operation point of the diode should be in the domain of damped oszillation. There the resonance overshoot disappears for $2\gamma\i{r}>\omega\i{r}$. Thus the operation point should be chosen in that domain.
+For operation of the laserdiode with low oszillation, the operation point of the diode should be in the region of critical damping. In this case $\omega\i{r}=\gamma\i{r}\sqrt{2}$ and $\omega\i{3 dB}=\omega\i{r}$.
+There the resonance overshoot disappears.% for $2\gamma\i{r}>\omega\i{r}$.
+Thus the operation point should be chosen in that domain.
