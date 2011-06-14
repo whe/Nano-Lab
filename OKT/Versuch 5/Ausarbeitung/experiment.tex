@@ -175,20 +175,10 @@ This means that for a frequency of $f = 220$~THz the waveguide becomes multimode
 \end{figure}
 In the third task a silicon on insulator (SOI) strip waveguide of the length of $100~\upmu$m is simulated. The waveguide consists of a silicon core ($n=3.48$) with the height $h=0.7~\upmu$m and a width of $w=0.8~\upmu$m. This core is placed on a glass substrate ($n=1.44$). Above and on both sides of the waveguide there is air. This index profile is shown in \ref{fig:index_profile_3}. The gaussian exitation is shifted $0.25\cdot w$ in x-direction and $0.25\cdot h$ in y-direction, like in the task \ref{sec:task2}.
 
-Next the TE and TM modes for $\lambda = 1.55~\upmu$m were calculated by using the correlation method. The field distribution of the calculated modes is shown in the figures \ref{fig:3TE} and \ref{fig:3TM}. The figures were named according to the nomenclature in the OWS lecture notes. The calculated modes \ref{fig:ng}, \ref{fig:ng2} and \todo{TM-moden} are not guided because the effective index is lower than the refractive index in the substrate. The modes \ref{fig:HE20} and \todo{TM-moden} are guided, but heavily damped because the field is badly confined to the core. Thus the propagation of these modes can be neglegted.
+Next the TE and TM modes for $\lambda = 1.55~\upmu$m were calculated by using the correlation method. The field distribution of the calculated modes is shown in the figures \ref{fig:3TE} and \ref{fig:3TM}. The figures were named according to the nomenclature in the OWS lecture notes. The calculated modes \ref{fig:ng}, \ref{fig:ng2} and \ref{fig:ng3} are not guided because the effective index is lower than the refractive index in the substrate. The modes \ref{fig:HE20} and \ref{fig:EH02} are guided, but heavily damped because the field is badly confined to the core. Thus the propagation of these modes can be neglegted.
 
 \begin{figure}%
 \centering
-%\begin{adjustwidth}{0cm}{0cm}
-% <<<<<<< HEAD
-% 	\subfloat[HE$_{00}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_00.pdf}\label{fig:3TE00}}
-% 	\subfloat[HE$_{10}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_01.pdf} \label{fig:3TE01}}\\%
-% 	\subfloat[HE$_{11}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_02.pdf}\label{fig:3TE02}}
-% 	\subfloat[HE$_{02}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_03.pdf} \label{fig:3TE03}}\\
-%         \subfloat[HE$_{20}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_04.pdf}\label{fig:3TE04}}
-% 	\subfloat[not guided  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_05.pdf} \label{fig:3TE05}}\\
-% 	\subfloat[not guided  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_06.pdf}\label{fig:3TE06}}
-% =======
 	\subfloat[HE$_{00}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_00.pdf}\label{fig:HE00}}
 	\subfloat[HE$_{10}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_01.pdf} \label{fig:HE10}}\\%
 	\subfloat[HE$_{11}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_02.pdf}\label{fig:HE11}}
@@ -196,12 +186,22 @@ Next the TE and TM modes for $\lambda = 1.55~\upmu$m were calculated by using th
         \subfloat[HE$_{20}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_04.pdf}\label{fig:HE20}}
 	\subfloat[not guided  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_05.pdf} \label{fig:ng}}\\
 	\subfloat[not guided  ]{\includegraphics[totalheight=5 cm]{Grafiken/A3_TE_06.pdf}\label{fig:ng2}}
-% >>>>>>> 5273b373a0ae633bb87dfc89447e5df26404ed99
-%\end{adjustwidth}
 \caption{}%
 \label{fig:3TE}%
 \end{figure}
 
-\todo{TM-bilder}
+\begin{figure}%
+\centering
+	\subfloat[EH$_{00}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/SOI_TM_mode_00.png}\label{fig:EH00}}
+	\subfloat[EH$_{10}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/SOI_TM_mode_01.png} \label{fig:EH10}}\\%
+	\subfloat[EH$_{01}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/SOI_TM_mode_02.png}\label{fig:EH01}}
+	\subfloat[EH$_{20}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/SOI_TM_mode_03.png} \label{fig:EH20}}\\
+        \subfloat[EH$_{11}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/SOI_TM_mode_04.png}\label{fig:EH11}}
+	\subfloat[EH$_{02}$  ]{\includegraphics[totalheight=5 cm]{Grafiken/SOI_TM_mode_05.png} \label{fig:EH02}}\\
+	\subfloat[not guided  ]{\includegraphics[totalheight=5 cm]{Grafiken/SOI_TM_mode_06.png}\label{fig:ng3}}
+\caption{}%
+\label{fig:3TE}%
+\end{figure}
+
 
 At the last the dimensions of the waveguide were varied that only one mode is guided for a wavelength of about $1.55~\upmu$m in the strip waveguide. A single mode waveguide could be achieved for a height of 0.2~$\upmu$m and a width of 0.55~$\upmu$m. For this dimensions, TE01 and TM01 are not guided anymore.
