@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/Arch Linux) (format=pdflatex 2011.5.5)  14 JUN 2011 20:27
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010/Arch Linux) (format=pdflatex 2011.5.5)  15 JUN 2011 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,7 +913,7 @@ babelbib: Set language for keywords in the bibliography fixed to ngerman
 babelbib: Set language for keywords in the bibliography fixed to ngerman
 \openout2 = `titlepage.aux'.
 
-(./titlepage.tex <logos/KITLogo_RGB.pdf, id=7, 196.46399pt x 90.77916pt>
+(./titlepage.tex <logos/KITLogo_RGB.pdf, id=23, 196.46399pt x 90.77916pt>
 File: logos/KITLogo_RGB.pdf Graphic file (type pdf)
 
 <use logos/KITLogo_RGB.pdf>
@@ -942,36 +942,80 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logos/KITLogo_RGB.pdf>])
 \openout2 = `preparation.aux'.
 
- (./preparation.tex)
+ (./preparation.tex
+Chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              You should use the features of package `tocbasic'
+(scrbook)              instead of \float@addtolists.
+(scrbook)              Support for \float@addtolists may be removed from
+(scrbook)              `scrbook' soon .
+
+
+LaTeX Warning: Reference `fig:' on page 1 undefined on input line 7.
+
+) [1
+
+
+
+
+
+
+
+
+
+
+
+]
 \openout2 = `experiment.aux'.
 
+ (./experiment.tex
+Chapter 2.
+) [2
 
-(./experiment.tex)
+
+
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
- (./OKT6.aux (./titlepage.aux) (./preparation.aux)
-(./experiment.aux))
+ (./OKT6.aux (./titlepage.aux) (./preparation.aux) (./experiment.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
-Package rerunfilecheck Info: File `OKT6.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package rerunfilecheck Warning: File `OKT6.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `OKT6.out':
+(rerunfilecheck)             Before: 95F8595437AAF1AC679C46915E680581;257
+(rerunfilecheck)             After:  0A62BBE24888212403E4CFB3EF37F1FB;348.
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
  ) 
 Here is how much of TeX's memory you used:
- 19898 strings out of 493772
- 336996 string characters out of 3150565
- 442803 words of memory out of 3000000
- 22761 multiletter control sequences out of 15000+200000
- 27883 words of font info for 46 fonts, out of 3000000 for 9000
+ 19965 strings out of 493772
+ 337637 string characters out of 3150565
+ 445801 words of memory out of 3000000
+ 22789 multiletter control sequences out of 15000+200000
+ 43142 words of font info for 81 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 72i,7n,73p,430b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,11n,73p,439b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
-c/uhvr8a.pfb>
-Output written on OKT6.pdf (1 page, 20368 bytes).
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1
+/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
+.pfb>
+Output written on OKT6.pdf (3 pages, 82308 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 50 words of extra memory for PDF output out of 10000 (max. 10000000)
 
