@@ -138,16 +138,18 @@ For this waveguide all modes wer calculated at a frequency of 200~THz by using t
 \begin{figure}[ht]
 \centering
 %\begin{adjustwidth}{0cm}{0cm}
-	\subfloat[TE00]{\includegraphics[totalheight=5.5 cm]{Grafiken/2_TE00.pdf}\label{fig:2_TE00}}
-	\subfloat[TE01]{\includegraphics[totalheight=5.5 cm]{Grafiken/2_TE01.pdf} \label{fig:2_TE01}}\\%
-	\subfloat[TM00]{\includegraphics[totalheight=5.5 cm]{Grafiken/2_TM00.pdf}\label{fig:2_TM00}}
+	\subfloat[HE$_{00}$]{\includegraphics[totalheight=5.5 cm]{Grafiken/2_TE00.pdf}\label{fig:2_TE00}}
+	\subfloat[not guided]{\includegraphics[totalheight=5.5 cm]{Grafiken/2_TE01.pdf} \label{fig:2_TE01}}\\%
+	\subfloat[EH$_{00}$]{\includegraphics[totalheight=5.5 cm]{Grafiken/2_TM00.pdf}\label{fig:2_TM00}}
 %\end{adjustwidth}
 \caption{Modes of the quadratic single-mode strip waveguide.}%
 \label{fig:2_modes}%
 \end{figure}
-As figure \ref{fig:2_modes} shows only the ground modes TE00 and TM00 are guided. The field of TM01 \ref{fig:2_TE01} is not confined to the core and the calculated field makes no sense and since the effective refractive index is below the core index this means that the mode can't be guided as well.
+As figure \ref{fig:2_modes} shows only the ground modes HE$_{00}$ (dominating $\vec{\mathrm{E}}_x$-field: quasi TE) and EH$_{00}$ (dominating $\vec{\mathrm{E}}_y$-field: quasi TM) are guided. The field of the higher quasi TE mode ($m~=~1$) \ref{fig:2_TE01} is not confined to the core and the calculated field makes no sense and since the effective refractive index is below the core index this means that the mode can't be guided as well.
 
-Comparing the TE00 (cf. figure \ref{fig:2_TE00}) and the TM00 (cf. figure \ref{fig:2_TM00}) modes shows, that the dominating E-Fields are in different direction. The Field of the TE00 is in x-direction and the field of the TM00 is in y-direction. Furthermore the field of the TM00 shows two larger maxima outside the cure compared to the TE00 mode. That means that the field of the TE00 is more confined to the core.
+Comparing the HE$_{00}$ (cf. figure \ref{fig:2_TE00}) and the EH$_{00}$ (cf. figure \ref{fig:2_TM00}) modes shows, that the dominating $\vec{\mathrm{E}}$-fields are in different direction. The Field of the HE$_{00}$ is in x-direction and the field of the EH$_{00}$ is in y-direction. Both modes show a discontinuity in the $\vec{\mathrm{E}}$-field that is tangential to the dielectric boundary. This is based on the continuity of the electric displacement field.
+
+Furthermore the field of the EH$_{00}$ shows two larger maxima outside the cure compared to the HE$_{00}$ mode. That means that the field of the HE$_{00}$ is more confined to the core.
 
 For the case that the waveguide is single-moded there are several conditions. As in the preparation (eg. \ref{pre:single-mode}) the normalized frequency $V$ needs to be below $\pi/2$ and $V$ depends on the dimensions of the waveguide, the refractive indices of the materials and the wavelength of the light.
 For the given waveguide design the number of modes can be changed by changing the frequency. 
@@ -160,7 +162,7 @@ For the given waveguide design the number of modes can be changed by changing th
 \label{fig:2_sweep}%
 \end{figure}
 
-Figure \ref{fig:2_sweep} shows the effective indices for different modes and frequencies. In figure \ref{fig:2_TE_sweep} can be seen, that TE01 is the first time calculated as a guided mode for $f~=~220$~Thz.  Here the effective index is just above 1. For the TM mode it looks nearly the same (cf. figure \ref{fig:2_TM_sweep}). The first calculated TM01 mode of the simulation program is at 210~THz but the effective index is below 1. That means the mode is not guided at this frequency. For $f = 220$~THz the TM01 is guided as well.
+Figure \ref{fig:2_sweep} shows the effective indices for different modes and frequencies. In figure \ref{fig:2_TE_sweep} can be seen that the quasi TE-mode for $m~=~1$ is the first time calculated as a guided mode for $f~=~220$~Thz.  Here the effective index is just above 1. For the quasi TM mode it looks nearly the same (cf. figure \ref{fig:2_TM_sweep}). The first of the simulation program calculated quasi TM mode with $m~=~1$ is at 210~THz but the effective index is below 1. That means the mode is not guided at this frequency. For $f = 220$~THz the the quasi-TM mode for $m$~=~1 is guided as well.
 This means that for a frequency of $f = 220$~THz the waveguide becomes multimode.
 
 
