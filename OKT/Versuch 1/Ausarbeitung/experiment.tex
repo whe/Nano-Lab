@@ -169,7 +169,7 @@ N\i{P}(30~\mathrm{°C})\approx 290000
 \centering
 \includegraphics[width=.7\columnwidth]{Grafiken/4_aufbau.png}%
 \caption{Measurement setup.}%
-\label{}%
+\label{fig:measurement3}%
 \end{figure}
 
 
@@ -204,9 +204,37 @@ Inserting in \eqref{eq:gamma_r} leads to:
  \gamma\i{r}=\sqrt{\frac{\left|H\i{Kl}(\omega\i{Kl})\right|\cdot\omega\i{Kl}^2}{2\sqrt{\left|H\i{Kl}(\omega\i{Kl})\right|^2-1}}-\frac{\omega\i{Kl}^2}{2}}
 \end{equation}
 
+Now $\omega\i{r}^2$ and $\gamma\i{r}$ are calculated for the measured values for $\left|H\i{Kl}(\omega\i{Kl})\right|$ and $\omega\i{Kl}$. The figures \ref{fig:omega2} and \ref{fig:gamma} show the results in dependency of the normalized current $I_0/I\i{th}$.
+
+% For calculating the effective carrier livetime $\tau\i{eff}$ \eqref{eq:omega2_I} can be derrived:
+From \eqref{eq:omega2_I} one can see, that the slope of the line in figure \ref{fig:omega2} corresponds to:
+\begin{equation}
+ \frac{\partial \omega\i{r}^2}{\partial I_0/I\i{th}}=\frac{1}{\tau\i{eff}\tau\i{p}}
+\end{equation}
+Thus, with the value of $\tau\i{p} = 1.77$~ps from the preparation, $\tau\i{eff}$ can be calculated:
+\begin{equation}
+ \tau\i{eff}= 1.07\mathrm{~ps}
+\end{equation}
 
 
 
-% 
+\begin{figure}%
+\centering
+ \includegraphics[width=.6\columnwidth]{Grafiken/omega2.pdf}
+ \caption{}%
+\label{fig:omega2}%
+\end{figure}
+
+\begin{figure}%
+\centering
+ \includegraphics[width=.6\columnwidth]{Grafiken/gamma.pdf}
+ \caption{}%
+\label{fig:gamma}%
+\end{figure}
+
+
+
+%\subfloat[]{\includegraphics[totalheight=6.5	 cm]{Grafiken/gamma.pdf} \label{fig:gamma}}\\%
+ 
 % Like described in the preparation material\todo{footnote}, the for the measured frequency response the hole transmission channel has to be taken into account. 
 
