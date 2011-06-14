@@ -110,8 +110,27 @@ To calculate the external quantum efficiency
 can be used.
 $P\i{a}$ is the total output power of the laser diode. Since the mirrors at both sides of the laserdiode have the same reflectivity and therefore the same output powers. This leads to the total output power of  $P\i{a} = 2\cdot P\i{opt}$.
 
-For $I = 60$~mA, $T = 20$~°C and $\lambda=736~\mathrm{nm}$ (cf. \eqref{eq:lambda}) an external quantum efficiency of $\eta\i{ext}=0.22$ can be calculated. 
-\comwo{Hier hängt der wirkungsgrad massiv vom strom ab. Als wellenlänge habe ich den zuvor bestimmten wert genommen}
+Table \ref{tab:2_ext} shows the external quantum efficiencies of the laser diode for different temperatures and currents, calculated width $\lambda=736~\mathrm{nm}$ (cf. \eqref{eq:lambda}). The external efficiancy decreases with an increasing temperature.
+
+\begin{table}%
+\centering
+\caption{Quantum efficiencies at different temperatures and currents}
+ 
+\begin{tabular}{cccc}
+
+\toprule
+$T$~/~°C& $\eta\i{ext}$(50~mA)&	$\eta\i{ext}$(60~mA)&	$\eta\i{ext}$(65~mA)\\
+\midrule
+
+20&0.09&0.18&0.22\\
+25&0.08&0.17&0.21\\
+30&0.06&0.15&0.19\\
+35&0.05&0.14&0.18\\
+\bottomrule 
+\end{tabular}
+\label{tab:2_ext}
+\end{table}
+
 
 The differential quantum efficiency 
 \begin{equation}
@@ -120,11 +139,11 @@ The differential quantum efficiency
 \end{equation}
 is calculated to be
 \begin{equation}
-\eta\i{d} = 0.655~\mathrm{mW/mA}
+\eta\i{d} = 0.655
 \label{eq:}
 \end{equation} at $T=20~$°C and currents above threshold.
-\comwo{Einheit? Freude schreibt keine Einheit dahinter, das Datasheet gibt die Einheit an, die ich auch geschrieben hab}
-
+For higher temperatures this efficiency did not significantly.
+ 
 To calculate the efficiency of the induced emission the values of the preparation for $\tau\i{P}$ (cf. \eqref{eq:tau_p}) and $\tau\i{R}$ (cf. \eqref{eq:tau_r}) are used.
 
 \begin{equation}
@@ -132,17 +151,20 @@ To calculate the efficiency of the induced emission the values of the preparatio
 \label{eq:}
 \end{equation}
 leads to $\eta\i{ind}$~=~1.28.
-\comwo{Größer als 1. da kann was nicht stimmen! \\alternative vorgehensweise:}
 
-\begin{equation}
-\begin{split}
-\eta\i{ind}=\eta\i{d}\frac{\eta\i{int}}{\eta\i{ext}}\\
-=\eta\i{d}\frac{P}{P\i{a}}=\eta\i{d}\frac{UI-R\i{s}I^2}{2P\i{opt}}\\
-=2.98
-\end{split}
-\label{eq:}
-\end{equation}
-for $I = 65$~mA and $U = 1.975$~V at $T = 20$~°C.
+This value is not useful since the value is bigger than one. The used values for $\tau\i{P}$ and $\tau\i{R}$ of the preparation could be not valid for the laser diode.
+Since $\eta\i{ind}$ depends on the temperature independent $\eta\i{d}$ it does not depend on the temperature as well.
+%\comwo{Größer als 1. da kann was nicht stimmen! \\alternative vorgehensweise:}
+%
+%\begin{equation}
+%\begin{split}
+%\eta\i{ind}=\eta\i{d}\frac{\eta\i{int}}{\eta\i{ext}}\\
+%=\eta\i{d}\frac{P}{P\i{a}}=\eta\i{d}\frac{UI-R\i{s}I^2}{2P\i{opt}}\\
+%=2.98
+%\end{split}
+%\label{eq:}
+%%\end{equation}
+%for $I = 65$~mA and $U = 1.975$~V at $T = 20$~°C.
 
 To calculate the number of photons above threshold neglecting spontaneous emission 
 \begin{equation}
