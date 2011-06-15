@@ -1,7 +1,7 @@
 \chapter{Preparation}
 
 
-\section{Design of an awesome resonator}
+\section{Design of a Ring Resonator}
 To filter a special wavelength using a ring resonator the design of the resonator needs to be adjusted to the wavelength.
 \begin{figure}[h]%
 \centering
@@ -52,7 +52,7 @@ Secondly the design of the waveguide used for the ring resonator (material, dime
 \end{equation}
 is true.
 
-Finally there is the possibility to make a large ring resonator. The Free Spectral Range that discribes the distance between two resonances $m$ and $m+1$ is approximately
+Finally there is the possibility to make a large ring resonator. The Free Spectral Range that describes the distance between two resonances $m$ and $m+1$ is approximately
 
 \begin{equation}
 \Delta f \approx \frac{c}{n\i{g}\cdotL}
@@ -69,11 +69,11 @@ Calculating $\Delta f$ for the given values:
 This leads to 
 
 \begin{equation}
-L \approx \frac{3\cdot10^8}{n_\i{g}\cdot125\cdot10^9}=\frac{2.40\cdot10^{-3}}{n_\i{g}}
+L \approx \frac{3\cdot10^8}{n\i{g}\cdot125\cdot10^9}=\frac{2.40\cdot10^{-3}}{n\i{g}}
 \label{eq:}
 \end{equation}
 
-
+For a ring resonator with this length the neighbouring dips have a distance of $\sim1$~nm. So with one Resonator two dips at the example wavelength could be realized.
 
 \section{Measuring the Resonator Parameters}
 
@@ -83,7 +83,6 @@ L \approx \frac{3\cdot10^8}{n_\i{g}\cdot125\cdot10^9}=\frac{2.40\cdot10^{-3}}{n_
 \caption{Example Transmission Coefficient of a Resonator}%
 \label{fig:S21}%
 \end{figure}
-\todo{Bild evtl auf f anpassen}
 
 To caracterize a resonator its power transmission in dependency of the frequency can easily be measured. By that measurement, the whidth of the resonance lines at full width half maximum (FWHM) $\delta f$ and the free spectral range $\Delta f$ can determined. (cf. figure \ref{fig:S21}). The quotient $F= \Delta f/\delta f$ is called Finesse. For the case of critical coupling $F$ is given as:
 \begin{equation}
