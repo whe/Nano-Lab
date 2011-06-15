@@ -40,7 +40,7 @@ When $e^{-a/2\cdot L} = \sqrt{1-\kappa}$ the transmission is zero. This case is 
 
 To design ring resonator filter to block certain wavelength there are different approaches.
 At first the filter could be consist different in series connected parallel ring resonators. Each resonator would filter characteristic frequencies.
-For the given wavelenght $\lambda_1 = 1550$~nm and $\lambda_2 = 1551$~nm two other approaches are conceivable.
+For the given wavelenght $\lambda_1 = 1550$~nm and $\lambda_2 = 1551$~nm some other approaches are conceivable.
 
 Firstly one resonator could be used with a resonance frequency between $\lambda_1$ and $\lambda_2$. If the width of the resonance line is broader than than the difference between $\lambda_1$ and $\lambda_2$ both wavelengths get filtered.
 
@@ -51,6 +51,28 @@ Secondly the design of the waveguide used for the ring resonator (material, dime
 \label{eq:}
 \end{equation}
 is true.
+
+Finally there is the possibility to make a large ring resonator. The Free Spectral Range that discribes the distance between two resonances $m$ and $m+1$ is approximately
+
+\begin{equation}
+\Delta f \approx \frac{c}{n\i{g}\cdotL}
+\label{eq:}
+\end{equation}
+
+Calculating $\Delta f$ for the given values:
+
+\begin{equation}
+|\Delta f| = \left|-\frac{c}{\lambda^2}\Delta\lambda\right| =~125~\mathrm{GHz}.
+\label{eq:}
+\end{equation}
+
+This leads to 
+
+\begin{equation}
+L \approx \frac{3\cdot10^8}{n_\i{g}\cdot125\cdot10^9}=\frac{2.40\cdot10^{-3}}{n_\i{g}}
+\label{eq:}
+\end{equation}
+
 
 
 \section{Measuring the Resonator Parameters}
@@ -65,7 +87,7 @@ is true.
 
 To caracterize a resonator its power transmission in dependency of the frequency can easily be measured. By that measurement, the whidth of the resonance lines at full width half maximum (FWHM) $\delta f$ and the free spectral range $\Delta f$ can determined. (cf. figure \ref{fig:S21}). The quotient $F= \Delta f/\delta f$ is called Finesse. For the case of critical coupling $F$ is given as:
 \begin{equation}
- F = \frac{\Delta f}{\delta f} = \frac{\pi\sqrt{1-\kappa}}{\kappa}=\frac{\pi\exp\left(-\alpha/2L\right)}{1-\exp\left(-\alpha/L\right)}
+ F = \frac{\Delta f}{\delta f} = \frac{\pi\sqrt{1-\kappa}}{\kappa}=\frac{\pi\exp\left(-\alpha L/2\right)}{1-\exp\left(-\alpha L\right)}
 \end{equation}
 This can be rearranged to:
 \begin{equation}
