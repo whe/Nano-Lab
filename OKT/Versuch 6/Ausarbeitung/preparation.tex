@@ -78,3 +78,16 @@ and
 respectively.
 
 \section{Over-Critical and Under-Critical coupling}
+
+\begin{figure}[h]%
+\centering
+\includegraphics[width=.7\columnwidth]{Grafiken/crit_coupling.pdf}%
+\caption{group delay in dependency of the detuning for different Finesses}%
+\label{fig:crit_coupling}%
+\end{figure}
+
+For over and undercritical coupling the group delay changes at the resonance frequency. This behavior can be seen in figure \ref{fig:crit_coupling}. For overcritical coupling the losses in the ring are smaller than the coupling losses. The signal gets delayed, so the group delay is positive. For undercritical damping the losses in the ring are greater than the coupling losses. In this case the group velocity becomes negative.
+
+The design of a filter with a over or undercoupled system is disadvantageous. The ideal case is critical damping. There the part that is directly transmitted from the input to the output is extinguished by the part that couples out of the resonator. In the case of undercritical coupling the wave needs some circulations in the resonator till it vanishes. Each time it passes the coupler, the wave is coupled to the output. The signal from the input is depleted by the first circulation, thus each additional circulation couples energy to the output.
+In the case of overcritical coupling the wave is depleted within one circulation. Thus there is no wave that is coupled out of the resonator, that depletes the wave coupled from the input to the output.
+In both cases, overcritical and undercritical coupling, the Quality Q is decreased.
