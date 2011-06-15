@@ -1,7 +1,7 @@
 \chapter{Preparation}
 
 
-\section{Design of an awesome resonator}
+\section{Design of a Ring Resonator}
 To filter a special wavelength using a ring resonator the design of the resonator needs to be adjusted to the wavelength.
 \begin{figure}[h]%
 \centering
@@ -9,7 +9,7 @@ To filter a special wavelength using a ring resonator the design of the resonato
 \caption{Schematic of a ring resonator.}%
 \label{fig:p1_ring}%
 \end{figure} 
-Figure \ref{fig:p1_ring}\footnote[1]{Jingshi Li, Materials for the preparation of Experiment 6} shows a schematic picture of a parallel ring resonator. It consists of a coupling zone between the ring resonator and the waveguide which can be modelled as directional coupler\footnotemark[1].
+Figure \ref{fig:p1_ring}\footnote[1]{Jingshi Li, Materials for the preparation of Experiment 6} shows a schematic picture of a parallel ring resonator. It consists of a coupling zone between the ring resonator and the waveguide which can be modeled as directional coupler\footnotemark[1].
 
 The transmission of the ring follows the relation:
 
@@ -24,7 +24,7 @@ That means the ring is in resonance
 \end{equation}
 wiht $\beta = n_{\mathrm{eff}} \frac{2\pi f}{c} = n_{\mathrm{eff}} \frac{2\pi}{\lambda_0}$.
 
-Using the transmission of the ring and the matrix of the directional coupler a term for the transmittet power can be derived\footnotemark[1]:
+Using the transmission of the ring and the matrix of the directional coupler a term for the transmitted power can be derived\footnotemark[1]:
 \begin{equation}
 T(\beta L) = \frac{|a_t|^2}{|a_i|^2}= \frac{(1-e^{-a\cdot L})(1-(1-\kappa))}{(1-e^{-a/2\cdot L}\sqrt{1-\kappa})^2+4e^{-a/2\cdot L}\sqrt{1-\kappa}\cdot\mathrm{sin}^2(\beta L / 2)}
 \label{eq:}
@@ -36,11 +36,11 @@ T_{\mathrm{min}}=\frac{(e^{-a/2\cdot L} - \sqrt{1-\kappa})^2}{(1 - e^{-a/2\cdot 
 \label{eq:}
 \end{equation}
 
-When $e^{-a/2\cdot L} = \sqrt{1-\kappa}$ the transmission is zero. This case is calld $critical~coupling$ and can be achieved for $a = - \frac{1}{L}\mathrm{ln}(1-\kappa)$.
+When $e^{-a/2\cdot L} = \sqrt{1-\kappa}$ the transmission is zero. This case is called $critical~coupling$ and can be achieved for $a = - \frac{1}{L}\mathrm{ln}(1-\kappa)$.
 
 To design ring resonator filter to block certain wavelength there are different approaches.
 At first the filter could be consist different in series connected parallel ring resonators. Each resonator would filter characteristic frequencies.
-For the given wavelenght $\lambda_1 = 1550$~nm and $\lambda_2 = 1551$~nm two other approaches are conceivable.
+For the given wavelength $\lambda_1 = 1550$~nm and $\lambda_2 = 1551$~nm some other approaches are conceivable.
 
 Firstly one resonator could be used with a resonance frequency between $\lambda_1$ and $\lambda_2$. If the width of the resonance line is broader than than the difference between $\lambda_1$ and $\lambda_2$ both wavelengths get filtered.
 
@@ -52,6 +52,28 @@ Secondly the design of the waveguide used for the ring resonator (material, dime
 \end{equation}
 is true.
 
+Finally there is the possibility to make a large ring resonator. The Free Spectral Range that describes the distance between two resonances $m$ and $m+1$ is approximately
+
+\begin{equation}
+\Delta f \approx \frac{c}{n\i{g}\cdot L}
+\label{eq:}
+\end{equation}
+
+Calculating $\Delta f$ for the given values:
+
+\begin{equation}
+|\Delta f| = \left|-\frac{c}{\lambda^2}\Delta\lambda\right| =~125~\mathrm{GHz}.
+\label{eq:}
+\end{equation}
+
+This leads to 
+
+\begin{equation}
+L \approx \frac{3\cdot10^8}{n\i{g}\cdot125\cdot10^9}=\frac{2.40\cdot10^{-3}}{n\i{g}}
+\label{eq:}
+\end{equation}
+
+For a ring resonator with this length the neighbouring dips have a distance of $\sim1$~nm. So with one Resonator two dips at the example wavelength could be realized.
 
 \section{Measuring the Resonator Parameters}
 
@@ -61,11 +83,10 @@ is true.
 \caption{Example Transmission Coefficient of a Resonator}%
 \label{fig:S21}%
 \end{figure}
-\todo{Bild evtl auf f anpassen}
 
-To caracterize a resonator its power transmission in dependency of the frequency can easily be measured. By that measurement, the whidth of the resonance lines at full width half maximum (FWHM) $\delta f$ and the free spectral range $\Delta f$ can determined. (cf. figure \ref{fig:S21}). The quotient $F= \Delta f/\delta f$ is called Finesse. For the case of critical coupling $F$ is given as:
+To characterize a resonator its power transmission in dependency of the frequency can easily be measured. By that measurement, the width of the resonance lines at full width half maximum (FWHM) $\delta f$ and the free spectral range $\Delta f$ can determined. (cf. figure \ref{fig:S21}). The quotient $F= \Delta f/\delta f$ is called Finesse. For the case of critical coupling $F$ is given as:
 \begin{equation}
- F = \frac{\Delta f}{\delta f} = \frac{\pi\sqrt{1-\kappa}}{\kappa}=\frac{\pi\exp\left(-\alpha/2L\right)}{1-\exp\left(-\alpha/L\right)}
+ F = \frac{\Delta f}{\delta f} = \frac{\pi\sqrt{1-\kappa}}{\kappa}=\frac{\pi\exp\left(-\alpha L/2\right)}{1-\exp\left(-\alpha L\right)}
 \end{equation}
 This can be rearranged to:
 \begin{equation}
