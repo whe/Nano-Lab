@@ -39,7 +39,18 @@ T_{\mathrm{min}}=\frac{(e^{-a/2\cdot L} - \sqrt{1-\kappa})^2}{(1 - e^{-a/2\cdot 
 When $e^{-a/2\cdot L} = \sqrt{1-\kappa}$ the transmission is zero. This case is calld $critical~coupling$ and can be achieved for $\a = - \frac{1}{L}\mathrm{ln}(1-\kappa)$.
 
 To design ring resonator filter to block certain wavelength there are different approaches.
-At first the filter could be consist different in series connected parallel ring resonators. Each 
+At first the filter could be consist different in series connected parallel ring resonators. Each resonator would filter characteristic frequencies.
+For the given wavelenght $\lambda_1 = 1550$~nm and $\lambda_2 = 1551$~nm two other approaches are conceivable.
+
+Firstly one resonator could be used with a resonance frequency between $\lambda_1$ and $\lambda_2$. If the width of the resonance line is broader than than the difference between $\lambda_1$ and $\lambda_2$ both wavelengths get filtered.
+
+Secondly the design of the waveguide used for the ring resonator (material, dimensions) could be chosen, that the effective indices for the two waveguides are just so that 
+
+\begin{equation}
+\frac{2\pi n_{\mathrm{eff,1}}}{\lambda_1} = \frac{2\pi n_{\mathrm{eff,2}}}{\lambda_2}
+\label{eq:}
+\end{equation}
+is true.
 
 
 \section{Measuring the Resonator Parameters}
