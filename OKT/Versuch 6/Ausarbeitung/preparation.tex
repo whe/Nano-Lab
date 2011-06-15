@@ -2,6 +2,43 @@
 
 
 \section{Design of an awesome resonator}
+To filter a special wavelength using a ring resonator the design of the resonator needs to be adjusted to the wavelength.
+\begin{figure}[h]%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/Resonator.png}%
+\caption{Schematic of a ring resonator.}%
+\label{fig:p1_ring}%
+\end{figure} 
+Figure \ref{fig:p1_ring}\footnote[1]{Jingshi Li, Materials for the preparation of Experiment 6} shows a schematic picture of a parallel ring resonator. It consists of a coupling zone between the ring resonator and the waveguide which can be modelled as directional coupler\footnotemark[1].
+
+The transmission of the ring follows the relation:
+
+\begin{equation}
+a\i{r2}=a_{\mathrm{r1}}\cdot e^{-a/2\cdot L}\cdot e^{-j\beta L}
+\label{eq:}
+\end{equation}
+That means the ring is in resonance
+\begin{equation}
+\beta L = m\cdot2\pi,\qquad m \in \mathbf{N}
+\label{eq:}
+\end{equation}
+wiht $\beta = n_{\mathrm{eff}} \frac{2\pi f}{c} = n_{\mathrm{eff}} \frac{2\pi}{\lambda_0}$.
+
+Using the transmission of the ring and the matrix of the directional coupler a term for the transmittet power can be derived\footnotemark[1]:
+\begin{equation}
+T(\beta L) = \frac{|a_t|^2}{|a_i|^2}= \frac{(1-e^{-a\cdot L})(1-(1-\kappa))}{(1-e^{-a/2\cdot L}\sqrt{1-\kappa})^2+4e^{-a/2\cdot L}\sqrt{1-\kappa}\cdot\mathrm{sin}^2(\beta L / 2)}}
+\label{eq:}
+\end{equation}
+As described above the ring is in resonance for $\beta L = m\cdot2\pi$ and the transmission becomes minimum. 
+In this case
+\begin{equation}
+T_{\mathrm{min}}=\frac{(e^{-a/2\cdot L} - \sqrt{1-\kappa})^2}{(1 - e^{-a/2\cdot L}\sqrt{1-\kappa})^2}
+\label{eq:}
+\end{equation}
+
+When $e^{-a/2\cdot L} = \sqrt{1-\kappa}$ the transmission is zero. This case is calld $critical~coupling$ and can be achieved for $\a = - \frac{1}{L}\mathrm{ln}(1-\kappa)$.
+
+
 
 \section{Measuring the Resonator Parameters}
 
