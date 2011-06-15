@@ -26,7 +26,7 @@ wiht $\beta = n_{\mathrm{eff}} \frac{2\pi f}{c} = n_{\mathrm{eff}} \frac{2\pi}{\
 
 Using the transmission of the ring and the matrix of the directional coupler a term for the transmittet power can be derived\footnotemark[1]:
 \begin{equation}
-T(\beta L) = \frac{|a_t|^2}{|a_i|^2}= \frac{(1-e^{-a\cdot L})(1-(1-\kappa))}{(1-e^{-a/2\cdot L}\sqrt{1-\kappa})^2+4e^{-a/2\cdot L}\sqrt{1-\kappa}\cdot\mathrm{sin}^2(\beta L / 2)}}
+T(\beta L) = \frac{|a_t|^2}{|a_i|^2}= \frac{(1-e^{-a\cdot L})(1-(1-\kappa))}{(1-e^{-a/2\cdot L}\sqrt{1-\kappa})^2+4e^{-a/2\cdot L}\sqrt{1-\kappa}\cdot\mathrm{sin}^2(\beta L / 2)}
 \label{eq:}
 \end{equation}
 As described above the ring is in resonance for $\beta L = m\cdot2\pi$ and the transmission becomes minimum. 
@@ -91,11 +91,11 @@ To caracterize a resonator its power transmission in dependency of the frequency
 \end{equation}
 This can be rearranged to:
 \begin{equation}
- \kappa = 0.5 \pm \sqrt{0.25+F^2/\pi^2}
+ \kappa = \frac{-\pi^2 \pm \sqrt{\pi^4+4F^2\pi^2}}{2F^2}
 \end{equation}
 and
 \begin{equation}
-\alpha = -\frac{\ln F}{L(\ln F+2\ln\pi)} 
+\alpha = \frac{2\ln\frac{\sqrt{4F^2+\pi^2}+\pi}{2F}}{L} 
 \end{equation}
 respectively.
 
