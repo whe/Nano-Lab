@@ -1,9 +1,68 @@
 \chapter{Experiment}
 
-To analyze the properties of a ring resonator, a scaled microwave model is used. The setup is shown in Figure \ref{fig:setup}. The transmission throug this waveguide structure ($S_{21}$) is analyzed with a network analyser (NWA). For each measurement the NWA was calibrated without the resonator.
+To analyze the properties of a ring resonator, a scaled microwave model is used. The setup is shown in Figure \ref{fig:setup}\footnote[1]{Jingshi Li, Materials for the preparation of Experiment 6}. The transmission through this waveguide structure (|$S_{21}$|) is analyzed with a network analyser (NWA). For each measurement the NWA was calibrated without the resonator 
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/foto_resonator.jpg}%
+\caption{Experimental Setup}%
+\label{fig:setup}%
+\end{figure}
 
 \section{Influence of the distance of the ring}
+First a ring with a radius of $r_1$~=~22.6~mm was analyzed. Therefore frequencies between 8 and 10.8~GHz were measuered with 1601 points. The transmission through the setup without any ring resonator was measured and subtracted out with the calibration of the NWA.
 
+The ring was set in direct contact to the line. The transmission changed immediatly. At certain frequencies the transmission breaks in and characteristic dips of the ring resonator can be observed. Figure \ref{fig:01_s21} shows the transmission $|S_{21}|$ through the setup for different distances between the ring and the transmission line.
+For lager distance the dips become less deep and the resonance frequency shifts to lower frequencies. The coupling into the ring resonator becomes weaker for higher distances.
+ 
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/01_s21.pdf}%
+\caption{|$S_{21}$| for different distances between the transmission line and the ring resonator ($r_1$~=~22.6~mm).}%
+\label{fig:01_s21}%
+\end{figure}
+
+Between a distance of 0~mm and 1~mm the dips become deepest, the transmission gets minimal. In this area there is the case of critical coupling. 
+
+To analyze this the frequency range was changed to 9~GHz~-~9.8~GHz. In this range two dips can be observed. By changing the distance between the ring resonator and the transmission line the minimal transmission at the resonance frequencies was minimized. It was not possible to get both dips below -40~dB. The best result was achieved for a distance of $\sim$0.75~mm. Figure \ref{fig:03_075} shows the transmission for that case.
+For this distance $|S_{21}|$(9.16~GHz)~=~-38.3~dB and  $|S_{21}|$(9.62~GHz)~=~-40.3~dB.
+
+\todo{Quality Berechnen, damit kappa und alpha}
+$\delta f$ and $\Delta f$ can be extracted from the measurement are given in table \ref{tab:ring_klein}.
+Using equations \eqref{eq:kappa} and \eqref{eq:alpha} $\kappa$ and $\alpha$ can be calculated. The values are given in \ref{tab:ring_klein} as well.
+
+\todo{die Werte dann noch im Text nennen}
+
+\begin{table}%
+\centering
+\caption{Ring resonator ($r_1$~=~22.6~mm) at critical coupling ($d \approx 0.75$~mm. Transmission properties.}
+
+\begin{tabular}{cccccc}
+\toprule
+$f\i{res}$	& $\delta f$	& $\Delta f$ & F & $\kappa$ & $\alpha$\\
+\midrule
+9.16 GHz	& ???	& 0.46~GHz	&	???	&	??? & ???\\
+9.62 GHz	& ???	& 0.46~GHz	&	???	&	??? & ???\\
+\bottomrule 
+\end{tabular}
+\label{tab:ring_klein}
+\end{table}
+
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/03_075.pdf}%
+\caption{Transmission near the case of critical coupling for a small ring ($r_1$~=~22.6~mm)}%
+\label{fig:03_075}%
+\end{figure}
+
+Secondly a larger ring with a radius of $r_2$~=~45.1~mm was examined. Comparing the small and the large ring (cf. fig. \ref{fig:04_vergleich}) the large ring shows in the same frequency range twice as much resonances compared to the small ring. This agrees with equation \eqref{eq:abstand} since the  radius of the resonator and the length of the resonator has doubled thus the distance between two resonances $\Delta f$ halves.
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/04_vergleich.pdf}%
+\caption{Transmission of the small ring resonator and a large ring resonator.}%
+\label{fig:04_vergleich}%
+\end{figure}
 
 
 
