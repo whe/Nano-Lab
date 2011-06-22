@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.0
-lastDocument=OKT6.tex
+lastDocument=preparation.tex
 masterDocument=
 name=OKT6
 pkg_extIsRegExp=false
@@ -40,6 +40,14 @@ Indentation Mode=
 Mode=LaTeX
 ReadWrite=true
 
+[document-settings,item:thesisclass.cls]
+Bookmarks=
+Encoding=ISO-8859-1
+Highlighting=LaTeX
+Indentation Mode=
+Mode=LaTeX
+ReadWrite=true
+
 [document-settings,item:titlepage.tex]
 Bookmarks=
 Encoding=ISO-8859-1
@@ -50,20 +58,20 @@ ReadWrite=true
 
 [item:OKT6.tex]
 archive=true
-column=14
+column=0
 encoding=ISO-8859-1
 highlight=LaTeX
-line=149
+line=134
 mode=LaTeX
 open=true
 order=3
 
 [item:experiment.tex]
 archive=true
-column=19
+column=0
 encoding=ISO-8859-1
 highlight=LaTeX
-line=0
+line=1
 mode=LaTeX
 open=true
 order=0
@@ -80,13 +88,23 @@ order=-1
 
 [item:preparation.tex]
 archive=true
-column=0
+column=7
 encoding=ISO-8859-1
 highlight=LaTeX
-line=2
+line=46
 mode=LaTeX
 open=true
 order=2
+
+[item:thesisclass.cls]
+archive=true
+column=0
+encoding=ISO-8859-1
+highlight=LaTeX
+line=0
+mode=LaTeX
+open=true
+order=4
 
 [item:titlepage.tex]
 archive=true
@@ -99,16 +117,20 @@ open=true
 order=1
 
 [view-settings,view=0,item:OKT6.tex]
-CursorColumn=14
-CursorLine=149
+CursorColumn=0
+CursorLine=134
 
 [view-settings,view=0,item:experiment.tex]
-CursorColumn=19
-CursorLine=0
+CursorColumn=0
+CursorLine=1
 
 [view-settings,view=0,item:preparation.tex]
+CursorColumn=7
+CursorLine=46
+
+[view-settings,view=0,item:thesisclass.cls]
 CursorColumn=0
-CursorLine=2
+CursorLine=0
 
 [view-settings,view=0,item:titlepage.tex]
 CursorColumn=0
