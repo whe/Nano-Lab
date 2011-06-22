@@ -120,9 +120,19 @@ Assuming that this is the case of critical coupling the coupling coefficient $\k
 
 \todo{compare  the results with the small ring}
 
-The next task was to analyze the group delay change when varying the distance of the ring. Therefore the format of the NWA display was changed to $gruop~delay$. 
+The next task was to analyze the group delay change when varying the distance of the ring. Therefore the format of the NWA display was changed to $gruop~delay$. The frequency range was defined as 8.55-9.85~GHz.
 
-
+\begin{figure}%
+\centering
+%\begin{adjustwidth}{0cm}{0cm}
+%	\subfloat[contact]{\includegraphics[totalheight=6 cm]{Grafiken/06_0.pdf}\label{fig:06_0}}
+	\subfloat[$d = 0.7$~mm]{\includegraphics[totalheight=6 cm]{Grafiken/06_07.pdf} \label{fig:06_07}}
+		\subfloat[$d = 1.2$~mm]{\includegraphics[totalheight=6 cm]{Grafiken/06_12.pdf}\label{fig:06_12}}\\
+	\subfloat[$d = 2.2$~mm]{\includegraphics[totalheight=6 cm]{Grafiken/06_22.pdf} \label{fig:06_22}}
+\caption{Group delay for different distances of the ring.}%
+\label{fig:1_TE}%
+\end{figure}
+When moving the ring slowly away from the transmission line one can observe a change in time delay. At first, near the transmission line the transmission 
 
 \chapter{Simulation}
 In the next step a simulation with the program RSoft was performed. To reduce the computation time the 3D-structure was reduced to a 2D-structure using the effective index method. The simulation was performed in the optical frequency domain around 200~THz, so the dimensions of the waveguides had to be reduced by a factor of 20000. 
@@ -139,5 +149,6 @@ The strip waveguide with a length $l=5~\upmu$m was drawn in z-direction. For dra
 
 
 In the first simulation a pulse was transmitted through the waveguide structure.
+
 
 
