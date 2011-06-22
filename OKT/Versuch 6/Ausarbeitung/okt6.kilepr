@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.0
-lastDocument=preparation.tex
+lastDocument=experiment.tex
 masterDocument=
 name=OKT6
 pkg_extIsRegExp=false
@@ -68,10 +68,10 @@ order=3
 
 [item:experiment.tex]
 archive=true
-column=0
+column=185
 encoding=ISO-8859-1
 highlight=LaTeX
-line=1
+line=181
 mode=LaTeX
 open=true
 order=0
@@ -88,10 +88,10 @@ order=-1
 
 [item:preparation.tex]
 archive=true
-column=7
+column=0
 encoding=ISO-8859-1
 highlight=LaTeX
-line=46
+line=103
 mode=LaTeX
 open=true
 order=2
@@ -121,12 +121,12 @@ CursorColumn=0
 CursorLine=134
 
 [view-settings,view=0,item:experiment.tex]
-CursorColumn=0
-CursorLine=1
+CursorColumn=185
+CursorLine=181
 
 [view-settings,view=0,item:preparation.tex]
-CursorColumn=7
-CursorLine=46
+CursorColumn=0
+CursorLine=103
 
 [view-settings,view=0,item:thesisclass.cls]
 CursorColumn=0
