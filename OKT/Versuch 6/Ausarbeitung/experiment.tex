@@ -1,4 +1,5 @@
 \chapter{Experiment}
+\label{ch:part1}
 
 To analyze the properties of a ring resonator, a scaled microwave model is used. The setup is shown in Figure \ref{fig:setup}\footnote[1]{Jingshi Li, Materials for the preparation of Experiment 6}. The transmission through this waveguide structure (|$S_{21}$|) is analyzed with a network analyser (NWA). For each measurement the NWA was calibrated without the resonator 
 \begin{figure}%
@@ -148,7 +149,28 @@ The strip waveguide with a length $l=5~\upmu$m was drawn in z-direction. For dra
 
 
 
-In the first simulation a pulse was transmitted through the waveguide structure.
+In the first simulation the waveguide is exited by a pulse. The pulse propagates through the waveguide structure. At the output the impulse response of the transimission can be recorded. By performing a fourier transform the frequency behavior of the system can be examined. Figure \ref{fig:2_TE_FFT} shows the fourier transform of the input signal (red) and the output signal (green). Deviding the input signal through the output signal results in the transmission $S_{21}$ in dependency of the frequency, like examined in the preceeding experiment (cf. \ref{ch:part1}). Therefore the resonance frequencies can be read from \ref{fig:2_TE_FFT}.  
+
+\begin{figure}
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/2_TE_FFT.pdf}%
+\caption{FFT of the input signal (red) and the output signal (green)}%
+\label{fig:2_TE_FFT}%
+\end{figure}
+
+
+% 
+% \begin{table}%
+% \centering
+% \caption{Parameters of the first simulation}
+% \begin{tabular}{lll}
+% \toprule
+% Exitation Type&Grid Size(x;y)&Stop Time\\
+% ''Slab Mode``&(0.2;0.2)&32*1024*\\
+% \bottomrule 
+% \end{tabular}
+% \label{tab:simulation1}
+% \end{table}
 
 
 
