@@ -159,21 +159,59 @@ The strip waveguide with a length $l=5~\upmu$m was drawn in z-direction. For dra
 
 \begin{figure}
 \centering
-\includegraphics[width=.6\columnwidth]{Grafiken/1_index_profile.pdf}%
+\includegraphics[width=.6\columnwidth]{Grafiken/11_index_profile.pdf}%
 \caption{Index profile of the simulated waveguide structure}%
 \label{fig:index_profile1}%
 \end{figure}
 
 
 
-In the first simulation the waveguide is exited by a pulse. The pulse propagates through the waveguide structure. At the output the impulse response of the transimission can be recorded. By performing a fourier transform the frequency behavior of the system can be examined. Figure \ref{fig:2_TE_FFT} shows the fourier transform of the input signal (red) and the output signal (green). Deviding the input signal through the output signal results in the transmission $S_{21}$ in dependency of the frequency, like examined in the preceeding experiment (cf. \ref{ch:part1}). Therefore the resonance frequencies can be read from \ref{fig:2_TE_FFT}.  
+In the first simulation the waveguide is exited by a pulse. The pulse propagates through the waveguide structure. At the output the impulse response of the transimission can be recorded. By performing a fourier transform the frequency behavior of the system can be examined. Figure \ref{fig:2_TE_FFT} shows the fourier transform of the input signal (red) and the output signal (green). Deviding the input signal through the output signal results in the transmission $\left|S_{21}\right|$ in dependency of the frequency, like examined in the preceeding experiment (cf. \ref{ch:part1}). Therefore the resonance frequencies can be read from the dips in figure \ref{fig:2_TE_FFT}. The free spectral range (FSR) can be determined by subtracting to neighbouring resonance frequencies. With the dips at  $195$~THz and $211,5$~THz the FSR results to $FSR = 16.5$~THz.
+
 
 \begin{figure}
 \centering
-\includegraphics[width=.6\columnwidth]{Grafiken/2_TE_FFT.pdf}%
+\includegraphics[width=.6\columnwidth]{Grafiken/12_TE_FFT.pdf}%
 \caption{FFT of the input signal (red) and the output signal (green)}%
 \label{fig:2_TE_FFT}%
 \end{figure}
+
+
+
+
+In the Next simulation the two resonance frequencies at $195$~THz and $211,5$~THz and the intermediate frequency at 202.7~THz is examined. Now the waveguide is exited by a current wave. 
+
+
+
+\newpage
+\begin{figure}%
+\centering
+	\subfloat[]{\includegraphics[totalheight=5 cm]{Grafiken/13_54_aufsicht.pdf}\label{fig:3_1_54_aufsicht}}
+	\subfloat[]{\includegraphics[totalheight=5 cm]{Grafiken/13_54_field.pdf} \label{fig:3_1_54_field}}\\%
+\caption{Spatial Field Distribution \textbf{(a)} and Field at the Output \textbf{(b)} for a frequency of 195~THz}%
+\label{fig:3TE}%
+\end{figure}
+
+\begin{figure}%
+\centering
+	\subfloat[]{\includegraphics[totalheight=5 cm]{Grafiken/13_48_aufsicht.pdf}\label{fig:3_1_48_aufsicht}}
+	\subfloat[]{\includegraphics[totalheight=5 cm]{Grafiken/13_48_field.pdf} \label{fig:3_1_48_field}}\\%
+\caption{Spatial Field Distribution \textbf{(a)} and Field at the Output \textbf{(b)} for a frequency of 202.7~THz}%
+\label{fig:3TE}%
+\end{figure}
+
+
+
+\begin{figure}%
+\centering
+	\subfloat[]{\includegraphics[totalheight=5 cm]{Grafiken/13_42_aufsicht.pdf}\label{fig:3_1_42_aufsicht}}
+	\subfloat[]{\includegraphics[totalheight=5 cm]{Grafiken/13_42_field.pdf} \label{fig:3_1_42_field}}\\%
+\caption{Spatial Field Distribution \textbf{(a)} and Field at the Output \textbf{(b)} for a frequency of 211,5~THz}%
+\label{fig:3TE}%
+\end{figure}
+
+
+
 
 
 % 
