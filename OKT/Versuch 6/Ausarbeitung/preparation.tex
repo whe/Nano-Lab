@@ -2,6 +2,7 @@
 
 
 \section{Design of a Ring Resonator}
+\label{design}
 To filter a special wavelength using a ring resonator the design of the resonator needs to be adjusted to the wavelength.
 \begin{figure}[h]%
 \centering
@@ -14,7 +15,7 @@ Figure \ref{fig:p1_ring}\footnote[1]{Jingshi Li, Materials for the preparation o
 The transmission of the ring follows the relation:
 
 \begin{equation}
-a\i{r2}=a_{\mathrm{r1}}\cdot e^{-a/2\cdot L}\cdot e^{-j\beta L}
+a\i{r2}=a_{\mathrm{r1}}\cdot e^{-\alpha /2\cdot L}\cdot e^{-j\beta L}
 \label{eq:}
 \end{equation}
 That means the ring is in resonance
@@ -26,17 +27,22 @@ wiht $\beta = n_{\mathrm{eff}} \frac{2\pi f}{c} = n_{\mathrm{eff}} \frac{2\pi}{\
 
 Using the transmission of the ring and the matrix of the directional coupler a term for the transmitted power can be derived\footnotemark[1]:
 \begin{equation}
-T(\beta L) = \frac{|a_t|^2}{|a_i|^2}= \frac{(1-e^{-a\cdot L})(1-(1-\kappa))}{(1-e^{-a/2\cdot L}\sqrt{1-\kappa})^2+4e^{-a/2\cdot L}\sqrt{1-\kappa}\cdot\mathrm{sin}^2(\beta L / 2)}
+T(\beta L) = \frac{|a_t|^2}{|a_i|^2}= \frac{(1-e^{-\alpha \cdot L})(1-(1-\kappa))}{(1-e^{-\alpha /2\cdot L}\sqrt{1-\kappa})^2+4e^{-\alpha /2\cdot L}\sqrt{1-\kappa}\cdot\mathrm{sin}^2(\beta L / 2)}
 \label{eq:}
 \end{equation}
 As described above the ring is in resonance for $\beta L = m\cdot2\pi$ and the transmission becomes minimum. 
 In this case
 \begin{equation}
-T_{\mathrm{min}}=\frac{(e^{-a/2\cdot L} - \sqrt{1-\kappa})^2}{(1 - e^{-a/2\cdot L}\sqrt{1-\kappa})^2}
+T_{\mathrm{min}}=\frac{(e^{-\alpha /2\cdot L} - \sqrt{1-\kappa})^2}{(1 - e^{-\alpha /2\cdot L}\sqrt{1-\kappa})^2}
 \label{eq:}
 \end{equation}
 
-When $e^{-a/2\cdot L} = \sqrt{1-\kappa}$ the transmission is zero. This case is called $critical~coupling$ and can be achieved for $a = - \frac{1}{L}\mathrm{ln}(1-\kappa)$.
+When $e^{-\alpha /2\cdot L} = \sqrt{1-\kappa}$ the transmission is zero. This case is called $critical~coupling$ and can be achieved for 
+\begin{equation}
+\alpha = - \frac{1}{L}\mathrm{ln}(1-\kappa)\quad .
+\label{eq:crti}
+\end{equation}
+
 
 To design ring resonator filter to block certain wavelength there are different approaches.
 At first the filter could consist of different in series connected parallel ring resonators. Each resonator would filter characteristic frequencies.
