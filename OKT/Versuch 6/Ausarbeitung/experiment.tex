@@ -188,6 +188,11 @@ In the first simulation the waveguide is exited by a pulse. The pulse propagates
 % \end{tabular}
 % \label{tab:simulation1}
 % \end{table}
+At resonance the inserted power is stored in the ring. At resonance the condition \eqref{eq:res} is fulfilled and the field that is coupled into the resonantor and the field in the resonator interfere constructively. 
+
+Although the attenuation in the resonator is zero there are losses inside the ring. This could be caused by the bend waveguide where the field is concentrated to the outer side of the bend waveguide. So parts of the field couple out of the bend waveguide and are radiating.
+The experiment has additional attenuation in the waveguide. Therefore the losses are higher.
 
 
-
+One major difference between the simulation and the experiment is that the simulation calculates with an attenuation of zero which leads to differences in the transmission characteristic. Changing that simulation parameter is a possibility to better match the simulation with the experiment. 
+Furthermore another simulation could be used. The beam propagation method uses the refractive index method which is a 2D simulation for a 3D structure. This reduces the computation time but leads to less accurate results. An alternative would be a 3D simulation with e.g. CST Microwave Studio. But the computation time for that would be much longer. 
