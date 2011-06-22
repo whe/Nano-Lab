@@ -153,16 +153,23 @@ This shows that using different ring resonators in series filters can be realize
 \end{figure}
 
 \chapter{Simulation}
-In the next step a simulation with the program RSoft was performed. To reduce the computation time the 3D-structure was reduced to a 2D-structure using the effective index method. The simulation was performed in the optical frequency domain around 200~THz, so the dimensions of the waveguides had to be reduced by a factor of 20000. 
-
-The strip waveguide with a length $l=5~\upmu$m was drawn in z-direction. For drawing the resonator rings two concentric cylinders with different diameters were created and subtracted from each other. The resulting index profile of the structure is shown in figure \ref{fig:index_profile1}.
-
-\begin{figure}
+\begin{figure}[ht]
 \centering
 \includegraphics[width=.6\columnwidth]{Grafiken/11_index_profile.pdf}%
 \caption{Index profile of the simulated waveguide structure}%
 \label{fig:index_profile1}%
 \end{figure}
+
+In the next step a simulation with the program RSoft was performed. To reduce the computation time the 3D-structure was reduced to a 2D-structure using the effective index method. The simulation was performed in the optical frequency domain around 200~THz, so the dimensions of the waveguides had to be reduced by a factor of 20000. 
+
+The strip waveguide with a length $l=5~\upmu$m was drawn in z-direction. For drawing the resonator rings two concentric cylinders with different diameters were created and subtracted from each other. The resulting index profile of the structure is shown in figure \ref{fig:index_profile1}.
+% 
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=.6\columnwidth]{Grafiken/11_index_profile.pdf}%
+% \caption{Index profile of the simulated waveguide structure}%
+% \label{fig:index_profile1}%
+% \end{figure}
 
 
 
@@ -178,16 +185,16 @@ In the first simulation the waveguide is exited by a pulse. The pulse propagates
 
 
 
-
-In the next simulation the two resonance frequencies at $195$~THz and $211,5$~THz and the intermediate frequency at 202.7~THz is examined. Now the waveguide is exited by a current wave (CW) and the spatial field distribution and the the field at the output in dependence of time is examined (cf. figures \ref{fig:13_54,},\ref{fig:13_48} and \ref{fig:13_42}).
+\newpage
+In the next simulation the two resonance frequencies at $195$~THz and $211,5$~THz and the intermediate frequency at 202.7~THz is examined. Now the waveguide is exited by a current wave (CW) and the spatial field distribution and the the field at the output in dependence of time is examined (cf. figures \ref{fig:13_54}, \ref{fig:13_48} and \ref{fig:13_42}).
 
 For the resonance frequency of 195~THz the spatial field distribution is shown in figure \ref{fig:3_1_54_aufsicht}. The CW couples in the resonator continously. At the beginnig the resonator doesnt guide a wave and thus nothing couples out. Therefore the wave transmitted to the output is only dependent of the coupling factor $\kappa$. After one circulation a part of the light couples out and interferres destructively with the incident wave. Thus the signal decreases. Every further time the wave circulates the wave couples out too. At some time more waves are coupled out of the resonator, than are coupled in. Thus the output signal increases. This behavior can be seen in figure \ref{fig:3_1_54_field}. There are 4 wavelenght fitting in the resonator until the outcoupling gets larger than the transmission to the output. 
 
 For the frequency of $211.5$~THz the field distribution is shown in figure \ref{fig:3_1_48_aufsicht}. The field in the resonator is much lower than at the resonance frequencies because the wave doesn't fit in the resonator. At the beginning the wave couples in the waveguide like at the resonance frequencies. After one circulation light a part of the light couples out and interferres constructively with the incident wave at the output. Thus the transmission is greater than 1. But the circulating wave interferres destructively with the wave coupled in. Thus the intensity of the circulating wave decreases and the transmission reaches value arround 1 after infinite time. This behavior can be examined in figure \ref{fig:3_1_48_field}.
+\newpage
+For the resonance frequency of 211,5~THz the behavior is the same as at the resonance frequency of 195~THz. Only there are more wavelength fitting in the resonator, because of the shorter wavelength. Thus there are 7 wavelength fitting in the resonator. This behavior can be examined in figure \ref{fig:3_1_42_field}.
 
-For the resonance frequency of 211,5~THz the behavior is the same as at the resonance frequency of 195~THz. Only there are more wavelength fitting in the resonator, because of the shorter wavelength. Thus there are 7 wavelength fitting in the resonator. This behavior can be examined in figure \ref{fig:3_1_42_field}. 
-
-
+ 
 \begin{figure}%
 \centering
 	\subfloat[]{\includegraphics[totalheight=5 cm]{Grafiken/13_54_aufsicht.pdf}\label{fig:3_1_54_aufsicht}}
@@ -203,8 +210,6 @@ For the resonance frequency of 211,5~THz the behavior is the same as at the reso
 \caption{Spatial Field Distribution \textbf{(a)} and Field at the Output \textbf{(b)} for a frequency of 202.7~THz}%
 \label{fig:13_48}%
 \end{figure}
-
-
 
 \begin{figure}%
 \centering
@@ -232,9 +237,10 @@ For the resonance frequency of 211,5~THz the behavior is the same as at the reso
 % \end{table}
 At resonance the inserted power is stored in the ring. At resonance the condition \eqref{eq:res} is fulfilled and the field that is coupled into the resonantor and the field in the resonator interfere constructively. 
 
+  
 Although the attenuation in the resonator is zero there are losses inside the ring. This could be caused by the bend waveguide where the field is concentrated to the outer side of the bend waveguide. So parts of the field couple out of the bend waveguide and are radiating.
 The experiment has additional attenuation in the waveguide. Therefore the losses are higher.
 
-
+\newpage
 One major difference between the simulation and the experiment is that the simulation calculates with an attenuation of zero which leads to differences in the transmission characteristic. Changing that simulation parameter is a possibility to better match the simulation with the experiment. 
 Furthermore another simulation could be used. The beam propagation method uses the refractive index method which is a 2D simulation for a 3D structure. This reduces the computation time but leads to less accurate results. An alternative would be a 3D simulation with e.g. CST Microwave Studio. But the computation time for that would be much longer. 
