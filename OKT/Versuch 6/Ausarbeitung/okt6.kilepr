@@ -63,17 +63,17 @@ encoding=ISO-8859-1
 highlight=LaTeX
 line=134
 mode=LaTeX
-open=true
+open=false
 order=3
 
 [item:experiment.tex]
 archive=true
-column=185
+column=8
 encoding=ISO-8859-1
 highlight=LaTeX
-line=181
+line=243
 mode=LaTeX
-open=true
+open=false
 order=0
 
 [item:okt6.kilepr]
@@ -93,7 +93,7 @@ encoding=ISO-8859-1
 highlight=LaTeX
 line=103
 mode=LaTeX
-open=true
+open=false
 order=2
 
 [item:thesisclass.cls]
@@ -103,7 +103,7 @@ encoding=ISO-8859-1
 highlight=LaTeX
 line=0
 mode=LaTeX
-open=true
+open=false
 order=4
 
 [item:titlepage.tex]
@@ -113,7 +113,7 @@ encoding=ISO-8859-1
 highlight=LaTeX
 line=0
 mode=LaTeX
-open=true
+open=false
 order=1
 
 [view-settings,view=0,item:OKT6.tex]
@@ -121,8 +121,8 @@ CursorColumn=0
 CursorLine=134
 
 [view-settings,view=0,item:experiment.tex]
-CursorColumn=185
-CursorLine=181
+CursorColumn=8
+CursorLine=243
 
 [view-settings,view=0,item:preparation.tex]
 CursorColumn=0
