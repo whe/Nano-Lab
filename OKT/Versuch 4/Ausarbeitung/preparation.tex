@@ -6,21 +6,22 @@ The guiding mechanism of a mode in an optical fiber can be described by an elect
 \begin{equation}
  -2k\i{1x}h+2\varphi = -m\cdot2\pi
 \end{equation}
-This leads to several guided modes in a waveguide structure, dependent on the height of the core and the used materials. The described principle can be easyly transferred to cylindrically symetric structures like fibers or even more complex geometries.
+This leads to several guided modes in a waveguide structure, dependent on the height of the core and the used materials. The described principle can be easyly transferred to cylindrically symetric structures like fibers or even more complex geometries.\footnote[1]{Prof. Koos - OWF lecture slides}
 
 \subsection{Loss Mechanisms in Optical Fibers}
 \label{loss}
-The losses in optical fibers can be explained by different mechanisms. First there is the intrinsic material absorption. From the Kramers-Kronig relation of the real and imaginary part of the dielectric susceptibility it can be derived, that, if the attenuation of a medium is zero ($\chi\i{i}=0$ the medium is also dispersionless ($\chi=0$). Thus every dispersive medium has absorption. Furthermore there are the extrinsic losses in the fiber. These are caused by material impurities in the material like metal or OH$^-$ ions. Another source of losses is the Rayleigh scattering. This scattering is caused by random index fluctuations smaller than a wavelength. These index fluctuations arise during the freezing of the silica molecules during the fiber fabrication. 
+The losses in optical fibers can be explained by different mechanisms. First there is the intrinsic material absorption. From the Kramers-Kronig relation of the real and imaginary part of the dielectric susceptibility it can be derived, that, if the attenuation of a medium is zero ($\chi\i{i}=0$ the medium is also dispersionless ($\chi=0$). Thus every dispersive medium has absorption. Furthermore there are the extrinsic losses in the fiber. These are caused by material impurities in the material like metal or OH$^-$ ions. Another source of losses is the Rayleigh scattering. This scattering is caused by random index fluctuations smaller than a wavelength. These index fluctuations arise during the freezing of the silica molecules during the fiber fabrication. \footnote[1]{Prof. Koos - OWF lecture slides}
 
 \subsection{Bends in Optical Fibers}
 
-When a waveguide is bent it shows significant loss due to radiation. A wavefront propagates with its group velocity. If the waveguide is bent the wavefront at the inner boundary travels further in the same time than the wavefront at the outer boundary. This leads to a bigger part of the field that is not confined to the waveguide core and therefore suffers more attenuation. If the waveguide is bent further the fiber can crack.
+When a waveguide is bent it shows significant loss due to radiation. A wavefront propagates with its group velocity. If the waveguide is bent the wavefront at the inner boundary travels further in the same time than the wavefront at the outer boundary. This leads to a bigger part of the field that is not confined to the waveguide core and therefore suffers more attenuation. If the waveguide is bent further the fiber can crack.\footnote[1]{Prof. Koos - OWF lecture slides}
 
 
 \section{Optical Time Domain Reflectometry}
 Optical time domain reflectometry (OTDR) is a methodology to measure and characterize optical networks. It is possible to estimate losses in the fiber caused by connections or damages of the fiber. The attenuation of the fiber can be estimated just as the fiber length.
 
 \subsection{Measurement principles of OTDR}
+\label{subsec:Principle}
 To analyze an optical network wit OTDR an optical time domain reflectometer sends in a short laser pulse with a certain amount of energy. The pulse travels trough the fiber and gets reflected and scattered at fiber connections, switches, damages and impurities in the fiber. 
 
 After sending the pulse into the fiber the reflectometer starts listening on the port. An directional coupler leads the incoming light to a photodetector. Using the photodetector backscattered light can be detected. The time when the backscattered signal comes in is used to calculated the distance of the location the light got scattered.
@@ -30,19 +31,12 @@ The Fresnel reflection is caused by an index contrast. This is the case at a spl
 
 \begin{figure}%
 \centering
-\includegraphics[width=.6\columnwidth]{Grafiken/fresnel.png}%
+\includegraphics[width=.6\columnwidth]{grafiken/fresnel.png}%
 \caption{Different Fresnel reflection caused by by (1) mechanical splices, (2) bulkhead and (3) open connection}%
 \label{fig:fresnel}%
 \end{figure}
 
-The other scattering mechanism is the Rayleigh scattering (cf. \ref{loss}). The result of Rayleigh scattering is a straight slope in the OTDR trace. With that information the attenuation of the fiber can be calculated.\footnote[1]{EXFO - Application Note 194}
-
-
-
-
-
-\
-
+The other scattering mechanism is the Rayleigh scattering (cf. \ref{loss}). The result of Rayleigh scattering is a straight slope in the OTDR trace. With that information the attenuation of the fiber can be calculated.\footnote[2]{EXFO - Application Note 194}
 
 
 
@@ -50,6 +44,19 @@ The other scattering mechanism is the Rayleigh scattering (cf. \ref{loss}). The 
 The dynamic range is the main limiting factor for the reach of an OTDR. To estimate the measurement range of an OTDR the noise level and attenuation like caused by fiber connectors, bends and splices have to be taken into account. As a rule of thumb the dynamic range of the OTDR should be 5 to 8 dB higher than the loss in the fiber.
 Another limiting factor for the range of the OTDR is the pulse width. The shorter a pulse is, the less energy it carries. Through the attenuation of the fiber the pulse Amplitude of the pulse decreases and thus drops faster beneath the noise level if the pulse is short.
 
+\subsection{Resolution of an OTDR}
+\begin{figure}[h]%
+\centering
+%\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[Event Dead Zone]{\includegraphics[totalheight=4 cm]{grafiken/dead_event.pdf}\label{fig:event_dead}}\qquad
+	\subfloat[Attenuation Dead Zone]{\includegraphics[totalheight=4 cm]{grafiken/dead_att.pdf} \label{fig:att_dead}}
+\caption{}%
+\label{fig:dead}
+\end{figure}
+
+
+
+Fresnel reflection in the fiber like described in \ref{subsec:Principle} leads to ''dead zones´´ in the detected signal. A dead zone is the time in which an event cannot be detected after another event. If two events like connectors or splices are too close to each other they could not be distinguished from each other they are called event dead zones (cf. figure \ref{fig:event_dead}). There is also a case where the two events can be distinguished, but the attenuation of the events cannot be determined(cf. figure \ref{fig:att_dead}). This is called attenuation dead zones. The dead zones could be avoided, by making the exitation pulses short. Another limiting factor of the Resolution of an OTDR is of course the sampling
 
 
   
