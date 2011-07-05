@@ -14,7 +14,7 @@ The losses in optical fibers can be explained by different mechanisms. First the
 
 \subsection{Bends in Optical Fibers}
 
-When a waveguide is bent it shows significant loss due to radiation. A wavefront propagates with its group velocity. If the waveguide is bent the wavefront at the inner boundary travels further in the same time than the wavefront at the outer boundary. This leads to a bigger part of the field that is not confined to the waveguide core. If the waveguide is bent further the fiber can break.
+When a waveguide is bent it shows significant loss due to radiation. A wavefront propagates with its group velocity. If the waveguide is bent the wavefront at the inner boundary travels further in the same time than the wavefront at the outer boundary. This leads to a bigger part of the field that is not confined to the waveguide core and therefore suffers more attenuation. If the waveguide is bent further the fiber can crack.
 
 
 \section{Optical Time Domain Reflectometry}
@@ -37,12 +37,9 @@ The Fresnel reflection is caused by an index contrast. This is the case at a spl
 
 The other scattering mechanism is the Rayleigh scattering (cf. \ref{loss}). The result of Rayleigh scattering is a straight slope in the OTDR trace. With that information the attenuation of the fiber can be calculated.\footnote[1]{EXFO - Application Note 194}
 
-
-
-
-
-\
-
+\subsection{Measurement Range of an OTDR}
+The dynamic range is the main limiting factor for the reach of an OTDR. To estimate the measurement range of an OTDR the noise level and attenuation like caused by fiber connectors, bends and splices have to be taken into account. As a rule of thumb the dynamic range of the OTDR should be 5 to 8 dB higher than the loss in the fiber.
+Another limiting factor for the range of the OTDR is the pulse width. The shorter a pulse is, the less energy it carries. Through the attenuation of the fiber the pulse Amplitude of the pulse decreases and thus drops faster beneath the noise level if the pulse is short.
 
 \section{Characterisation of Passive Optical Networks}
 
@@ -86,7 +83,6 @@ Two main different kinds of OTDR are most commonly used - standard OTDR and PON-
 By OTDR the link is measured from the ONT to the OLT and distortion in the link is observed. A small pulse with $\lambda$ = 1625 nm is sent through the fiber. Losses in the backscattered signal are proof for bad connection (a bend in the fiber for example).
 
 As the standard OTDR results can be significantly distorted by many factors which is why a PON Optimized OTDR is used. With the PON-optimized OTDR, distortion after the splitter drop is greatly reduced, and the result is highly repeatable and reliable. The user can measure the loss of the splitter and the cumulative link loss, as well as identify whether any unexpected physical event occurred before or after the splitter.
-
 
 
 
