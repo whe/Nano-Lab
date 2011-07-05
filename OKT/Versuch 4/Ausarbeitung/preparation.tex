@@ -30,7 +30,7 @@ The Fresnel reflection is caused by an index contrast. This is the case at a spl
 
 \begin{figure}%
 \centering
-\includegraphics[width=.6\columnwidth]{Grafiken/fresnel.png}%
+\includegraphics[width=.6\columnwidth]{grafiken/fresnel.png}%
 \caption{Different Fresnel reflection caused by by (1) mechanical splices, (2) bulkhead and (3) open connection}%
 \label{fig:fresnel}%
 \end{figure}
@@ -45,3 +45,52 @@ The other scattering mechanism is the Rayleigh scattering (cf. \ref{loss}). The 
 
 
 \section{Characterisation of Passive Optical Networks}
+
+\begin{figure}%
+\includegraphics[width=\columnwidth]{grafiken/gpon.jpg}%
+\caption{GPON Network}%
+\label{}%
+\end{figure}
+
+A standard PON Network has three main components - OLT, Splitter and ONP.
+
+It uses Wavelength Division Multiplexing (WDM) to differentiate the upstream ($\lambda$~=~1310~nm) from downstream ($\lambda~=~$1490~nm).
+
+The OLT (Optical Line Terminal) provides the interface between the PON and the service provider's network services. These typically include:
+
+\begin{itemize}
+	\item Internet Protocol (IP) traffic over gigabit/s, 10 Gbit/s, or 100 Mbit/s Ethernet
+\item standard time division multiplexed (TDM) interfaces such as SONET or SDH
+\item ATM UNI at 155-622 Mbit/s
+\end{itemize}
+
+Splitters
+
+Although both the GPON and EPON protocols permit large split ratios (up to 128 subscribers for GPON, up to 32,768 for EPON), in practice most PONs are deployed with a split ratio of 1x32 or smaller
+
+
+ONTs
+
+Optical Network Transmitters (ONTs) a.k.a. Optical Network Units (ONUs) are devices that transforms incoming optical signals into electronics at a customer's premises in order to provide telecommunications services over the optical network.
+\begin{figure}%
+\centering
+\includegraphics[width=.4\columnwidth]{grafiken/onu.jpg}%
+\caption{Optical Network Transmitter}%
+\label{}%
+\end{figure}
+
+There are different methods for characterizing the optical networks. Examples include testing all points from the central office (CO) to the optical network terminal (ONT), testing only some parts of the network. Still the OTDR method has proved itself to be most applicable as it is a single-ended method which to lead to great advantages of the network providers (reduced staff time, lower costs).
+
+Two main different kinds of OTDR are most commonly used - standard OTDR and PON-Optimized OTDR.
+
+By OTDR the link is measured from the ONT to the OLT and distortion in the link is observed. A small pulse with $\lambda$ = 1625 nm is sent through the fiber. Losses in the backscattered signal are proof for bad connection (a bend in the fiber for example).
+
+As the standard OTDR results can be significantly distorted by many factors which is why a PON Optimized OTDR is used. With the PON-optimized OTDR, distortion after the splitter drop is greatly reduced, and the result is highly repeatable and reliable. The user can measure the loss of the splitter and the cumulative link loss, as well as identify whether any unexpected physical event occurred before or after the splitter.
+
+
+
+
+
+
+
+
