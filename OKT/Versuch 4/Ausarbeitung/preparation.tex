@@ -36,13 +36,13 @@ The Fresnel reflection is caused by an index contrast. This is the case at a spl
 \label{fig:fresnel}%
 \end{figure}
 
-The other scattering mechanism is the Rayleigh scattering (cf. \ref{loss}). The result of Rayleigh scattering is a straight slope in the OTDR trace. With that information the attenuation of the fiber can be calculated.\footnote[2]{EXFO - Application Note 194}
 
-
+The other scattering mechanism is the Rayleigh scattering (cf. \ref{loss}). The result of Rayleigh scattering is a straight slope in the OTDR trace. With that information the attenuation of the fiber can be calculated.\footnote[1]{EXFO - Application Note 194}
 
 \subsection{Measurement Range of an OTDR}
 The dynamic range is the main limiting factor for the reach of an OTDR. To estimate the measurement range of an OTDR the noise level and attenuation like caused by fiber connectors, bends and splices have to be taken into account. As a rule of thumb the dynamic range of the OTDR should be 5 to 8 dB higher than the loss in the fiber.
 Another limiting factor for the range of the OTDR is the pulse width. The shorter a pulse is, the less energy it carries. Through the attenuation of the fiber the pulse Amplitude of the pulse decreases and thus drops faster beneath the noise level if the pulse is short.
+
 
 \subsection{Resolution of an OTDR}
 \begin{figure}[h]%
@@ -59,6 +59,50 @@ Another limiting factor for the range of the OTDR is the pulse width. The shorte
 Fresnel reflection in the fiber like described in \ref{subsec:Principle} leads to ''dead zones´´ in the detected signal. A dead zone is the time in which an event cannot be detected after another event. If two events like connectors or splices are too close to each other they could not be distinguished from each other they are called event dead zones (cf. figure \ref{fig:event_dead}). There is also a case where the two events can be distinguished, but the attenuation of the events cannot be determined(cf. figure \ref{fig:att_dead}). This is called attenuation dead zones. The dead zones could be avoided, by making the exitation pulses short. Another limiting factor of the Resolution of an OTDR is of course the sampling
 
 
-  
+
+
+
 
 \section{Characterisation of Passive Optical Networks}
+
+\begin{figure}%
+\includegraphics[width=\columnwidth]{grafiken/gpon.jpg}%
+\caption{GPON Network}%
+\label{}%
+\end{figure}
+
+A standard PON Network has three main components - OLT, Splitter and ONP.
+
+It uses Wavelength Division Multiplexing (WDM) to differentiate the upstream ($\lambda$~=~1310~nm) from downstream ($\lambda~=~$1490~nm).
+
+The OLT (Optical Line Terminal) provides the interface between the PON and the service provider's network services. These typically include:
+
+\begin{itemize}
+	\item Internet Protocol (IP) traffic over gigabit/s, 10 Gbit/s, or 100 Mbit/s Ethernet
+\item standard time division multiplexed (TDM) interfaces such as SONET or SDH
+\item ATM UNI at 155-622 Mbit/s
+\end{itemize}
+
+Splitters
+
+Although both the GPON and EPON protocols permit large split ratios (up to 128 subscribers for GPON, up to 32,768 for EPON), in practice most PONs are deployed with a split ratio of 1x32 or smaller
+
+
+ONTs
+
+Optical Network Transmitters (ONTs) a.k.a. Optical Network Units (ONUs) are devices that transforms incoming optical signals into electronics at a customer's premises in order to provide telecommunications services over the optical network.
+\begin{figure}%
+\centering
+\includegraphics[width=.4\columnwidth]{grafiken/onu.jpg}%
+\caption{Optical Network Transmitter}%
+\label{}%
+\end{figure}
+
+There are different methods for characterizing the optical networks. Examples include testing all points from the central office (CO) to the optical network terminal (ONT), testing only some parts of the network. Still the OTDR method has proved itself to be most applicable as it is a single-ended method which to lead to great advantages of the network providers (reduced staff time, lower costs).
+
+Two main different kinds of OTDR are most commonly used - standard OTDR and PON-Optimized OTDR.
+
+By OTDR the link is measured from the ONT to the OLT and distortion in the link is observed. A small pulse with $\lambda$ = 1625 nm is sent through the fiber. Losses in the backscattered signal are proof for bad connection (a bend in the fiber for example).
+
+As the standard OTDR results can be significantly distorted by many factors which is why a PON Optimized OTDR is used. With the PON-optimized OTDR, distortion after the splitter drop is greatly reduced, and the result is highly repeatable and reliable. The user can measure the loss of the splitter and the cumulative link loss, as well as identify whether any unexpected physical event occurred before or after the splitter.
+
