@@ -14,6 +14,7 @@ The range from $10$~km~$ < x < 20$
 \caption{Backscattered signal of the setup. (TRACE008)}%
 \label{fig:1_line}%
 \end{figure}
+\newpage
 
 \section{Effects of OTDR measurement parameters on the measurements}
 In the first task the effects of the OTDR measurement parameters on the measurement was analyzed. 
@@ -29,21 +30,25 @@ To determine the effects of the pulse length on the measurement several differen
 Comparing the different traces shown in figure \ref{fig:1_time} leads to the fact, that longer pulses in time lead to an higher signal amplitude. This is obvious since this pulse carries the most energy compared to the other pulses. 
 The lowest signal amplitude therefore hast the smallest measured pulse, with a pulse width of $t\i{pulse}$~=~10~ns. But due to the low energy the small pulse carries the signal of short pulses shows higher influence of noise than the longer pulses. 
 
-At a distance of $x$~$\approx$~20~km the end of the line can be observed.
-The trace of the long pulse shows a large dead zone compared to the other. The signal needs up to 5~km to reach the low signal value the other traces show at this distance. 
 
-To achieve the best performance a compromise between a heigh resolution (small pulse) and a low noise level (large pulse) needs to be found.
-
-To reduce the noise level of the small pulses the integration time can be enlarged.therefore a pulse lenght of 100~ns was selected and the integration time was varied from 30~s to 2~min. 
-
-\begin{figure}%
+\begin{figure}[h]%
 \centering
 \includegraphics[width=.6\columnwidth]{grafiken/1_time.pdf}%
 \caption{Backscattered signal for different pulse widths. (2.5 $\upmu$s: TRACE000, 275 ns: TRACE001, 100~ns: TRACE002, 30~ns: TRACE003, 10~ns: TRACE004). All measurements with an integration time of 30~s.}%
 \label{fig:1_time}%
 \end{figure}
+\newpage
 
-\begin{figure}%
+At a distance of $x$~$\approx$~20~km the end of the line can be observed.
+The trace of the long pulse shows a large dead zone compared to the other. The signal needs up to 5~km to reach the low signal value the other traces show at this distance. 
+
+
+To achieve the best performance a compromise between a heigh resolution (small pulse) and a low noise level (large pulse) needs to be found.
+
+To reduce the noise level of the small pulses the integration time can be enlarged.therefore a pulse lenght of 100~ns was selected and the integration time was varied from 30~s to 2~min. 
+
+
+\begin{figure}[t]%
 \centering
 \includegraphics[width=.6\columnwidth]{grafiken/1_integration.pdf}%
 \caption{Backscattered signal for different integration times. (30 s: TRACE009, 60 s: TRACE008, 90~s: TRACE010, 120~s: TRACE011). All measurements with a pulse width of 100~ns.}%
