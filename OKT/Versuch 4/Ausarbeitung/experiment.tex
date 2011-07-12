@@ -3,6 +3,52 @@
 In the experiment an FTB-300 ``Universal Test System''by EXFO was used to characterize optical links and an optical network. To perform the OTDR measurements an in the FTB-300 integrated FTB-7323B was used. In the first experimets a model standard link is examined. The OTDR is connected to a spool of fiber by a patchcord. Another patchcord connects the end of the fiber to another spool of fiber. The end of the fiber is terminated by an open APC connector. 
 
 \section{Effects of OTDR measurement parameters on the measurements}
+In the first task the effects of the OTDR measurement parameters on the measurement was analyzed. 
+The following parameters were set:
+\begin{itemize}
+	\item \textbf{Wavelength} - The FTB-300 is able to measure with two different wavelength. At the zero dispersion wavelength $\lambda 1310~$nm  of silica based optical fibers and at $\lambda~=~1550$~nm the minimum-loss window for silica based optical fibres.
+	\item \textbf{Pulse Width} - The pulse width determines for one thing the resolution of the OTDR (cf. \ref{sec:resolution}), for another thing the maximum measurement distance. 
+	\item \textbf{Integration Time} - The OTDR does several measurements and integrates over the preset time to reduce noise. 
+\end{itemize}
+
+To determine the effects of the pulse length on the measurement several different length were tested. To demonstrate the effects traces of 5 different pulse length are put into one graph (eg. \ref{fig:1_time}). The integration time for all traces was 30~s. The complete data can be found in the appendix.
+
+Comparing the different traces shown in figure \ref{fig:1_time} leads to the fact, that longer pulses in time lead to an higher signal amplitude. This is obvious since this pulse carries the most energy compared to the other pulses. 
+The lowest signal amplitude therefore hast the smallest measured pulse, with a pulse width of $t\i{pulse}$~=~10~ns. But due to the low energy the small pulse carries the signal of short pulses shows higher influence of noise than the longer pulses. 
+
+At a distance of $x$~$\approx$~20~km the end of the line can be observed.
+The trace of the long pulse shows a large dead zone compared to the other. The signal needs up to 5~km to reach the low signal value the other traces show at this distance. 
+
+To achieve the best performance a compromise between a heigh resolution (small pulse) and a low noise level (large pulse) needs to be found.
+
+To reduce the noise level of the small pulses the integration time can be enlarged.therefore a pulse lenght of 100~ns was selected and the integration time was varied from 30~s to 2~min. 
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{grafiken/1_time.pdf}%
+\caption{Backscattered signal for different pulse widths. (2.5 $\upmu$s: TRACE000, 275 ns: TRACE001, 100~ns: TRACE002, 30~ns: TRACE003, 10~ns: TRACE004).}%
+\label{fig:1_time}%
+\end{figure}
+%\begin{table}%
+%\centering
+%\caption{Parameters and effects on the measurement}
+% 
+%\begin{tabular}{cc}
+%
+%\toprule
+%Parameter	&	Effect\\
+%\midrule
+%Wavelength	&	
+%
+%
+%\bottomrule 
+%\end{tabular}
+%\label{tab:1_parameters}
+%\end{table}
+%
+
+
 
 
 \section{Effects of a loose connector on the measurements}
