@@ -94,7 +94,7 @@ The fiber shows a larger attenuation at $\lambda~=~$1310~nm than at $\lambda~=~1
 
 
 \section{Effects of a loose connector on the measurements}
-
+\label{connectors}
 \begin{figure}%
 \centering
 \includegraphics[width=.7\columnwidth]{grafiken/Connector.pdf}%
@@ -117,37 +117,105 @@ Since the pulse width does not affect the losses in the fiber measurements perfo
 
 \begin{table}%
 \centering
-\caption{Losses through bends in the waveguide.}
+\caption{Losses based on bends in the waveguide.}
  
-\begin{tabular}{ccc}
+\begin{tabular}{cccc}
 
 \toprule
 
-bend radius	& number of turns	&	loss\\
+bend radius	& number of turns	&	loss &measurement\\
 \midrule
-15~mm	&	1	& 6.9~dB	\\
-15~mm	&	2	& 12.2 dB	\\
-15~mm	&	3	& >14~dB		\\
+15~mm	&	1	& 6.9~dB	&TRACE032\\
+15~mm	&	2	& 12.2 dB	&TRACE031\\
+15~mm	&	3	& >14~dB	&TRACE033	\\
 \midrule
-20~mm	&	1	& 2.6~dB		\\
-20~mm	&	2	&3.7~dB	\\
-20~mm	&	3	& 8.2~dB	\\\midrule
-30~mm	&	1	&0.9~dB		\\
-30~mm	&	2	& 1.0~dB	\\
-30~mm	&	3	& 1.1~dB	\\\midrule
-40~mm	&	1	&	0.9~dB	\\
-40~mm	&	2	&0.9~dB		\\
-40~mm	&	3	& 0.9~dB	\\
+20~mm	&	1	& 2.6~dB	&TRACE026	\\
+20~mm	&	2	&3.7~dB	&TRACE027\\
+20~mm	&	3	& 8.2~dB&TRACE029	\\\midrule
+30~mm	&	1	&0.9~dB	&TRACE030	\\
+30~mm	&	2	& 1.0~dB&TRACE034	\\
+30~mm	&	3	& 1.1~dB&TRACE035	\\\midrule
+40~mm	&	1	&	0.9~dB&TRACE036	\\
+40~mm	&	2	&0.9~dB	&TRACE037	\\
+40~mm	&	3	& 0.9~dB&TRACE038	\\
 \bottomrule 
 \end{tabular}
 \label{tab:3_daempfung}
 \end{table}
+Table \ref{tab:3_daempfung} compares the losses based on bends in the waveguide. The measured data can be found in the appendix. As expected (cf. \ref{bend_loss}) the smallest bend diameter of $d=15$~mm leads to the highest losses. Every turn of the fiber increases the losses. The losses when the fiber is turned three times around the loop with $d=15$~mm are to high to measure with a pulse length of 1~$\upmu$m.
+
+With a larger bend diameter the losses are getting lower. A bend diameter of 40~mm leads to a loss of 0.9~dB. This can be compared to the losses of the connectors (cf. \ref{connectors}) with 0.8~dB. Since the number of turns have no influence in the losses one can say that a bend of a diameter of 40~nm or larger causes no additional loss.
+
+\begin{figure}%
+\centering
+%\begin{adjustwidth}{0cm}{0cm}
+	\subfloat[]{\includegraphics[totalheight=5 cm]{grafiken/3_radii.pdf}\label{fig:3_radii}}\qquad
+	\subfloat[]{\includegraphics[totalheight=5 cm]{grafiken/3_diameter.pdf} \label{fig:3_diameter}}\\
+\caption{Losses in a bend waveguide with different diameters and number of turns. \textbf{(a)} loss vs. number of turns $n$,  \textbf{(b)} loss vs. bend diameter.}%
+\label{fig:3_bend}%
+\end{figure}
+
+
+
+%\begin{figure}%
+%\centering
+%\includegraphics[width=.6\columnwidth]{grafiken/3_radii.pdf}%
+%\caption{Losses in a bend waveguide with different diameters and number of turns.}%
+%\label{fig:3_radii}%
+%\end{figure}
+
+Figure \ref{fig:3_bend} illustrates the dependence of the losses on the bend diameters and the number of turns $n$. As noticed before a smaller bend diameter leads to higher losses based on the bends. A higher number of turns causes a longer way trough the lossy section. The diameter of $d = 30$~mm shows only a small increase of attenuation per turn. Probably a little bit larger diameter leads to no additional losses per turn.
+
+\todo{take a resume with an overview data plot!!!}
 
 
 
 \section{Effects of an open end with a PC connector}
+In the next task of the experiment the APC connector at the end was changed with a PC connector. The difference between the PC and APC is the angle at the end (0° for PC and 8° APC) The simulation was run again with pulse width 1.0 $\upmu$s and wavelength 1550 nm. The results are seen in figure \ref{fig:4_reflection}.
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{grafiken/4_reflection.pdf}%
+\caption{OTDR signal with an PC connector at the end. (TRACE039)}%
+\label{fig:4_reflection}%
+\end{figure}
+
+At 21st km where APC connector was replaced with a PC a high reflection peek can be seen. It is due to the fact that the PC connector has a 0° angle. This simplifies the Fresnel equation to the following:
+
+\begin{equation}
+R = \left(\frac{n_1-n_2}{n_1+n_2}\right)^2
+\label{eq:}
+\end{equation}
+For refractive indexes n1 and n2 are respectively 1 and 1.43 (air, fused silica) which leads to R=3~\% which is quite inaccurate compared to the result from the OTDR -16~\%.
+\todo{Why? The sistem is not ideal?}
+\comwo{Sebastian: Du als alter Fiber-Experte musst das doch wissen?}
 
 \section{Analysis of an optical network}
+For the last part three different measurements at different pulse widths were performed before the right resolution was chosen.  The results for pulse width of 275ns where chosen as they give the most distinguishable drops and peaks at the highest possible resolution. 
 
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{grafiken/5_line.pdf}%
+\caption{OTDR signal of a test network. (TRACE42)}%
+\label{fig:5_line}%
+\end{figure}
 
+Figure \ref{fig:5_line} shows the measured data. After 10~km of fiber a peak with a sudden drop of power right afterwards can be seen. This leads to the assumption that there is a PC connector and splitter. The drop is about 9~dB wichs is approximately the attenuation caused by a 1:4 splitter (ideal 1:4 splitter has 6~dB loss).
 
+The large peak at about 12 km leads to the idea that there is a open PC connector. \comwo{Ich denke der connector ist offen, da der peak doch deutlich hoch ist... und wenn wir schon einen splitter dran haben sollten wir auch verschiedene lines sein} 
+
+The small drop at the 17$^{\mathrm{th}}$~km can have several different explanations
+\begin{itemize}
+	\item A bad connector
+	\item An error in the fiber (for example a large bend)
+	\item An open APC connector \comwo{Diesen Punkt habe ich eingefügt, da wir irgendwie sowas mit moritz besprochen hatten, vgl. das untere bild auf dem gescannten zettel} 
+\end{itemize}
+
+The end of the whole transmission setup is at 21.1~km which can be easily seen in the picture.
+
+The network topology could be the following:\\
+A 10~km spool of fiber followed by a 1:4 splitter. The splitter could be connected to the spool via a PC connector or is reflecting itself. 
+At one port of the splitter is a approximately 800~m long fiber with an open PC at the end. 
+One port could have a $\sim$9~km long line with an error or a bad connection at the middle of that line. In this case nothing is connected to the two remaining ports of the splitter.
+The other case is, that there is one $\sim$9~km long line with no measurable error within the line and an additional line at a third port of the splitter. This third line would than have a length of $\sim$5~km and is ended with an APC connector.
