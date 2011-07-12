@@ -2,11 +2,24 @@
 \label{ch:exp}
 In the experiment an FTB-300 ``Universal Test System''by EXFO was used to characterize optical links and an optical network. To perform the OTDR measurements an in the FTB-300 integrated FTB-7323B was used. In the first experimets a model standard link is examined. The OTDR is connected to a spool of fiber by a patchcord. Another patchcord connects the end of the fiber to another spool of fiber. The end of the fiber is terminated by an open APC connector. 
 
+Figure \ref{fig:1_line} shows the OTDR measurement for the setup. The measurement complete measurement settings can be found in the appendix.
+At the distance near $x$~=~0 there is a large reflection caused by the OTDR. The range from $ 0$~km$~ < x < 10$~km shows the first 10~km spool of fiber. The slope is caused by Rayleigh scattering (cf. {\ref{loss}}). At $x = 10~$km a step in the measurement can be observed. At this location the spool of fiber is connected to another spool using a patchcord and APC connectors. This connectors lead to losses. 
+The range from $10$~km~$ < x < 20$
+~km shows the second spool of fiber. At $x = 20$~km the signal drops significantly at the end of the line.
+
+
+\begin{figure}[h]%
+\centering
+\includegraphics[width=.6\columnwidth]{grafiken/1_line.pdf}%
+\caption{Backscattered signal of the setup. (TRACE008)}%
+\label{fig:1_line}%
+\end{figure}
+
 \section{Effects of OTDR measurement parameters on the measurements}
 In the first task the effects of the OTDR measurement parameters on the measurement was analyzed. 
 The following parameters were set:
 \begin{itemize}
-	\item \textbf{Wavelength} - The FTB-300 is able to measure with two different wavelength. At the zero dispersion wavelength $\lambda 1310~$nm  of silica based optical fibers and at $\lambda~=~1550$~nm the minimum-loss window for silica based optical fibres.
+	\item \textbf{Wavelength} - The FTB-300 is able to measure with two different wavelength. At the zero dispersion wavelength $\lambda ~=~1310~$nm  of silica based optical fibers and at $\lambda~=~1550$~nm the minimum-loss window for silica based optical fibres.
 	\item \textbf{Pulse Width} - The pulse width determines for one thing the resolution of the OTDR (cf. \ref{sec:resolution}), for another thing the maximum measurement distance. 
 	\item \textbf{Integration Time} - The OTDR does several measurements and integrates over the preset time to reduce noise. 
 \end{itemize}
@@ -43,25 +56,33 @@ Changing the integration time leads to a variation of the noise level. An integr
 Doubling the integration time to 60~s gives an variation of the signal of $\sim$0.02~dB. Increasing the integration time even further gives nearly no improvement of the signal variation but leads to long measurement times.
 For this reason the the integration time was set to 1 minute and since the trace with a pulse with 100~ns pulse width shows low noise and a good resolution those parameters were chosen for the following measurements.
 
+Last the influence of the wavelength was examined. Figure \ref{fig:1_lambda} shows the OTDR measurement for the two different wavelenght. Both traces were measured with a pulse width of 100~ns and an integration time of 1 minute. The complete data can be found in the appendix.
 
-%\begin{table}%
-%\centering
-%\caption{Parameters and effects on the measurement}
-% 
-%\begin{tabular}{cc}
-%
-%\toprule
-%Parameter	&	Effect\\
-%\midrule
-%Wavelength	&	
-%
-%
-%\bottomrule 
-%\end{tabular}
-%\label{tab:1_parameters}
-%\end{table}
-%
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{grafiken/1_lambda.pdf}%
+\caption{Backscattered signal for different wavelengths. (1310~nm: TRACE012, 1550~nm: TRACE008). Both measurements with a pulse width of 100~ns and an integration time of 1 minute.}%
+\label{fig:1_lambda}%
+\end{figure}
 
+Using the EXFO OTDR FTB-7000 software the attenuation of the optical fiber at both wavelengths can be measured at the slopes of the trace. Table \ref{tab:1_daempfung} shows the attenuation at both wavelenghts.
+
+\begin{table}[h]%
+\centering
+\caption{Attenuation of the optical fiber}
+ 
+\begin{tabular}{cc}
+
+\toprule
+$\lambda~=~1310$~nm	&	$\lambda~=~1550$~nm\\
+\midrule
+0.34 dB / km	&	0.19~dB / km\\
+\bottomrule 
+\end{tabular}
+\label{tab:1_daempfung}
+\end{table}
+
+The fiber shows a larger attenuation at $\lambda~=~$1310~nm than at $\lambda~=~1550$~nm. This behaviour is expected since the minimum-loss window for silica based optical fibers is at this wavelength. 
 
 
 
