@@ -98,7 +98,7 @@ The fiber shows a larger attenuation at $\lambda~=~$1310~nm than at $\lambda~=~1
 \begin{figure}%
 \centering
 \includegraphics[width=.7\columnwidth]{grafiken/Connector.pdf}%
-\caption{}%
+\caption{Backscattered singnal with an open connector (TRACE015), with an connector not closed propperly (TRACE021) and a closed connector as reference (TRACE006)}%
 \label{fig:connector}%
 \end{figure}
 
@@ -106,7 +106,7 @@ In this experiment a connector at the patchcord between the two fibers is loosen
 
 The losses at the connection of a not propperly closed fiber are caused primarily by the end gap between the fibers. Since the light emitted by the end of a fiber spreads conicaly, a higher amount of light misses the core and is not coupled in the other fiber\footnote[4]{http://www.lanshack.com/fiber-optic-tutorial-termination.aspx}.
 
-Using the 4 point measurement of the OTDR the Losses for the closed connector are measured as 0.8~dB. For a not propperly closed connection a loss of 2.6~dB is measured. For a connector loosend further the losses at the connection are greater than 9~dB, so that the backscattering at the end of the fiber couldn't be detected.
+Using the 4 point measurement of the OTDR the Losses for the closed connector are measured as 0.8~dB. For a not propperly closed connection a loss of 1.5~dB is measured. For a connector loosend further the losses at the connection are greater than 12~dB, so that the backscattering at the end of the fiber couldn't be detected.
 
 \section{Effects of a bend on the measurements}
 To calculate the effects of bends in the optical fiber the patchcord between the two 10~km spools of optical fiber was bent. To produce repeatable measurements supplied loops with 15~mm, 20~mm, 30~mm and 40~mm diameter were used. The fiber was wound 1, 2 and 3 times around each loop. 
@@ -189,15 +189,13 @@ In the next task of the experiment the APC connector at the end was changed with
 \label{fig:4_reflection}%
 \end{figure}
 
-At 21st km where APC connector was replaced with a PC a high reflection peek can be seen. It is due to the fact that the PC connector has a 0° angle. This simplifies the Fresnel equation to the following:
+At 21st km where APC connector was replaced with a PC a 17.7~dB high reflection peek can be seen. It is due to the fact that the PC connector has a 0° angle. This simplifies the Fresnel equation to the following:
 
 \begin{equation}
 R = \left(\frac{n_1-n_2}{n_1+n_2}\right)^2
 \label{eq:}
 \end{equation}
-For refractive indexes n1 and n2 are respectively 1 and 1.43 (air, fused silica) which leads to R=3~\% which is quite inaccurate compared to the result from the OTDR -16~\%.
-\todo{Why? The sistem is not ideal?}
-\comwo{Sebastian: Du als alter Fiber-Experte musst das doch wissen?}
+For refractive indexes n1 and n2 are respectively 1 and 1.43 (air, fused silica) which leads to R=3~\% which is quite inaccurate compared to the result from the OTDR -13~\%. Thus there have to be errors in either the measurement or the calculation. The calculation is only valid for rays orthogonal to a material boundary. The modes in a fiber don't propagate as rays but rather as waves. Thus there is no defined angle in which the mode hits the boundary. The reflectivity has to be calculated by a wave model of the fiber.
 
 \section{Analysis of an optical network}
 For the last part three different measurements at different pulse widths were performed before the right resolution was chosen.  The results for pulse width of 275ns where chosen as they give the most distinguishable drops and peaks at the highest possible resolution. 
@@ -209,29 +207,26 @@ For the last part three different measurements at different pulse widths were pe
 \label{fig:5_line}%
 \end{figure}
 
-Figure \ref{fig:5_line} shows the measured data. After 10~km of fiber a peak with a sudden drop of power right afterwards can be seen. This leads to the assumption that there is a PC connector and splitter. The drop is about 9~dB wichs is approximately the attenuation caused by a 1:4 splitter (ideal 1:4 splitter has 6~dB loss).
 
-The large peak at about 12 km leads to the idea that there is a open PC connector. \comwo{Ich denke der connector ist offen, da der peak doch deutlich hoch ist... und wenn wir schon einen splitter dran haben sollten wir auch verschiedene lines sein} 
 
-The small drop at the 17$^{\mathrm{th}}$~km can have several different explanations
+Figure \ref{fig:5_line} shows the measured data. After 10~km of fiber a peak with a sudden drop of power right afterwards can be seen. This leads to the assumption that there is a splitter with at least one open port. The large peak at about 12 km leads to the idea that there is a open PC connector. The small drop at the 17$^{\mathrm{th}}$~km can have several different explanations
 \begin{itemize}
 	\item A bad connector
 	\item An error in the fiber (for example a large bend)
-	\item An open APC connector \comwo{Diesen Punkt habe ich eingefügt, da wir irgendwie sowas mit moritz besprochen hatten, vgl. das untere bild auf dem gescannten zettel} 
+	\item An open APC connector 
 \end{itemize}
+It can't be told which of the above the event in the backscattering signal corresponds without knowing the network topology. For the detection of faults in the network, the signal is recorded with a working setup. In the case of fault the measured signal is compared to this reference signal. By the differences in the signal the location of the fault can be determined.
 
 The end of the whole transmission setup is at 21.1~km which can be easily seen in the picture.
 
-The network topology could be the following:\\
-A 10~km spool of fiber followed by a 1:4 splitter. The splitter could be connected to the spool via a PC connector or is reflecting itself. 
-At one port of the splitter is a approximately 800~m long fiber with an open PC at the end. 
-One port could have a $\sim$9~km long line with an error or a bad connection at the middle of that line. In this case nothing is connected to the two remaining ports of the splitter.
-The other case is, that there is one $\sim$9~km long line with no measurable error within the line and an additional line at a third port of the splitter. This third line would than have a length of $\sim$5~km and is ended with an APC connector.
 
-\begin{figure}%
+\begin{figure}[b]%
 \includegraphics[width=\columnwidth]{grafiken/network.pdf}%
-\caption{Possible network topology.}%
-\label{fig_5_network}%
+\caption{Scheme of a possible network topology.}%
+\label{fig:5_network}%
 \end{figure}
 
-\todo{Appendix nicht vergessen! Am besten die Traces extra auf dem SW drucker ausdrucken und anheften?}
+
+The network topology could be the following:\\
+A 10~km spool of fiber followed by a splitter. The drop at the splitter is about 9~dB. A splitting ratio of 1:4 corresponds to 6~dB. Thus it could be a 1:4 splitter with losses of 2~dB. At one port of the splitter is a approximately 800~m long fiber with an open PC at the end. Another port could have a $\sim$9~km long line with an error or a bad connection at the middle of that line. But in that case the reflection at the splitter would be bigger, because there are two open ports. The other case is, that there is one $\sim$9~km long line with no measurable error within the line and an additional line at a third port of the splitter. This third line would than have a length of $\sim$5~km and is ended with an APC connector. This network topology is shown in figure \ref{fig:5_network}.
+
