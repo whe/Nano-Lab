@@ -287,6 +287,7 @@ language=Matlab
 %\newcommand{\um2}{$\upmu$m$^2$}
 
 \def \i #1{_{\mathrm{#1}}}
+\def \E #1{\cdot 10^{#1}}
 
 
 \renewcommand{\baselinestretch}{1.2}

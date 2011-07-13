@@ -23,15 +23,50 @@ BER = \frac{1}{2}\mathrm{erfc}\left(\frac{Q}{\sqrt{2}}\right)\qquad.
 \label{eq:p1_BER}
 \end{equation}
 
-Using this equation $BER$ can be calculated.
+Using this equation the $BER$ is calculated for some values of $Q$ in Table \ref{tab:BER_Q}.
+\begin{table}[h]
+ \caption{$BER$ for some $Q$-Factors}
+\begin{center}
+\begin{tabular}{lrrrrrr}
+\toprule
+Q-Factor & 4.0 & 5.0 & 6.0 & 7.0 & 8.0 & 9.0\\
+\midrule
+$BER$ & $3.17\cdot 10^{-5}$ & $2.87\cdot 10^{-7}$ & $9.87\cdot 10^{-10}$ & $1.28\cdot 10^{-12}$ & $6.22\cdot 10^{-16}$ & $1.13\cdot 10^{-19}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{tab:BER_Q}
+\end{table}
+\todo{die Tabelle gefällt mir noch net so}
 
-\begin{equation}
-\begin{split}
-BER(Q=4) = \frac{1}{2}\mathrm{erfc}\left(\frac{4}{\sqrt{2}}\right)\\
-=0.00003167
-\end{split}
-\label{eq:}
-\end{equation}
+In the case of a gausian distribution of the Signal the signal-to-noise ratio (SNR) can be calculated from the BER by \comseb{evtl ist das SNR einfach Q**2}
+
+
+\begin{table}[h]
+ \caption{$BER$ for some $Q$-Factors}
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+$BER$ & $10\E{-9}$ & $10\E{-11}$ & $10\E{-13}$ & $10\E{-15}$\\
+\midrule
+$SNR$ &&&&\\
+$t\i{err}$&&&&\\
+
+\bottomrule
+\end{tabular}
+\end{center}
+\label{tab:BER_Q}
+\end{table}
+
+
+% 
+% \begin{equation}
+% \begin{split}
+% BER(Q=4) = \frac{1}{2}\mathrm{erfc}\left(\frac{4}{\sqrt{2}}\right)\\
+% =0.00003167
+% \end{split}
+% \label{eq:}
+% \end{equation}
 
 \section{Exercise 2}
 
@@ -39,7 +74,13 @@ BER(Q=4) = \frac{1}{2}\mathrm{erfc}\left(\frac{4}{\sqrt{2}}\right)\\
 
 
 \section{Exercise 3}
-
+The losses in the given transmission system are:
+\begin{itemize}
+ \item 20~dB for the attenuation loss in the fiber
+ \item 0.8~dB for the two connectors
+ \item 79 splices with unknown losses
+\end{itemize}
+ \todo{das is auch doof. ich bin grad zu müde}
 
 
 \section{Exercise 4}
