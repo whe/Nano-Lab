@@ -23,6 +23,52 @@ BER = \frac{1}{2}\mathrm{erfc}\left(\frac{Q}{\sqrt{2}}\right)\qquad.
 \label{eq:p1_BER}
 \end{equation}
 
+% <<<<<<< HEAD
+% Using this equation the $BER$ is calculated for some values of $Q$ in Table \ref{tab:BER_Q}.
+% \begin{table}[h]
+%  \caption{$BER$ for some $Q$-Factors}
+% \begin{center}
+% \begin{tabular}{lrrrrrr}
+% \toprule
+% Q-Factor & 4.0 & 5.0 & 6.0 & 7.0 & 8.0 & 9.0\\
+% \midrule
+% $BER$ & $3.17\cdot 10^{-5}$ & $2.87\cdot 10^{-7}$ & $9.87\cdot 10^{-10}$ & $1.28\cdot 10^{-12}$ & $6.22\cdot 10^{-16}$ & $1.13\cdot 10^{-19}$\\
+% \bottomrule
+% \end{tabular}
+% \end{center}
+% \label{tab:BER_Q}
+% \end{table}
+% \todo{die Tabelle gefällt mir noch net so}
+% 
+% In the case of a gausian distribution of the Signal the signal-to-noise ratio (SNR) can be calculated from the BER by \comseb{evtl ist das SNR einfach Q**2}
+% 
+% 
+% \begin{table}[h]
+%  \caption{$BER$ for some $Q$-Factors}
+% \begin{center}
+% \begin{tabular}{lrrrr}
+% \toprule
+% $BER$ & $10\E{-9}$ & $10\E{-11}$ & $10\E{-13}$ & $10\E{-15}$\\
+% \midrule
+% $SNR$ &&&&\\
+% $t\i{err}$&&&&\\
+% 
+% \bottomrule
+% \end{tabular}
+% \end{center}
+% \label{tab:BER_Q}
+% \end{table}
+% 
+% 
+% % 
+% % \begin{equation}
+% % \begin{split}
+% % BER(Q=4) = \frac{1}{2}\mathrm{erfc}\left(\frac{4}{\sqrt{2}}\right)\\
+% % =0.00003167
+% % \end{split}
+% % \label{eq:}
+% % \end{equation}
+% =======
 Using this equation $BER$ can be calculated.
 
 \begin{equation}
@@ -32,6 +78,7 @@ BER(Q=4) = \frac{1}{2}\mathrm{erfc}\left(\frac{4}{\sqrt{2}}\right)\\
 \end{split}
 \label{eq:}
 \end{equation}
+% >>>>>>> 079253752d669474feb075f023471554faf5a2cb
 
 \begin{table}[h]%
 \centering
@@ -125,7 +172,41 @@ When measuring with small optical powers the noise is dominated by the receiver 
 
 
 \section{Exercise 3}
+The transmission system consists of a 80~km long fiber with a loss of 0.25~dB/km. Thus the attenuation caused by the fiber is 20~dB. There is a splice every kilometer in the fiber, thus there are 79 splices. At the input and the output of the fiber there's a connector with a loss of 0.4~dB each. The transmitter has an output power of 1~dBm and the detector has a sensitivity of -32~dBm. With a power margin of 7~dB the losses in the transmission system have to fulfill the following relation:
+% \begin{equation}
+%  \bar{P}\i{tr} = \bar{P}\i{rec} + C\i{L} + M\i{S}
+% \end{equation}
+\begin{equation}
+1\mathrm{~dBm} \stackrel{!}{=}  - 32\mathrm{~dBm} +(20\mathrm{~dB}+79\cdot X+2\cdot 0.4\mathrm{~dB}) + 7\mathrm{~dB}
+\end{equation}
+Thus the attenuation of a splice $X$ has to be smaller than 0.07~dB.
 
+In another system the power margin should be calculated. The systems transmission length of 70~km and a fiber loss of 0.3~dB/km corresponds to a loss of 21~dB. There are connectors at the begining and the end of the transmission line which cause a loss of 0.5~dB each. With a splice every kilometer and a loss of 0.07~dB at each splice there is an attenuation of 4.83~dB caused by the splices. Through dispersion there is a penalty of 5.5~dB. The reciever has a sensitivity of -32~dBm and the sender an output power of 3~dBm.
+The power Budget of the Systems is:
+\begin{equation}
+ 3\mathrm{~dBm} = -32\mathrm{~dBm} + (21\mathrm{~dB}+2\cdot 0.5\mathrm{~dB}+ 4.83\mathrm{~dB} +5.5\mathrm{~dB}) + M\i{S}
+\end{equation}
+Thus the power margin of the system is 2.67~dB. Because of degradation of the components or other unpredictable events the penalty of the system can change during operation. Thus the power margin should be 6-8~dB to ensure a reliable operation of the system.
+
+
+% The losses in the given transmission system are:
+% \begin{itemize}
+%  \item 20~dB for the attenuation loss in the fiber
+%  \item 0.8~dB for the two connectors
+%  \item 79 splices with unknown losses
+% \end{itemize}
+%  \todo{das is auch doof. ich bin grad zu müde}
 
 
 \section{Exercise 4}
+To check if an optical transmission system can operate using a RZ format the rise time of the signal has to be calculated. The total rise time of the system $T\i{r}$ is calculated by
+\begin{equation}
+ T\i{r}^2 = T\i{tr}^2+T\i{f}^2+T\i{rec}^2
+\end{equation}
+where $T\i{tr}$ is the rise time of the transmitter, $T\i{f}$ the delay caused by the group velocity dispersion and $T\i{rec}$ the rise time of the reciever. Thus the rise time can be calculated as:
+\begin{equation}
+ T\i{r} = \sqrt{\left(0.3\mathrm{~ns}\right)^2+ \left(\frac{3 \mathrm{~ps}}{\mathrm{km}\cdot \mathrm{nm}}\cdot3\mathrm{~nm}\cdot 60\mathrm{~km}\right)^2 +\left(0.35\mathrm{~ns}\right)^2} = 0.71\mathrm{~ns}
+\end{equation}
+With the transmission rate of 1~Gbps corresponding to a transmission Bandwith of $B=$~1GHz the time bandwith product is $T\i{r}\cdot B = 0.71$. For using the RZ format $T\i{r}\cdot B$ has to be smaller than 0.35. Thus the RZ-format can't be used. For using the NRZ format a time bandwith product $T\i{r}\cdot B \leq 0.7$ is needed. Thus this format can't be used either. To use the given transmission system, the datarate has to be reduced. 
+
+
