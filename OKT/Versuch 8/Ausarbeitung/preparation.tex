@@ -2,7 +2,7 @@
 
 
 \section{Exercise 1}
-The Bit Error Probability (BER) is given by
+\footnote[1]{Freude, W; Scriptum - Optische Empfänger und Fehlerwahrscheinlichkeit, 2009}The Bit Error Probability (BER) is given by
 
 \begin{equation}
 BER = \frac{1}{4}\mathrm{erfc}\left(\frac{u\i{s}-u_0}{\sqrt{2}\sigma_0}\right)+\frac{1}{4}\mathrm{erfc}\left(\frac{u\i{1}-u\i{s}}{\sqrt{2}\sigma_1}\right)
@@ -62,7 +62,6 @@ The probability density needs to be determined completely to the second momentum
 \label{eq:}
 \end{equation}
 and pulse shapes like cos$^2(\pi t/T_t)$ there is a practical relationship between the SNR and Q-factor.
-
 \begin{equation}
 \gamma = Q^2
 \label{eq:}
@@ -84,20 +83,44 @@ $10^{-13}$ &$10^{-26}$ \\
 $10^{-15}$ &$10^{-30}$ \\
 \bottomrule 
 \end{tabular}
-\label{tab:1_daempfung}
+\label{tab:p1_daempfung}
 \end{table}
 
-Since the BER is the number of bit errors per total number of bits. 
+The BER is the number of bit errors per total number of bits. 
 This means for the BER of $10^{-9}$ that 1 error occurs every $10^{9}$ send bits. Assuming a 622 Mbps bit rate the time until an error occurs.
 
+
 \begin{equation}
-t\i{error}=\frac{10^9 bit}{622\cdot10^{6} bit/s} = 1.61~s
+t\i{error}=\frac{10^9 \mathrm{bit}}{622\cdot10^{6} \mathrm{bit/s}} = 1.61~\mathrm{s}
 \label{eq:}
 \end{equation}
 
+To receive a statistically relevant result it is possible to receive as many bits as possible. But for the task a number of bit errors of 10 is chosen. 
+This leads to approximately 16 seconds to wait until a statistically relevant result can be made.
+
+Table \ref{p1_time} shows the times to wait for the different $BER$s.
+
+\begin{table}[h]%
+\centering
+\caption{Time to wait to receive a statistical relevant result.}
+ 
+\begin{tabular}{cc}
+
+\toprule
+
+$BER$	& $time$\\
+\midrule
+$10^{-9}$ &16~s\\
+$10^{-11}$ &2~min 41~s \\
+$10^{-13}$ &4~h~28~min \\
+$10^{-15}$ &18~d~15~h\\
+\bottomrule 
+\end{tabular}
+\label{tab:p1_time}
+\end{table}
 
 \section{Exercise 2}
-
+When measuring with small optical powers the noise is dominated by the receiver circuit noise. To reach the shot noise limit the optical needs to be high. In the case of the shot noise limit the SNR increases lineary with $\bar{P\i{e}}$ and depends only on the quantum efficiency $\eta$.\footnote[2]{Koos, C.; Optical Sources and Detectors; Lecture Notes} So one should measure in the shot noise limited case.
 
 
 
