@@ -23,50 +23,125 @@ BER = \frac{1}{2}\mathrm{erfc}\left(\frac{Q}{\sqrt{2}}\right)\qquad.
 \label{eq:p1_BER}
 \end{equation}
 
-Using this equation the $BER$ is calculated for some values of $Q$ in Table \ref{tab:BER_Q}.
-\begin{table}[h]
- \caption{$BER$ for some $Q$-Factors}
-\begin{center}
-\begin{tabular}{lrrrrrr}
-\toprule
-Q-Factor & 4.0 & 5.0 & 6.0 & 7.0 & 8.0 & 9.0\\
-\midrule
-$BER$ & $3.17\cdot 10^{-5}$ & $2.87\cdot 10^{-7}$ & $9.87\cdot 10^{-10}$ & $1.28\cdot 10^{-12}$ & $6.22\cdot 10^{-16}$ & $1.13\cdot 10^{-19}$\\
-\bottomrule
-\end{tabular}
-\end{center}
-\label{tab:BER_Q}
-\end{table}
-\todo{die Tabelle gefällt mir noch net so}
-
-In the case of a gausian distribution of the Signal the signal-to-noise ratio (SNR) can be calculated from the BER by \comseb{evtl ist das SNR einfach Q**2}
-
-
-\begin{table}[h]
- \caption{$BER$ for some $Q$-Factors}
-\begin{center}
-\begin{tabular}{lrrrr}
-\toprule
-$BER$ & $10\E{-9}$ & $10\E{-11}$ & $10\E{-13}$ & $10\E{-15}$\\
-\midrule
-$SNR$ &&&&\\
-$t\i{err}$&&&&\\
-
-\bottomrule
-\end{tabular}
-\end{center}
-\label{tab:BER_Q}
-\end{table}
-
-
+% <<<<<<< HEAD
+% Using this equation the $BER$ is calculated for some values of $Q$ in Table \ref{tab:BER_Q}.
+% \begin{table}[h]
+%  \caption{$BER$ for some $Q$-Factors}
+% \begin{center}
+% \begin{tabular}{lrrrrrr}
+% \toprule
+% Q-Factor & 4.0 & 5.0 & 6.0 & 7.0 & 8.0 & 9.0\\
+% \midrule
+% $BER$ & $3.17\cdot 10^{-5}$ & $2.87\cdot 10^{-7}$ & $9.87\cdot 10^{-10}$ & $1.28\cdot 10^{-12}$ & $6.22\cdot 10^{-16}$ & $1.13\cdot 10^{-19}$\\
+% \bottomrule
+% \end{tabular}
+% \end{center}
+% \label{tab:BER_Q}
+% \end{table}
+% \todo{die Tabelle gefällt mir noch net so}
 % 
-% \begin{equation}
-% \begin{split}
-% BER(Q=4) = \frac{1}{2}\mathrm{erfc}\left(\frac{4}{\sqrt{2}}\right)\\
-% =0.00003167
-% \end{split}
-% \label{eq:}
-% \end{equation}
+% In the case of a gausian distribution of the Signal the signal-to-noise ratio (SNR) can be calculated from the BER by \comseb{evtl ist das SNR einfach Q**2}
+% 
+% 
+% \begin{table}[h]
+%  \caption{$BER$ for some $Q$-Factors}
+% \begin{center}
+% \begin{tabular}{lrrrr}
+% \toprule
+% $BER$ & $10\E{-9}$ & $10\E{-11}$ & $10\E{-13}$ & $10\E{-15}$\\
+% \midrule
+% $SNR$ &&&&\\
+% $t\i{err}$&&&&\\
+% 
+% \bottomrule
+% \end{tabular}
+% \end{center}
+% \label{tab:BER_Q}
+% \end{table}
+% 
+% 
+% % 
+% % \begin{equation}
+% % \begin{split}
+% % BER(Q=4) = \frac{1}{2}\mathrm{erfc}\left(\frac{4}{\sqrt{2}}\right)\\
+% % =0.00003167
+% % \end{split}
+% % \label{eq:}
+% % \end{equation}
+% =======
+Using this equation $BER$ can be calculated.
+
+\begin{equation}
+\begin{split}
+BER(Q=4) = \frac{1}{2}\mathrm{erfc}\left(\frac{4}{\sqrt{2}}\right)\\
+=0.00003167=3.167\cdot 10^{-5}
+\end{split}
+\label{eq:}
+\end{equation}
+% >>>>>>> 079253752d669474feb075f023471554faf5a2cb
+
+\begin{table}[h]%
+\centering
+\caption{Minimum Bit Error Probabilities of different Q-factors}
+ 
+\begin{tabular}{cc}
+
+\toprule
+
+$Q$	& $BER$\\
+\midrule
+4.0 & 3.167$\cdot 10^{-5}$\\
+5.0& 2.867$\cdot 10^{-7}$  \\
+6.0& 9.866$\cdot 10^{-10}$ \\
+7.0& 1.280$\cdot 10^{-12}$ \\
+8.0&6.221$\cdot 10^{-16}$ \\
+9.0&1.129$\cdot 10^{-19}$ \\
+\bottomrule 
+\end{tabular}
+\label{tab:1_daempfung}
+\end{table}
+
+There is no unique relationship between the signal-to-noise ration (SNR) and the BER. But considering several asumptions a relationship can be found. 
+
+The probability density needs to be determined completely to the second momentum. This is the case for the Gaussian distribution. For the relationship 
+\begin{equation}
+1 < \frac{\sigma_1^2}{\sigma_0^2}\leq 2
+\label{eq:}
+\end{equation}
+and pulse shapes like cos$^2(\pi t/T_t)$ there is a practical relationship between the SNR and Q-factor.
+
+\begin{equation}
+\gamma = Q^2
+\label{eq:}
+\end{equation}
+
+\begin{table}[h]%
+\centering
+\caption{Sinal-to-nose ratios for different $Q$-factors.}
+ 
+\begin{tabular}{cc}
+
+\toprule
+
+$BER$	& $\gamma$\\
+\midrule
+$10^{-9}$ &$10^{-18}$ \\
+$10^{-11}$ &$10^{-22}$ \\
+$10^{-13}$ &$10^{-26}$ \\
+$10^{-15}$ &$10^{-30}$ \\
+\bottomrule 
+\end{tabular}
+\label{tab:1_daempfung}
+\end{table}
+
+Since the BER is the number of bit errors per total number of bits. 
+This means for the BER of $10^{-9}$ that 1 error occurs every $10^{9}$ send bits. Assuming a 622 Mbps bit rate the time until an error occurs.
+
+\begin{equation}
+t\i{error}=\frac{10^9 bit}{622\cdot10^{6} bit/s} = 1.61~s
+\label{eq:}
+\end{equation}
+
 
 \section{Exercise 2}
 
@@ -74,13 +149,30 @@ $t\i{err}$&&&&\\
 
 
 \section{Exercise 3}
-The losses in the given transmission system are:
-\begin{itemize}
- \item 20~dB for the attenuation loss in the fiber
- \item 0.8~dB for the two connectors
- \item 79 splices with unknown losses
-\end{itemize}
- \todo{das is auch doof. ich bin grad zu müde}
+The transmission system consists of a 80~km long fiber with a loss of 0.25~dB/km. Thus the attenuation caused by the fiber is 20~dB. There is a splice every kilometer in the fiber, thus there are 79 splices. At the input and the output of the fiber there's a connector with a loss of 0.4~dB each. The transmitter has an output power of 1~dBm and the detector has a sensitivity of -32~dBm. With a power margin of 7~dB the losses in the transmission system have to fulfill the following relation:
+% \begin{equation}
+%  \bar{P}\i{tr} = \bar{P}\i{rec} + C\i{L} + M\i{S}
+% \end{equation}
+\begin{equation}
+1\mathrm{~dBm} \stackrel{!}{=}  - 32\mathrm{~dBm} +(20\mathrm{~dB}+79\cdot X+2\cdot 0.4\mathrm{~dB}) + 7\mathrm{~dB}
+\end{equation}
+Thus the attenuation of a splice $X$ has to be smaller than 0.07~dB.
+
+In another system the power margin should be calculated. The systems transmission length of 70~km and a fiber loss of 0.3~dB/km corresponds to a loss of 21~dB. There are connectors at the begining and the end of the transmission line which cause a loss of 0.5~dB each. With a splice every kilometer and a loss of 0.07~dB at each splice there is an attenuation of 4.83~dB caused by the splices. Through dispersion there is a penalty of 5.5~dB. The reciever has a sensitivity of -32~dBm and the sender an output power of 3~dBm.
+The power Budget of the Systems is:
+\begin{equation}
+ 3\mathrm{~dBm} = -32\mathrm{~dBm} + (21\mathrm{~dB}+2\cdot 0.5\mathrm{~dB}+ 4.83\mathrm{~dB} +5.5\mathrm{~dB}) + M\i{S}
+\end{equation}
+Thus the power margin of the system is 2.67~dB. Because of degradation of the components or other unpredictable events the penalty of the system can change during operation. Thus the power margin should be 6-8~dB to ensure a reliable operation of the system.
+
+
+% The losses in the given transmission system are:
+% \begin{itemize}
+%  \item 20~dB for the attenuation loss in the fiber
+%  \item 0.8~dB for the two connectors
+%  \item 79 splices with unknown losses
+% \end{itemize}
+%  \todo{das is auch doof. ich bin grad zu müde}
 
 
 \section{Exercise 4}
