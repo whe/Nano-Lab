@@ -145,7 +145,7 @@ t\i{error}=\frac{10^9 \mathrm{bit}}{622\cdot10^{6} \mathrm{bit/s}} = 1.61~\mathr
 To receive a statistically relevant result it is possible to receive as many bits as possible. But for the task a number of bit errors of 10 is chosen. 
 This leads to approximately 16 seconds to wait until a statistically relevant result can be made.
 
-Table \ref{p1_time} shows the times to wait for the different $BER$s.
+Table \ref{tab:p1_time} shows the times to wait for the different $BER$s.
 
 \begin{table}[h]%
 \centering
@@ -166,8 +166,9 @@ $10^{-15}$ &18~d~15~h\\
 \label{tab:p1_time}
 \end{table}
 
+\newpage
 \section{Exercise 2}
-When measuring with small optical powers the noise is dominated by the receiver circuit noise. To reach the shot noise limit the optical needs to be high. In the case of the shot noise limit the SNR increases lineary with $\bar{P\i{e}}$ and depends only on the quantum efficiency $\eta$.\footnote[2]{Koos, C.; Optical Sources and Detectors; Lecture Notes} So one should measure in the shot noise limited case.
+When measuring with small optical powers the noise is dominated by the receiver circuit noise, the thermal noise. To reach the shot noise limit the optical power needs to be high. Therefore for high powers the shot noise is relevant. In the case of the shot noise limit the SNR increases lineary with $\bar{P\i{e}}$ and depends only on the quantum efficiency $\eta$.\footnote[2]{Koos, C.; Optical Sources and Detectors; Lecture Notes} So one should measure in the shot noise limited case.
 
 
 
@@ -196,7 +197,7 @@ Thus the power margin of the system is 2.67~dB. Because of degradation of the co
 %  \item 79 splices with unknown losses
 % \end{itemize}
 %  \todo{das is auch doof. ich bin grad zu müde}
-
+\newpage
 
 \section{Exercise 4}
 To check if an optical transmission system can operate using a RZ format the rise time of the signal has to be calculated. The total rise time of the system $T\i{r}$ is calculated by
