@@ -50,6 +50,7 @@ In the next Setup a bit pattern was modulated on the carrier and measured by a o
 
 Now the pulse pattern generator was set to the pseudo random bit sequence mode (PBRS) for transmitting patterns of the length PN23. The amplitudes of the electrical pulse and the clock were set to 1.0~V and 1.5~V without any offset, respectively.
 
+
 \begin{figure}%
 \centering
 \includegraphics[width=.6\columnwidth]{Grafiken/B_setup.png}%
@@ -57,7 +58,70 @@ Now the pulse pattern generator was set to the pseudo random bit sequence mode (
 \label{fig:B_setup}%
 \end{figure} 
 
+To determine the effect of the laser power on the extinction ratio (ratio of the optical power of the mark and the space) the laserpower was changed from one to 4~mW in steps of 1~mW. 
 
+\begin{table}%
+\centering
+\caption{Extinction ratio for different laser powers}
+ 
+\begin{tabular}{ccc}
+\toprule
+$P$~/~mW	& Extinction ratio~/dB\\
+&min&max\\
+\midrule
+1 &9.16&9.2\\
+2 &9.1&9.11\\
+3 &9.19&9.22\\
+4 &9.12&9.2\\
+\bottomrule 
+\end{tabular}
+\label{tab:B_power}
+\end{table}
+Table \ref{tab:B_power} includes the measured maximum and minimum extinction ratios for the different laser powers. The change of the power shows no influence on the extinction ratio. Therefore an optical laserpower of 1.0~mW was used.
+
+A change of the between 1~V and 2~V showed that the highest extinction ration could be achieved at an clock voltage of 1.5~V. Changing the optical amplitude of the electrical data pulses showed that for a amplitude of 0.5~V the extinction ratio becomes small ($\sim 5.31$~dB). A higher amplitude of 1.5~V leads only to a small improvement. For that reason the amplitude of the data pulses was set to 1.0~V like in the task described.
+
+Now at the pulse pattern generator was set into the WORD mode to send a defined bit pattern. The generator was set to send the bit sequence ``00100100''. The PAT SYNC output of the PPG was connected to the front panel input of the oscilloscope.
+
+Using the oscilloscope mode and the histogram option of the Agilent 86100 Digital Communication Analyzer the mean value and the standard deviation for both mark ($\mu_1,~\sigma_1$) and space ($\mu_0,~\sigma_0$) were estimated at the center of the pulse at a width of 10~\% of the pulse width. These values are shown in table \ref{tab:B_Q}.
+
+\begin{table}%
+\centering
+\caption{Measured mean values and standard deviation and calculated Q-factors and bit error rate.}
+ 
+\begin{tabular}{lcc}
+\toprule
+&mark&space\\
+\midrule
+mean value / $\upmu$W&105.5	&12.58	\\
+standard deviation / $\upmu$W&11.4	&10.8	\\\midrule
+Q-factor&	&	4.2\\
+Q$^2$-factor / dB	&	&12.4\\
+bit error rate	&	&$1.4\cdot 10^{-5}$\\
+\bottomrule 
+\end{tabular}
+\label{tab:B_Q}
+\end{table}
+
+Using 
+\begin{equation}
+\begin{split}
+\mathrm{Q} = \frac{\mu_1-\mu_0}{\sigma_1+\sigma_0}\\
+\mathrm{Q}^2|\i{dB} = 10\cdot \mathrm{log}\left(\mathrm{Q}^2\right)
+\label{eq:}
+\end{split}
+\end{equation} 
+the linear Q-factor and the logarithmic Q$^2$ factor can be calculated. The \textit{BER} can be calculated with
+
+\begin{equation}
+BER = \frac{1}{2}\mathrm{erfc}\left(\frac{Q}{\sqrt{2}}\right)\qquad.
+\label{eq:}
+\end{equation}
+Since the histograms of both mark and space were symmetric and looked Gaussian and therefore can be assumed to be Gaussian distributed and because the standard deviation of mark and space are nearly the same this equation can be used.
+
+The calculated values can be found in table \ref{tab:B_Q}.
+
+\todo{Wir hamn unseren MZM echt scheiße eingestellt Oo. Soll man noch was über die güte schreiben und über die BER? dass die halt net so toll ist ?}
 \section{Setup C: Receiver sensitivity measurement}
 
 The MZM was connected to a variable optical attenuator set to the lowest possible attenuation. Then the output power was measured using the connected power meter. Figure \ref{fig:C_setup1}\footnote[3]{Luca Alloatti, Materials for the preparation of OKT lab 8} shows the used setup. For a laser output power of 0~dBm the output power was measured to be 63.5~$\upmu$W.
