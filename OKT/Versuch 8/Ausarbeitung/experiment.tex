@@ -2,7 +2,7 @@
 \todo{ne tolle Einleitung schreiben}
 
 \section{Setup A: Estimation of the quadrature point of the MZI modulator}
-To calculate the quadrature point of the used MZI modulator the setup shown in figure \ref{fig:A_setup}\footnote[3]{Luca Alloatti, Materials for the preparation of OKT lab 8} was used. A laser source with an output wavelength of 1550~nm and an output power of 0~dBm was connected to an MZI modulator. The output of the MZI modulator was connected to a power meter. The modulator was biased over a variable DC voltage.
+To calculate the quadrature point of the used MZI modulator the setup shown in figure \ref{fig:A_setup}\footnote[3]{Luca Alloatti, Materials for the preparation of OKT lab 8} was used. A laser source with an output wavelength of 1550~nm and an output power of 0~dBm were connected to an MZI modulator. The output of the MZI modulator was connected to a power meter. The modulator was biased over a variable DC voltage.
 
 The DC voltage was swept from -4.8~V to 5.1~V in steps of 0.3~V. At every point the output power of the MZM was measured.
 
@@ -43,8 +43,12 @@ The quadrature point of the transfer function of the modulator was determined to
 \section{Setup B: Optimization of the extinction ratio of the modulator; Q-factor measurement}
 
 
-\ref{fig:B_setup}\footnote[3]{Luca Alloatti, Materials for the preparation of OKT lab 8}
 
+
+
+In the next Setup a bit pattern was modulated on the carrier and measured by a oscilloscope (Agilent 86100 Digital Communication Analyzer). To do so a pulse pattern generator was connected to the electrical input of the MZI modulator. The oscilloscope was connected to the output of the MZI modulator and to the electrical data output of the pulse pattern generator for optimal triggering. This setup is shown in figure \ref{fig:B_setup}\footnote[3]{Luca Alloatti, Materials for the preparation of OKT lab 8}.
+
+Now the pulse pattern generator was set to the pseudo random bit sequence mode (PBRS) for transmitting patterns of the length PN23. The amplitudes of the electrical pulse and the clock were set to 1.0~V and 1.5~V without any offset, respectively.
 
 \begin{figure}%
 \centering
