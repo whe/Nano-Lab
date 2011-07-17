@@ -56,3 +56,27 @@ Now the pulse pattern generator was set to the pseudo random bit sequence mode (
 \caption{Setup B}%
 \label{fig:B_setup}%
 \end{figure} 
+
+
+\section{Setup C: Receiver sensitivity measurement}
+
+The MZM was connected to a variable optical attenuator set to the lowest possible attenuation. Then the output power was measured using the connected power meter. Figure \ref{fig:C_setup1}\footnote[3]{Luca Alloatti, Materials for the preparation of OKT lab 8} shows the used setup. For a laser output power of 0~dBm the output power was measured to be 63.5~$\upmu$W.
+
+In the next step the power meter was disconnected and the photo receiver connected like in figure \ref{fig:C_setup2}\footnotemark[3] shown. The $DATA$ and the $CLOCK$ electrical outputs of the photo reciever were connected to the corresponding inputs of the BER analyzer. At the pulse pattern generator PRBS was set as the data signal. The BER analyzer was set to $AUTOSEARCH$ in the $TIMED$ test mode. 
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/C_setup1.png}%
+\caption{Setup C.1}%
+\label{fig:C_setup1}%
+\end{figure}
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/C_setup2.png}%
+\caption{Setup C.2}%
+\label{fig:C_setup2}%
+\end{figure}
+
+
+\todo{Damit du die daten hast: Nach erneutem Einstellen und 3~mW laserleistung: gemesseN. -4.3~dBm bzw. 0.3824~mW}
