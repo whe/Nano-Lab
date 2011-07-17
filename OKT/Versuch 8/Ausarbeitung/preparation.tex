@@ -5,7 +5,7 @@
 \footnote[1]{Freude, W; Scriptum - Optische Empfänger und Fehlerwahrscheinlichkeit, 2009}The Bit Error Probability (BER) is given by
 
 \begin{equation}
-BER = \frac{1}{4}\mathrm{erfc}\left(\frac{u\i{s}-u_0}{\sqrt{2}\sigma_0}\right)+\frac{1}{4}\mathrm{erfc}\left(\frac{u\i{1}-u\i{s}}{\sqrt{2}\sigma_1}\right)
+BER = \frac{1}{4}\mathrm{erfc}\left(\frac{\mu\i{s}-\mu_0}{\sqrt{2}\sigma_0}\right)+\frac{1}{4}\mathrm{erfc}\left(\frac{\mu\i{1}-\mu\i{s}}{\sqrt{2}\sigma_1}\right)
 \label{eq:}
 \end{equation}
 with the complementary error function
@@ -14,7 +14,7 @@ with the complementary error function
 \mathrm{erfc}(x)=\frac{2}{\sqrt{\pi}}\int^{\infty}_x\mathrm{e}^{-t^2}\mathrm{d}t\qquad,
 \label{eq:}
 \end{equation}
-the decision threshold level $u\i{s}$ and the mean values $u_1$ of the mark and $u_0$ of the space.
+the decision threshold level $\mu\i{s}$ and the mean values $\mu_1$ of the mark and $\mu_0$ of the space.
 
 To obtain the minimum BER the decision threshold is set that 1s and 0s occur with equal probability. In this case for a Gaussian probability distribution and a identical probability for the sending of marks and spaces the BER can be expressed by
 
