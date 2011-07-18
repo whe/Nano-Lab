@@ -151,9 +151,10 @@ In the next step the power meter was disconnected and the photo receiver connect
 \label{fig:BER}%
 \end{figure}
 \todo{hier fehlt noch warums mit 1mW net richtig geklappt hat}
-The output power of the laser was now set to 3~mW. With the variable optical attenuatior the power at the photo diode was varied and the BER was measured. Figure \ref{fig:BER} shows the dependence of the BER on the optical power for a bit squences of the length \textit{PN~17} and \textit{PN~20}, respectively. In the \textit{PN~17} bit sequence one can see, that the BER decreases with increasing power. This can be explained by the fact that the signal in the optical transmission system is a poisson process. When the power is doubled the noise only increases by a factor of $\sqrt{2}$. 
-\todo{PN20, ich weiﬂ nimmer warum die BER auch vom Bitpattern abh‰ngt.}
+The output power of the laser was now set to 3~mW. This corresponds to a power of 0.382~mW at the output of the MZM. With the variable optical attenuatior the power at the photo diode was varied and the BER was measured. Figure \ref{fig:BER} shows the dependence of the BER on the optical power for a bit squences of the length \textit{PN~17} and \textit{PN~20}, respectively.
 
+In the \textit{PN~17} bit sequence one can see, that the BER decreases with increasing power. This can be explained by the fact that the signal in the optical transmission system is a poisson process. When the power is doubled the noise only increases by a factor of $\sqrt{2}$.
 
+For the \textit{PN~20} bit sequence the bit error rate was in the magnitude of $10^{-5}$ indepenent from the input power. This behavior should not be caused by physical reasons. It is probably caused by faults of the BER analyzer system. It often didn't recognize the type of the bit sequence properly (``No Signal''), so that the measurement stoped and started again after a short period of time. Because of that, there were not always enough bit errors to determine the BER with a good accuracy.
 
-\todo{Damit du die daten hast: Nach erneutem Einstellen und 3~mW laserleistung: gemesseN. -4.3~dBm bzw. 0.3824~mW}
+The BER sensitivity of the photodetector is defined as the power level when a BER of $10^{-9}$ is reached at the reciver. Due to faults in the measurement system this value could not be reached. Thus the BER sensitivity could not be determined.
