@@ -2,16 +2,20 @@
 In this experiment an optical transmission system was used. At first the Power-Voltage characteristic of a Mach-Zehnder modulator was recorded to find the quadrature point and determine the operation point. In the second setup the extinction ratio of the modulator was analyzed and optimized and after that the Q-factor was measured. In the last setup a PRBS was transmitted and received and the BER was measured. With this the receiver sensitivity was estimated.  
 
 \section{Setup A: Estimation of the quadrature point of the MZI modulator}
-To calculate the quadrature point of the used MZI modulator the setup shown in figure \ref{fig:A_setup}\footnote[3]{Luca Alloatti, Materials for the preparation of OKT lab 8} was used. A laser source with an output wavelength of 1550~nm and an output power of 0~dBm were connected to an MZI modulator. The output of the MZI modulator was connected to a power meter. The modulator was biased over a variable DC voltage.
 
-The DC voltage was swept from -4.8~V to 5.1~V in steps of 0.3~V. At every point the output power of the MZM was measured.
 
-\begin{figure}%
+\begin{figure}[t]%
 \centering
 \includegraphics[width=.5\columnwidth]{Grafiken/SetupA.png}%
 \caption{Setup A}%
 \label{fig:A_setup}%
 \end{figure}
+
+
+
+To calculate the quadrature point of the used MZI modulator the setup shown in figure \ref{fig:A_setup}\footnote[3]{Luca Alloatti, Materials for the preparation of OKT lab 8} was used. A laser source with an output wavelength of 1550~nm and an output power of 0~dBm were connected to an MZI modulator. The output of the MZI modulator was connected to a power meter. The modulator was biased over a variable DC voltage.
+
+The DC voltage was swept from -4.8~V to 5.1~V in steps of 0.3~V. At every point the output power of the MZM was measured.
 
 \begin{figure}%
 \centering
@@ -38,6 +42,7 @@ U\i{quadrature}=\frac{90.9~\upmu \mathrm{W}-90~\upmu \mathrm{W}}{42.17~\upmu \ma
 \label{eq:}
 \end{equation}
 The quadrature point of the transfer function of the modulator was determined to be at $U\i{quadrature}\approx 0~\mathrm{V}$.
+
 
 
 \section{Setup B: Optimization of the extinction ratio of the modulator; Q-factor measurement}
@@ -121,32 +126,32 @@ Since the histograms of both mark and space were symmetric and looked Gaussian a
 
 The calculated values can be found in table \ref{tab:B_Q}. The MZM seems not to be driven at its optimum. In the following task this becomes a problem and the operational settings are changed to achieve results using setup C.
 
+
+\newpage
+\section{Setup C: Reciever Sensitivity Measurement}
+
+
+\begin{adjustwidth}{-2cm}{2cm}
+\begin{figure}%
+\centering
+	\subfloat[]{\includegraphics[width=.5\columnwidth]{Grafiken/C_setup1.png}\label{fig:C_setup1}}~~~~~~~~~
+	\subfloat[]{\includegraphics[width=.5\columnwidth]{Grafiken/C_setup2.png}\label{fig:C_setup2}}%
+\caption{Setup C for the first part (a) and the second part (b)}%
+\label{fig:13_42}%
+\end{figure}
+\end{adjustwidth}
+
+
+
 The MZM was connected to a variable optical attenuator set to the lowest possible attenuation. Then the output power was measured using the connected power meter. Figure \ref{fig:C_setup1}\footnote[3]{Luca Alloatti, Materials for the preparation of OKT lab 8} shows the used setup. For a laser output power of 0~dBm the output power was measured to be 63.5~$\upmu$W.
 
 In the next step the power meter was disconnected and the photo receiver connected like shown in figure \ref{fig:C_setup2}\footnotemark[3]. The $DATA$ and the $CLOCK$ electrical outputs of the photo reciever were connected to the corresponding inputs of the BER analyzer. At the pulse pattern generator PRBS was set as the data signal. The BER analyzer was set to $AUTOSEARCH$ in the $TIMED$ test mode. 
-\begin{figure}%
-\centering
-\includegraphics[width=.6\columnwidth]{Grafiken/C_setup1.png}%
-\caption{Setup C.1}%
-\label{fig:C_setup1}%
-\end{figure}
-
-
-\begin{figure}%
-\centering
-\includegraphics[width=.6\columnwidth]{Grafiken/C_setup2.png}%
-\caption{Setup C.2}%
-\label{fig:C_setup2}%
-\end{figure}
 
 
 
-\begin{figure}%
-\centering
-\includegraphics[width=.6\columnwidth]{Grafiken/BER.pdf}%
-\caption{BER for different bit patterns.}%
-\label{fig:BER}%
-\end{figure}
+
+
+
 Using the settings used before (laserpower: 1~mW, electrical amplitude DATA: 1.0~V, electrical amplitude CLOCK: 1.5~V) lead to no measurable BERs. The BER analyzer showed ''NO DATA``. This could be caused by the fact, that the used settings were not in the optimal operation point of the MZM (cf. tab. \ref{tab:B_Q}). For that reason the operation point was re adjusted. The polarizers right after the laser were adjusted again and the output power of the laser was now set to 3~mW. This corresponds to a power of 0.382~mW at the output of the MZM. The DC bias voltage was set to -0.22~V and the DC amplitude to 1.15~V. At this operation point there was a big eye in the eye diagram.
 
 With the variable optical attenuatior the power at the photo diode was varied and the BER was measured. Figure \ref{fig:BER} shows the dependence of the BER on the optical power for a bit squences of the length \textit{PN~17} and \textit{PN~20}, respectively.
@@ -156,3 +161,11 @@ In the \textit{PN~17} bit sequence one can see, that the BER decreases with incr
 For the \textit{PN~20} bit sequence the bit error rate was in the magnitude of $10^{-5}$ indepenent from the input power. This behavior should not be caused by physical reasons. It is probably caused by faults of the BER analyzer system. It often didn't recognize the type of the bit sequence properly (``No Signal''), so that the measurement stoped and started again after a short period of time. Because of that, there were not always enough bit errors to determine the BER with a good accuracy.
 
 The BER sensitivity of the photodetector is defined as the power level when a BER of $10^{-9}$ is reached at the reciver. Due to faults in the measurement system this value could not be reached. Thus the BER sensitivity could not be determined.
+
+
+\begin{figure}%
+\centering
+\includegraphics[width=.6\columnwidth]{Grafiken/BER.pdf}%
+\caption{BER for different bit patterns.}%
+\label{fig:BER}%
+\end{figure}
