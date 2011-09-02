@@ -70,10 +70,10 @@ order=1
 
 [item:Ausarbeitung/preparation.tex]
 archive=true
-column=0
+column=649
 encoding=ISO-8859-15
 highlight=LaTeX
-line=0
+line=10
 mode=LaTeX
 open=true
 order=3
@@ -107,8 +107,8 @@ CursorColumn=0
 CursorLine=0
 
 [view-settings,view=0,item:Ausarbeitung/preparation.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=649
+CursorLine=10
 
 [view-settings,view=0,item:Ausarbeitung/titlepage.tex]
 CursorColumn=0
