@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.0
-lastDocument=Ausarbeitung/preparation.tex
+lastDocument=Ausarbeitung/experiment.tex
 masterDocument=
 name=LIL
 pkg_extIsRegExp=false
@@ -26,7 +26,7 @@ ReadWrite=true
 
 [document-settings,item:Ausarbeitung/experiment.tex]
 Bookmarks=
-Encoding=UTF-8
+Encoding=ISO-8859-15
 Highlighting=LaTeX
 Indentation Mode=
 Mode=LaTeX
@@ -60,17 +60,17 @@ order=2
 
 [item:Ausarbeitung/experiment.tex]
 archive=true
-column=0
-encoding=UTF-8
+column=326
+encoding=ISO-8859-15
 highlight=LaTeX
-line=0
+line=4
 mode=LaTeX
 open=true
 order=1
 
 [item:Ausarbeitung/preparation.tex]
 archive=true
-column=649
+column=635
 encoding=ISO-8859-15
 highlight=LaTeX
 line=10
@@ -103,11 +103,11 @@ CursorColumn=0
 CursorLine=0
 
 [view-settings,view=0,item:Ausarbeitung/experiment.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=326
+CursorLine=4
 
 [view-settings,view=0,item:Ausarbeitung/preparation.tex]
-CursorColumn=649
+CursorColumn=635
 CursorLine=10
 
 [view-settings,view=0,item:Ausarbeitung/titlepage.tex]
