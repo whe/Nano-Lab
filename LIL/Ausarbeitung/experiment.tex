@@ -1,10 +1,17 @@
 \chapter{Auswertung}
 
-Nach der Herstellung war bei einigen Proben mit bloßem Auge das Vorhandensein einer Gitterstruktur zu erkennen. Beim Betrachten der Proben unter einem bestimmten Winkeln war eine Begung des auftreffenden Lichts zu beobachten.
 
-Die Betrachtung der hergestellten Gitterstrukturen unter dem Lichtmikroskop ist nicht nötig, da die Auflösung zu gering ist um die Periodizität von ca 276~nm auflösen zu können (vgl. Abbildung \ref{fig:nix}). Zur Demonstration ist in Abbildung \ref{fig:400nm}\footnote[1]{Probe Hergestellt von Uwe Bog} ein Gitter  mit einer Periode von 400~nm unter 100-facher Vergrößerung dargestellt. Man erkennt deutlich die einzelnen Gitterlinien. Hier reicht das Lichtmikroskop gerade noch aus um die Strukturen aufzulösen. 
 
-\begin{figure}%
+
+
+\section{Vermessung der Proben}
+Nach der Herstellung war bei einigen Proben mit bloßem Auge eine Beugung des auftreffenden Lichts zu erkennen. Dies deutet darauf hin, dass die Herstellung gelungen ist und sich eine Gitterstruktur auf der Probe befindet. Zur Charakterisierung dieser Proben ist nun ein geiegnetes Verfahren notwendig.
+
+Die Charakterisierung der hergestellten Gitterstrukturen unter dem Lichtmikroskop ist nicht möglich, da die Auflösung zu gering ist um die Periodizität von ca 276~nm auflösen zu können (vgl. Abbildung \ref{fig:nix}). Bei größerem Gitterabstand reicht die Auflösung jedoch aus. In Abbildung \ref{fig:400nm}\footnote[1]{Probe Hergestellt von Uwe Bog} ist ein Gitter  mit einer Periode von 400~nm unter 100-facher Vergrößerung dargestellt. Man erkennt deutlich die einzelnen Gitterlinien. 
+
+Ein geeignetes Charakterisierungsverfahren für die Proben ist die Vermessung mit einem \textit{Atomic Force Microscope} (AFM). Hierzu wurde das AFM am Institut für Mikrostrukturtechnik (IMT) verwendet. Jede Probe wurde an mehreren Stellen durch das AFM abgetastet. Das aufgenommene Höhenprofil wird anschließend Ausgewertet. Zur Übersicht wurde auch die drei dimensionale Topografie der Probenoberfläche aufgezeichnet. Abbildung \ref{fig:3d_bild} zeigt diese.
+
+\begin{figure}[hb]%
 \centering
 %\begin{adjustwidth}{0cm}{0cm}
 	\subfloat[]{\includegraphics[totalheight=5 cm]{Grafiken/nix.jpg}\label{fig:nix}}\qquad
@@ -14,10 +21,6 @@ Die Betrachtung der hergestellten Gitterstrukturen unter dem Lichtmikroskop ist 
 \label{fig:matlab}%
 \end{figure}
 
-
-
-Um die hergestellten Proben zu Charakterisieren wurden die Proben am Institut für Mikrostrukturtechnik (IMT) mit einem \textit{Atomic Force Microscope} (AFM) vermessen. Abbildung \ref{fig:3d_bild} zeigt die mit dem AFM aufgezeichnete Topografie einer hergestellten Gitterstruktur.
-
 \begin{figure}%
 \centering
 \includegraphics[width=.65\columnwidth]{Grafiken/3d_bild.jpg}%
@@ -25,12 +28,15 @@ Um die hergestellten Proben zu Charakterisieren wurden die Proben am Institut fü
 \label{fig:3d_bild}%
 \end{figure}
 
-Die Gitterstrukturen wurden damit Vermessen. Jede Probe wurde an mehreren Positionen durch das AFM abgetastet. Abbildung \ref{fig:vgl_periode} zeigt Messungen zweier Proben. Anhand der Messungen ist es möglich zum einen die Gitterperiode als auch die Amplitude des Gitters zu bestimmen. 
+
+\section{Messung der Gitterperiode}
+
+Aus den Aufgezeichneten Höhenprofilen der Proben lässt sich die Periodizität des hergestellten Gitters bestimmen. Abbildung \ref{fig:vgl_periode} zeigt das Profil zweier Proben. 
 Zur Bestimmung der Periode wurden Zeiger auf zwei unterschiedlichen Maxima gesetzt. Die Software des AFMs gibt den Abstand beider Zeiger an. In Abbildung \ref{fig:periode1} beträgt der Abstand beider schwarzen Zeiger 1,6~$\upmu$m und reicht über 6 Perioden. Damit ergibt sich für diese Probe eine Gitterperiode von 267~nm für die Probe mit einer Dosis von 40~mJ und einer Entwicklungszeit von 5~s.
 
-Die Probe die mit einer Dosis von 20~mJ und einer Entwicklungszeit von 10~s hergestellt wurde (Abbildung \ref{fig:periode2}) hat ebenso eine Gitterperiode von 267~nm. Dies bestätigt \eqref{eq:periode}, dass die Gitterperiode nicht durch Belichtungsdosis oder Entwicklungszeit beeinflusst wird.
+Die Probe die mit einer Dosis von 20~mJ und einer Entwicklungszeit von 10~s hergestellt wurde (Abbildung \ref{fig:periode2}) hat ebenso eine Gitterperiode von 267~nm. Dies bestätigt \eqref{eq:periode}, dass die Gitterperiode nicht durch Belichtungsdosis oder Entwicklungszeit beeinflusst wird, sondern maßgeblich durch die Wellenlänge bei der Laserinterferenzbelichtung bestimmt wird.
 
-\begin{figure}%
+\begin{figure}[h]
 \centering
 %\begin{adjustwidth}{0cm}{0cm}
 	\subfloat[40~mJ, 5~s]{\includegraphics[totalheight=4 cm]{Grafiken/Periode_40mj_5s_1.jpg}\label{fig:periode1}}
@@ -39,6 +45,9 @@ Die Probe die mit einer Dosis von 20~mJ und einer Entwicklungszeit von 10~s herg
 \caption{Mit dem AFM gemessene Gittertopographien. Gitterperiode beider Proben: $\sim$267~nm. \textbf{(a)} Dosis: 40~mJ, Entwicklungszeit: 5~s. \textbf{(b)} Dosis: 20~mJ, Entwicklungszeit 10~s. }%
 \label{fig:vgl_periode}%
 \end{figure}
+
+
+\section{Messung der Gitteramplitude}
 
 Weitergehend wurde anhand der Messungen die Gitteramplitude bestimmt. Hierzu wurden Zeiger einem Maximum und einem benachbarten Minimum gesetzt. Abbildung \ref{fig:periode1} zeigt einen Höhenunterschied zwischen den grünen Zeigern von 91,3~nm. In jeder Messung wurde zum einen die maximale Amplitude als auch die minimale Amplitude bestimmt. 
 
@@ -61,5 +70,22 @@ in s	& in mJ\\
 \label{tab:Referenz}
 \end{table}
 
+Zunächst soll die Amplitude des Gitters in Abhängigkeit von der Strahlungsdosis untersucht werden. Hierzu wurde über alle Messwerte mit gleicher Belichtungszeit gemittelt. Diese Mittelwerte sind in Abbildung \ref{fig:Ampl1} aufgetragen. Man erkennt, dass die Gitteramplitude mit steigender Strahlungsdosis abnimmt. \todo{erklärung mit kontrastkurve veruchen}
 
-\section{Auswirkungen von Gitterstruktur }
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.7\columnwidth]{Grafiken/Dosis.pdf}
+
+\caption{}%
+\label{fig:Ampl1}%
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=.7\columnwidth]{Grafiken/Entwicklungszeit.pdf}
+\caption{}%
+\label{fig:Ampl2}%
+\end{figure}
+
+\section{Analyse der Gitterform}
