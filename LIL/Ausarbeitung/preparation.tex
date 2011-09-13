@@ -3,13 +3,13 @@
 Bei der Herstellung von integrierten Systemen und Schaltungen ist die Strukturierung der Proben im Nanometerbereich ein unumgänglicher Prozesschritt. In der industriellen Fertigung hat sich die Fotolithografie etabliert. Mit ihr lassen sich vergleichsweise günstig und schnell Strukturen im Mikrometerbereich und kleiner herstellen. 
 
 Sollen peridoische Strukturen hergestellt werden, bietet sich die Laserinterferenzlithographie an. So lassen sich mit dieser Technik z.B. Beugungsgitter mit hoher Genauigkeit und Linienbreiten von einigen hundert Nanometern herstellen. %So ist es möglich Gitter mit Linienbreiten von einigen hundert Nanometern herzustellen. Das Verfahren wird zum Beispiel zur Herstellung von Reflektionsgittern, \textit{Grating Couplern}, oder zur Herstellung von Biosensoren verwendet. 
-Weitere Anwendungsgebiete sind u.a. Gitterkoppler, \textit{Distributed Feedback Laser} oder Resonatoren z.B. für Biosensoren.
+Weitere Anwendungsgebiete sind u.a. Gitterkoppler, \textit{Distributed Feedback Laser}, Resonatoren z.B. für Biosensoren oder Antireflexions-Schichte z.B. für OLEDs.
 
 Im Labor Nanotechnologie am Lichttechnischen Institut (LTI) des KIT werden an einem Versuchstermin Gitterstrukturen mit der Laserinterferenzlithographie hergestellt. Es wird zum einen die Probenvorbereitung, die Belichtung und Entwicklung der Proben sowie Charakterisierung der selbst hergestellten Proben vorgenommen.
 
 \chapter{Grundlagen und Versuchsaufbau}
 
-Die Laserinterferenzlithographie nutzt den Effekt der Interferenz zweier Wellen. Hierzu wird kohärentes, monochromatisches Licht aus einem Laser verwendet. Das Licht des Lasers wird mit einem Strahlteiler aufgeteilt. Über Spiegel werden die Strahlen zur Probe hin umgelenkt und mit Linsen aufgeweitet um den Belichtungsbereich zu vergrößern. Abbildung \ref{fig:aufbau}\footnote[1]{Uwe Bog; Laboratory Nanotechnology - Experiment: Laser Interference Lithography; Preperation Materials - Version 1.2}.  Veranschaulicht den beschriebenen Aufbau zur Laserinterferenzlithographie. Der verwendete Aufbau zur Probenherstellung beinhaltet einen Laser mit einer Wellenlänge von $\lambda$~=~266~nm. Aufgrund der verwendeten Wellenlänge im tiefen UV-bereich wurden die Linsen zur Strahlaufweitung im verwendeten Aufbau durch konkave Spiegel ersetzt. 
+Die Laserinterferenzlithographie nutzt den Effekt der Interferenz zweier Wellen. Hierzu wird kohärentes, monochromatisches Licht aus einem Laser verwendet. Das Licht des Lasers wird mit einem Strahlteiler aufgeteilt. Über Spiegel werden die Strahlen zur Probe hin umgelenkt und mit Linsen aufgeweitet um den Belichtungsbereich zu vergrößern. Abbildung \ref{fig:aufbau}\footnote[1]{Uwe Bog; Laboratory Nanotechnology - Experiment: Laser Interference Lithography; Preperation Materials - Version 1.2}.  Veranschaulicht den beschriebenen Aufbau zur Laserinterferenzlithographie. Der verwendete Aufbau zur Probenherstellung beinhaltet einen Laser mit einer Wellenlänge von $\lambda$~=~266~nm. Um die Absorprion des Laserstrahls in den Linsen zur Strahlaufweitung zu vermeiden, wurden diese im verwendeten Aufbau durch konkave Spiegel ersetzt. 
 
 
 \begin{figure}%
@@ -19,7 +19,7 @@ Die Laserinterferenzlithographie nutzt den Effekt der Interferenz zweier Wellen.
 \label{fig:aufbau}%
 \end{figure}
 
-Beim Aufeinandertreffen der beiden Strahlen interagieren die elektromagnetischen Wellen beider Strahlen miteinander. Aufgrund von Phasenunterschieden beider Strahlen Addieren oder Subtrahieren sich die Amplituden beider Strahlen. Dies erzeugt ein sinusförmiges Interferenzmuster auf der Probenoberfläche. Abbildung \ref{fig:interferenz}\footnotemark[1] veranschaulicht dies. An Punkten gleicher Phase addieren sich die beiden Wellen ($\Psi_1$ und $\Psi_2$). Es entsteht ein sinusförmiger Intensitätsverlauf (blau) auf der Probenoberfläche.
+Durch das zusammenführen der beiden aufgeweiteten Laserstrahlen überlagern sich zwei elektromagnetischen Wellen. Aufgrund der Phasenunterschiede der beiden Wellen an der Probenoberfläche interferrieren diese konstrunktiv oder destruktiv miteinander.  Da die Phase der einzelnen Wellen auch vom Ort auf der Probenoberfläche abhängig ist, wird ein sinusförmiges Interferenzmuster erzeugt. Abbildung \ref{fig:interferenz}\footnotemark[1] veranschaulicht dies. An Punkten gleicher Phase addieren sich die beiden Wellen ($\Psi_1$ und $\Psi_2$). 
 
 
 \begin{figure}%
@@ -36,7 +36,7 @@ Die Periode $P$ des sinusförmigen Interferenzmusters ist durch
 P = \frac{\lambda}{2 n \cdot\mathrm{sin}\theta}
 \label{eq:periode}
 \end{equation}
-gegeben. Hierbei ist $n$ die Brechzahl des über der Probe liegenden Mediums (z.B. Luft) \todo{Korrekt, dass ich hier Luft habe.. die in der Präsentation labern was vom Fotolack}, $\lambda$ die Wellenlänge des verwendeten Lasers und $\theta$ der Winkel zur unter dem der Laserstrahl auf die Probe fällt, gemessen zur Normalen zur Probe.
+gegeben. Hierbei ist $n$ die Brechzahl des über der Probe liegenden Mediums (z.B. Luft) \todo{Korrekt, dass ich hier Luft habe.. die in der Präsentation labern was vom Fotolack}\comseb{ich glaub das mit luft passt. ich hab ja die periodizität an der oberfläche}, $\lambda$ die Wellenlänge des verwendeten Lasers und $\theta$ der Winkel zur unter dem der Laserstrahl auf die Probe fällt, gemessen zur Normalen zur Probe.
 
 Auf der Probenoberfläche ist ein Fotolack aufgebracht der durch das Interferenzmuster periodisch belichtet wird. Die Wahl des verwendeten Fotolackes beeinflusst die hergestellten Strukturen maßgeblich. Ein Fotolack mit hohem Kontrast resultiert in einem Gitter mit steilen Kanten. Um eine flache sinusförmige Gitterstruktur herzustellen muss ein Fotolack mit geringem Kontrast verwendet werden.
 
