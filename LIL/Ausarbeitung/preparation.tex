@@ -1,6 +1,5 @@
 \chapter{Einleitung}
 
-
 Bei der Herstellung von integrierten Systemen und Schaltungen ist die Strukturierung der Proben im Nanometerbereich ein unumgänglicher Prozesschritt. In der industriellen Fertigung hat sich die Fotolithografie etabliert. Mit ihr lassen sich vergleichsweise günstig und schnell Strukturen im Mikrometerbereich und kleiner herstellen. 
 
 Sollen peridoische Strukturen hergestellt werden, bietet sich die Laserinterferenzlithographie an. So lassen sich mit dieser Technik z.B. Beugungsgitter mit hoher Genauigkeit und Linienbreiten von einigen hundert Nanometern herstellen. %So ist es möglich Gitter mit Linienbreiten von einigen hundert Nanometern herzustellen. Das Verfahren wird zum Beispiel zur Herstellung von Reflektionsgittern, \textit{Grating Couplern}, oder zur Herstellung von Biosensoren verwendet. 
@@ -8,24 +7,38 @@ Weitere Anwendungsgebiete sind u.a. Gitterkoppler, \textit{Distributed Feedback 
 
 Im Labor Nanotechnologie am Lichttechnischen Institut (LTI) des KIT werden an einem Versuchstermin Gitterstrukturen mit der Laserinterferenzlithographie hergestellt. Es wird zum einen die Probenvorbereitung, die Belichtung und Entwicklung der Proben sowie Charakterisierung der selbst hergestellten Proben vorgenommen.
 
-\chapter{Grundlagen}
+\chapter{Grundlagen und Versuchsaufbau}
 
-Die Periodizität der Gitterstruktur ist durch
+Die Laserinterferenzlithographie nutzt den Effekt der Interferenz zweier Wellen. Hierzu wird kohärentes, monochromatisches Licht aus einem Laser verwendet. Das Licht des Lasers wird mit einem Strahlteiler aufgeteilt. Über Spiegel werden die Strahlen zur Probe hin umgelenkt und mit Linsen aufgeweitet um den Belichtungsbereich zu vergrößern. Abbildung \ref{fig:aufbau}\footnote[1]{Uwe Bog; Laboratory Nanotechnology - Experiment: Laser Interference Lithography; Preperation Materials - Version 1.2}.  Veranschaulicht den beschriebenen Aufbau zur Laserinterferenzlithographie. Der verwendete Aufbau zur Probenherstellung beinhaltet einen Laser mit einer Wellenlänge von $\lambda$~=~266~nm. Aufgrund der verwendeten Wellenlänge im tiefen UV-bereich wurden die Linsen zur Strahlaufweitung im verwendeten Aufbau durch konkave Spiegel ersetzt. 
+
+Beim Aufeinandertreffen der beiden Strahlen interagieren die elektromagnetischen Wellen beider Strahlen miteinander. Aufgrund von Phasenunterschieden beider Strahlen Addieren oder Subtrahieren sich die Amplituden beider Strahlen. Dies erzeugt ein sinusförmiges Interferenzmuster auf der Probenoberfläche. 
+
+Die Periode $P$ des sinusförmigen Interferenzmusters ist durch
+
+\begin{figure}%
+\centering
+\includegraphics[width=.5\columnwidth]{Grafiken/aufbau.jpg}%
+\caption{}%
+\label{fig:aufbau}%
+\end{figure}
+
+
 \begin{equation}
 P = \frac{\lambda}{2 n \cdot\mathrm{sin}\theta}
 \label{eq:periode}
 \end{equation}
-gegeben. Hierbei ist $n$ die Brechzahl des über der Struktur liegenden Mediums (z.B. Luft), $\lambda$ die Wellenlänge des verwendeten Lasers und $\theta$ der Winkel zur unter dem der Laserstrahl auf die Probe fällt, gemessen zur Normalen zur Probe.
+gegeben. Hierbei ist $n$ die Brechzahl des über der Probe liegenden Mediums (z.B. Luft) \todo{Korrekt, dass ich hier Luft habe.. die in der Präsentation labern was vom Fotolack}, $\lambda$ die Wellenlänge des verwendeten Lasers und $\theta$ der Winkel zur unter dem der Laserstrahl auf die Probe fällt, gemessen zur Normalen zur Probe.
 
-\section{LIL aufbau}
+Auf der Probenoberfläche ist ein Fotolack aufgebracht der durch das Interferenzmuster periodisch Belichtet wird. Die Wahl des verwendeten Fotolackes beeinflusst die hergestellten Strukturen maßgeblich. Ein Fotolack mit hohem Kontrast resultiert in einem Gitter mit steilen Kanten. Um eine flache sinusförmige Gitterstruktur herzustellen muss ein Fotolack mit geringem Kontrast verwendet werden.
+
 
 \chapter{Versuchsdurchführung}
-Zunächst wurde das Substrat für die Durchführung des Versuches vorbereitet. Hierzu wurde das Glassubstrat zunächst auf 25x25~mm$^2$ große stücke zurechtgeschnitten und mit Aceton und Isopropanol gereinigt. Um Feuchtigkeit aus dem Substrat zu verdrängen wurden die Proben für 10~min auf eine Hot-Plate mit 150~°C gelegt und anschließend in einem Plasmaverascher für 2~min einem Sauerstoffplasma ausgesetzt. Zur besseren Haftung des Lacks wurde dann per Vakuum-Sublimation eine Schicht Hexamethyldisilazan (HMDS) aufgetragen. Hierzu wurde ein Becherglas mit HMDS zusammen mit den Proben in einen Exsikkator gestellt. Durch das Evakuieren des Exsikkators verdampft nun das HMDS und lagert sich an der Oberfläche des Substrats an.
+Zunächst wurde das Substrat für die Durchführung des Versuches vorbereitet. Hierzu wurde das Glassubstrat zunächst auf 25x25~mm$^2$ große Stücke zurechtgeschnitten und mit Aceton und Isopropanol gereinigt. Um Feuchtigkeit aus dem Substrat zu verdrängen wurden die Proben für 10~min auf eine Hot-Plate mit 150~°C gelegt und anschließend in einem Plasmaverascher für 2~min einem Sauerstoffplasma ausgesetzt. Zur besseren Haftung des Lacks wurde dann per Vakuum-Sublimation eine Schicht Hexamethyldisilazan (HMDS) aufgetragen. Hierzu wurde ein Becherglas mit HMDS zusammen mit den Proben in einen Exsikkator gestellt. Durch das Evakuieren des Exsikkators verdampft nun das HMDS und lagert sich an der Oberfläche des Substrats an.
 
 Als nächstes folgte das Auftragen des Fotolacks per Spin-Coating. Als Fotolack wurde der experimentelle Fotolack SX~AR-P~5300/4 verwendet. Das Spin-Coating erfolgte zunächst für 5~s mit 500~min$^{-1}$ um den Lack gleichmäsig auf dem Substrat zu verteilen und anschließend für 45~s bei 4000~min$^{-1}$. Die hieraus resultierende Schichtdicke beträgt ca. 1,5~$\upmu$m.
 Schließlich wurden die Proben für 2~min auf eine Hotplate mit 110°C gelegt um das Lösungsmittel aus dem Fotolack auszutreiben.
 
-Nun wurden die Proben in den LIL-Aufbau eingebaut und belichtet. Durch unterschiedliche Belichtungszeiten wurden Proben hergestellt, die mit einer Strahlungsdosis von 40, 80, 120 und 160~mJ belichtet wurden. Die Entwicklung der Proben wurde mit dem Entwickler AR 300-35 durchgeführt. Hierzu wurde dieser im Verhältnis 1:1 mit Wasser gemischt. In diese Lösung wurden die Proben anschließend getaucht und nach einer Entwicklungszeit von 2~s bis 10~s wieder herausgenommen und in ein Wasserbad getaucht um die Entwicklung zu stoppen. Zur Übersicht sind die bei der Herstellung variierten Parameter in Tabelle \ref{tab:parameter} zu sehen.
+Nun wurden die Proben in den LIL-Aufbau eingebaut und belichtet. Durch unterschiedliche Belichtungszeiten wurden Proben hergestellt, die mit unterschiedlichen Energien von 40, 80, 120 und 160~mJ belichtet wurden. Die Entwicklung der Proben wurde mit dem Entwickler AR 300-35 durchgeführt. Hierzu wurde dieser im Verhältnis 1:1 mit Wasser gemischt. In diese Lösung wurden die Proben anschließend getaucht und nach einer Entwicklungszeit von 2~s bis 10~s wieder herausgenommen und in ein Wasserbad getaucht um die Entwicklung zu stoppen. Zur Übersicht sind die bei der Herstellung variierten Parameter in Tabelle \ref{tab:parameter} zu sehen.
 
 \begin{table}%
 \centering
