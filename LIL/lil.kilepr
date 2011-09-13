@@ -56,27 +56,27 @@ highlight=LaTeX
 line=0
 mode=LaTeX
 open=true
-order=2
+order=1
 
 [item:Ausarbeitung/experiment.tex]
 archive=true
-column=326
+column=555
+encoding=ISO-8859-15
+highlight=LaTeX
+line=105
+mode=LaTeX
+open=true
+order=3
+
+[item:Ausarbeitung/preparation.tex]
+archive=true
+column=37
 encoding=ISO-8859-15
 highlight=LaTeX
 line=4
 mode=LaTeX
 open=true
-order=1
-
-[item:Ausarbeitung/preparation.tex]
-archive=true
-column=635
-encoding=ISO-8859-15
-highlight=LaTeX
-line=10
-mode=LaTeX
-open=true
-order=3
+order=2
 
 [item:Ausarbeitung/titlepage.tex]
 archive=true
@@ -103,12 +103,12 @@ CursorColumn=0
 CursorLine=0
 
 [view-settings,view=0,item:Ausarbeitung/experiment.tex]
-CursorColumn=326
-CursorLine=4
+CursorColumn=555
+CursorLine=105
 
 [view-settings,view=0,item:Ausarbeitung/preparation.tex]
-CursorColumn=635
-CursorLine=10
+CursorColumn=37
+CursorLine=4
 
 [view-settings,view=0,item:Ausarbeitung/titlepage.tex]
 CursorColumn=0
